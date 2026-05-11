@@ -1,11 +1,15 @@
 {
-  "version": "0.0.17",
+  "version": "0.0.18",
   "notes": "",
-  "pub_date": "2026-05-08T18:31:51Z",
+  "pub_date": "2026-05-11T03:53:22Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG52Tkh6VGRHRE1qdTUzUnoyZjN0LzVsUTFkVTYvZnFPZXdkbXBBUkg4WWlJcEVkS2oyKytBMWxXOVBYOE8vRGRDU1lMNkRTSDdhN1lST0JwbFE0ZVFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4MjY1MTExCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKbldGQTQwcXJJblZsVjRiSjR2eW16VWxGRW1Oek1LNFRkeENrSDZpZ0dMM0t4MDE4NXpuVmJ1d1VzNVdoRjFVdGJaSHNjTXJxaXErM015ZjVtN3JCQXc9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.17/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHVUQ3Bsc1ZHZUJkbkJ4ME9IcWFyZUZYN0NvcE5MZ21mUllKdStleHBGMDVnV1h2ZG8wYkFDWWdydzNUeUt4c3JKYSsxZ0dZbzNmMGNzbnBUUjUwRVFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4NDcxMzUxCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKTXVMdllGVHZRUjUxZzlLVjRKQ0ZQVmlNVFF2YWxsWWs0V3JnSmRSWGM4clBINmJGUVlaSTNYMmJpM0JGOWtJNlZOc2labnQ1c0dra3FrbEJSQUQ0QkE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.18/Gold.Hand.Trade.app.tar.gz"
+    },
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHA3cE1LcnZwUUVwUXRNQUMreGJtVUh4bDJKdGIxbDJCbmFDZHdMSHVnbkRBMWdTbTRoUDFIV1hyQ2phVkNlY05jY0FDVlZrMGU4dDltSnZzT1NqUkFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4NDcxNjAwCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMC4xOF94NjQtc2V0dXAuZXhlClJCWGpUMFlQRmFKNm9DUW1FREhUN2kyUTR6VjBpOE80cE1HYmQ1NWxZTEhWNDI4Sjg2VUE0c2NTbFVhaHNzSXkzZk5BdFM1aUlMQ2Y0d0Jja1V3UUJBPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.18/Gold.Hand.Trade_0.0.18_x64-setup.exe"
     }
   }
 }
