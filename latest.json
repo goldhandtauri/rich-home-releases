@@ -1,15 +1,11 @@
 {
-  "version": "0.0.22",
-  "notes": "## v0.0.22\n\n- 커뮤니티 기능이 기본 비공개로 전환 (설정 → 버전 영역 7번 클릭으로 고급 기능 활성화 시 표시)\n- 커뮤니티 — 욕설 필터 클라이언트 측 처리 (한/영, leetspeak/우회 표현 포함), 401 감지 시 JWT 자동 재발급\n- 커뮤니티 — 멘션 자동완성 dropdown, 무한 스크롤(커서 페이지네이션), FAB(+) 작성 모달, 인기글 임계값·전체 카운트 표시\n- 종목검색 — \"/\" reset 시 디스커버 첫 항목 자동 활성화 + 스크롤 리셋 보강\n\n## v0.0.21\n\n- 커뮤니티 기능 도입 — 글로벌 게시판 + 종목별 게시판, 댓글·반응·신고·차단·알림, 플로팅 위젯·인앱 토스트 지원\n- 본인 글/댓글 수정·삭제 + 공통 확인 다이얼로그(ConfirmDialog) + 본문 길이/내용 검증\n- 커뮤니티 단축키: macOS ⌘+Enter / Windows Ctrl+Enter 로 작성 제출\n- UI/UX 폴리시: SVG 아이콘 통일, 본문 종목 칩, 카드 헤더 정렬·시간 우측 정렬\n\n## v0.0.20\n\n- \"주기적으로 새 버전 확인\" 옵션이 기본 ON 으로 변경 (1시간 간격, 설정 → 업데이트에서 조정 가능)",
-  "pub_date": "2026-05-12T06:22:25Z",
+  "version": "0.0.23",
+  "notes": "## v0.0.23\n\n- 커뮤니티 기능 일반 오픈 — 사이드바·플로팅 위젯·종목별 진입점 모두 일반 사용자에게 노출\n- 커뮤니티 — 60초 자동 갱신 + 마지막 갱신 시각 표시 (전체/종목별 페이지)\n- 전체 커뮤니티 창 기본 핀고정(항상 위에) — 핀 버튼으로 토글 가능\n- 일반설정에 커뮤니티 섹션 추가 — 플로팅 위젯 표시 / 전체 커뮤니티 창 항상 위에 표시 토글\n- 윈도우에서 커뮤니티 플로팅 위젯·팝업 타이틀바 드래그 커서가 안 보이던 문제 수정\n\n## v0.0.22\n\n- 커뮤니티 기능이 기본 비공개로 전환 (설정 → 버전 영역 7번 클릭으로 고급 기능 활성화 시 표시)\n- 커뮤니티 — 욕설 필터 클라이언트 측 처리 (한/영, leetspeak/우회 표현 포함), 401 감지 시 JWT 자동 재발급\n- 커뮤니티 — 멘션 자동완성 dropdown, 무한 스크롤(커서 페이지네이션), FAB(+) 작성 모달, 인기글 임계값·전체 카운트 표시\n- 종목검색 — \"/\" reset 시 디스커버 첫 항목 자동 활성화 + 스크롤 리셋 보강\n\n## v0.0.21\n\n- 커뮤니티 기능 도입 — 글로벌 게시판 + 종목별 게시판, 댓글·반응·신고·차단·알림, 플로팅 위젯·인앱 토스트 지원\n- 본인 글/댓글 수정·삭제 + 공통 확인 다이얼로그(ConfirmDialog) + 본문 길이/내용 검증\n- 커뮤니티 단축키: macOS ⌘+Enter / Windows Ctrl+Enter 로 작성 제출\n- UI/UX 폴리시: SVG 아이콘 통일, 본문 종목 칩, 카드 헤더 정렬·시간 우측 정렬\n\n## v0.0.20\n\n- \"주기적으로 새 버전 확인\" 옵션이 기본 ON 으로 변경 (1시간 간격, 설정 → 업데이트에서 조정 가능)",
+  "pub_date": "2026-05-12T07:35:23Z",
   "platforms": {
-    "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGdzODI3RksvYnNNUlJOSmZjUlVyNFFnaGFnOHNuTlFuY3V2MWlDRXpoeis2UG56L1dnWU9wNTdLUEwwRHZHU0liSmJpMHZwY25ldTJyWUhsOEk0akFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4NTY2NDU0CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKT0tsU3h1N3Z5aTU5YVZKYXFIRy9maDJKS1dadlI3bDR2QlJkQW9UMUVRbnRaTXZXazRUNnJUSUtGZkNsTWVxajFmV0phUStXZHo5ZTUrVzNkZDREREE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.22/Gold.Hand.Trade.app.tar.gz"
-    },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG1tVlZQVTE1d1hCYmxSOFJaOGJibHJ3RDZmWGhJTEl4UysvSG9Hb2VTWlRNQTRiaW00WGRXTG5FeU1wd1BiRjQ4VjdmMGdIMUFDL0lpZWliN3B0NEFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4NTY2OTQzCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMC4yMl94NjQtc2V0dXAuZXhlCnY4UHBsWWRNc1BWdFF2U1BJU3kwZTNMUzJhdjdHYU56aVpOZDRRaXZqVmxpQkl0NXJweGZxUUhXRGsrRXpvM0tvaWRWV3NQNWJnclFUT2kwa2tQeENBPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.22/Gold.Hand.Trade_0.0.22_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG9iRlNsRlo3eDhtY3V4bFRjYnNtSTk4aXF2R21BSmlYLzhNWi9yV01lcjUvNUlvamY4WGtKcHVya1lmcUtyLzBINVpwRmUvWXZXZFoya3RxZFFRdWc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4NTcxMzIxCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMC4yM194NjQtc2V0dXAuZXhlCllYc3NwS3hPWWQ5NXp5RnJzc1phSnRzTHVLT0xuM0gyYWVSZ1ZtdmpKa2NvQ1dKK290WnRjV0RnbUEwcUEvWmdZaExFZlhRQlIwclVZVWc4ekxTYURBPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.23/Gold.Hand.Trade_0.0.23_x64-setup.exe"
     }
   }
 }
