@@ -1,15 +1,15 @@
 {
-  "version": "0.0.47",
-  "notes": "## [v0.0.47] — 2026-05-14\n\n### 변경\n\n- **업데이트 모달 노트가 마크다운으로 렌더링** — 기존엔 `##`, `###`, `**굵게**` 같은 마크다운 기호가 평문으로 그대로 보여 알아보기 어려웠음. 이제 `marked` 로 파싱해 골드 버전 헤더 + 카테고리 좌측 strip + 진한 헤드라인 + 골드 bullet + 골드 tint `code` chip 으로 시각 위계 표현 (라이트/다크 모드 분기). 트레이더가 3~5초 안에 핵심 변경 인지 가능\n\n### 수정\n\n- **모달 노트에서 해당 버전 섹션만 추출** — 기존엔 `latest.json.notes` 에 `RELEASE_NOTES.md` 전체를 dump 해 Changelog 헤더·과거 버전·레거시 항목까지 모두 노출되던 문제 fix. `scripts/generate-latest-json.sh` 가 `## [v<버전>]` 패턴으로 해당 섹션만 추출. 매칭 실패 시 빈 노트 + stderr 경고\n\n### 변경 (내부 정리)\n\n- **릴리스 노트 양식 SSOT 문서 보강** — `doc/guides/update_guide.md §2-2` 에 렌더링 파이프라인 표·섹션 추출 매칭 패턴·가독성 가이드(모달 `max-height: 160px` 기준 3~5초 결정용) 추가. `CLAUDE.md` 본문 포인터를 mandatory + 헤더 형식 정확성 + marked 렌더링 사실 명시로 강화 — 매 배포 작업마다 자동 인지",
-  "pub_date": "2026-05-14T11:38:26Z",
+  "version": "0.0.48",
+  "notes": "## [v0.0.48] — 2026-05-14\n\n### 수정\n\n- **종목검색 키워드 입력 후 첫 항목 포커스가 중간으로 이동하던 race 차단** — 키워드 입력 → 결과 도착 시 `activeIndex = 0` 으로 set 했지만, 사용자 마우스가 이미 결과 영역 위에 있으면 자연스러운 미동·`scrollIntoView` 가 `onMouseMove` → 가드 해제 → `onRowHover` 로 중간 row 점프시키던 회귀 fix. 새 가드 `searchJustCompleted` (400ms 강한 가드) 추가 — 그동안엔 mouse move 도 가드 해제 못 함. 키워드 입력 직후 Enter 로 첫 결과 안정적으로 선택 가능",
+  "pub_date": "2026-05-14T11:48:51Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHFBamFRV2pGakV6Wk5XZ08vQ3RLN2FXZWdkSmRETmk0cmY0Ujl0RGVrRmN1ZlFCTWN3ZjVvR0RKK2JwQ2lIbVhwTlJlcFBlZXJ5MHNqUEdpM2RxNWdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4NzU4MDQwCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKa3BNY3UwQXdIa1BHbUdmM3ZHcVZpL29qSEg5c2hadEJxYjM0Tm1mcFp2b2xXRmE3RDd2SnZBVVVpZXBEaXVJSGxiMDV2QUJoU3pxVEx6eUVtWEFuRFE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.47/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGd3SENkRXdydjA4VU5XMjhTNGowbWc4UVBCOE1UdC9EMVhheU5oVjRzbVhaLzBFd2tBSUhBQUhSSHN0ZXQrNysvZkN3emZwNkVaTUxZeDYxWDJtL2dJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4NzU4NDg0CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKVjNxNWVnYTkrdUNONlRWZjhYTmNtaHB3b2V4bGtBb2pFZjFXREZFRHBtMFF3UytOc29vQ3ZUZXVLeXlwbXcrcnB4K1VWaXRPNTc0dmNqTWZsQmFGQWc9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.48/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGhlekRTM3haZVhPQzB0YThKam5GeDZCK1Q4cEtDbm91NW94YUJZNzVFbkxid000aGZYbTQ0dnlwU2FWbm9xNms5QnlsRThQMjdDRHE0WnE0cGprTlF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4NzU4NzA0CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMC40N194NjQtc2V0dXAuZXhlCm5BbUZMSXp4T08ybzZYRFpZcjFvUE1BdU1EbGMxd2VKRFFZRjJiUi9vQlpjMmZkTDJrYzZ0RU5QdWZvdkpVWkVuclFXWTlSTXF6clRKMzkxbkFEc0NBPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.47/Gold.Hand.Trade_0.0.47_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGdhREgrMTJlWGIrOEc4VmVKUWdjUTd5OHRJbEFjQkdvbk9OY0NSSFA3Q1J4S1hzUjBHMU9Ha211NC9SWFZIVFRENDNTMjNQQnZsWEdNMU14NWNMNlEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4NzU5MzI4CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMC40OF94NjQtc2V0dXAuZXhlCkhnNC9IbmlOWi84dm1VdWxxRWhtY25oeWRiK1g2T3hrTmU5aXhOQytncWlDc29VTzRSSG1wTTU2U1VNdko3Z2x2YzdSVUNhdFkvZ3gwSkRnSldhWkFBPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.48/Gold.Hand.Trade_0.0.48_x64-setup.exe"
     }
   }
 }
