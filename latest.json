@@ -1,15 +1,15 @@
 {
-  "version": "0.0.60",
-  "notes": "## [v0.0.60] — 2026-05-15\n\n### 수정\n\n- **칩이 집까지 다시 순간이동하던 회귀** — 위젯이 칩으로 변환되는 페이드인 애니메이션과 이동 애니메이션이 겹쳐 좌표 transition 이 무력화되던 race fix. 페이드인이 끝난 뒤 이동 시작하도록 대기 추가 → 살랑살랑 이동 정상 표시\n\n### 변경\n\n- **칩 집 디자인 v2 (따뜻한 코티지 톤)** — 단순했던 집을 더 cute 하게 재디자인:\n  - 둥근 굴뚝 연기 두 송이\n  - 둥근 꼭대기·처마 지붕 (Q 곡선)\n  - 더 큰 둥근 아치 문 + 손잡이\n  - 둥근 모서리 창문 + 십자 mullion\n  - 정원 잔디 점선",
-  "pub_date": "2026-05-14T16:30:04Z",
+  "version": "0.0.61",
+  "notes": "## [v0.0.61] — 2026-05-15\n\n### 추가\n\n- **투명도 복구 단축키 안내** — 팝업 창 투명도가 0 으로 완전 투명일 때 본문이 안 보여 사용자가 회복 방법을 인지하기 어려웠던 점 해결. 이제 두 곳에 안내:\n  - **팝업 상단 핀 버튼 왼쪽**에 골드 톤 배지로 단축키(Cmd/Ctrl + Shift + O) 인라인 표시. 투명도가 0 일 때만 자동 노출, 회복하면 사라짐\n  - **설정 → 일반 → 단축키 표**에 항목 추가 — 모든 사용자가 한 곳에서 확인 가능",
+  "pub_date": "2026-05-14T16:41:31Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGloN2Ewbm1VT0lacXEzRFVEVTdxYWdOSHg0cHpIdU5NZE5XcEEvM1k0R2haTmppSEFOaWhTVWw0NG1IZmJIV2crWEsxd1RzTFMxOERVMmFrZmhUUGdNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4Nzc1MTYxCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKMFF2ckpVa1NBNEpPaHpHWFB4T3ZScFZxM3RwUmdOVndPVmxHUElmcXU3dEdUbUhSSzgzR2I0S0hpRWJxTnVhbkJaSTlLdlhRSG03dEJGMHZBYUwvRFE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.60/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGttcDREbDZpL0xiK2REZ1ZKbTVLdDRweXFyaU16Q1BzZ2pKRW1JMjBWVlZaN1duaGhENjNKcC9RcS9ic1Q3SUZNckc1WkVrVW0zK2lMNng0NVVyandJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4Nzc2MDk4CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKeGhHVnN6SkdHNXNZcUQ0d2hxSEEza3BvWlpGZk5CMjFNK2x1UWZ5NTNRdFk5OXNBU1lpVVUzRGN1OTBseldUbW55a05oVzNaSlBxMUY4OUwrV1ZxQkE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.61/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHFCUnYzUFA3UnNWdU5BMTBNUHF1R0Zhdy9PQlFPbkg2bzBINHllMnBCWlphZkcxQzdsQXBJU1E0ZTUvQ0toVDhSTlVZUk5uUDV4OFUvc05iMitSMlFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4Nzc2MTk5CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMC42MF94NjQtc2V0dXAuZXhlCmk3SU9tYVY1Q1E1cDY2Qzl0L1ZkRjJGWFd0ZmUwdjBibFNHaGpXb1RpWFNtZ3F2YXdjbWlabVY1WkhRTzBpak9LeGZoUUZzUTJaZmdtU3NMZFl3U0F3PT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.60/Gold.Hand.Trade_0.0.60_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHJmelV3aDBWcC9WcWgyTmIvL2drRXpwMzN3TEZQN3JtdWN1M3RjSmZOVHVER1MrNFAydXlIVm9pTGRTc1dsSjA1TmdUbEpDeDFoOGVLazFLNDVqdUFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4Nzc2ODg5CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMC42MV94NjQtc2V0dXAuZXhlCklRd0tWb0ZzSFRtT3hqWmg0TmNhU0RqL1MrVlZvWXVtVTltWVhuWlltbEc3QndscVZPODlQQ0tNZHU5ZW9iSW9pMGdlWllBbDZBc2JwRFNpUlc2MkRnPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.61/Gold.Hand.Trade_0.0.61_x64-setup.exe"
     }
   }
 }
