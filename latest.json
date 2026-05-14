@@ -1,15 +1,15 @@
 {
-  "version": "0.0.48",
-  "notes": "## [v0.0.48] — 2026-05-14\n\n### 수정\n\n- **종목검색 키워드 입력 후 첫 항목 포커스가 중간으로 이동하던 race 차단** — 키워드 입력 → 결과 도착 시 `activeIndex = 0` 으로 set 했지만, 사용자 마우스가 이미 결과 영역 위에 있으면 자연스러운 미동·`scrollIntoView` 가 `onMouseMove` → 가드 해제 → `onRowHover` 로 중간 row 점프시키던 회귀 fix. 새 가드 `searchJustCompleted` (400ms 강한 가드) 추가 — 그동안엔 mouse move 도 가드 해제 못 함. 키워드 입력 직후 Enter 로 첫 결과 안정적으로 선택 가능",
-  "pub_date": "2026-05-14T11:48:51Z",
+  "version": "0.0.49",
+  "notes": "## [v0.0.49] — 2026-05-14\n\n### 추가\n\n- **KIS 시세 연결 끊김 안내 + 자동 재연결 안전 정지** — 같은 KIS 계정을 다른 PC 에서 동시 사용 시 KIS 가 한쪽 연결을 silent 하게 invalidate 해 양쪽 시세가 ping-pong 으로 끊기던 문제 해소. 백엔드가 **30초 안 disconnect 3회**를 휴리스틱으로 감지하면 자동 재연결을 중단하고 모든 webview 상단에 골드 배너 표시. 배너의 [재연결] 버튼으로 사용자가 명시적으로 다시 연결할 때까지 ping-pong 차단. **5분 쿨다운**으로 중복 알림 노이즈 방지, 재연결 후 첫 시세 수신 시 카운터·배너 자동 정리\n- **자동매매 RUNNING 중 안전 정지** — KIS 시세 끊김 휴리스틱 발화 시 자동매매가 돌아가고 있으면 `auto_trade_stop` / `sa_stop` / `rim_stop` 백엔드 명령을 모두 시도해 매매 평가 정지. 강조 모달로 사용자에게 명확히 알림 (시세 끊긴 상태에서 stale 가격 기반 매매 사고 방지)\n\n### 변경 (내부 정리)\n\n- `doc/guides/kis-api-guide.md §3` 에 disconnect 휴리스틱 정책 SSOT 문서화 — 동작 흐름·이벤트 채널·금지 패턴·코드 참조 통합. 작업지시서·구현계획은 `doc/plans/archive/` 로 frozen",
+  "pub_date": "2026-05-14T12:37:57Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGd3SENkRXdydjA4VU5XMjhTNGowbWc4UVBCOE1UdC9EMVhheU5oVjRzbVhaLzBFd2tBSUhBQUhSSHN0ZXQrNysvZkN3emZwNkVaTUxZeDYxWDJtL2dJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4NzU4NDg0CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKVjNxNWVnYTkrdUNONlRWZjhYTmNtaHB3b2V4bGtBb2pFZjFXREZFRHBtMFF3UytOc29vQ3ZUZXVLeXlwbXcrcnB4K1VWaXRPNTc0dmNqTWZsQmFGQWc9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.48/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG9IYkoyWWZJVCthb3JDWjNBOE4vbG84UjZVQTl2RmVScE1GMUxMd3k0bDRnK0pMQ0pQakUyMDF1cit6alRucHJBS3RJZ1RsZkhHbndMT291dXFZWVEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4NzYxNzM2CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKUkhWVE1CRXVZVTkvYzB4cHF3K05hUHZTQ1VmUmJzQkJuZTV0TlF4U3pncFE4MU9Ga2hvaGhMeEFwRnJKTDJsSVV0ZnVpNWs0RHR2ZGdQek5GdGdqQXc9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.49/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGdhREgrMTJlWGIrOEc4VmVKUWdjUTd5OHRJbEFjQkdvbk9OY0NSSFA3Q1J4S1hzUjBHMU9Ha211NC9SWFZIVFRENDNTMjNQQnZsWEdNMU14NWNMNlEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4NzU5MzI4CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMC40OF94NjQtc2V0dXAuZXhlCkhnNC9IbmlOWi84dm1VdWxxRWhtY25oeWRiK1g2T3hrTmU5aXhOQytncWlDc29VTzRSSG1wTTU2U1VNdko3Z2x2YzdSVUNhdFkvZ3gwSkRnSldhWkFBPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.48/Gold.Hand.Trade_0.0.48_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHNoc0xESVRoUlo3YmlqRVpvcWpCSlN4TkRSWDFNeGtsWXcxN21HamVKc3dBYzNkSmNBdWFLd0tDL3NZZFludlFQcnp1RUQ2TnlOWkdFN0RndlFqblFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4NzYyMjc1CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMC40OV94NjQtc2V0dXAuZXhlCmJqSUZuYnJuSWtrdkxjYTMzSHdrbzBEUlBSY05Gb3hrdnJ3UHVpSFZ3ZGJCKzN0VVBxb2FVRzJhWngxT3RIKzMxcnJUYlR6bUFESFdOMXJiS1BlTER3PT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.49/Gold.Hand.Trade_0.0.49_x64-setup.exe"
     }
   }
 }
