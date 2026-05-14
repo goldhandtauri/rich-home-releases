@@ -1,15 +1,15 @@
 {
-  "version": "0.0.51",
-  "notes": "## [v0.0.51] — 2026-05-14\n\n### 수정\n\n- **종목상세 호가 — 장 마감 후에도 \"장중\" 표시되던 문제** — 장이 끝난 시간(예: 20:00) 인데도 마지막으로 들어온 시세 메시지의 stale 상태 코드 때문에 \"장상태\" 가 \"장중\" 으로 남던 문제 해결. 현재 시간이 정규장(09:00~15:30) 밖이면 시간 기반 라벨(시간외 종가·시간외 단일가·NXT 애프터마켓·장마감) 로 자동 보정\n- **커뮤니티 위젯 닫기 → 칩이 X 버튼 자리로 collapse** — 위젯의 [×] 버튼을 누르면 작은 칩으로 줄어드는데 기존엔 위젯의 왼쪽 끝 위치로 이동해 시각적으로 어색했던 문제 해결. 이제 X 버튼이 있던 우상단 자리에서 칩으로 변신하는 자연스러운 동작. 다시 펼칠 때도 칩 위치 기준으로 위젯이 좌측으로 펼쳐져 X 버튼 자리가 그대로 유지\n- **커뮤니티 위젯 펼침 시 화면 밖으로 나가지 않음** — 위젯 펼침 사이즈 계산 오류로 글이 많거나 화면이 낮을 때 위젯 본체가 화면 우/하단 밖으로 잘리던 버그 해결. 펼침 후 실제 높이를 측정해 화면 안으로 자동 위치 보정",
-  "pub_date": "2026-05-14T14:30:46Z",
+  "version": "0.0.52",
+  "notes": "## [v0.0.52] — 2026-05-14\n\n### 추가\n\n- **팝업 창 투명도 0 → 클릭 통과** — 팝업 창의 투명도 슬라이더를 0(완전 투명) 으로 내리면 그 위 마우스 클릭이 팝업을 통과해 뒤 창이나 다른 앱으로 전달. 트레이딩 화면 위에 참고용 팝업을 띄워두고 가려진 영역도 클릭하고 싶을 때 유용\n- **투명도 회복 단축키 `Cmd/Ctrl + Shift + O`** — 클릭 통과 상태에선 슬라이더 자체도 클릭 불가능하므로 키보드로 회복. 단축키를 누르면 투명도가 100 으로 복구되고 클릭 통과가 해제됨. 단축키 동작 전 OS 단축키로 팝업에 포커스를 먼저 줘야 함 (macOS `Cmd+`` / Windows `Alt+Tab`)",
+  "pub_date": "2026-05-14T14:54:02Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGg1aktuQmVHcWxvcXoxbDBpeFpaUlczZjE5YWpwOEhNQXdaL25ITk1uMEpGRDRvMVN6SkJ1WEQ4Rkl4ZVlsRUcrY2dVckNoRjlJd0REd0VoWFh1UHcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4NzY4MzAwCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKN0Y3V2tDVWk5OWh0dU1nQWdtR05HekJPRG5KOW5HTXFBNVNxK1oyMnA5Sm5lbTkxK1c2bUtXbjh5TW9ZamlNS0xrd0ovRVlXMDRwZmtZV0hNTDl6Q3c9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.51/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHRWTmdGOTJGS3FGY2h6NlNla08yUGJWZlN3OFdPOE40bzdtWjIrbTB1eE5EaVA1SjFGTllrVGs2MVFUM2ZLVDhoQ3h2TDB3RTUweGlRd3JZMk1iRFFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4NzY5NzAzCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKMEV5SDdWRkNxTEI1MkxLRWhqbWw1eXBRKzFYN0ZkSllaTlZGZHJZRzZJbE9YQy9iMzVXdkg2VUJMaFBjLzMzMlhReXR6cTRZYW5jOUphNTVMTVdKRGc9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.52/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHJLV3Q3V1pPQ2YvNy92aDNUU3lXb2tOa0IxS2lxMGdaQ1N3TmREa0ZObmE5T3BvWXBDdFAweXIzbjhDd2RzZFNNeHpvSUhsZDFVbnFncjFvUjU0Rmd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4NzY5MDQxCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMC41MV94NjQtc2V0dXAuZXhlCnMrQXlYZlI4ckVzQ0tUVmhSN1JZeC96b0RsWjVUZEwyVE02Ulk2S2xuMCtLN0hDaHBlUklJMDRoUG4wMkpSbWZ1WWsrdlAxT25zY2FBTkRhcDZyckR3PT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.51/Gold.Hand.Trade_0.0.51_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGhsSUs3N2tURmNCMHhZTktlTjcwMXJGSVVHR0tOM3J5aVQvMGE2YjJJREtiQTUrc05SZUhER2JJYzhJemNrVVJDU2dkUlczZHRxOUlJcEtMRGt5SUFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4NzcwNDM4CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMC41Ml94NjQtc2V0dXAuZXhlClROQ0k2YWJQcUVsMzNaandoUmt6TDM2ckk3Ulo5QjVmZk5wZG9CSmZGZ2thakdCd2JIcE1iQ1YxYzVWSTFOOHN5ekM4VGxxNmVDYVdiSHltTVEwUkJ3PT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.52/Gold.Hand.Trade_0.0.52_x64-setup.exe"
     }
   }
 }
