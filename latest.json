@@ -1,15 +1,15 @@
 {
-  "version": "0.0.49",
-  "notes": "## [v0.0.49] — 2026-05-14\n\n### 추가\n\n- **KIS 시세 연결 끊김 안내 + 자동 재연결 안전 정지** — 같은 KIS 계정을 다른 PC 에서 동시 사용 시 KIS 가 한쪽 연결을 silent 하게 invalidate 해 양쪽 시세가 ping-pong 으로 끊기던 문제 해소. 백엔드가 **30초 안 disconnect 3회**를 휴리스틱으로 감지하면 자동 재연결을 중단하고 모든 webview 상단에 골드 배너 표시. 배너의 [재연결] 버튼으로 사용자가 명시적으로 다시 연결할 때까지 ping-pong 차단. **5분 쿨다운**으로 중복 알림 노이즈 방지, 재연결 후 첫 시세 수신 시 카운터·배너 자동 정리\n- **자동매매 RUNNING 중 안전 정지** — KIS 시세 끊김 휴리스틱 발화 시 자동매매가 돌아가고 있으면 `auto_trade_stop` / `sa_stop` / `rim_stop` 백엔드 명령을 모두 시도해 매매 평가 정지. 강조 모달로 사용자에게 명확히 알림 (시세 끊긴 상태에서 stale 가격 기반 매매 사고 방지)\n\n### 변경 (내부 정리)\n\n- `doc/guides/kis-api-guide.md §3` 에 disconnect 휴리스틱 정책 SSOT 문서화 — 동작 흐름·이벤트 채널·금지 패턴·코드 참조 통합. 작업지시서·구현계획은 `doc/plans/archive/` 로 frozen",
-  "pub_date": "2026-05-14T12:37:57Z",
+  "version": "0.0.50",
+  "notes": "## [v0.0.50] — 2026-05-14\n\n### 변경\n\n- **컬러 테마 v2 — 차분한 워밍 페이퍼** — 라이트 모드 페이지 배경을 살짝 더 진한 크림으로 조정해 장시간 사용 시 흰 배경 눈부심 감소. 카드가 페이지 위에 떠 보이도록 페이지·카드 두 단계 elevation 도입 (다크 모드의 카드 떠오름 패턴을 라이트에도 적용). 상태 메시지 색(성공·에러·정보) 도 워밍 톤으로 통일해 골드 베이스와 시각 일관성 ↑\n- **다크 모드 본문 텍스트 보정** — 본문 색을 살짝 더 차분한 톤으로 미세 보정해 골드 강조 색과 시각 분리. 본문 가독성과 액센트의 시각 위계가 더 명확해짐\n- **키보드 포커스 행 강화** — 리스트·테이블에서 키보드로 이동할 때 활성 행의 골드 outline 을 더 명확히 표시. hover 와 혼동되던 문제 해결",
+  "pub_date": "2026-05-14T13:54:44Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG9IYkoyWWZJVCthb3JDWjNBOE4vbG84UjZVQTl2RmVScE1GMUxMd3k0bDRnK0pMQ0pQakUyMDF1cit6alRucHJBS3RJZ1RsZkhHbndMT291dXFZWVEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4NzYxNzM2CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKUkhWVE1CRXVZVTkvYzB4cHF3K05hUHZTQ1VmUmJzQkJuZTV0TlF4U3pncFE4MU9Ga2hvaGhMeEFwRnJKTDJsSVV0ZnVpNWs0RHR2ZGdQek5GdGdqQXc9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.49/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHE1V0Z5VC93NzJsOHVWVVhzaFNZcXc3QUk5NVZieFVGT3dLQmZyUzlwbDhiT0o1SHIvR0Rka0JkdWNLZCtsWmo1TTUzUlAyLytvelpTejRBWnZFRkFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4NzY2MTI4CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKakRnRTdDUHdKbVFmcXpjQW1OSFFqYUVVMzgveE1DalBCZWNFUVlEQnAzaWVpNCsvMy9TQzBOa1Y2SVliVlhqQ2tmK3VDQWRGL2QyUWc3TDVRUkJHQmc9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.50/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHNoc0xESVRoUlo3YmlqRVpvcWpCSlN4TkRSWDFNeGtsWXcxN21HamVKc3dBYzNkSmNBdWFLd0tDL3NZZFludlFQcnp1RUQ2TnlOWkdFN0RndlFqblFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4NzYyMjc1CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMC40OV94NjQtc2V0dXAuZXhlCmJqSUZuYnJuSWtrdkxjYTMzSHdrbzBEUlBSY05Gb3hrdnJ3UHVpSFZ3ZGJCKzN0VVBxb2FVRzJhWngxT3RIKzMxcnJUYlR6bUFESFdOMXJiS1BlTER3PT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.49/Gold.Hand.Trade_0.0.49_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHZHMVQwQ1l1c0NxSFN5d1dtZXErQ05LQmliL1lGMitnVjM1K3piZWtpdVU1cExFZG1KSmVETk1HZHdYV2xNOCtzbzJGNDdkSkhqSEhyL2Y2bFdSWlFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4NzY2ODc5CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMC41MF94NjQtc2V0dXAuZXhlCld4UkxLQkpGTGlVenhWT05DSUFveVlYcDltdk1vZVVaZVl3TERPR0UzMXZzZ1gwdzY2akhkS29reDFscEZhb2c5KzJpd09UUXFaS3ppWTFlaWI1L0F3PT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.50/Gold.Hand.Trade_0.0.50_x64-setup.exe"
     }
   }
 }
