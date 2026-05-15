@@ -1,15 +1,15 @@
 {
-  "version": "0.0.88",
-  "notes": "## [v0.0.88] — 2026-05-16\n\n### 추가\n\n- **AI 모델별 설명 툴팁** — 모델 선택 드롭다운의 각 항목 우측 ⓘ 아이콘에 마우스를 올리면 \"어떤 모델인지\" 한 줄 안내. 빠름·저렴 계열인지, 추론 강화 계열인지, 이미지·딥리서치 같은 특수 모델인지 즉시 판단 가능\n- **AI 응답 실패 시 재시도 버튼** — 에러 박스 바로 아래 골드 \"↺ 재시도\" 버튼. 클릭하면 마지막 질문을 그대로 다시 보냄 (직접 다시 타이핑 불필요)\n\n### 변경\n\n- **AI 첫 분석 질문이 화면에는 짧게, AI 에는 풍부하게** — 채팅 화면엔 \"{종목명}({종목코드}) 에 대해 분석해줘\" 한 줄만, AI 에는 펀더멘털·산업·리스크·체크리스트 4가지 항목 분석 prompt 전체 전달. 답변 결과는 풀 prompt 기준이라 그대로 풍부함\n- **AI 대화 누적 토큰 자동 절감** — 한 세션 안에서 대화가 길어져도 토큰 비용·응답 속도가 일정. 초기 종목 분석 맥락은 유지하면서 중간 잡담은 자동 정리 (마지막 6 쌍 + 첫 분석 prompt 유지)\n- **AI 모델 드롭다운 가독성** — 긴 모델명도 한 줄로 표시 (잘릴 땐 hover 로 풀네임 확인), 너비 통일, 메뉴가 떠보이도록 라이트 모드 그림자 보강\n- **AI 모달 안 아무 곳이나 클릭하면 열린 드롭다운 자동 닫힘** — 이전엔 backdrop 만 닫혔으나 메시지 영역·입력 박스 등도 동일하게 동작\n\n### 수정\n\n- **스크리닝 화면의 AI 분석에 종목 데이터가 정확히 전달** — ROE·부채비율·영업이익 성장률·PER·PBR·유보율 값이 \"정보 없음\" 으로 잘못 전달되던 회귀 fix. 이제 화면에 보이는 수치 그대로 AI 에 전달돼 분석 정확도 향상",
-  "pub_date": "2026-05-15T16:41:15Z",
+  "version": "0.0.89",
+  "notes": "## [v0.0.89] — 2026-05-16\n\n### 변경\n\n- **AI 설정 화면 \"활성 AI\" 위치 상단으로** — 키 등록 카드 위로 올라와 현재 어떤 AI 가 분석에 사용되고 있는지 한눈에 인지. 여러 키를 등록해뒀을 때 어떤 게 활성인지 헷갈리지 않음",
+  "pub_date": "2026-05-15T17:00:40Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGwzblF1bDUxVkc4b3F1Tmo0Z2Q3blhKQ2lEbDFaanJkU3I0Sk0rRDQ3dnVqV0JHdWlwdnpzZ05RRUVCRDFMK3E2a1dFQllZZEhPdU1LR3VZcldOZVF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4ODYyMzk5CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKMHc0ZndkQmpjeXRNN3Rpc2xWc0lTdFh0Yml6ZXNiaThqeDI4Yml2OW9wL3JFdWtBOFh6U1pVYlpiczJaVitRTGg1bGNsZ1ZacE9Bc2kxUll5cHZpRGc9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.88/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHJ5WjdSNG43aG10QzhPcWM1NnJvS3FJWHRyYlRHTW1EQVlCdERoc2p1c1VFYmg2amdaeVIybEgzUWJNeDFJNjRDblBmU2lnbGhjVWhEcDlHeTF3bkEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4ODYzNjI3CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKSW5DSURRVWlEM2tNN0JweS9JelcyTGhBUmt6eHhzQnFCelNvRFRxYzdFQXNDNE84bVdaUXJjRXFZZkV2ZGZwZmVlczcyQjI3NEplZENJMG9lQWVVQWc9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.89/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGt2TCttNXNqQTVzb0hsSjJlV3JwNGhlRHhvdzZiakNYd1JCdTdtZ3lYakFTMEM5OERwUXZqM1JESkNDSXNBRC9vSHkzb2RnMWZLWGJSeHBKZzFYeEFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4ODYzMjczCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMC44OF94NjQtc2V0dXAuZXhlCkNkbC81clpOOTM3dGhNV1JPbytQYnJ6WVhBb3Z6ejRhTGhhclVkV3FrVENLRU53K3N2VWR4OEJTVy93Z3BJZm1rTkIrdEpIaFYwU3JBWnFoZzB1Z0NnPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.88/Gold.Hand.Trade_0.0.88_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGxJdndKNkx3eUdmaXRNZVhhQS9lL0F2SFVUY3lLdStFazZMeEpUcVgxMWhQdGd0ZThoS2YzMXg1ZkdzcVZXRVVVU2VoNFIyMWpmcWJwTXM0bTFBM0FNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4ODY0NDM4CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMC44OV94NjQtc2V0dXAuZXhlCklEYXV6MDFCR284aEZsUlBWUUpPb3pseXowMEczSjQrMXRIby9mdWs0Q3IweDl3eUdDUGVYUXhKM3ptMWs3a1JtbUJQTTNQdlJyZEMwS3ZYemdrWkNBPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.89/Gold.Hand.Trade_0.0.89_x64-setup.exe"
     }
   }
 }
