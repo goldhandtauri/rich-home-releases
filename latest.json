@@ -1,11 +1,15 @@
 {
-  "version": "0.0.76",
-  "notes": "## [v0.0.76] — 2026-05-15\n\n### 변경\n\n- **자산정보 손익 항목 순서 조정** — 짧은 기간부터 긴 기간 순으로 정렬: 당일손익 → 올해 실현손익 → 5년 실현손익. 일반적인 손익 인지 흐름과 일치",
-  "pub_date": "2026-05-15T11:21:42Z",
+  "version": "0.0.77",
+  "notes": "## [v0.0.77] — 2026-05-15\n\n### 수정\n\n- **Windows 팝업 투명도 슬라이더가 본문만 비치도록 동작 개선** — 이전엔 슬라이더를 내려도 본문이 골드색으로만 채워졌던 문제 해결. 페이지 배경을 OS 알파에 전달되도록 분리했고, Windows 11 환경에서는 자연스러운 acrylic(흐림) 효과 적용",
+  "pub_date": "2026-05-15T11:41:40Z",
   "platforms": {
+    "darwin-aarch64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHIwNzlTU0k5dVVNL0hIajVGbk45K2xvdmVwWE1JMDhMbHVJMHUxUUZwUGRIYmQyOGhvd244Y055aVVONHo3YWduZWJ4alVjeDY3VWJLU2NjNitoL0FVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4ODQ0ODgwCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKZEpQWSs5cFR2K3pVNmw3N0VBdjlGWENkSU4vZy9NeWozRTB3UlBnQVgyT0l0c1pZNGoxdnRuNURkaC9kelBpekJhL3FjMHVkUTRvUVdlaWZUNW1HRGc9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.77/Gold.Hand.Trade.app.tar.gz"
+    },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHA0Vm8zQVZ0aE8xUzZTS2llOEM0WG4xelJIam0ycjBaS0tDbUUxWmxwYUtvQ0Y3d1FnekVjbXdYa0tqNEpCT05laEZZczIvR3MyaWEyeSs2a1VnVlFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4ODQ0MTAwCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMC43Nl94NjQtc2V0dXAuZXhlCjNWVkZOQVRVVG5DVEI5NHlkbXdpRmcxUjU3RUJZbzd3ekJKWENFYWJTZ3VPdi9IUi9HRzlDS2JwYlNFaTdiME9DMWpTRzB4bFdvZ3R0NzhJemc2UEFRPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.76/Gold.Hand.Trade_0.0.76_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHIvVW1XUUVxTVJZS0lVUXkzKzNGaEZaK0V4NkdKalk5VXEvRjhOdnpSZUlvRFZuOGR4OWRYQ1NWb0VhWktkK2xLSUt0dENZSGkwMmp3amZOS3VWMUFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4ODQ1Mjk4CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMC43N194NjQtc2V0dXAuZXhlCkNFNmVHMG9VeFJGazdCcDg0ZmtTMTNXVHJ2anl1UDJieHFqTUtONm5iYytIeG94bytEdVZDdkFxZkNDUjcva2JwRzdYQ0xDa1EzWTRlOW5scnZhVUNRPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.77/Gold.Hand.Trade_0.0.77_x64-setup.exe"
     }
   }
 }
