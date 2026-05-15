@@ -1,15 +1,15 @@
 {
-  "version": "0.0.82",
-  "notes": "## [v0.0.82] — 2026-05-15\n\n### 추가\n\n- **AI 종목 분석 — Google Gemini** (Phase 1) 도입:\n  - 설정 → \"AI 설정\" 탭에서 사용자 본인 Gemini API 키 등록 (Google AI Studio 무료 발급)\n  - 스크리닝 종목 화면의 종목명 옆에 AI 아이콘 → 클릭 시 채팅 모달\n  - 첫 질문 자동 발송: 종목 강점·약점·주의점 + 사업 설명\n  - 사용자가 추가 질문 가능 (채팅 형식)\n  - 우리가 가진 스크리닝 데이터(등급·점수·ROE·PER·PBR·부채비율 등)를 AI 컨텍스트로 제공해 답변 정확도 ↑\n  - 모달 하단 면책 문구: \"AI 답변은 참고용이며 투자 자문이 아닙니다\"\n- Phase 2 예정: Groq / OpenAI GPT / Anthropic Claude 추가",
-  "pub_date": "2026-05-15T14:05:57Z",
+  "version": "0.0.83",
+  "notes": "## [v0.0.83] — 2026-05-15\n\n### 추가\n\n- **AI 종목 분석 — Phase 2: Groq / OpenAI / Anthropic Claude 추가** — 설정 → AI 설정에서 4 개 AI 서비스 모두 키 등록·활성 전환 가능:\n  - Google Gemini (gemini-2.5-flash) — 무료\n  - Groq Llama 3.3 70B — 무료, 매우 빠른 응답\n  - OpenAI GPT-4o-mini — 유료, 정확도 높음\n  - Anthropic Claude Haiku 4.5 — 유료, 한국어 자연스러움\n- 설정에서 활성 AI 변경 → 스크리닝 종목의 AI 채팅이 즉시 새 모델로 전환",
+  "pub_date": "2026-05-15T14:17:46Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHNsUHhoWHhqNTNlWlJkemtXMzlxTmNXc1J6dy93ZjBBNnVNRGx3NGc1TnZGcnJTTjdZTXphOGdYL3RvNXJXemJzZUgwVVlPRjdGUmgrY05zb2RGQkFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4ODUzMjYxCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKaXlaQndIU0QwRVhHcVhQdVU3MFF1K3Myd1lFMTRFbUNRSW5IRVNXV1ZNT2FGbE11NXVNV1Z0ZGNpWjdkT1JpcGRQVVZ2WmNlbVZ1cm1GV1pnaHhDRFE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.82/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG44RWNqSS9POXVPTnVEV3g4VUxFQnFKc3hvN2xhbFFubHl4c0hUR21obXJqTm9BNE5ZUHJxQksrU3p1eFpUb1AvU1JuY2lmenFRS2J5QVV6d09qZ3dRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4ODUzNzgyCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKVlhzd2UzS1V2MTBYTHIwbWhKWUw2cW8zeXNPSzhpM3d0V2JaTEVwQ0VuTnN4M3hzOXkzbGdZSUVrUnpqL0dsL29rMGRPRVh5UnQ4WHNZNGpQc1FUQkE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.83/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHVQUjlVekc1TG0rNmVxV0wrMWxicmQ4VnAxUjhMRXBUbVBCRkF3MkZteGNCSGFTS1BrSDlzaGJmUEtSUnlJYjlCY1NqZVRsQllhYXo2ZDhqeEFnWFFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4ODUzOTU1CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMC44Ml94NjQtc2V0dXAuZXhlCnk4NTFnejZmcVkyK2VMcnZZNW1CdEpnVUsyWldtcm05NE9lSlBzNHBidW5sWXBLRkEwNnJ3WkczY0Y3dVduNU0yeVVkRVJ6UU9yY0lIOExISCsvREFBPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.82/Gold.Hand.Trade_0.0.82_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGhjWUhocm9PVGkwQkpMWWFjV2hvYlJaSVgzWFBRVGJ5SkJkYWZTQ2k1VEx6MnVkT052MFJDZHl1UmxuK1dwaTMzUmdvUnU2c21IeXRndWlRUWxLa1FzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4ODU0NjY0CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMC44M194NjQtc2V0dXAuZXhlCjVMQ3NpS2F0WXRtOW5RSlczUnJMTU9kRWFLWDh1dWFYaStwRXZObWZpeXgxVkFJZmM2Rk5DVVp3eXRnOUU0VEFvcUtBcksveXRURnhtTDFnUEJoSkR3PT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.83/Gold.Hand.Trade_0.0.83_x64-setup.exe"
     }
   }
 }
