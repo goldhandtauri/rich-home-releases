@@ -1,15 +1,15 @@
 {
-  "version": "0.0.80",
-  "notes": "## [v0.0.80] — 2026-05-15\n\n### 수정\n\n- **스크리닝 종목 화면의 검색 입력 버벅거림 해결** — 매 키 입력마다 수백 종목을 필터링해 입력이 끊겨 보이던 문제 해결. 입력이 멈춘 뒤 0.25초 후 한 번만 필터링하도록 변경 (debounce). Enter 키로 검색 / 초기화 시는 즉시 반영",
-  "pub_date": "2026-05-15T12:59:19Z",
+  "version": "0.0.81",
+  "notes": "## [v0.0.81] — 2026-05-15\n\n### 수정\n\n- **Windows 에서 칩이 \"집으로 가기\" 동작 시 좌하단으로 잘못 이동하던 회귀 해결** — 종목순위·스크리닝·시황공시 등 화면에서 발생. 페이지 전환 후 잔존 element 의 음수·화면 밖 좌표가 잡히던 문제 fix. 가시성·viewport 검증 추가로 안전한 우측 상단으로 이동",
+  "pub_date": "2026-05-15T13:20:57Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHNVUW5YNTZWeTl5Um5oVEx1N1grY1RNS2h5UDBXRVh3QzI3RUJxbFJLRDBqYURER3VMcUF0Y2drZmhKbG9kcnZRempGVjMxSEs5UjF1bWc1YmtMb2drPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4ODQ5NTY5CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKZnZJbndJZDc5T0JRQlR4ZW1lNUd6NS95c3JJdkJoMWlQUEZadDBvZCtramtlSjQ0ejExZy96eFhNQVo4S3ZJcHpVMWtNb1YzMTNVQkJnNVdwOEEzREE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.80/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGhUZVVFL2dtNUxpYnB2dG1GMnFMckhSR1dKMzFhN1l0UjdsS1NuR2RINVkzTjMzeU0xVUpxVGNOdG9sYnpPSDBaOXNKTkVYbTgzb2hrVy9CNG5sWkFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4ODUwODMzCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKVXhReE5wbm5vdHlaaE9WV1Z5V3VZWjc2YkIxMm56RjN3YWpXL3ZOTzQxWGVoNDFNV052a1k3WjVnNG16VitQdVM1NWkrK0Z4TmxSUE9MOVlFL2NCQ1E9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.81/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGhRSWttYXVsYzNIYWdJR0J2dlFySTlEM3oraUF0NjM1NWR0L2lpY29TclJGNkRMTkoxSEJMWmhPeDc0L092c2VPcVhsM0V4Y2VsUGlYQk0rRTZJekFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4ODQ5OTU3CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMC44MF94NjQtc2V0dXAuZXhlCndBd1gxZTMvODhNNW1XL1pxMzFNYXRyUG1iWldXYmd6Z0g3MXo5RjZTVGpPbExPOVNycHRlMFVCRVRnbDhXUnpIME5Gblk3ay94UlBJWnRTZWU2TENRPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.80/Gold.Hand.Trade_0.0.80_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG9hWVFEM0daemhnZW96aWdPQ1BCQ0xjZ2xWczVCTk83SDMrYnZsa1gzR255MUNlK0NxeVhZZDE1T1FNY0szU2FDQWF2VThtcWRiKzhPOWlaYXF3RndVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4ODUxMjU1CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMC44MV94NjQtc2V0dXAuZXhlCnVXK2VkWTZKbFp0Mis0MGRNNFB5NWd0UnRpbE9hNUwwYnA3UFE4eGcvcmdrOWZ0WnNNN1BkTTNjS0ZwV1BNaGZYcCtha0FDcXJFMFBFTlhJT3l5N0J3PT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.81/Gold.Hand.Trade_0.0.81_x64-setup.exe"
     }
   }
 }
