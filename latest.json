@@ -1,11 +1,15 @@
 {
-  "version": "0.0.84",
-  "notes": "## [v0.0.84] — 2026-05-15\n\n### 변경\n\n- **AI 채팅 모달 디자인 리터치 + 드래그 이동 가능** — 헤더를 잡고 끌어 모달을 화면 어디로든 옮길 수 있음. 본문은 더 밝게(가독성 ↑), 사용자 메시지·전송 버튼은 골드 그라데이션 + 광택, 헤더 살짝 그라데이션\n- **AI 응답의 마크다운 렌더링** — 굵게(**), 헤더(### ), 가로 구분선(---), 리스트, 인라인 코드 정상 표시 (이전엔 raw 텍스트로 보였음). 한국어 강조·소제목이 시각적으로 명확\n\n### 수정\n\n- **AI 설정에서 키 입력 + 저장 + 삭제 버튼이 좁은 폭에서 컨테이너 밖으로 튀어나오던 회귀 해결** — input 축소 + 줄바꿈 허용",
-  "pub_date": "2026-05-15T14:33:02Z",
+  "version": "0.0.85",
+  "notes": "## [v0.0.85] — 2026-05-15\n\n### 추가\n\n- **AI 모달에서 AI 모델 전환 가능** — 모달 헤더의 AI 뱃지를 클릭하면 등록된 AI 목록이 펼쳐져 즉시 다른 AI 로 전환. 활성 AI 와 활성 모델은 영구 저장됨\n- **AI 모델 선택** — 각 AI 의 사용 가능 모델을 해당 서비스 서버에서 직접 가져와 dropdown 으로 보여줌. 모델 선택 시 다음 질문부터 새 모델로 답변. 가입 후 새 모델이 추가되면 자동 반영",
+  "pub_date": "2026-05-15T14:47:56Z",
   "platforms": {
+    "darwin-aarch64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG94dlRuTzUyMWVXL2JGcHVGUGhOZDZLemJ2S2M2Tzc1NnRGMmFKWWE4Y1Byb25LN2JRclNyYXZIWkJqTmRMOG5WWTRwRWh1UmY2THZvNXNZSVVva2dRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4ODU1ODIwCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKVFhoc3NWZElPaHBCL0xoaHNiUGF1dm5ud3R6aXpybnVKdFBhSWRCMnAwRnB4TG1jdnRkU2VPeWRXOXAwUjU5dnJKRndWd0Jyb3JXYldYbVNkM2R5Qnc9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.85/Gold.Hand.Trade.app.tar.gz"
+    },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG9vb3VHM2hDb2FCUUFoemcwZmRIV2UwWjlkdy9FUy8wLy9peGZlZG9JdGlBUlFnRS9naFpHdXlLNDBBVFpERlF1TWt3anl1NFJZcGFPanJkNG92SEFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4ODU1NTc5CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMC44NF94NjQtc2V0dXAuZXhlCmNjdTY4TzJjZHIvTFlpdkhQNENUeXJ5V2pYeEEvZDNPRkkvUXV0czBpZGwxcWd2aTBCVzJGY1dsbFRDWHlkbEtYTXdPYUE5dUFCbVR1UTdaYkhSc0RBPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.84/Gold.Hand.Trade_0.0.84_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHAwMllQaW1lMzFNc3FWWkJJV2pPZlZMSk14RVpSTnBRYVROZUs1TkJBWmd6cDNINFAzSllSNTFTSmQyMTJYaGdQNkNrakdWcTNmSkJFY2N4dGN6OFE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4ODU2NDc0CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMC44NV94NjQtc2V0dXAuZXhlCjc4alRpWWJzdG44L2NYTXE4TDdpd2diZm9PdzgvNnd0ZlNlUDU3TThLUmpnUDZWVEhZNU1WZ0lKSGw3TmhuUDAyQ3ZaYTF1R1pKWVg5WTlwRmN0QkRnPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.85/Gold.Hand.Trade_0.0.85_x64-setup.exe"
     }
   }
 }
