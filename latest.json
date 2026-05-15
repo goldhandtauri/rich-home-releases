@@ -1,15 +1,15 @@
 {
-  "version": "0.0.63",
-  "notes": "## [v0.0.63] — 2026-05-15\n\n### 수정\n\n- **다른 PC 에서 같은 계정으로 앱을 사용 중일 때 시세 끊김 즉시 안내** — 기존엔 시세가 조용히 멈춰 사용자가 영문을 몰랐던 문제. 이제 약 16ms 안에 \"시세 연결이 끊어졌습니다\" 배너가 뜨고, 안내 문구도 명확해짐 (다른 PC 의 앱을 종료한 뒤 [재연결]을 누르도록 단일 안내)\n- **일시적 네트워크 끊김에 자동 복구** — 5초 간격으로 최대 3회 자동 재연결을 시도하고, 그래도 연결 안 되면 배너로 사용자에게 안내. 중간에 시세가 정상 복귀하면 알림 없이 조용히 회복\n- **[재연결] 정확도 향상** — TCP 연결만 보고 성공 처리하던 문제 해결. 5초 안에 첫 시세가 수신되어야 성공으로 판정, 시세 미수신·점유 충돌 시 실패 안내\n- **[재연결] 후 시세가 안 들어오던 문제 해결** — 재연결 시 종목 구독을 다시 송신하지 않아 빈 연결로 남던 문제 fix\n- **재연결 실패 안내 토스트가 배너에 가려지던 문제 해결** — 토스트 위치를 배너 아래로 이동",
-  "pub_date": "2026-05-15T06:02:23Z",
+  "version": "0.0.64",
+  "notes": "## [v0.0.64] — 2026-05-15\n\n### 수정\n\n- **Windows 에서 팝업 창 투명도 슬라이더가 작동하지 않던 문제 해결** — 기존엔 슬라이더를 움직여도 안의 내용물만 흐려지고 창은 그대로였음. 이제 슬라이더 값에 따라 창 전체가 OS 레벨로 투명해져 뒤에 있는 화면이 자연스럽게 비침. macOS 동작과 동일",
+  "pub_date": "2026-05-15T06:16:20Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHYzZ0tLTDYrb1MwUWdsUlkxbUQ4WERTbThLbUVrTEkrV080TzVYNkpMd3V6Q0RQcE5Oc2R4OHpKUXRuYmUrL2tUTm5ES3BRVlZaNkdtK3dCUkF5M3drPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4ODIzNzM5CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKSUJBbGgvVGU5UlpqNWJzU2xrYkVhbGRjOTFKdnBhbGVPUEduK1lVVE5vM0t2cTZ4cmJRanRpNksrN1lIZUZzZlF3UTRsZ1Z3NGkvQU0yV3p5TitSQXc9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.63/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG05aWNUYUd0K3lNdWlRQXBobkFqa0hTeGhyMmthZUxKZ0VNSnFQRFFDRXMzSVhSUmZJQks0TlRwbmpvRWhmRU5qTTRoaDdHbWpwUFk3RlZrKzNlcEF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4ODI1MjE5CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKY0d3aXd2QzZhYU9WQjdnRzNaVG5jU1JVZHp4a2hKN0NUVmlTTk5mK0FHcWJ1QjJqSVp0QXpmR2ZrZGJUMWR4dXkyNSt0MjZWNjlNdGVuMXZWdiswREE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.64/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHBEQ0xBb0lMbDlBcnpuRFB3cktGSENpbnZSR1Rnakd2R1dtaUVzZGlJRVBLRnRGK1dLQkhFRGJvZG12UmlCblgxM0hFSDVjTGNZT2tIVVd1d3BwR3dVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4ODI0OTQwCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMC42M194NjQtc2V0dXAuZXhlClNKOGJxMGNwQm9LemVoODlnd0VXV0RJT3UybWFkZzMrekFGZmE0SFhWRmVtajVHdXNCRWV6YkhiZ0k2TldFaTliR0tVY2p3a3Y0cDA5QXFobElTYUNBPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.63/Gold.Hand.Trade_0.0.63_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGgvM09xcXdvR3prTnhoQ2FrVVluOTh5Q1djSS80a2hEVzk2VWJ3cldCTkQvRkViYzBwZjh2ZHoyQWVtZ3gvd1FnaEsxNjlsVEx4MXF6RTg1QTBIQ3dVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4ODI1Nzc4CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMC42NF94NjQtc2V0dXAuZXhlClBDOVVKMnQ4dHNNdVRkQlNNZm8rN2FXQ29UVjZTeU12MzNwVjR3bWRlTUx1THNOUUNsSUpoUDg5c0hWbU1BdG8zQUdUZnpsOUF0Zk9zQmxhS3o2OUN3PT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.64/Gold.Hand.Trade_0.0.64_x64-setup.exe"
     }
   }
 }
