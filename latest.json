@@ -1,15 +1,15 @@
 {
-  "version": "0.0.68",
-  "notes": "## [v0.0.68] — 2026-05-15\n\n### 수정\n\n- **Windows 팝업 헤더 더블 클릭으로 확대/복원 토글이 두 번째부터 동작 안 하던 회귀 해결** — 일반 팝업에선 확대 후 복원이 안 됐고, 종목상세에선 확대·복원 후 다시 확대가 안 되던 문제. OS API 로 현재 상태를 직접 확인 후 확대/복원 명시 호출하도록 변경해 안정화",
-  "pub_date": "2026-05-15T07:10:06Z",
+  "version": "0.0.69",
+  "notes": "## [v0.0.69] — 2026-05-15\n\n### 변경\n\n- **종목상세 호가 우측 \"최근 체결\" 가독성 개선** — 체결 행이 호가 영역 밖으로 죽 흘러내리던 회귀 fix + 표시 방식 개선:\n  - 호가 영역 안에 고정 (스크롤 가능)\n  - 최대 10건만 표시 (정보 밀도 적정화)\n  - **시간 / 가격 / 수량** 3개 컬럼으로 정렬 — 체결 시각을 한눈에\n  - 가장 최근 체결은 큰 폰트 + 굵게 + 0.35초 골드 깜빡임 — \"방금 무슨 일이 일어났나\" 즉시 인지",
+  "pub_date": "2026-05-15T07:23:21Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGdiMTBxZ0VwM0RGNElXRU13b1J4clJvSno1SDM3SnIzeEx5djRiU3RDSGkreHJuV011U25YOTBuVkVHVXVTVFNScktkSXpiczBNVDRvalUvRFNKZHdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4ODI4NDkyCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKNXVPK1RFTDF2UnNJejFvZXdXekdhVFU2cVlTaENTc252RzJIeHB4T2hrck9LNUNhWnM5ZnJJZHhUTURvcEFuZjdsU05jR29SNXMvZXlNZHRuOHlKQWc9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.68/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGhCV1FET3VhRG83WEREVWxlUnFoVDBtYlhvQmZidERtWGRiY2xmV3lYeHNQdzJRdERrUU1nNjN0aklrQVVIOTk4a3VjVWZDcm1oVWVHZEJVbzdCOEFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4ODI5MTk3CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKVVY1RjJIanlaK0M3SU5oWVZma3g4TEE4Z1ZDQ1A3Tm1Ub3RFMTlNZ2s0b3ZvY0U0VG1MZUdsNlREdFNJckY4dEJIZlZsWnE5bGlOMWpNSVZlNVhiQ0E9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.69/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHFFQnJiUUVoOGw5WVlhT2g5UlhSSzRWZEhpeDdZWC8rRS93VFFHb01xQ0VQeGFWWklBV3FtaEdoVjZBUTZLb3hhTkdYK2tWVm9zOE5SdVFMUTNDQ2dVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4ODI5MDA0CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMC42OF94NjQtc2V0dXAuZXhlCmoza3VUNlBXM2FoTnJ5ajJiVFE1RGpsbjVJWXRsbVpwY2N1eXpaRVk0alRIN0VTNkNDMjVDeE1FVFlaMVpkQXlvaWxRd3BSdHByZVlTcXlaZkZuOENBPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.68/Gold.Hand.Trade_0.0.68_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHM1TTd4S3Z4a1htWURQWmRzcnRiTEFzeTNRbXh3aEJYY1pxTTJOVWdNVXNwZGxhVXdWWHZzS3VtSjg4bklZMTAraWF4cm1acjVseW8yU1U3RzN4TlFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4ODI5Nzk5CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMC42OV94NjQtc2V0dXAuZXhlCjYzbjZaZlpzcFIzSEh3WG9KUHBCc3ZEQmd3ZjhObWpjWDZxZWVsdjlDU1JpM2FjTEF4eUxodXpVN1MxRS9ZSWJrYUdjSkRabllLZmU3N3NXZm5ab0J3PT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.69/Gold.Hand.Trade_0.0.69_x64-setup.exe"
     }
   }
 }
