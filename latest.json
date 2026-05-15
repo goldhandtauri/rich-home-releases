@@ -1,15 +1,15 @@
 {
-  "version": "0.0.87",
-  "notes": "## [v0.0.87] — 2026-05-16\n\n### 추가\n\n- **AI 모달 사이즈 조절 가능** — 우측 하단 코너를 드래그해 모달 크기 자유 조정 (최소 480×420, 최대 96vw×92vh)\n\n### 수정\n\n- **AI 채팅 추가 질문 시 자동 스크롤 동작** — 사용자가 보낸 직후 응답 대기(•••) 가 화면 밑에 가려 인식 안 되던 회귀 fix\n- **AI 응답 실패가 채팅 흐름 안 인라인으로 명확히 표시** — 토스트(짧게 사라짐) 대신 빨강 톤 박스로 모달 안에 남음. 어떤 에러였는지 다시 볼 수 있고, 다음 호출 땐 에러 메시지가 다시 AI 에 보내지지 않음\n- **AI 모달의 모델 표시가 \"기본 모델\" → 실제 모델 명** (예: gemini-2.5-flash). 현재 어떤 모델로 호출되는지 즉시 인지 가능\n- **AI 호출 로그 보강** — backend 에 provider/model/에러 로그 추가 (사용자 진단 용이)",
-  "pub_date": "2026-05-15T15:30:29Z",
+  "version": "0.0.88",
+  "notes": "## [v0.0.88] — 2026-05-16\n\n### 추가\n\n- **AI 모델별 설명 툴팁** — 모델 선택 드롭다운의 각 항목 우측 ⓘ 아이콘에 마우스를 올리면 \"어떤 모델인지\" 한 줄 안내. 빠름·저렴 계열인지, 추론 강화 계열인지, 이미지·딥리서치 같은 특수 모델인지 즉시 판단 가능\n- **AI 응답 실패 시 재시도 버튼** — 에러 박스 바로 아래 골드 \"↺ 재시도\" 버튼. 클릭하면 마지막 질문을 그대로 다시 보냄 (직접 다시 타이핑 불필요)\n\n### 변경\n\n- **AI 첫 분석 질문이 화면에는 짧게, AI 에는 풍부하게** — 채팅 화면엔 \"{종목명}({종목코드}) 에 대해 분석해줘\" 한 줄만, AI 에는 펀더멘털·산업·리스크·체크리스트 4가지 항목 분석 prompt 전체 전달. 답변 결과는 풀 prompt 기준이라 그대로 풍부함\n- **AI 대화 누적 토큰 자동 절감** — 한 세션 안에서 대화가 길어져도 토큰 비용·응답 속도가 일정. 초기 종목 분석 맥락은 유지하면서 중간 잡담은 자동 정리 (마지막 6 쌍 + 첫 분석 prompt 유지)\n- **AI 모델 드롭다운 가독성** — 긴 모델명도 한 줄로 표시 (잘릴 땐 hover 로 풀네임 확인), 너비 통일, 메뉴가 떠보이도록 라이트 모드 그림자 보강\n- **AI 모달 안 아무 곳이나 클릭하면 열린 드롭다운 자동 닫힘** — 이전엔 backdrop 만 닫혔으나 메시지 영역·입력 박스 등도 동일하게 동작\n\n### 수정\n\n- **스크리닝 화면의 AI 분석에 종목 데이터가 정확히 전달** — ROE·부채비율·영업이익 성장률·PER·PBR·유보율 값이 \"정보 없음\" 으로 잘못 전달되던 회귀 fix. 이제 화면에 보이는 수치 그대로 AI 에 전달돼 분석 정확도 향상",
+  "pub_date": "2026-05-15T16:41:15Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGh5MHEvMWdqU2swTXBmdnBrQnBZYSs0TlFrR0cwaTZ1R0xETHlYL1RGMU5KOVJtWm85UUo0cFVIR2MyNHFzQlp0RW96ZDI3TXdKYUZJeUplVjV4V1FzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4ODU4NDkzCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKZk84cDRPMzRyY0w1MEw2bVYyRXR6YXJGZWduRklVNEhwOXdxWTJWaUpjRUFqRnU5ZVRpVG9FSFVJTitucHpkQWFzaGptWllIbTFHTGlmLzZVeWtQQ0E9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.87/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGwzblF1bDUxVkc4b3F1Tmo0Z2Q3blhKQ2lEbDFaanJkU3I0Sk0rRDQ3dnVqV0JHdWlwdnpzZ05RRUVCRDFMK3E2a1dFQllZZEhPdU1LR3VZcldOZVF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4ODYyMzk5CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKMHc0ZndkQmpjeXRNN3Rpc2xWc0lTdFh0Yml6ZXNiaThqeDI4Yml2OW9wL3JFdWtBOFh6U1pVYlpiczJaVitRTGg1bGNsZ1ZacE9Bc2kxUll5cHZpRGc9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.88/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG90RU5kQTFyVm5pM2FwRWhOR0h5RzcwRW9tTHE5Y1FuOEZUNWdKQmhGaEhHSWo2aWdJYll2VkRQbitCNTB2OTVsVWpiT2lhTWxEU0hMTzZEMUZZNlFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4ODU5MDI3CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMC44N194NjQtc2V0dXAuZXhlCmdkMlB2ZDZOdW5SWDE2a3VlM3VUa0pWQjBGV3BRMTJCRzdjNWFiVENwOTFpNjhCa0ZHWm9Gbno1LzFSOUVKL3NZZ3h6bEFsS3QvdHhQckIxRXI4RUJ3PT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.87/Gold.Hand.Trade_0.0.87_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGt2TCttNXNqQTVzb0hsSjJlV3JwNGhlRHhvdzZiakNYd1JCdTdtZ3lYakFTMEM5OERwUXZqM1JESkNDSXNBRC9vSHkzb2RnMWZLWGJSeHBKZzFYeEFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4ODYzMjczCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMC44OF94NjQtc2V0dXAuZXhlCkNkbC81clpOOTM3dGhNV1JPbytQYnJ6WVhBb3Z6ejRhTGhhclVkV3FrVENLRU53K3N2VWR4OEJTVy93Z3BJZm1rTkIrdEpIaFYwU3JBWnFoZzB1Z0NnPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.88/Gold.Hand.Trade_0.0.88_x64-setup.exe"
     }
   }
 }
