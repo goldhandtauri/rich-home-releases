@@ -1,15 +1,15 @@
 {
-  "version": "0.0.99",
-  "notes": "## [v0.0.99] — 2026-05-17\n\n### 추가\n\n- **AI 답변을 다른 AI 에게도 같은 질문 물어보기** — AI 분석 답변 우상단에 분기 아이콘이 새로 생겼습니다. 등록된 AI 키가 두 개 이상일 때 클릭하면 AI 선택 → 모델 선택 두 단계 메뉴가 열리고, 모델을 고르면 같은 종목·같은 첫 질문이 새 AI 채팅 창에 옆으로 함께 떠 두 AI 답변을 나란히 비교할 수 있습니다.\n- **AI 채팅 창 닫기 전 확인 안내** — 분석 창 바깥쪽을 실수로 클릭해 대화가 사라지는 사고를 막기 위해 \"이 분석을 종료할까요?\" 확인 다이얼로그가 먼저 뜹니다. **계속 보기** / **닫기** 두 버튼으로 의도를 명확히 선택. X 닫기 버튼은 기존처럼 곧장 닫힙니다.\n\n### 변경\n\n- **알림·카운트 뱃지 디자인 통일** — 팝업 카운트 / 커뮤니티 알림 / 보유종목·관심종목·감시종목·전체 글 카운트 등 앱 전반의 모든 뱃지가 jewelry 그라데이션 + 골드 메탈릭 테두리 + 광택 inset 으로 정돈되어 동일한 시각언어를 공유합니다. 라이트·다크 모드 양쪽에서 워밍 골드 정체성이 일관되게 유지됩니다.\n- **커뮤니티 글 작성 + 버튼 톤 정돈** — 우하단 + 버튼이 칙칙한 올리브 단색에서 골드 메달 그라데이션 + 광택으로 정돈되어, 커뮤니티 칩과 동일한 jewelry 톤으로 시각언어가 통일됐습니다.\n\n### 수정\n\n- **다른 AI 에 물어보기 메뉴에서 프로바이더를 눌러도 반응 없던 문제** — 마우스 클릭이 메뉴 바깥으로 전파되며 메뉴가 닫혀버리는 회귀를 차단했습니다. 이제 AI 선택 → 모델 선택 흐름이 매끄럽게 진행됩니다.\n- **AI 답변이 오류 상태일 때 \"다른 AI 에게 물어보기\" 버튼 노출** — 답변 자체가 없는 오류 메시지에선 의미 없는 분기 버튼이 뜨지 않도록 숨김 처리. 같은 줄의 **재시도** 버튼만 보입니다.",
-  "pub_date": "2026-05-16T15:27:20Z",
+  "version": "0.1.0",
+  "notes": "## [v0.1.0] — 2026-05-17\n\n### 수정\n\n- **종목 상세 화면의 시장 표시(KOSPI/KOSDAQ) 정돈** — 일부 종목에서 시장 라벨이 빈 색 막대처럼만 보이던 문제를 해결했습니다. KOSPI 는 골드 메달 채움 배지로, KOSDAQ 은 골드 외곽선 배지로 한눈에 시장이 구분되며, 시장 정보가 없을 땐 배지 자체가 표시되지 않습니다. 또한 마켓 배지의 색을 시세 빨강·파랑 신호와 분리해 워밍 골드 톤으로 통일했습니다.",
+  "pub_date": "2026-05-16T15:54:49Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGgxdkMvSVFVL1JsOHZYSDBEUU8ycFVhSXNCRDZEaUR0dWREWkoyQTJLeUlKZkZXV3M5MHlxRXo4cTQwTEN4c0psbHUrN1lhS3JoZ1lRUU95YmdEQkFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4OTQ0NTk3CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKNi9CN3UyWGVsRnUwVDh3Y3Fzb29IYncxQ2l4Q3N2b3J0cVVwQ0lSSDdPcUd3MkNINEQ5UGVqUlJmeDd2VVpyVWg3OEJ3YitISUhyb0s1cnVTK09lQXc9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.99/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG8ybjdRZHBWQjE4R25rRXRzTTN3d0JNSTdzQUV1NlZEWUpVTWh4YjlTTG5mYXlmWXZvY1MrTEFqTkttMWZrRGR5YU0zK3YyYmxCYnd6ajRIUTkxUEFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4OTQ2NDY4CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKY05NeGx1LzVKV3RhZEVxdkJENE10aHlwdTZaYVJjMm51RDUrZDN3b0hkMlZoN3FBSHlsWVc4WnJWa3hnRVNYRlBpTTVPRFNmcWEzZnpaRlhZcmtkQ3c9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.0/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG1oTUtzS210RXVwQmxjaWhOU1hKZ2R1NXlPRGQ1NVJpVjhWbmhrbUg5bDBjZUtYTC9wamh4VzBocWZEQ0ZTSnJKcm1meUdSUiszR2x3UHVlNGZPZ0FBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4OTQ1MjM4CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMC45OV94NjQtc2V0dXAuZXhlCndTdkE2YlU2WUVLYSs3TEh0ZWNZOGZURjNFakEvTm5nN0pMaWxhb1NKREVkWU5CWHE3UzRaa044MER3RTh2WkRCNFlIU2s4dXV6UTJKZTRONnlXN0FnPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.0.99/Gold.Hand.Trade_0.0.99_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGxLOVVERnlka0VFWWVMUjFMR3p6QjYxaEFGNXRYMEJKc3JwREpabTRuUVhkM1ZTM1BVNm4vSnFyaVplT2lnV1FQR2ZSakNzUVVHek5QRDRPVTA5SVE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4OTQ2ODg3CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS4wX3g2NC1zZXR1cC5leGUKbFQ1YjRMNHlsdGx5NmdjUm52WUVhZ2JCVms0NmpNZFJHdThaVXJxSHZOSVhZTzdreU8wdUZ1dzFlVUZBVjh4TEtDWlBzSkk5RjhVTTVjb3ZzNXN5Q3c9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.0/Gold.Hand.Trade_0.1.0_x64-setup.exe"
     }
   }
 }
