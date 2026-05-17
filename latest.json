@@ -1,15 +1,15 @@
 {
-  "version": "0.1.4",
-  "notes": "## [v0.1.4] — 2026-05-17\n\n### 추가\n\n- **메인 창 투명도 0 에서 본문 click-through** — 슬라이더를 0 까지 내리면 메인 창의 본문 영역으로 바탕화면·다른 앱이 그대로 보이고 클릭도 통과합니다. 상단의 메뉴/슬라이더/창 컨트롤은 그대로 보이고 클릭 받으므로 원하면 슬라이더로 다시 복원하거나, 키보드 단축키 `Cmd/Ctrl + Shift + O` 로도 즉시 100% 복원 가능합니다. 투명도 0 상태일 땐 우상단에 회복 단축키 안내가 작게 표시됩니다.\n\n### 변경\n\n- **메인 창 헤더(타이틀바 + 네비) 가 항상 불투명으로 유지** — 슬라이더가 0 이어도 헤더는 단색으로 또렷하게 보이도록 정돈했습니다. 본문만 비치고 메뉴/슬라이더/창 컨트롤은 항상 클릭 가능해 click-through 모드에서도 조작 경로가 살아 있습니다.\n\n### 수정\n\n- **Windows 사용자 — 메인 창 투명도 슬라이더 0 에서 바탕화면이 전혀 안 비치던 문제** — 메인 창의 OS 레벨 투명 설정이 누락되어 슬라이더를 끝까지 내려도 흰색만 보이던 회귀를 fix 했습니다. 이제 macOS 와 동일하게 슬라이더 0 에서 바탕화면과 다른 앱이 자연스럽게 비칩니다.\n- **Windows 사용자 — 팝업 창 투명도 0 시 본문이 뿌옇게 흐림 처리되던 문제** — 종목검색·종목상세·설정 등 팝업 창의 본문이 메인과 다르게 frosted glass 흐림 효과로 표시되던 시각을 메인과 같은 깔끔한 비침으로 통일했습니다.\n\n\n\n### 변경\n\n- **커뮤니티 새 글 작성 창 헤더와 작성자 정보 위치 정돈** — 모달 헤더는 [새 글 작성 + 글로벌 / 종목 칩] 좌측 + [닫기] 우측 의 표준 패턴으로 정렬했고, 작성자 닉네임은 본문 입력 영역 바로 위에 작은 칩 형태로 옮겨 \"내가 누구로 글 쓰는지\" 한눈에 확인하면서도 모달 타이틀과 위계가 충돌하지 않게 했습니다.\n- **커뮤니티 글 카드의 본문 가독성 강화** — 본문 폰트와 줄간격을 한 단계 키워 닉네임·시간 같은 메타 정보보다 본문이 시각적으로 또렷하게 보이도록 정돈. 우상단의 새 글 미리보기 위젯에서도 동일하게 적용되어 \"누가 / 언제 < 무엇을\" 위계가 명확해졌습니다.\n\n### 수정\n\n- **Windows 사용자 — 메인 창 우상단 [최소화 / 최대화] 버튼 마우스 hover 시 변화가 거의 안 보이던 문제** — 호버 색을 타이틀바 배경보다 명확히 진한 워밍 골드 단계로 조정해 어디까지가 버튼인지 한눈에 들어오도록 했습니다.\n- **Windows 사용자 — 메인 화면 우상단 투명도 슬라이더가 동작하지 않던 문제** — Windows 11 Acrylic 효과 호출과 함께 메인 창 배경 강제 투명 처리를 적용해, 팝업 창들처럼 슬라이더 조작 시 OS 데스크탑이 자연스럽게 비치도록 했습니다.",
-  "pub_date": "2026-05-17T02:53:45Z",
+  "version": "0.1.5",
+  "notes": "## [v0.1.5] — 2026-05-17\n\n### 변경\n\n- **AI 분석 모달 — 다른 AI 비교 띄울 때 화면 가운데 좌우로 균등 배치** — 같은 종목을 다른 AI 에게 추가로 물어보면 새 모달이 첫 모달과 겹쳐서 사용자가 직접 옮겨야 하던 동작을 개선했습니다. 모달이 늘어날 때마다 자동으로 화면 가운데 기준 좌우로 균등 분산되고, 부드러운 전환 애니메이션으로 두 모델의 답변을 한 화면에서 바로 비교할 수 있습니다.",
+  "pub_date": "2026-05-17T03:16:20Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG81TmRydE5QemJmc2lJVmRWZ1NwRFFwY3BDZnkvbUQwZS9sdlJ0ZzMxci9lUnJXdXF5dWN3WWwrdnNYMzFvNEZnQmlIWEpiQkZXam41QkVRQU5kOFFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4OTg1ODE0CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKOWxwdEIvTFBLdWZWMWY1QW93WDREanFDL3Vqalp2U3RKM0tSWHg5elE3ZlR1QnlpRHptUmdvODVCRVBtVVRCeEdXMExkNVB0ekQwK1lGNk9ncWMwQ1E9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.4/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHZ0SVdQcTdhYjFIUlhtNVJObEJWVHVDc0NORWQxWnU4MlRZYmFXaEg1YnhWQVQ4YXF5TlZwM0F3aE5tM0FuWkhpNFh4ZnVmNjM0UXRxVXNVdTlyS2dnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4OTg3Mjc5CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKbVBlWDhIWVhqbVpBUDBJZGtyd2R2eVFTc0tTakc3TG1MMXFVWXpndkNpN3owemVHMXBsSElIdmdrSzB5MUIwUzZsUjJBWFN5ZEU4TVVRTysrc0wxREE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.5/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG1McThBejVlTkZzUFlnRXFFdS9aV2kvTHBXc1FlY0FvRXNyNklnUFU5QmJ4TDhhQVUwa3dtUTZsT09GTTIxNnMvL2cxYWFuT0w3Z3BoMkJLOVZPZmdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4OTg2NDIzCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS40X3g2NC1zZXR1cC5leGUKRUJNc3pGeWdZM0tMeCt5OCtyU3BzWXdyak1TazR3MkM2dzNCK2xtWmxaQkdpR1dGWTNWSmJCRGhKNnhHbUpTRHJCU3pVdnA4VWhVMEgvdDNlZE5sRHc9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.4/Gold.Hand.Trade_0.1.4_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHRXWHkyQUNaZG1RN1NzYXdEQzBaaUVKQjE0RUpYSTNDbmxUeWk0SW5SSy9XT09zSWlxaWZ2dmtxZUozTlI0RkVPQlFWVGl1RDJEbk9TcjBFN2YvdUFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc4OTg3Nzc4CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS41X3g2NC1zZXR1cC5leGUKc2UxakRCSWliUUpLSERoMS9BVld3eXNmSDBiYUJSU0JRVnd1ekdGbTRSamFCTXB4eVUzc0c1WE5rQjB0SGk2Y0IwNXlLSXEvcEJHY1M5N0l2Y01WRGc9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.5/Gold.Hand.Trade_0.1.5_x64-setup.exe"
     }
   }
 }
