@@ -1,15 +1,15 @@
 {
-  "version": "0.1.7",
-  "notes": "## [v0.1.7] — 2026-05-18\n\n### 추가\n\n- **종목상세 호가 우측에 통합 시장 정보 표시** — 시간외 단일가 시간에도 호가 패널 우측의 거래량·거래대금·전일대비·체결강도가 KRX + NXT 합산 통합값으로 보이도록 정돈했습니다. 시간외 동안에는 60초마다 자동으로 통합 값을 새로고침해 한 시장만의 누적이 잘못 표시되는 회귀를 막았습니다.\n\n### 변경\n\n- **보유 종목 평단가 정수 표시** — 표에 노출되던 소수점(예: `30,214.286원`) 을 반올림한 정수(`30,214원`) 로 통일했습니다. 내부 계산용 수치는 정확도 그대로 유지하고 화면에서만 깔끔하게 보입니다.\n\n### 수정\n\n- **시간외 진입 시 호가 우측 누적값이 한 시장의 값으로 덮어쓰여지던 문제** — KRX 시간외 또는 NXT 시간외 체결만 들어오는 동안 통합 누적값이 시장별 분리 누적으로 바뀌어 한국투자 공식 앱과 다르게 보이던 회귀를 fix 했습니다.\n\n---",
-  "pub_date": "2026-05-18T13:54:27Z",
+  "version": "0.1.8",
+  "notes": "## [v0.1.8] — 2026-05-18\n\n### 수정\n\n- **사이드바 검색·필터 영역 일부 컨트롤이 잘려 보이던 회귀** — 검색 입력칸이 사이드바 폭을 넘어가서 옆 필터 토글이 화면 밖으로 밀려 안 보이던 시각을 fix 했습니다. 240px 사이드바 안에 입력칸과 필터 토글이 항상 함께 깔끔하게 보이도록 정돈했습니다.\n\n### 변경\n\n- **다크 모드에서 골드 배지 위 텍스트 가독성 개선** — 인용 도구의 큐 카운트·드로어 카운트·이미지 배지·강조 버튼 텍스트가 다크 모드에서 흰색으로 처리되어 밝은 골드 배경 위에 살짝 흐릿하게 보이던 부분을 어두운 톤으로 자동 전환하도록 정돈했습니다. 라이트·다크 어느 모드에서도 명도 대비가 안정적으로 유지됩니다.\n\n---",
+  "pub_date": "2026-05-18T14:24:30Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG1zeVAyRGdFZU1nWjgxQUZkUVlOazRqcE96SWE4eitWQ3VZU2pIZzd2UDBMWU1WMmVYemVvbjBNK25IU3EyZDA2VkVqTWRkZ0kwcnV2U0p5dmpSRlFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5MTExODc3CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKYTRvUmwvZDJ6RmQ2ZDVGWDZUc3cwL20wQWpOVERwWFNZU202ajZZVFkrVGxpbzcraE1qeG5zQXk5SzBOVnlUeUk2ZXlreXYvQUh5dnBCSUpNNUNCQnc9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.7/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGlkL0J0S1g2QUxNbE5BdzBsNUIrN0dyNXpoWGpCN0dEcGt4bTJZTXdyc2pScE5OQWpOanVyVlF5a015WFIrMGJpdlNTZ0JIN1F6R053M0QwanI3Q2dNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5MTEzNzQ2CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKR0RqMHloRE9MeFBIdkJEU1RjaHQ4OTVCZzJXNlFiTkJjdzFQam10NXQrN1pBY2wxRWVsZHVlMnVTMGdHL0pRbFBNSFQxdm12V0hSU0RtUGcvaXpaQUE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.8/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGtINnJ1TEN1VnJGQWY3aDNLcDk0dWNVTUI3WkZVc2cxcGlicjhtUGoxbkdpekRhd0hlNVlUdHJaNVZmSTRxMU5OMW41a0lUdkt0VWlwVHhiNXdKb3dnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5MTEyNDY0CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS43X3g2NC1zZXR1cC5leGUKN2NjY3ZsUGNTeit0S2h3aHdlZ0FqRWhGVUlwUTlRaWcrSU56WlRIWHFRL0c0a2xrRmh0UlBkTldPcUZzSTRrQy92ZzI2RWZZRW9XdUtxREFTekR3Q2c9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.7/Gold.Hand.Trade_0.1.7_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGoxQlJFaXFvZFJ0c2xQc3pmS0RCS0FnMmFhM0FVY3A4MGxCRktQNG5ZVDJSZzlCbXdNM2ZncFR4VU4vMjljdDh0TS9iQnBINnRJU0l4NGRKL3RabGc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5MTE0MjY4CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS44X3g2NC1zZXR1cC5leGUKQ1dWb0F4cmFKU1VFZWg5ZCtNR2IvbEpLMitUVzlUS0J1RitTSm5oc01EdmlMYk10N1FxcWZqdDU3Mks2MWJKMUFyb3BzNmhzNkR3Uzg5OTFtOGJLQUE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.8/Gold.Hand.Trade_0.1.8_x64-setup.exe"
     }
   }
 }
