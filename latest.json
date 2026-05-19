@@ -1,15 +1,15 @@
 {
-  "version": "0.1.13",
-  "notes": "## [v0.1.13] — 2026-05-20\n\n### 변경\n\n- **투자 일지 — 일지 삭제 시 본문 안의 차트·이미지도 함께 정리** — 이전엔 일지를 지워도 AI 초안이 만든 차트나 인용 도구로 본문에 박은 이미지 파일이 디스크에 남아 있었습니다. 이제 본문 마크다운에 등장한 모든 이미지 경로(`images/...`)를 자동으로 스캔해 함께 삭제합니다.\n- **투자 일지 — 삭제 시 안내창을 디자인 톤에 맞춘 모달로 통일** — 기존 시스템 기본 확인창 대신 골드 톤 모달(예 / 아니오 버튼, ESC 로 취소, Cmd+Enter 로 확인) 로 정돈했습니다. 되돌릴 수 없는 작업이므로 기본 포커스는 \"아니오\" 에 두어 실수 클릭을 막습니다.\n- **투자 일지 — 앱 시작 후 진입 시 신규 일지가 자동 생성되지 않음** — 일지 탭에 처음 들어왔을 때 빈 일지가 미리 만들어져 있던 동작을 정리했습니다. 사이드바에서 기존 일지를 선택하거나 \"+ 새 일지\" 를 명시적으로 눌렀을 때만 새 일지가 만들어집니다.\n\n---",
-  "pub_date": "2026-05-19T15:57:27Z",
+  "version": "0.1.14",
+  "notes": "## [v0.1.14] — 2026-05-20\n\n### 변경\n\n- **투자 일지 — \"AI 초안\" 버튼 디자인 강화** — 다른 보조 버튼 사이에서 한눈에 들어오도록 짙은 골드 그라디언트 + 흰 텍스트·스파클·내부 하이라이트 라인으로 정돈했습니다. 호버 시 골드 글로우 ring 으로 명확한 피드백을 줍니다.\n- **투자 일지 — AI 초안에 KOSPI/KOSDAQ 지수 자동 첨부** — 데일리·주간 회고에서 \"AI 초안\" 을 누르면 두 지수의 현재가·전일대비·시고저·상승/하락 종목수가 컨텍스트로 함께 전달되어, \"시장 한 줄\" 자리가 오늘 시장 분위기에 맞게 자연스럽게 채워집니다.\n\n---",
+  "pub_date": "2026-05-19T16:35:45Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGhHVk5uQXdEd2FGNzdhT01FZXlXeTNSOHJFV3RXN1ZPY1lZT0JDRGNXZ2MyaXNpYnhPSjhOTnBjVWR6RXZCekpYMndLcXRaZjEyMW8zTjJVbEhzSFFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5MjA2MjQ3CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKOEI1VmJRcDV6MUVwQ01vTHVMZUZESXdCd1BjVGV0ZG8wY0RCYTJtL0dWejdBSXpxaWNvUGg5SzZUS29MVGd5K2dUaDhJMTczQkZyQUsyVUFxcVFZQ2c9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.13/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHZSVEc0ak5tV05CMzIyQW9INHRIa1dUYzJpWkd6Uy8wSHlxeGpaMDZRY1hnazJueGF3cGNodnZrMklVeWFqQzJOM3pCQzM3QXBUZElNYW4xS1VXS3c0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5MjA4NTQ1CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKV3pjaGJuZUREaDE1TmhHV3VZaEJjOFlYemUwTitwVm9YSGw2ODlOWTllZmI3NTh2LzNaMzRONWhBUkhLbDRCVWdxVS9wL2lMaXRVSWhrRzg0dnNoQ2c9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.14/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG1kQ20wekNLNWV1WnI0RjdMTFFJK3dWYUZuRmNhdGN6NkJXT3VXRFFEekFoRkgvZllEYnhYV25QazZ6UU9WZHhLN3pyNGEveHdnSk9YeVRwZ1k2TGdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5MjA3MTU5CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS4xM194NjQtc2V0dXAuZXhlCnozNHJQdmNMVHpkN2xJcmdpVW93WjVwRmJMNVJCS2gvSS90NDJXeTVFNnNJMjZZb2Vibmlyak80V3hDR0NFT0NnV0RpTCtFTFBmU1FnbkQ3dktxYUNRPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.13/Gold.Hand.Trade_0.1.13_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHJkdEZpRHpIUGhaa2t6dmZKUFVydmNyUmlaVFREemx6cGhNWWhIL2VSN3NNWEorRER1RC9tUDI3OFZqK1BjNnZRRjdPUVkxUTBpSUlMajhXUmxKbEE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5MjA5NTE3CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS4xNF94NjQtc2V0dXAuZXhlCjAxc3VNYTdSQnE2Y0NIbkF0MTVWdThkbXY3S0hhdUdvM0dDU2RSUWxZZEEwbER3d0xzYnpvNy9KSjErWXZCRFhpQWhZeUl2ZUF2OEtqMUZMK0E2dERRPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.14/Gold.Hand.Trade_0.1.14_x64-setup.exe"
     }
   }
 }
