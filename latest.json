@@ -1,15 +1,15 @@
 {
-  "version": "0.1.19",
-  "notes": "## [v0.1.19] — 2026-05-20\n\n### 추가\n\n- **한투 OpenAPI 키 만료 알림** — 키 등록 화면에 \"키 신청일\" 필드가 추가되었습니다. 한투 포털에서 키를 발급(또는 갱신)받은 날짜를 입력하면, 만료 30일 전부터 노란 안내 배너, 7일 전부터 빨간 경고 배너가 표시되고, 만료된 뒤에는 차단 모달로 키 재입력을 안내합니다. (KIS 정책: 신청일로부터 1년 유효, 만료 30일 전부터 갱신 가능)\n- **앱키 자체 오류 자동 감지** — 한투 OpenAPI 가 \"키에 문제가 있습니다\" 라고 응답하면 (만료·폐기·오타 등) 자동으로 모달이 떠 키 재입력을 안내합니다. 동시에 자동매매를 일시 정지해 잘못된 키로 매매가 진행되는 것을 막습니다.\n\n### 변경\n\n- **사용자 키 등록 화면 디자인 정돈** — 보안 안내 카드를 워밍 골드 톤으로 통일하고, 입력 필드들의 크기·여백·포커스 효과를 일관되게 다듬었습니다. 본문 안의 \"App Key\", \"App Secret\" 단어만 빨강으로 강조해 민감 정보 위계를 명확히 했습니다.\n- **키 신청일 — 다양한 형식 붙여넣기 지원** — `2025-06-16` / `2025.06.16` / `2025/06/16` / `20250616` 등 어떤 형식으로 복사해 붙여넣어도 자동으로 같은 날짜로 인식됩니다.\n- **계좌번호 안내 문구** — \"12345678\" 예시 대신 \"계좌번호를 입력하세요\" 로 명확하게.\n- **필수 항목 표시 통일** — 계좌번호 / 상품코드 / 키 신청일 / App Key / App Secret 모두 `*` 마커로 일관 표시.\n- **투자 일지 단축키 라벨 OS 분기** — macOS 는 `⌘N`, Windows 는 `Ctrl+N` 으로 표시되도록 (이전에는 두 OS 모두 `⌘N` 으로 노출).\n\n### 수정\n\n- **첫 실행 직후 Cmd+Q 종료 시 크래시** (v0.1.18 후속 보강 — 동일 회귀 안 나오는지 검증 완료) — 사용자 키 등록 창이 떠 있는 상태에서 앱을 끄면 발생하던 크래시가 안정 종료로 정리됩니다.\n- **사용자 키 등록 창이 다른 앱 위로 강제 부상** (v0.1.18 후속 검증) — 한투 키를 확인하려 다른 브라우저를 띄워도 등록 창이 위로 튀어오르지 않습니다.\n\n---",
-  "pub_date": "2026-05-20T13:56:01Z",
+  "version": "0.1.20",
+  "notes": "## [v0.1.20] — 2026-05-20\n\n### 변경\n\n- **한투 키 등록 필요 안내 카드 — 키 신청일 항목 노출** — 키가 등록되어 있지 않을 때 보이는 안내 화면에 \"키 신청일 — 만료 30일 전 알림용\" 항목을 추가해, 사용자가 등록 화면에 들어가기 전에 무엇이 필요한지 미리 확인할 수 있습니다.\n\n---",
+  "pub_date": "2026-05-20T14:26:09Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHFCNzdHdkhOTVhGK3BxZ0M3UFg2QmNDMlhVazAyYzBxTHkrelFGQlBBTTl1cXJQbGZGa3NQV0o5ZXFWZGxGTzU1dk1YN3cxcUk0cUd4WUFCcjQxdWdVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5Mjg0NjkyCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKNVBNOGdmeGpvUENHQVNUWi8xdllFOVhobFV4MGhCMlJaNHhhaVpvRVc3ZVN5UTI2UTVKZnNXZzhKYlM5ckFIYXM1aC9NcU9jNGdRQ2N5T2w3K1ZmQkE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.19/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHVBZlRLekhlUHE0Z1hXQnd3aHZya0ZoQnQ2V3dUQTE2RWFVUmVROTFnRTlubFpZWCtZakJKbzhNMERIeEhramxwRHROalVxTG5wakN5Q09LNDVrNndnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5Mjg2NDY0CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKQUE1eXljUzN1Z3BlSENVa0dRZ1hIdVEwalZKTVVYVFZWVWRpd2hvTjlURjIwVWFRSEJoZ04vT1pDNlRZMmY5Mm4wd1hVcGhFaDArbzU5N21uYnJYRFE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.20/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGlUL2wxK21uWWRNYmhqeTdCcndQQ1h1VFRIc0dzblZzSDViV2NGVDFXS2Y3cThpT2xDVTVCV2NNVDgraXQrN1BYU0ZzT3hFVVpJaFpnckxJNWdwVGc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5Mjg1MzU5CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS4xOV94NjQtc2V0dXAuZXhlCk5FbkFDelpTY1hzRmtWcEVYSmlPbUN0UzJEMUJKOG1oR0VoaXFkdzc2NjVCbTV5dVI1YUtuR2RnRGJYZ2xvZmN6bldoY0o3UVF2OFVveEtZOFFMZURnPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.19/Gold.Hand.Trade_0.1.19_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHArbloxUlFrTWo3dlQrbmpaV2lFY1hlbW1IQzZxaVJiQ0FZL01kMy95cjdHaUxSNWRBMXVQQW9PNTA1elhOY2kwOXJHSElVTktod2RBM3ZwL21mQ0E4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5Mjg3MTY3CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS4yMF94NjQtc2V0dXAuZXhlCjN5U0djN3VPL2hWRkNpQkQ3VW5EbGNEdTc5NzZoV1d1Wkd0NEJWOXcwS3pMVHZNa1haU1RkZFBsRHZJYVROVkVkYXZOaS9Ec20rUFQyY1NWQm9lV0FRPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.20/Gold.Hand.Trade_0.1.20_x64-setup.exe"
     }
   }
 }
