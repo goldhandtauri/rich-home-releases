@@ -1,15 +1,15 @@
 {
-  "version": "0.1.17",
-  "notes": "## [v0.1.17] — 2026-05-20\n\n### 보안\n\n- **macOS Apple Developer 사인 + 공증 적용** — 앱이 Apple 의 검증을 거친 정식 개발자 인증서로 사인되어, 첫 실행 시 *\"확인되지 않은 개발자\"* 경고 다이얼로그가 사라졌습니다. Applications 폴더로 드래그한 뒤 **일반 더블클릭** 으로 바로 실행됩니다 (우클릭 → 열기 우회 절차 불필요). Gatekeeper 가 \"확인된 개발자\" 로 인식하여 인터넷 연결이 끊겨도 검증이 통과합니다.\n\n---",
-  "pub_date": "2026-05-20T08:55:59Z",
+  "version": "0.1.18",
+  "notes": "## [v0.1.18] — 2026-05-20\n\n### 수정\n\n- **첫 실행 직후 Cmd+Q 종료 시 크래시** — 앱을 처음 설치하고 사용자 키 등록 창이 열려 있는 상태에서 Cmd+Q 로 앱을 끄면 크래시가 발생하던 회귀를 수정. 종료 직전 열려 있는 창을 먼저 안전하게 정리한 뒤 한 호흡 양보하고 앱이 닫히도록 순서를 보강했습니다.\n- **사용자 키 등록 창이 브라우저 위로 강제 부상** — 한투 OpenAPI 키를 확인하려고 사파리·크롬을 띄워도 등록 창이 위로 튀어오르던 문제를 수정. 사용자가 의도적으로 다른 앱을 보고 있는 동안엔 등록 창이 그 위로 강제 부상하지 않고, 금손매 창으로 돌아왔을 때만 자연스럽게 앞으로 올라옵니다. 다른 팝업 창에도 동일하게 적용됩니다.\n\n---",
+  "pub_date": "2026-05-20T12:30:51Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG9kKzIycVBnaFFjZlRtUE5ObmRrSlE3cVV0bFZ0SjhVeGZOUzJuVm11Z3NSL3U3dVZmamR4dEZXTnFaSEZ3T21rcVpua1JrWThOU3R0UEpFcEp4N0FJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5MjY2NjEzCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKbUZWdUZnMHppVHZKLzhqUGdLOFhmVW5pVUFoRWxaOHpiWXQ2UHVDOUdNOFhDbmxHQnpNRC9jSWtseFhqcUZyU2piY1E5VnZMZGltbDRwVXJqRVR3QXc9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.17/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGg1QUFPUFVVYTRUZDFXTmtUOEQ2bnRMcHY4R1pJeUp3MWdtMitHNjFqclR3ejN1SkpCVXdOZC9HNjVQem11dVl3NGgySWtGWld4OG1zUUgwSlVPOGdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5Mjc5NDY0CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKWWtQZTVZWGtZZnROQUl1eU1GNngzVkErTFBiMnZyRDgxODhuRFordEJRMEg5eE8rNSs5bzVRUHJLZGpVUitlc0RTR1ovODZrNzlVcmxJRHBDQVg5Q3c9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.18/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG5uMGZJSkRTdHZxNXJBMmVHY3Y1eWRLVklGdzJ0K0pXcHNVT09LVmxOeFBJanp6WDRYWXAzbzVkNlV4ZWtvWlU1b1FBSWdkWUhwQ3NmbmNvZGs2aWd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5MjY3MzU3CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS4xN194NjQtc2V0dXAuZXhlCkpRSm5oc0I5YWtBc05IajhNeEhhVjRoS1krR2owelhnT3ZXV1o3MklVMFhCT3F4N0paaCtXay9zTk5Mc2hOVzJkVGhEWVZyNitybEhyN1BWanRpUEFRPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.17/Gold.Hand.Trade_0.1.17_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGhyWWpPVS9kSjMyN2NBaUZjNm9YcWZRYVRXN3Z0dlpsaTBhUjlua1QyWWhxN2Vha09XOHA2Sno5U3BURWdxcUFsK05FMkFzejdBRXc1V3pyUldyVkFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5MjgwMjQ5CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS4xOF94NjQtc2V0dXAuZXhlCmxJeDRGcUluV1ovY2xHYUg3K1M2TFhlUjlrUU1uZkFwSEdhMVRvQUEvK3ZrV2JqL3ZkUlVuUlNpdndmL2tTVFR4WWpOYmxJSjhGTG9va2RsTlRIWUR3PT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.18/Gold.Hand.Trade_0.1.18_x64-setup.exe"
     }
   }
 }
