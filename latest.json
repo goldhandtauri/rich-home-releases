@@ -1,15 +1,15 @@
 {
-  "version": "0.1.15",
-  "notes": "## [v0.1.15] — 2026-05-20\n\n### 변경\n\n- **종목상세 호가창 — 매수·매도 행 수 균형 + 빈 자리 표시** — 호가 데이터가 부족할 때도 매수·매도가 같은 행 수로 채워져 호가창이 한쪽으로 쏠려 보이지 않습니다. 빈 호가 자리는 가운데 옅은 점(·)으로 표시해 데이터 없는 구간임을 한눈에 알 수 있습니다.\n- **종목상세 호가창 — 장 상태별 안내 카드** — 장 개시 전·시간외·휴장 등 호가가 들어오지 않는 시간대에는 현재 장 상태를 알려주는 안내 카드를 보여줍니다. 정규장에서는 안내 카드 없이 실시간 호가가 깜빡임 없이 그대로 표시됩니다.\n- **종목상세 — 체결 내역 영역 정돈** — 체결 데이터가 아직 없을 때 \"체결 대기 중\" 안내를 표시하고, 최근 체결 목록의 스크롤바는 마우스를 올렸을 때만 나타나도록 정리해 평소 화면이 더 깔끔해졌습니다.\n\n---",
-  "pub_date": "2026-05-20T03:20:54Z",
+  "version": "0.1.16",
+  "notes": "## [v0.1.16] — 2026-05-20\n\n### 변경\n\n- **자동매매 매수 전략 — 1차 단계 진입 방식 배지 프리미엄 리디자인** — \"물타기 전략\" 류 카드의 1차 행에 표시되던 즉시진입 / 눌림진입 / 추세진입 / 가치진입 라벨이 입력 박스 모양으로 어색하게 보이던 부분을 정돈했습니다. 둥근 pill + 좌측 라이브 dot + 따뜻한 골드 글로우로 한눈에 \"지금 어떤 방식으로 1차 진입을 노리는지\" 가 들어오도록 했습니다. 진입 방식별 색조(골드/하락 파랑/보라/진한 골드) + 추세 추격용 \"+상승 시\" 배지(상승 빨강) 모두 라이트·다크 모드에서 동일한 가독성으로 동작합니다.\n\n---",
+  "pub_date": "2026-05-20T04:24:02Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHVKMkVnOFZEK1kyb2txeFQyczN1djRPYkdRVm14MTJtZ2J3Q0UvcVYrOVFxMFF2REZ1OERaT1lBS3pHY2NiT0VCRGt6bUZPL2dveVY0WUgwem1pN0E4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5MjQ2NDk1CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKYlo1SWdUMlRoajRoelJTZ1NheDJ4OUdMQVJPZnlKYzB0NkdWbmtuYXV2dDZYUjYxcW8wRm91WENMVWd1WGF1REdYT0xjWWtUMk5peEFiZjBNQ0o0RGc9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.15/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHZwQzNxTzhEUUFtTjM3K0RKaDNlVnR5b0JBODZQcTNrOGhka1hxWXRGb216LzcxUEZPYVpkZmI3NUR4dHFKUFYrNnlPaHMwU212TnJ0dzh2UEl3R0FnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5MjUwNDM5CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKWWlNUHpxZm1LYmVMK05TWkVsRHUxMVJTWG9DdEsxM2lLL1diZlVJRU14bTRBWFduejFoQ3NvUzI1bEFWMlY5Y3JndzIwUVU0elg1d0Y2V2w4VHBpQ1E9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.16/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG1BUXRRbnlqSWJLNlo4bEhoNFlrNjNXNThpdHovcmFORG9VYnhyUHZjejFjQzdaTXl4bTIvL0s0TjM4NS9vVlVxVUVtWThHWVBaNUd3bVYxZERXVlEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5MjQ3MjUxCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS4xNV94NjQtc2V0dXAuZXhlCitsd3FoaUlMdFJXVFhHTGtrMmZWeEZwOVZPVk5PKzZpWUZNSmVqbnJZaGJHbHVxVkZKN3JkTGtMUzB3bjNHSVVVZVgxMXVrUmJERjdTSTF2NGl1bEFnPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.15/Gold.Hand.Trade_0.1.15_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHJkU2ljWU43UW9GN3JwR0pZY29lc3QydGRoa2tyVmhTZ215eXBSbitDMm9MWlpDUFVkR1RpalpUTDcvc1dyK0MyUWdKSENyYWQvS1grUi9JdUNrb2dnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5MjUxMDQwCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS4xNl94NjQtc2V0dXAuZXhlCkRGN1BBdEErYkdQUFhOZmgrbFpPT0hRWS9lbFhuYjA3WXdwQ1BseHBKa3NyUzI2S2R4RlF1Y0JVMCswMUtpSWNSTUJkSmZDUkRZRW9hNGhHV3pxNENnPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.16/Gold.Hand.Trade_0.1.16_x64-setup.exe"
     }
   }
 }
