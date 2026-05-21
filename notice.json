@@ -1,1 +1,13 @@
-[]
+[
+  {
+    "id": "2026-05-21-테스트-race",
+    "severity": "info",
+    "title": "[테스트] race",
+    "body": "race",
+    "startAt": "2026-05-21T11:30:00.000Z",
+    "endAt": "2026-05-28T11:30:00.000Z",
+    "dismissible": true,
+    "minVersion": "999.0.0",
+    "maxVersion": null
+  }
+]
