@@ -1,11 +1,15 @@
 {
-  "version": "0.1.24",
-  "notes": "## [v0.1.24] — 2026-05-21\n\n### 변경\n\n- **종목명 클릭 진입 시 코스피·코스닥 배지 즉시 표시** — 화면 곳곳의 종목명을 클릭해 종목상세로 들어갈 때 코스피·코스닥 등 시장 배지가 진입 즉시 표시됩니다. 이전에는 시세 응답이 도착한 뒤에야 배지가 뒤늦게 나타났지만, 이제 종목 검색으로 진입할 때와 동일하게 처음부터 표시됩니다.\n\n---",
-  "pub_date": "2026-05-21T06:01:06Z",
+  "version": "0.1.25",
+  "notes": "## [v0.1.25] — 2026-05-21\n\n### 변경\n\n- **달력 시간 컬럼 다크 모드 가독성** — 한투 키 신청일 등 달력 입력에서 시·분 컬럼 글자가 다크 모드에서 어둡게 보이던 부분을 밝은 골드 톤으로 정돈했습니다. 달력을 쓰는 모든 화면에 자동 적용.\n- **공지 관리 화면 디자인 정돈** (고급 기능) — 운영자용 공지 작성 화면에 중요도 4단 세그먼트 선택, 빠른 기간 설정(+1일/+1주/+1개월) 칩, 시작·종료 사이 화살표, 라이브 미리보기 빈 상태 안내, 하단 sticky 발행 바 등이 적용됐습니다. PAT 등록 모달은 부모 화면을 가리지 않는 투명 overlay + 헤더 드래그로 이동 가능.\n\n---",
+  "pub_date": "2026-05-21T06:40:41Z",
   "platforms": {
+    "darwin-aarch64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGdBdVpGc2lvNFhzcVZua2hDZkVPTjJ3dGxUekFjNG9TY005SDdMMXpaa2lQaFlvTTI3ZFgvVGlxVVlnNzdIWjFFaFdZRW9zeTJPYVNMQU1qNUFoaVEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5MzQ1MTY1CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKQW5ZK2dSaEtNbW1ON3pNbHNqcUtZR0NWbHorU2FUUHpDd1EwVzdCZkpXeGxsYWdJTko0QnZEVjZnMzNTcFF5Umx2T2owYy9STC9KMUJZZlJoYW5jQkE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.25/Gold.Hand.Trade.app.tar.gz"
+    },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHZHeStpVjZ4S1E4MEZPYXl0ZHBxaEJ0RjdxajI2Qjg2WGljZEpWSmJFRjdWVEtHUTIxSm9Oa1ViYm1ScVppT3Z0TWNNa09mdVNwcEdQeFhkSmxjeFFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5MzQzMjY0CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS4yNF94NjQtc2V0dXAuZXhlCkJ0V0o3TmQzbUkrZGoxSnpTQ0phMkZlWUxCcHFBWlFvSnpleWVUMjl5ZVBobzlEeUlTaWVKR0M3SWJ0Z25GWmMxR3gyNUJiWnVuUTgrcHIwaGhGUEFBPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.24/Gold.Hand.Trade_0.1.24_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHBPNnlMb01IcGkzUCtUeEMrSFFwR3crTjM0WU02ZDZCUnJZTk9CZlg2ZnBCVkQwa1ovWFlVdzc5eFV5ZHdRTC95bEJtbzBaMjhTQ1cxS24xMGtIN3dRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5MzQ1NjM5CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS4yNV94NjQtc2V0dXAuZXhlCi9MeGM3bEJyd2tQdUZxdXUxQmc3NWtPek9zQjB5cDFoRUhDY25jVHNlcWMyRUM3WUtGYlpHOEFTRHBqTnpJR092cTZwUEJWdE0vOURQZmxCYnI2OEFBPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.25/Gold.Hand.Trade_0.1.25_x64-setup.exe"
     }
   }
 }
