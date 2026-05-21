@@ -1,15 +1,15 @@
 {
-  "version": "0.1.22",
-  "notes": "## [v0.1.22] — 2026-05-21\n\n### 변경\n\n- **만료 임박 안내 — 어느 계좌인지 표시** — 한투 API 키 만료 임박 배너와 문제 발생 모달 안내문에 해당 계좌번호를 노출했습니다. 여러 계좌를 등록한 경우 어느 키를 갱신해야 할지 한 눈에 식별 가능. 계좌번호는 `1234-5678` 가독성 포맷으로 표시됩니다.\n- **사용자 키 등록 화면 — 계좌별 만료 상태 chip + D-day 안내** — 각 계좌 카드 헤더에 \"신청일 미입력\" / \"27일 후 만료\" / \"만료됨\" 등의 상태 chip 을 표시했습니다. 신청일을 입력하면 필드 아래 안내문 앞에 \"만료까지 N일 남음\" 굵은 강조도 즉시 표시됩니다. 30일 이내 노란 톤, 7일 이내 빨간 톤 + 부드러운 펄스, 만료된 키는 진한 빨강 그라디언트로 위험 단계별 시각 위계.\n\n---",
-  "pub_date": "2026-05-20T15:44:37Z",
+  "version": "0.1.23",
+  "notes": "## [v0.1.23] — 2026-05-21\n\n### 추가\n\n- **전체 공지 시스템 — 헤더 우상단 종 아이콘** — 점검·신기능·이벤트 안내가 앱 부팅 시 자동으로 도착합니다. 새 공지가 있으면 종 아이콘에 점이 표시되고, 종 클릭 시 별도 창에서 카드 목록으로 확인할 수 있습니다. ESC 로 창 닫기.\n- **공지 중요도 4단계** — **긴급**(빨강, 차단 모달로 표시) / **주의**(주황, 비차단 모달) / **안내**(파랑, 종 배지만) / **이벤트**(골드, 종 배지만). 중요도에 따라 자동으로 다른 방식으로 표시되어 정말 중요한 안내만 작업을 막습니다.\n- **\"이 공지 다시 보지 않기\" 체크박스** — 긴급·주의 모달에서 체크 후 확인하면 영구적으로 안 보이게, 체크 안 하고 닫으면 다음 부팅 시 다시 노출됩니다.\n- **공지 관리 화면** (고급 기능) — 운영자가 앱 안에서 직접 새 공지를 작성하고 모든 사용자에게 발행할 수 있습니다. 왼쪽 폼에 입력하면 우측에서 카드·모달이 실시간 미리보기로 표시되며, 발행 직후 본인 앱부터 즉시 반영됩니다. 일반 사용자에게는 메뉴가 보이지 않습니다.\n\n### 변경\n\n- **오프라인 부팅 시 공지 캐시 사용** — 인터넷 연결 없이 앱을 켜도 마지막에 받았던 공지가 그대로 표시됩니다. 네트워크 실패는 사용자에게 노출되지 않습니다.\n\n---",
+  "pub_date": "2026-05-21T05:35:19Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHBVb2ZvMGRZb2t1aUZNcy9RQTVaYVV5RTRrSDhIK0JKZnFHWUgvWWpxbFpSdEZMblNadGdqWUU3N1oyVTJ1cXN2dkJzdHlkYUl1MEFpY3UyYUozVndBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5MjkwOTE1CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKNGJDcEpzT0FySjJta0VzZUU3ci9nZ0t4QmpUMTN0UllvMDg2TENkd0NXR2h5YTFFaC84SldwdHU4TWJzckRaR0l2Z2gySDdvTUlEY29VMEx4WE52QUE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.22/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGh2djBub3lSYTJMUk9OaUtyS1A5STVPS0JldFBGclJ2V1gwM0k1UDNYbSthQzZWSnMxZFhucjdhTG5CcEJNeTMzUU5MTnZoYVJwK1JrMTR4NEQ3amc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5MzQwNzY2CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKZFBYckxoekxnOFgyalRGaWViWVdsYlE1ZFVxdDY3Qlc4QWhYcldrb3NROHZVU0ZXUDh3N2JRUkdMMjY4SVhIYmlnc1N3Y0lKOGJFVXNtZ2V3Mys4RGc9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.23/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHRxL1RSWENEM29td05wOG52Ykw2dG9TWjlXRExBdnd0cCt2R2RqRmtKM2NFZ0hRUnFwMjBDQndRUkgzeFF6cFVPLzR4NGpmUXppVDFnL3Z2UkY0WUFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5MjkxODc0CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS4yMl94NjQtc2V0dXAuZXhlCkhpMXFIOU5BMUNJSnN5NEtycUc0Z2llRkhFSzdIMUI4TG9NVEx0WWZ5eFhPVm1MSnowNTNicS83YTNPdk94LzZOOFRidXRVcS9MRE5TTkJTc0N3ZkNBPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.22/Gold.Hand.Trade_0.1.22_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGpub3JMWDNocExZRzNNRVpBdmUyUVdVSG1jeENFUWJEUU9wY09oNFFRRzQwdHM5VWJJVE5IM2J6M0hOVFBtME5za2VIbTM2cEF5dzZiTUkxVW1RN2dvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5MzQxNzE2CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS4yM194NjQtc2V0dXAuZXhlCmpaS0tMWTlQQ2FOWHRHakZUeFg1dlpVSXVwOFBZTHgxMk1pZUxZa21lWVAvRVJaSWx3UzFCTHBBQmx5Q3RYalo0SHBqMGMzR1lUSjBHcFNzRHQ1MkF3PT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.23/Gold.Hand.Trade_0.1.23_x64-setup.exe"
     }
   }
 }
