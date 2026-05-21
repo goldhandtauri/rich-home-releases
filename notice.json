@@ -1,13 +1,1 @@
-[
-  {
-    "id": "2026-05-21-테스트-retry-검증",
-    "severity": "info",
-    "title": "[테스트] retry 검증",
-    "body": "retry 백오프 동작 확인",
-    "startAt": "2026-05-21T11:30:00.000Z",
-    "endAt": "2026-05-28T11:30:00.000Z",
-    "dismissible": true,
-    "minVersion": "999.0.0",
-    "maxVersion": null
-  }
-]
+[]
