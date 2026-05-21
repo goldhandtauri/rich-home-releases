@@ -1,15 +1,15 @@
 {
-  "version": "0.1.26",
-  "notes": "## [v0.1.26] — 2026-05-21\n\n### 추가\n\n- **공지 관리 AI 초안 작성** (고급 기능) — 운영자용 공지 작성 화면에 'AI 초안 작성' 버튼이 추가됐습니다. 공지 컨셉을 한 줄 적고 중요도(안내/이벤트/주의/긴급) 를 고르면 AI 가 톤에 맞춰 제목·본문을 자동으로 채워줍니다. 작성 모달에서 사용할 프로바이더(Gemini/Groq/OpenAI/Claude)·모델을 직접 선택할 수 있고, 오류가 나면 재시도 버튼이 함께 떠 다시 시도할 수 있습니다.\n\n### 변경\n\n- **AI 초안 모달에서 고른 프로바이더·모델이 화면 곳곳의 AI 채팅과 자동으로 동기화** — 일지 AI 초안 모달에서 프로바이더·모델을 바꾸면 화면 우측 ✨ AI 채팅 아이콘과 설정 페이지의 활성 모델도 같은 값으로 함께 갱신됩니다. 한 곳에서 바꾸면 다른 곳도 같은 조합으로 시작합니다.\n\n---",
-  "pub_date": "2026-05-21T09:05:21Z",
+  "version": "0.1.27",
+  "notes": "## [v0.1.27] — 2026-05-21\n\n### 추가\n\n- **공지 본문에 이미지 첨부** (고급 기능) — 운영자용 공지 작성 화면 본문에 이미지를 직접 첨부할 수 있게 됐습니다. 캡처를 그대로 Cmd/Ctrl+V로 붙여넣거나, 본문에 드래그&드롭하거나, 파일 선택 버튼·외부 URL 모달로 추가 가능. 첨부된 이미지는 자동으로 본문 커서 자리에 마크다운으로 삽입되며, `![설명|small](url)` 자체 문법으로 크기(small / medium / large / full)도 조절할 수 있습니다.\n- **발행된 공지 목록 + 수정·삭제** (고급 기능) — 공지 관리 화면에 \"신규 발행 / 발행된 공지\" 두 탭이 생겼습니다. 발행된 공지 목록에서 수정 클릭 시 폼이 자동으로 채워지고 \"수정 발행\" 으로 재발행할 수 있고, 삭제 시 첨부 이미지까지 함께 정리됩니다.\n\n### 변경\n\n- **한투 키 만료 안내 표시 형식 정돈** — 상단의 한투 키 만료 임박 배너에 표시되는 계좌 번호가 \"계좌번호-상품코드\" (예: `46589158-01`) 형식으로 정확히 표시됩니다. 한투 키 등록 화면의 입력 형식과 동일하게 맞춰 어느 계좌의 키를 갱신해야 하는지 한눈에 알 수 있습니다.\n- **PAT 등록 모달 / 공지 삭제 다이얼로그 디자인 보강** (고급 기능) — 운영자용 PAT 등록 모달의 저장 버튼이 진한 골드 fill 로 강조되고, 공지 삭제 확인 다이얼로그가 \"되돌릴 수 없습니다\" 빨강 강조 + 워밍 골드 톤으로 정돈됐습니다.\n\n### 수정\n\n- **공지 발행·삭제 안정성 보강** (고급 기능) — 발행/삭제 시 GitHub 측 캐시 지연으로 간헐적 실패가 발생하던 부분을 백오프 재시도(최대 4회)와 캐시 무효화 헤더로 보강했습니다. 빠르게 연달아 발행/삭제해도 안정적으로 처리됩니다.\n\n---",
+  "pub_date": "2026-05-21T11:59:12Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHU5YU84c0xndTR6eko4ZmF6NklaY3VrMlB4eVA5Zi9iTmNPYjFTZ0Vpc0lVdVQwaTJudjIwVDZOQlBCZzg5Q2Z4VzlkdElrR2c0YmtDTSttNFB3MUFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5MzUzODU3CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKUUUzTndPQnZJL3h6S2pIOVNLWk9MRGtsK2pkcXg3UmhaSFI4Y3ZCNWJ5OGJTeDA5NmtabnNtYkx6NEFQWGRCTmR1YVhXTmtqcHY0aEJLNWFpVlZYQkE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.26/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHBPWTBQblE2MWxIUk1reWFDQjNmWnpPU2thaGNPenUzUjNkUWNtTTc0eklWLzRhb2Y0TDNnTlBJcEQrY2lTc01tb3NLSXBaV0h5Y0dHejZxWmFoZFFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5MzY0MzE2CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKRW04ZFYxU1MxTithU1JIRWUyRWNQRHRYTkNZclMxZDhDZGRMTjdSRVBWUkpDeG9OSm83bTBWdjlJUkFJQzc2NFN1Mkx4ZVA3LzRuTEV5N1NMOHZHQVE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.27/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGtxdWlKclFYLysrNFdUYXFJYm5uMFlmcGdKMXlXK2RWMllSbmt1ckUxU3p5UXh4VWhETFBxelN2M1JRK2hSTkh4OEh4UjZRVFRqczJTeXhHcmw5YndFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5MzU0MzE4CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS4yNl94NjQtc2V0dXAuZXhlCjdjcnJRSUxlMHFQeGEvUSthUVEzNUcyUU1CTngxMXc3dm1mV1pNVG9xVndSZnpnRXY3VkcxK3NlVUFaWnFEdmZqNGlxZFFGMXlsbWlvK1YwVjlHVkRBPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.26/Gold.Hand.Trade_0.1.26_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGovZk5oaGY4VHplcXRzRkNxUmdtTCtLa2ZkbnhLRkdBUFMvdlZpR2hRMUV4SkhaQ1JDNlBMZUpXMS9udHVPaUtoeWJRK24rTlRUa0lQWkh3TGhtcUFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5MzY0NzUwCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS4yN194NjQtc2V0dXAuZXhlCmJVQVFhMGJxN3IzMXZWd0N0ZUF0ZzZ3MVlTcTZlWXk4UXk3aTR3ckxNcUpsZHg3WkVCazVSK1Nyd0U2amFxUzFnelJHdEY4dXYwVkJ1MnBaSDhtbENRPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.27/Gold.Hand.Trade_0.1.27_x64-setup.exe"
     }
   }
 }
