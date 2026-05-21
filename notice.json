@@ -1,1 +1,13 @@
-[]
+[
+  {
+    "id": "2026-05-21-테스트-optimistic-검증",
+    "severity": "info",
+    "title": "[테스트] optimistic 검증",
+    "body": "삭제 즉시 화면 갱신 검증",
+    "startAt": "2026-05-21T11:11:00.000Z",
+    "endAt": "2026-05-28T11:11:00.000Z",
+    "dismissible": true,
+    "minVersion": "999.0.0",
+    "maxVersion": null
+  }
+]
