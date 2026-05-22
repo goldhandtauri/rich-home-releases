@@ -9,16 +9,5 @@
     "dismissible": true,
     "minVersion": null,
     "maxVersion": null
-  },
-  {
-    "id": "2026-05-22-notice",
-    "severity": "critical",
-    "title": "금손매 긴급 테스트 입니다.",
-    "body": "테스트 중입니다 감사합니다.",
-    "startAt": "2026-05-22T10:22:00.000Z",
-    "endAt": "2026-06-21T10:22:00.000Z",
-    "dismissible": true,
-    "minVersion": null,
-    "maxVersion": null
   }
 ]
