@@ -9,16 +9,5 @@
     "dismissible": true,
     "minVersion": null,
     "maxVersion": null
-  },
-  {
-    "id": "2026-05-22-r",
-    "severity": "critical",
-    "title": "긴급 테스트 입니다.",
-    "body": "긴급 테스트 입니다.",
-    "startAt": "2026-05-22T10:07:00.000Z",
-    "endAt": "2026-06-21T10:07:00.000Z",
-    "dismissible": true,
-    "minVersion": null,
-    "maxVersion": null
   }
 ]
