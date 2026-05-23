@@ -1,15 +1,15 @@
 {
-  "version": "0.1.43",
-  "notes": "## [v0.1.43] — 2026-05-23\n\n### 추가\n\n- **시황/공시 화면 좌측 [뉴스 | 공시] 탭** — 좌측 패널 상단에 탭을 두어 뉴스와 공시를 한 화면에서 자유롭게 오갈 수 있습니다. 두 탭 모두 행을 클릭하면 우측 본문 영역에 내용이 표시되어 일관된 사용 흐름을 따릅니다.\n- **공시 종목 검색** — 공시 탭 상단에 종목명·코드 검색창을 별도로 두었습니다. 관심종목에 없는 종목도 검색해서 바로 공시를 조회할 수 있습니다.\n\n### 변경\n\n- **시황/공시 화면 디자인 정돈** — 탭 헤더 그라데이션과 활성 표시(굵은 골드 언더라인) 강화, 분할선 가운데 핸들 인디케이터, 검색창 카드형 디자인과 포커스 골드 링, 공시 표 행 호버 시 좌측 강조선·종목명·비고 마커 가독성 보강. 라이트·다크 모드 모두 보정.\n- **시황 뉴스 본문이 다시 우측 영역** — v0.1.42 에서 새 창으로 분리됐던 뉴스 본문이 공시와 같이 우측 영역으로 통합되어 한 화면에 머무릅니다.\n\n### 수정\n\n- **DART 본문 사이드 메뉴 자동 닫힘** — 공시 본문에서 좌측 사이드 메뉴(목차)를 열고 항목을 누를 때마다 메뉴가 자동으로 닫히던 문제를 고쳤습니다. 좁은 창에서도 목차가 계속 열려 있어 여러 항목을 빠르게 확인할 수 있습니다.\n\n---",
-  "pub_date": "2026-05-23T08:41:34Z",
+  "version": "0.1.44",
+  "notes": "## [v0.1.44] — 2026-05-23\n\n### 변경\n\n- **설정 — DART 전자공시 별도 탭** — 설정 화면 좌측 메뉴에 \"DART 전자공시\" 탭을 새로 두어 키 등록·매핑 갱신을 사용자키(한투) 등록과 시각적으로 분리했습니다. 두 도메인이 별도로 다뤄지는 영역이라 메뉴에서도 한눈에 구분됩니다.\n\n---",
+  "pub_date": "2026-05-23T08:59:41Z",
   "platforms": {
-    "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG5MY2RUSVpYNXpXYXJkZllEdmxEajBrdTdvS1R5eDR1TW0xdlllQk5oaGlzNUIvTVZTa1hJQWlqcTVReGpOTDQzNk84YjF6SDA3ZXFWd0J4NVNQR2dFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5NTI1NjkyCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS40M194NjQtc2V0dXAuZXhlCmlwbi9hMzBWWElZM21BQUhMTWg1K2s1NEtGaFhham53MVBZTGR5MUlOYWVYR1A2UThnSlBlbkVMakRTMTB1dXBMMkVhd0pOQWhzdWFOdDJLM2pHT0JRPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.43/Gold.Hand.Trade_0.1.43_x64-setup.exe"
-    },
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGxxNTZjTGFsbnA1SEtlRk9PMEhYZ3VxM0swVW9RLzg3dFpIM0NtL1E1S2NBVEhPa3o3ZXhaNCtJcGF1aHBGQVltZk9TQkNaSUtkWFpCM1lROGZYdkFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5NTI1MTA1CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKbSs1QVFZcHp3V0NwajRtYzhzRm94ckJWcWV3QUdFVmZ6QTU3aVZQdlJvdU96bG9YTWV5amx1Tjh4RUR0OUNQckV5MFlCYVpzTGp0eEFuaTJ5NU5SRFE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.43/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHJKY25BL2Q3VlQwQzhmUmZRcHJQcE5QazZOWWlWSExlTXBnSUU3RDdvYnlQbVpKNzc4dkxncEt5OU8rejZwRnF5MklxUVJEZTBEYVA4UHp4QUdRU2dRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5NTI2Mzg5CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKY0pSeVpoQUtuUmd2UWRQc3h5YnVHR3dkczZuQ2hHMkt3aS9aRjM1RG1mNWMwZm9PRk9ab29GOU5Edld4NEZ2S0kzRTVtTmVwNHBiclJzRmRmcEZWREE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.44/Gold.Hand.Trade.app.tar.gz"
+    },
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHFtbVNhd0tHUTErQ2QrQjc0Smwydlhhd2k4cG9GdXJuOTZ1TldVUWVDT3ZXWmZPK3VMVEJCL1Y5RmYySGVWNS9XVGZRQ3JXL1BoaWRidjZ2OGVObEE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5NTI2Nzc5CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS40NF94NjQtc2V0dXAuZXhlCjZRWllFcGVMODk3SldOTXh1WEU1ZXZFOWoyakFxL2ZXRWQzeDIvMnJPckcvdUpvZEp3VTRwMnFCaUxLRi9ZTmx5L2tKTUNaZXVGbmE2d3VvZGx2YkN3PT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.44/Gold.Hand.Trade_0.1.44_x64-setup.exe"
     }
   }
 }
