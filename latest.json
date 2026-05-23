@@ -1,15 +1,15 @@
 {
-  "version": "0.1.40",
-  "notes": "## [v0.1.40] — 2026-05-23\n\n### 추가\n\n- **AI 발행 정리 — 복사 형식(HTML / 마크다운) 선택** — 투자 일지를 X·블로그 발행 양식으로 정리한 결과를 HTML 또는 마크다운으로 골라 복사할 수 있습니다. HTML 로 복사하면 네이버 블로그처럼 서식 있는 편집기에 소제목·줄바꿈이 그대로 붙고, 마크다운은 원문 그대로 복사됩니다. 기본값은 HTML 입니다.\n\n### 변경\n\n- **AI 발행 정리 화면 재디자인** — 양식·종목 선택부터 결과 미리보기까지 화면 전체를 워밍 골드 톤으로 다듬고, 라이트·다크 모드 모두 일관되게 보이도록 정리했습니다.\n- **인용 도구 화면 재디자인** — 시세·매매·AI 분석을 일지에 인용하는 도구 창을 정돈했습니다. 불필요하게 길던 빈 공간을 줄이고 탭·안내·빈 상태 표시를 더 명확하게 바꿨으며, 매매 내역 날짜 입력을 앱 공통 달력으로 통일했습니다.\n- **관심종목 등락 색상 통일** — 일지 관심종목 표의 등락·수익률 색상을 앱 전체와 같은 상승 빨강·하락 파랑으로 맞췄습니다.\n- **투자 일지 상단 툴바 정리** — 제목 입력을 문서 제목답게 키우고, 저장 상태를 점 표시로 한눈에 보이게, 버튼 줄을 일관된 크기로 다듬었습니다. 라이트·다크 모드 모두 적용.\n- **'보유종목 분석 일지' 양식명** — 기존 '종목 분석 일지' 양식을 '보유종목 분석 일지'로 바꿔 '관심종목 분석 일지'와 짝이 맞도록 했습니다.\n- **상단 설정·닫기 버튼 툴팁 통일** — 네비게이션의 설정·모든 팝업 닫기 버튼 툴팁을 앱 공용 골드 톤 툴팁으로 맞췄습니다.\n\n### 수정\n\n- **키 만료 안내 배너 버튼** — 키 만료 임박 배너의 '키 재입력' 버튼에 마우스를 올리면 글자가 보이지 않던 문제를 고쳤습니다.\n- **Windows 리스트 스크롤 바운스** — Windows 에서 목록을 스크롤할 때 끝부분이 대각선으로 튕겼다 돌아오던 현상을 제거했습니다.\n- **민감정보 오탐 경고** — 일지를 복사할 때 차트 이미지 파일명에 들어간 날짜(`2026-05-23` 형식)를 계좌번호로 잘못 감지해 민감정보 경고가 뜨던 문제를 고쳤습니다.\n- **차트 재시도 버튼 노출 조건** — 새 일지를 시작하자마자 '차트 재시도' 버튼이 뜨던 문제를 고쳤습니다. 이제 AI 초안 생성 후 차트를 가져오지 못한 종목이 있을 때만 표시됩니다.\n- **HTML 복사 시 차트 이미지 누락** — 일지를 HTML·마크다운으로 클립보드에 복사할 때 삽입한 차트 이미지가 함께 복사되도록 고쳤습니다. 외부에 붙여넣어도 차트가 바로 보입니다.\n- **AI 초안 생성 중 버튼 표시** — AI 초안을 생성하는 동안 버튼 글자가 흐릿해 잘 안 보이던 문제를 고쳤습니다. 라이트·다크 모두 또렷한 진행 표시로 바꿨습니다.\n- **관심종목 분석 일지 — 종목 정보 누락 감소** — 관심종목이 많을 때 일부 종목의 시세·재무 조회가 누락돼 AI 초안에 '(미정)' 이 많이 생기던 문제를 줄였습니다. 종목 조회를 순차 처리 + 실패 시 재시도로 안정화했습니다.\n- **분석 일지 — 종목 시장·업종 줄 채움** — 보유종목·관심종목 분석 일지의 AI 초안에서 종목명 아래 '코스피/코스닥 · 업종 · 시가총액' 줄이 (특히 종목이 많을 때 뒤쪽에서) 자주 비던 문제를 고쳤습니다.\n\n---",
-  "pub_date": "2026-05-22T18:06:54Z",
+  "version": "0.1.43",
+  "notes": "## [v0.1.43] — 2026-05-23\n\n### 추가\n\n- **시황/공시 화면 좌측 [뉴스 | 공시] 탭** — 좌측 패널 상단에 탭을 두어 뉴스와 공시를 한 화면에서 자유롭게 오갈 수 있습니다. 두 탭 모두 행을 클릭하면 우측 본문 영역에 내용이 표시되어 일관된 사용 흐름을 따릅니다.\n- **공시 종목 검색** — 공시 탭 상단에 종목명·코드 검색창을 별도로 두었습니다. 관심종목에 없는 종목도 검색해서 바로 공시를 조회할 수 있습니다.\n\n### 변경\n\n- **시황/공시 화면 디자인 정돈** — 탭 헤더 그라데이션과 활성 표시(굵은 골드 언더라인) 강화, 분할선 가운데 핸들 인디케이터, 검색창 카드형 디자인과 포커스 골드 링, 공시 표 행 호버 시 좌측 강조선·종목명·비고 마커 가독성 보강. 라이트·다크 모드 모두 보정.\n- **시황 뉴스 본문이 다시 우측 영역** — v0.1.42 에서 새 창으로 분리됐던 뉴스 본문이 공시와 같이 우측 영역으로 통합되어 한 화면에 머무릅니다.\n\n### 수정\n\n- **DART 본문 사이드 메뉴 자동 닫힘** — 공시 본문에서 좌측 사이드 메뉴(목차)를 열고 항목을 누를 때마다 메뉴가 자동으로 닫히던 문제를 고쳤습니다. 좁은 창에서도 목차가 계속 열려 있어 여러 항목을 빠르게 확인할 수 있습니다.\n\n---",
+  "pub_date": "2026-05-23T08:41:34Z",
   "platforms": {
-    "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGlqd05MTjcxU29McVVsdjZSR1ZKaFEyYkNrd1lRckpWcDNONk4vankwNWVwcThCUTFsbjNGc3RCQjdQcE9pM1d3a3FUK0lhano2U1MyNTlJSlB3TVFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5NDcyOTIyCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKdVVJZmJhYzVhb3JDeFExQUpFVlF3N1JyQjY0SEdzNnY3NnFiQkhHcU1SS1hNTitORTk5bjkzYkpMZDkrWlBXZ1JrMHZOS2ZWb29Ldms3Q1c1QURVQmc9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.40/Gold.Hand.Trade.app.tar.gz"
-    },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGs3NWpqN3dOa1FldWJSbXJ3RUo1RUdhTnFFSTlnOXB4cTZhK25iMnh4TEF6RUIyVXZ3NGNuVE5jRVcvVUc3R3VEVUdiaFJUYzJLQS9adHpNMWg2VXcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5NDczMjEyCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS40MF94NjQtc2V0dXAuZXhlCnhUOTgzRXZQS0U3VGx2SEYxV1VIYkxSYktCRkRWQ1hYMlJ3T2s0dUhQakFjQ3lGMVNITldVNVFITThsL3UrR3p4VHJzTXVQWDcvRTJLcnN0WU5VSEFBPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.40/Gold.Hand.Trade_0.1.40_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG5MY2RUSVpYNXpXYXJkZllEdmxEajBrdTdvS1R5eDR1TW0xdlllQk5oaGlzNUIvTVZTa1hJQWlqcTVReGpOTDQzNk84YjF6SDA3ZXFWd0J4NVNQR2dFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5NTI1NjkyCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS40M194NjQtc2V0dXAuZXhlCmlwbi9hMzBWWElZM21BQUhMTWg1K2s1NEtGaFhham53MVBZTGR5MUlOYWVYR1A2UThnSlBlbkVMakRTMTB1dXBMMkVhd0pOQWhzdWFOdDJLM2pHT0JRPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.43/Gold.Hand.Trade_0.1.43_x64-setup.exe"
+    },
+    "darwin-aarch64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGxxNTZjTGFsbnA1SEtlRk9PMEhYZ3VxM0swVW9RLzg3dFpIM0NtL1E1S2NBVEhPa3o3ZXhaNCtJcGF1aHBGQVltZk9TQkNaSUtkWFpCM1lROGZYdkFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5NTI1MTA1CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKbSs1QVFZcHp3V0NwajRtYzhzRm94ckJWcWV3QUdFVmZ6QTU3aVZQdlJvdU96bG9YTWV5amx1Tjh4RUR0OUNQckV5MFlCYVpzTGp0eEFuaTJ5NU5SRFE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.43/Gold.Hand.Trade.app.tar.gz"
     }
   }
 }
