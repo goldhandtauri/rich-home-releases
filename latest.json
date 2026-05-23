@@ -1,15 +1,15 @@
 {
-  "version": "0.1.46",
-  "notes": "## [v0.1.46] — 2026-05-23\n\n### 수정\n\n- **공시 탭에서 DART 키 등록·삭제가 즉시 반영되지 않던 문제** — 종목상세 화면이나 시황/공시 화면에서 DART 키 안내 카드가 떠 있을 때 설정에서 키를 등록해도 자동으로 갱신되지 않거나, 반대로 키 삭제 후에도 이전 공시 리스트가 그대로 보이던 회귀를 고쳤습니다. 이제 설정에서 키를 저장·삭제하면 모든 화면이 즉시 동기화됩니다.\n\n### 추가\n\n- **DART 키 안내 카드에 \"키 등록 후 다시 확인\" 버튼** — 설정 창을 닫고 메인으로 돌아왔을 때 화면이 자동 갱신되지 않은 경우 명시적으로 재시도할 수 있는 버튼을 추가했습니다.\n\n---",
-  "pub_date": "2026-05-23T12:00:39Z",
+  "version": "0.1.47",
+  "notes": "## [v0.1.47] — 2026-05-23\n\n### 추가\n\n- **신규 DART 공시 자동 감지·알림** — 보유종목과 관심종목의 신규 전자공시를 평일 영업시간 동안 10분 간격으로 자동 확인하고, 도착하면 텔레그램으로 알려줍니다. 자고 일어났을 때는 직전 24시간 신규 공시 요약 1건을 보내드립니다.\n- **종목명 옆 빨강 점 (신규 공시 알림)** — 보유·관심·종목 순위·스크리닝 등 어디서나 신규 공시가 있는 종목 옆에 작은 빨강 점이 표시됩니다. 종목상세 → 공시 탭에 들어가면 사라집니다.\n- **종목상세 공시 탭 카운트 뱃지** — 공시 탭 라벨 옆에 미확인 신규 공시 건수가 빨강 뱃지로 표시됩니다. 탭을 클릭하면 사라집니다.\n- **공시 리스트 행 NEW 라벨** — 종목상세 공시 리스트의 신규 공시 행에 빨강 `NEW` 라벨이 붙습니다. 본문을 클릭해서 열면 그 1건만 NEW 가 사라집니다.\n- **텔레그램 설정에 \"신규 공시 알림\" 토글** — 텔레그램이 활성화돼 있으면 신규 공시 알림은 기본 켜져 있습니다. 끄고 싶으면 설정 → 텔레그램에서 해제하세요.\n- **신규 공시 즉시 폴링 (디버그)** — 설정 → 텔레그램 탭 하단에서 폴링을 즉시 트리거해 신규 공시 확인 가능합니다.\n- **시황/공시 — 공시 본문 우측 영역 임베드** — 공시 행 클릭 시 우측 분할 영역에 본문이 바로 표시되어 화면 전환 없이 좌측 리스트와 함께 살펴볼 수 있습니다.\n- **시황/공시 — 뉴스 본문 창 모드 선택 (여러창 / 단일창)** — 뉴스 행 클릭 시 별도 창으로 본문이 열립니다. \"여러창\"은 클릭마다 새 창, \"단일창\"은 한 자리에서 창을 재사용합니다.\n- **시황/공시 — 자동 정렬 토글 + 모두 닫기** — 여러창 모드에서 \"자동 정렬\"을 켜면 뉴스 클릭마다 열린 본문 창들이 그리드로 자동 배치되고 메인 창 위에 상위 고정됩니다. \"모두 닫기\"로 한 번에 정리할 수 있습니다.\n\n### 변경\n\n- **텔레그램 알림 송신 경로 일원화** — 매매 체결·시스템 알림·신규 공시까지 모든 텔레그램 알림이 같은 송신 경로로 통일됐습니다. 메인 창이 최소화돼 있어도 알림이 정상 도착합니다.\n- **같은 종목 다건 공시는 1개 메시지로 묶음** — 동일 종목에 같은 시점 여러 건 공시가 등록되어도 텔레그램은 종목당 1통으로 묶어 보내며, 메시지 안에 각 공시의 본문 링크가 별도로 포함됩니다.\n\n### 수정\n\n- **시황/공시 화면 종목 검색 후 셀렉트에 종목코드만 표시되던 문제** — 종목명으로 검색해서 선택한 뒤 셀렉트 라벨에 6자리 종목코드만 보이던 회귀를 고쳤습니다. 이제 검색 후에도 종목명과 코드가 함께 표시됩니다.\n- **시황/공시 — 탭 전환 시 우측 본문이 잔존하던 문제** — 뉴스 ↔ 공시 탭을 바꿔도 우측에 이전 본문이 그대로 보이던 회귀를 고쳤습니다. 탭을 전환하면 우측 본문이 자동으로 닫힙니다.\n\n---",
+  "pub_date": "2026-05-23T17:10:16Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG9RTlorSzB0SWZiM25xUUhFUjVMaDlzNVlZMk9WYUhVdFdsWlZWemFPMHFOcVJXY083bGxVWXBVOGRpcTFTMjloVEN6NTRGK0UweDJ0Q3Q1NjVDRGdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5NTM3MTY4CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKNVZnNmZpcHhvUWZCZ1lZeGRyejY1Y1NacUg3amVwVTdUMy9nQmhWWFRNQm1nVzMrTEp6VFl0TU14aGlROWNQUnNNZW4xTGpoSi9hSDMrUlBUT0ZyQmc9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.46/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG9QV01RWStOOHFycldaSEk0ejdrb2w0SFk0SnU3V3oxeHJIWTdzY1VWVWorMEZ1M2s2MFkwQXVaWWxGUTltdlc4QkM3c1RLK1BDRDVLZFYva2ZWTWdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5NTU1NzI0CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKck5zcGhEMVczS25IWjJidzJ2WEhHSXRKTlU0NTJZSTkzVm53VktSQ3ljTWR5QWxCNjNvOXVEaGVKbVMrNW91bkxpanVEWWZqQmFHUjlVOFJ6bjV4QkE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.47/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGlzNG5rN2t6TFNBdEhpYmZVOTBYTE1TQVRDZ0JTQ3R3OHNJSlBJZlRmeE5RZUtSRE1YR0toVnRwQnhyU2VieWhHZ1E5VzVWbThhUldZb015bXROQWd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5NTM3NjM3CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS40Nl94NjQtc2V0dXAuZXhlCmxtQm0rQWdtbVJJMUdXbkZzWGt6SDhrOERtUlBrSkdTeDlyRjVJeno0ZzF5NDR3OXJYeVg4SExBNHBBZG9LRWl3MHBxZEZoRVJsZHFxdGluOC9NTENBPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.46/Gold.Hand.Trade_0.1.46_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGltdUhZWjExcjczcXlxY2luZjdubmkvVVJoZGFBcVZ1bUhqdGRmVStTMnRIYytoWkxrTzQzUFpzQTViM0c2OTkzRlZaYnJ3U1RhNGJ1MHlqVVJ3K0FNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5NTU2MjE0CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS40N194NjQtc2V0dXAuZXhlCkY5YVhzUTdSNC9oUnJMOVRmVVJRZG9YcU9pNThPOU9XUXA5dmNXbi9FZjM5aXNqRHFDZXJlVlgwNFIyS2dRTjI3eW0xZStvTlc5ZElxWVgwYlJSZENBPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.47/Gold.Hand.Trade_0.1.47_x64-setup.exe"
     }
   }
 }
