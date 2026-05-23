@@ -1,15 +1,15 @@
 {
-  "version": "0.1.45",
-  "notes": "## [v0.1.45] — 2026-05-23\n\n### 수정\n\n- **자산정보 계좌 메타 자가 복구** — 한투 키는 등록되어 있는데 자산정보 셀렉트가 비어 보이던 회귀를 고쳤습니다. 부팅 시 계좌 메타가 비어있고 한투 키가 살아있으면 자동으로 계좌 메타를 복원합니다(상품코드 기본값 01 — 다르면 사용자키 등록 화면에서 수정).\n- **DART 키 없을 때 ✨ AI 옵션 모달 생략** — DART API 키가 등록되지 않은 상태에서 ✨ 를 눌렀을 때 첨부 옵션 모달이 떠 어차피 첨부할 수 없는 옵션을 보여주던 문제를 고쳤습니다. 이제 DART 키 미설정 상태에선 옵션 모달 없이 바로 AI 채팅으로 진입합니다.\n\n### 변경\n\n- **(내부) 한투 키 손상 초기화 정책** — 한투 키 중 일부만 손상된 경우에도 모든 계좌 메타가 함께 삭제되던 정책을 살아남은 키의 계좌 메타는 보존하는 방식으로 바꿨습니다. 같은 회귀 재발을 차단합니다.\n\n---",
-  "pub_date": "2026-05-23T09:35:16Z",
+  "version": "0.1.46",
+  "notes": "## [v0.1.46] — 2026-05-23\n\n### 수정\n\n- **공시 탭에서 DART 키 등록·삭제가 즉시 반영되지 않던 문제** — 종목상세 화면이나 시황/공시 화면에서 DART 키 안내 카드가 떠 있을 때 설정에서 키를 등록해도 자동으로 갱신되지 않거나, 반대로 키 삭제 후에도 이전 공시 리스트가 그대로 보이던 회귀를 고쳤습니다. 이제 설정에서 키를 저장·삭제하면 모든 화면이 즉시 동기화됩니다.\n\n### 추가\n\n- **DART 키 안내 카드에 \"키 등록 후 다시 확인\" 버튼** — 설정 창을 닫고 메인으로 돌아왔을 때 화면이 자동 갱신되지 않은 경우 명시적으로 재시도할 수 있는 버튼을 추가했습니다.\n\n---",
+  "pub_date": "2026-05-23T12:00:39Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGxEOGdQTzBwRzIwMlhZRFRxa0hjZnlrS1lOeEk1ZW9BMzJha0E0eGkwZDBwSkZWWEFGMVY2UDFTSTFPR0pSKzQ4c3FlMEdmWmx0bUl3aFNKa2QwQ2cwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5NTI4NTU2CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKZWFwN2k3MlVSN1Y5a2dlMnhuclFUeWswSE9veU96NGFDMmJFa3JMSTVPWEVubEZ4MkFIcW1DeVkxOTNWV2dPbVBuVlVkQ3NIemhuckxJUlpEMWlQQ1E9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.45/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG9RTlorSzB0SWZiM25xUUhFUjVMaDlzNVlZMk9WYUhVdFdsWlZWemFPMHFOcVJXY083bGxVWXBVOGRpcTFTMjloVEN6NTRGK0UweDJ0Q3Q1NjVDRGdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5NTM3MTY4CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKNVZnNmZpcHhvUWZCZ1lZeGRyejY1Y1NacUg3amVwVTdUMy9nQmhWWFRNQm1nVzMrTEp6VFl0TU14aGlROWNQUnNNZW4xTGpoSi9hSDMrUlBUT0ZyQmc9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.46/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGdGZWZodkNvaWJabUpsUTF0bitjSFRIQ0hjV05mT1FDREhxY3VXYmVGcHVuVmNITmM5UjJqTnh0c0VEMGVHQ3pTV05pMk5HaThSelBXM3pqQVhxM3c0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5NTI4OTE0CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS40NV94NjQtc2V0dXAuZXhlCmF5MDBnTkdXNHVRK2Y1QXZkTlNCQjFNZm9ySTlmY3pkYlA4UnBFYzcyN21XVkNzdDlYNVFFWGNucGpoYllNOXRvQ0JIVDdQT3VJZ3NMakptc2pDZkF3PT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.45/Gold.Hand.Trade_0.1.45_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGlzNG5rN2t6TFNBdEhpYmZVOTBYTE1TQVRDZ0JTQ3R3OHNJSlBJZlRmeE5RZUtSRE1YR0toVnRwQnhyU2VieWhHZ1E5VzVWbThhUldZb015bXROQWd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5NTM3NjM3CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS40Nl94NjQtc2V0dXAuZXhlCmxtQm0rQWdtbVJJMUdXbkZzWGt6SDhrOERtUlBrSkdTeDlyRjVJeno0ZzF5NDR3OXJYeVg4SExBNHBBZG9LRWl3MHBxZEZoRVJsZHFxdGluOC9NTENBPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.46/Gold.Hand.Trade_0.1.46_x64-setup.exe"
     }
   }
 }
