@@ -1,15 +1,15 @@
 {
-  "version": "0.1.57",
-  "notes": "## [v0.1.57] — 2026-05-26\n\n### 수정\n\n- **종목상세 — 신규 공시 표시가 안 뜨던 문제 수정** — 메인 화면 보유·관심 종목에 새 공시 빨간 표시가 떴어도, 해당 종목을 종목상세 팝업으로 열면 공시 탭에 미확인 개수가 안 보이고, 탭을 눌러도 새로 들어온 공시 행에 NEW 라벨이 뜨지 않던 문제를 수정했습니다. 이제 팝업의 공시 탭 라벨에 미확인 공시 개수가 정확히 표시되고, 탭을 누르면 신규 공시 행에 NEW 라벨이 그대로 남아 어떤 게 새로 들어온 건지 한눈에 식별됩니다.\n\n---",
-  "pub_date": "2026-05-26T06:36:18Z",
+  "version": "0.1.58",
+  "notes": "## [v0.1.58] — 2026-05-26\n\n### 추가\n\n- **종목상세 — 시간외 매매 자동 대응** — 정규장 마감 후에도 종목상세 팝업에서 직접 시간외 매매를 진행할 수 있습니다. 시간대가 바뀌면 주문 패널의 주문 유형·거래소가 그 시간대 한투에서 허용되는 값으로 자동 전환됩니다. KRX 시간외 종가(15:40~16:00) 에는 가격칸이 당일 종가로 자동 채워져 잠기고, KRX 시간외 단일가(16:00~18:00) 와 NXT 애프터마켓(18:00~20:00) 도 별도 설정 없이 그대로 매수·매도가 가능합니다.\n\n### 수정\n\n- **시간외 매수·매도가 항상 거부되던 문제 수정** — 15:40 이후 종목상세에서 주문을 보내면 \"장운영시간이 아닙니다\" 에러로 항상 실패하던 문제를 수정했습니다. 시간대마다 요구되는 한투 주문 유형이 다른데 그 자동 전환이 누락돼 있었습니다.\n- **NXT 거래종목 — 16:00~18:00 시간외 단일가 거부 문제** — NXT 가능 종목으로 시간외 단일가 시간에 주문 시 \"NXT거래종목은 시간외단일가 주문불가합니다\" 에러가 나던 문제를 수정했습니다. 그 시간대 NXT 가능 종목은 자동으로 NXT 애프터마켓으로 라우팅됩니다.\n- **주문 불가 시간 안내** — 정규장 동시호가 마감 직후 10분(15:30~15:40) 과 장 마감 시간(20:00~익일 08:00) 은 주문 패널 대신 안내 카드를 표시해 헛 클릭을 막습니다.\n- **종목상세 — 신규 공시 표시가 안 뜨던 문제 수정** — 메인 화면 보유·관심 종목에 새 공시 빨간 표시가 떴어도, 해당 종목을 종목상세 팝업으로 열면 공시 탭에 미확인 개수가 안 보이고, 탭을 눌러도 새로 들어온 공시 행에 NEW 라벨이 뜨지 않던 문제를 수정했습니다. 이제 팝업의 공시 탭 라벨에 미확인 공시 개수가 정확히 표시되고, 탭을 누르면 신규 공시 행에 NEW 라벨이 그대로 남아 어떤 게 새로 들어온 건지 한눈에 식별됩니다.\n\n---",
+  "pub_date": "2026-05-26T07:20:49Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGsxWmtpMG54VEVVRWRiVjBGY0VaSDlHMGc0ZGQzZlFUMGFqSHNFVWRoQSszOW1sZzc4NURuR2xiRE5uS3lWVnFGNmUzNVU2RnY0ZWloWGhRTlBueXdBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5Nzc2OTI3CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKblRSNkNzakR3ZkM3OVA3aml5MnBrVitQYWhzZnY4SUZyZjlJcjhySGFHM3lhekdFWGJoeHRvZ2Z2U2dWVEdqNHc1NENvL3p4Z2JwZEU5N2lCa1pYQ1E9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.57/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGd5c2ZISW1WMW5CMHhKcW1xako4MWZhTnVrSGVwc2dwL3VRYVR5VDR5dmZPMEpxL1Y5WnQ2Z0YzMGtxaTM2QzE2WjZDd013anUvaHpDTzcwbGtYOFE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5Nzc5NjUwCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKMEw1UU5qbUFrcldLb0s4bk01M0FmcjlkbEJuSWhXYld1WGN6cXFpOUQ1QXV5TnMrbFpNem1TQzJqdE5oRU1ybEM4aFc4SXhOUXNyRVlRRXE2elRWQ2c9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.58/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGtDZXlxT2VScXgvQ1RVOFBZSm4wNUM4V0tLL1BBYUtSR0FzMjAwMU1lc2IyYndacmlGcXpUdmJ6NjN5VVcrSkpzUUhlUTNOOFBwOTVIS3pYdllwUlFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5Nzc3Mzc1CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS41N194NjQtc2V0dXAuZXhlClNvVmRtMy9mQTlwcDZ4L3FNYzZoUEttQkJHdi9rNTdYcy9HOXNFdDl3VUlMOHFzNzFHR1ZvUWVxcjRHODRtbjNUakhuaDZQVmtZK2UxeXM2bThpakNBPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.57/Gold.Hand.Trade_0.1.57_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGxyQlAzWFh5TS9xazl6ZjEyaVdQUzZPL3RmYkxKcDl3OXh3S3N1Q3h2M1djcGtPOXdzWFRiT01PbG9EbmxmZVJ1N0oyY0ZTWnRCUndWaytVa3grZGdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5NzgwMDQ3CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS41OF94NjQtc2V0dXAuZXhlCldEcklwbjByRUl1UnpjRjRSa1ZYZU9sbHpTdnRJb0g5M1JZZm5oMmd6bG1mdWN0QXQ5cnd4djVJL2xMdit1TXNJclZITTBSekwxT2F5NG9BbmF4Z0NnPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.58/Gold.Hand.Trade_0.1.58_x64-setup.exe"
     }
   }
 }
