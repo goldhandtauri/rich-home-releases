@@ -1,15 +1,15 @@
 {
-  "version": "0.1.56",
-  "notes": "## [v0.1.56] — 2026-05-25\n\n### 변경\n\n- **커뮤니티 칩 — 창 크기 조절 후 자동으로 집에 다시 안착** — 칩이 \"집\"(오늘의 운세 옆) 에 안착해 있던 상태에서 창 크기를 바꾸면, 조절이 끝나는 순간 새 집 위치로 살랑살랑 자동 이동합니다. 사용자가 직접 칩을 다른 자리로 옮겨 둔 경우에는 그 자리를 유지합니다.\n\n### 수정\n\n- **커뮤니티 칩 — 앱을 껐다 켜도 집 안착 상태 유지** — 칩이 집에 안착해 있을 때 앱을 종료하면 위치는 기억되지만 \"집에 들어가 있는 상태\" 표시가 풀려 있던 문제를 수정했습니다. 이제 안착 상태도 함께 기억되어, 다음 부팅 시 동일한 자리에 집 배경과 함께 그대로 복원됩니다.\n\n---",
-  "pub_date": "2026-05-25T03:12:45Z",
+  "version": "0.1.57",
+  "notes": "## [v0.1.57] — 2026-05-26\n\n### 수정\n\n- **종목상세 — 신규 공시 표시가 안 뜨던 문제 수정** — 메인 화면 보유·관심 종목에 새 공시 빨간 표시가 떴어도, 해당 종목을 종목상세 팝업으로 열면 공시 탭에 미확인 개수가 안 보이고, 탭을 눌러도 새로 들어온 공시 행에 NEW 라벨이 뜨지 않던 문제를 수정했습니다. 이제 팝업의 공시 탭 라벨에 미확인 공시 개수가 정확히 표시되고, 탭을 누르면 신규 공시 행에 NEW 라벨이 그대로 남아 어떤 게 새로 들어온 건지 한눈에 식별됩니다.\n\n---",
+  "pub_date": "2026-05-26T06:36:18Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG0vZjJKM3Z0SGJiejV3QWZWYmdMbmRDRnZPVUVudTk3NGtRUVlBYmdXVkFyMzJ3RnFscytucmMwTnhIRU8yV0NQTUpyRmVoZnBJQk9LRkZWbWFQSFFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5Njc4Mzc3CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKYTh6ZWd6RUVSWUxSSzIyQkdkMkErbGowNzU0SnB0aWtYL0RLc2ljRExmZ1BJZnUrR1RtOUNTdEhwU2tnUXNkMld4a0tJcVZycDZFTDVaOUMyb01JQlE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.56/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGsxWmtpMG54VEVVRWRiVjBGY0VaSDlHMGc0ZGQzZlFUMGFqSHNFVWRoQSszOW1sZzc4NURuR2xiRE5uS3lWVnFGNmUzNVU2RnY0ZWloWGhRTlBueXdBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5Nzc2OTI3CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKblRSNkNzakR3ZkM3OVA3aml5MnBrVitQYWhzZnY4SUZyZjlJcjhySGFHM3lhekdFWGJoeHRvZ2Z2U2dWVEdqNHc1NENvL3p4Z2JwZEU5N2lCa1pYQ1E9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.57/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHZOMEtJdjQ1bXJMZmxMcm4xci8vcjdLcmFiSkRNTTN0ZjlURUFHQzkvVGdSSVdjRk1SbmE3Z25FVFlqeDRhMERvNEhoOEJ0bFA0eEQvck1oWEFWd1FFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5Njc4NzYyCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS41Nl94NjQtc2V0dXAuZXhlClg3Um9abm1rZ08wYjRuRkZFbDhtWEw0U2VPQ3F4Rk9kbHVNd0p5SWI0OGdWa05mak1WeVdWbDNMWHlXTm02YXhHSDBUbVNLK1VidXNNbEorZENDVkFBPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.56/Gold.Hand.Trade_0.1.56_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGtDZXlxT2VScXgvQ1RVOFBZSm4wNUM4V0tLL1BBYUtSR0FzMjAwMU1lc2IyYndacmlGcXpUdmJ6NjN5VVcrSkpzUUhlUTNOOFBwOTVIS3pYdllwUlFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5Nzc3Mzc1CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS41N194NjQtc2V0dXAuZXhlClNvVmRtMy9mQTlwcDZ4L3FNYzZoUEttQkJHdi9rNTdYcy9HOXNFdDl3VUlMOHFzNzFHR1ZvUWVxcjRHODRtbjNUakhuaDZQVmtZK2UxeXM2bThpakNBPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.57/Gold.Hand.Trade_0.1.57_x64-setup.exe"
     }
   }
 }
