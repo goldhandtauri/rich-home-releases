@@ -1,15 +1,15 @@
 {
-  "version": "0.1.59",
-  "notes": "## [v0.1.59] — 2026-05-27\n\n### 추가\n\n- **AI 분석에 공시 본문 첨부 옵션** — 종목 ✨ AI 분석 시작 모달에 \"메타만 / 본문 포함\" 두 단계 첨부 깊이를 고를 수 있습니다. 본문 포함을 켜면 DART 보고서 본문에서 읽히는 계약금액·매출 대비 비중·계약 상대방·지분율 같은 구체 숫자를 AI 가 그대로 인용해 답변에 녹입니다. 본문 포함은 토큰 사용량이 크게 늘어나 설정 → DART 전자공시 의 \"AI 분석에 공시 본문 첨부 허용\" 토글을 켠 사용자만 사용할 수 있고, 유료 AI 키 모델에 권장합니다.\n- **투자 일지 — AI 초안에 공시 첨부** — 데일리·주간·실수·종목분석 4종 회고와 X·블로그 단편·블로그 상세 3종 발행 양식 모두에서 AI 초안 작성 시 종목별 DART 공시를 함께 분석합니다. 회고는 자동으로 다음부터 같은 옵션이 적용되고, 발행은 매번 사용자가 명시적으로 켭니다. 양식별로 공시를 본문에 녹이는 방식이 자동 결정됩니다 — X 변형은 인라인 한 줄, 블로그 단편은 인라인 + 마지막 한 줄 요약, 블로그 상세·회고는 별도 \"주요 공시 흐름\" 섹션이 추가됩니다. 본문에서 추출된 종목 중 어떤 종목의 공시를 첨부할지 체크박스로 직접 고를 수 있고, 메타만 / 본문 포함 도 양식별로 선택 가능합니다.\n- **신규 회고 본문에 \"공시 점검\" 섹션 자동 추가** — 데일리는 \"오늘 공시 점검\", 주간은 \"이번 주 공시 흐름\", 실수 일지는 \"최근 공시 점검\", 종목분석은 \"4. 최근 공시\" 섹션이 본문 골격에 자리잡습니다. AI 초안에서 공시 옵션을 켜면 이 자리에 종목별 공시 메타 또는 본문 발췌가 자동으로 박힙니다.\n\n### 변경\n\n- **AI 분석 답변에 공시 흐름 항목 추가** — DART 공시 첨부 시 AI 답변에 catalyst·리스크 분류 (단일판매·자기주식취득·실적공시·무상증자 등은 catalyst, 소송·관리종목·정정공시·감자는 리스크) 가 명시적으로 들어갑니다. 본문 첨부 모드에서는 발췌에서 읽히는 구체 숫자만 인용하고 그 외 숫자는 추측하지 않게 답변이 제한됩니다.\n\n---",
-  "pub_date": "2026-05-26T15:59:26Z",
+  "version": "0.1.60",
+  "notes": "## [v0.1.60] — 2026-05-27\n\n### 변경\n\n- **AI 분석 공시 첨부 — 본문 포함 토큰 안내 표시** — 종목 ✨ AI 분석 모달에서 첨부 깊이를 \"본문 포함\" 으로 고르면 \"메타만 모드 대비 토큰 사용량이 크게 늘어 비용이 증가합니다\" 라는 안내 박스가 즉시 노출됩니다. 유료 모델 비용 추정에 도움이 됩니다.\n\n### 제거\n\n- **투자 일지 AI 초안 — 작동하지 않던 자동 적용 체크박스 정리** — 회고 모달의 \"다음 회고부터 같은 공시 옵션 자동 적용\", 발행 모달의 \"다음 발행부터 같은 옵션 자동 적용\" 체크박스를 제거했습니다. 라벨대로 작동하지 않는 잔여 UI 였고, 마지막 선택값(건수·기간·깊이·종목) 은 기존대로 자동으로 다음 호출에 복원됩니다.\n\n---",
+  "pub_date": "2026-05-27T03:56:36Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHB1MFVYL00zMmNmcmdVWHNVdHlBSSsrV0F4dkNoL0Z1Sm95NHdvTjBlNU1FZ05jT0xhTFBPZW45ZFJlanovaXk5K1Fhck50NUNzK3JXVjJmUGNDd1FNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5ODEwNzE5CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKU0hUUldwVWcyclo0S0NzNDFKZU5tM0QwRllrd1V6enA3ZlVLSWsvbG8yOEllQzhVVkpuMjFqTUlSTkhncDliTnNBREczYW8rbzE5cUl3eFkyWElpQlE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.59/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHJHZGJPeVpUaHhia0hXVFIzME0yS3hCckdJMjc2MDRMakYrOW5vejZtclVjMHdYeGdEV3N4WXBDSE4rWmdiZmlPcWV5SWYvV3p1SlJuby9vVkphdVE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5ODUzODQzCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKaysvSGV6cVJTanVNV3NWNG0rdzNpOUZMSWY0dEdERVdHNGIrNmVVU1JNb2ZJS25FRTRkK3U2RnRDeHdtY1FHZW5qUnN5eDVFMkppWUZhZkJRK1QzQnc9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.60/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHZ3LzlnL3RqczZ1UGlsY0J2d2VQQnR3SmRJUVNWYVJGYW1hWjNYeUwyQWd1S2FkTjRVbzBCY2RFRG9EQXNJbCtEUVByd0FVS3Z4MVduTEN0KysxNVFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5ODExMTYzCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS41OV94NjQtc2V0dXAuZXhlClE5dEtFVzF4YVphY2JlREViMHQ5dDZBTlFFYVN2Z29XRHo5SHdrM1IwT0xLamN6WVZIM2pUU3pubERyQ01CbFRzTE4xMXEzakIza0VKMDZJVlU1ckN3PT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.59/Gold.Hand.Trade_0.1.59_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHNOdFcvKzhIazdrUGh4NDhHS2U0bHFnL3pUOExWUEVKM1lNNGMwbFY3K215SWV0a2ptcW9nSFRhM0NUekFXMEdYWEo2RzBqVTJ5L0dKTElyTDlodFFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5ODU0MTk0CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS42MF94NjQtc2V0dXAuZXhlCkd3QW5Sc21LaDFoL0U1NVFrbUxMdUE4UTgydXFSV1BBMUR2MjBDbkNmSVc4ZVREZjlheTZpaDkzZHBoZmxWWGplM1NzYVRldVo2T0kyRXh5SGFpOEFRPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.60/Gold.Hand.Trade_0.1.60_x64-setup.exe"
     }
   }
 }
