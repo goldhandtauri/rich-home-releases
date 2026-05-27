@@ -1,15 +1,15 @@
 {
-  "version": "0.1.72",
-  "notes": "## [v0.1.72] — 2026-05-27\n\n### 추가\n\n- **호가창 상한가 / 하한가 행** — 종목 상세 호가 테이블 맨 위 행에 상한가, 맨 아래 행에 하한가가 표시됩니다. 좌측에 빨강/파랑 컬러 막대 + \"상한\"/\"하한\" 마커와 함께 도달 한계선을 한눈에 확인할 수 있습니다. 호가에 실제 가격이 표시되는 동안에만 노출되며 장마감 직후의 빈 호가 상태에서는 자동으로 숨겨집니다.\n\n### 변경\n\n- **커뮤니티 칩 — 집 디자인 통합 + 위치 보정** — 칩이 \"집에 가기\" 로 들어가면 집의 문이 양쪽으로 열리며 칩이 작아져 안으로 들어가는 애니메이션이 추가되었습니다. 안착 후엔 칩이 사라지고 집만 표시되며, 사용자가 집을 드래그하면 칩이 다시 등장해 따라옵니다. 집 크기를 줄이고 위치를 조정해 상단 타이틀바의 알림·설정·종료 버튼을 가리지 않도록 정리했습니다. 앱을 껐다가 켜도 집이 항상 오늘의 운세 옆 정위치로 다시 안착합니다.\n\n---",
-  "pub_date": "2026-05-27T13:01:28Z",
+  "version": "0.1.73",
+  "notes": "## [v0.1.73] — 2026-05-27\n\n### 변경\n\n- **업데이트 모달 디자인 리뉴얼** — 새 버전 안내 모달을 스파클 헤더 + 골드 글로우 ring, 현재/최신 버전 칩 비교, 변경 내역(추가/변경/수정/제거/보안) 카테고리 알약 칩, 풀와이드 골드 메인 CTA + 화살표 등으로 재구성해 한눈에 시각 위계가 들어오도록 다듬었습니다.\n- **설정 사이드바 업데이트 인디케이터** — 새 버전이 사용 가능할 때 설정 좌측 메뉴의 \"업데이트\" 항목에 펄스 dot 과 NEW 칩이 표시됩니다. 메뉴를 열어보지 않아도 바로 인지할 수 있습니다.\n\n---",
+  "pub_date": "2026-05-27T13:32:00Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHJQSmVKQ2krSWRlOVZqcGdMY3A1eG9ab2hiZG1ZYmdyZm9yNE5RZUFvUnBzT2QxMEtaayttZzd0Vk5rQVQ3RHluTnlwVDVCMGwyc2p3S2lSMzRUMVFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5ODg2NDczCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKMEhFWi85QW1samtKWEhSRkYyeEduRG93QXp1M0NYNmZYYVpsRWc3Q0diUnNkWnZPR0xSa2Y2Y21lazE2OXpJdEpHRTVuZ3hmM2lpSWFVYW9zV1RsQVE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.72/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHRpZGZOU2xmUi9BUDBoOHY2NUNZSENXdVVsUGk5Mk0raHZ1UEpqdGFZWmc1VllCdENCK2szRVIyVmx0ZzZsbjIrVE9OWksyZFNjSmRsTXBaMGhzcFFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5ODg4MjIwCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKNEY1RTl6NkZycUJjVzNMK2hjT1Z1RlZGRWJmNkxoTWZTS1Vyb1VqeTZwYUZtTlNBTUJmOGFlTFZUcTRaTVJ6bHdrQkRHR0gvaERVbThxVDEwckJ4QUE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.73/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHU4TU9YQTY4ZVg1VHFNb1JxdE1Kd0lRSzd2U1FpbHlYbFhWTTN3d1daN1pZL2pvcXc4ZmxQY09PRkZjaWtiUDc3bERxVCsrc0xNbFBaK3dhQXFFMVFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5ODg2ODg1CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS43Ml94NjQtc2V0dXAuZXhlCnZiWWkrb3ZlYUZLVW1ERFpMeld6blZ0ajlQR2NJYWEwUmdBeC8zY3FreXZybUhONEN3cnM1djZoTTNqVjBZZERyVkdRVFE4R3Y4eE5USW9kUnVjVUJBPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.72/Gold.Hand.Trade_0.1.72_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGpPWDhnK3pMZWQ2QVpIeExhOUErRVJ1MXNlOEdOYkljNE1xbFBDYVp6VG16clVxcXZqSW0xTHdGSlJYKytLTkg3K1E2cEt5My93ZGYzSXlaVFdDSUFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5ODg4NzE4CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS43M194NjQtc2V0dXAuZXhlCitxMWFYR2JzOHR2S08zck9QbXN1a3dvWTVVVG5vOGZOcFFPUE9qbUJhanlOZ3J2bDR2Z1ZkT2tzcElpYytwQ3c0NkwwWXhDbGdEaUdEWmIrVy92RkN3PT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.73/Gold.Hand.Trade_0.1.73_x64-setup.exe"
     }
   }
 }
