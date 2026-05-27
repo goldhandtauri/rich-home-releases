@@ -1,15 +1,15 @@
 {
-  "version": "0.1.75",
-  "notes": "## [v0.1.75] — 2026-05-27\n\n### 변경\n\n- **장 마감·주문 불가 시간 주문 영역 단순화** — 장 마감(20:00~익일 08:00) 또는 동시호가 직후(15:30~15:40) 처럼 매매가 불가능한 시간에는 매수/매도 토글과 입력 폼을 숨기고, 시계 아이콘과 함께 \"장 마감\" 안내 카드를 큼지막하게 보여줍니다. 시각 노이즈가 크게 줄어 한눈에 상태를 인지할 수 있습니다.\n- **장 마감 시간에도 예약 매수/매도 가능** — 안내 카드 안에 예약 매수·예약 매도 버튼을 함께 배치해 다음 영업일을 위한 예약 주문은 이 시간대에도 바로 등록할 수 있습니다.\n- **호가·시세 스크롤바 hover-on-show** — 종목 상세 화면의 호가와 시세 영역 스크롤바를 기본으로 숨기고, 마우스가 해당 영역에 올라갔을 때만 골드 thumb 으로 표시합니다. 평소 시선 노이즈가 줄어듭니다.\n- **수동매매 거래량·상승률·하락률 패널 스크롤바 hover-on-show** — 수동매매 좌측 상단의 거래량 순위·상승률 TOP·하락률 TOP 세 패널도 같은 방식으로 정돈했습니다. 컬럼 우측 끝선 정렬은 그대로 유지됩니다.\n\n---",
-  "pub_date": "2026-05-27T14:28:53Z",
+  "version": "0.1.76",
+  "notes": "## [v0.1.76] — 2026-05-28\n\n### 변경\n\n- **커뮤니티 칩 집 — 금손매 정체성에 맞춰 재디자인** — 시골 코티지였던 집을 트레이더의 금고에 어울리는 톤으로 새로 그렸습니다. 지붕 위 작은 상승 캔들 + ↗ 화살표, 우상단 ₩ 동전, 금괴 벽돌 본체, 좌측 창문 ₩ 등불, 우측 창문 미니 상승 캔들 차트, 중앙의 vault 금고문(칩이 들어가는 자리, 4 꼭짓점 vault bolt), 문 양옆 금괴 stack 등 부와 상승을 한눈에 느끼게 다듬었습니다. 칩이 문으로 들어가고 나오는 애니메이션과 드래그 인터랙션은 그대로 유지됩니다.\n\n---",
+  "pub_date": "2026-05-27T15:20:28Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHVPM2pWVXNoVS95VXZHUmN5UUgwNkhRRHZRbllYQ3JRMWVnT0g1Q3JPMzZSdlVENGxWcm04TXFDZndESUhLcGpyRU0weTR0WTBhVVV1VTJMNU9KRFE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5ODkxNzYyCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKSUp2bkk4UXcrd200MUIvamF0V2JWSUlhWmdHeDRPQnA2aXZtL0VrRDc1TFJWYjhKN3ZQYlp5MEZ4Ty8rd0VNUmowVVBFQWxPVDJ1OE92Q3BaODkzQnc9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.75/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHEvcUd5UktrVkRvcUdhT0lIUENpYlVOYW9wMmJYZGoyYzY1djJLdytYdC9JZndmM29aRG1rK2R6ZzN2a2pVTlo4RWdaeTZHd3JxdXVNNSticGVIbmd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5ODk0NjE3CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKbEhUdVpVcEpGK3RGTWt6TVFWSlJVeXFDK3MyeXRvN1hjcXlSQ3QvcytOdjVTMERCeXQzS3l2S255UXlXbjR5RTRZU3kzZUdaWWVJUldtam1HY2RaQVE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.76/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHNMejFsbDZHQUQ3VTdQc21iMEhHZSs0SEo0ZTJjWVNqcDh0NWh1M2JkRHR1OHh1R2FmdS9uL2cvQWpjbGprRXcvMVo5OTJQRjc3ZXpXTUthZkNQcmdJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5ODkyMTMwCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS43NV94NjQtc2V0dXAuZXhlCnpmU1hqcjJiUzcxWURiWkM5d2QvUXFWOFpoRk03S3BzUHNIbmN5Ykc0bXdPeGdGNmIwOTltRjlLVVBlR1JvaVJ0d0x0aGZVVkFCMGcvV1o5SVVpR0RRPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.75/Gold.Hand.Trade_0.1.75_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGs5K09iNHphNUxrR0dVNFNJQ2tvRmNnZU9xbXgvMXVyVnFaNUN1aDM4S2d3M0ZKa2dSNUxnK1BGVzVhallFQldiUjA4U0ZzR0ZiVEQwRzczRXp0N0FjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5ODk1MjI0CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS43Nl94NjQtc2V0dXAuZXhlCi8rMmphb3hlbDJnUGhQcVI4WjhUT1hITTNyMmJUKzNjOXF5dGVFWjdZMzVWazQrekFrZnNBT0pqV2JRYkZEc09aZ0lheEFyN0hLSXBrRHJBSDdjNUR3PT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.76/Gold.Hand.Trade_0.1.76_x64-setup.exe"
     }
   }
 }
