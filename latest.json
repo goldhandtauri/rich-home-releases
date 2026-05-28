@@ -1,15 +1,15 @@
 {
-  "version": "0.1.78",
-  "notes": "## [v0.1.78] — 2026-05-28\n\n### 추가\n\n- **예약 주문 중 호가 클릭으로 단가 입력** — 예약 매수·매도 창이 떠 있을 때 호가의 가격을 클릭하면 그 가격이 예약 단가에 바로 입력됩니다. 시장가로 선택돼 있었다면 지정가로 자동 전환되어 클릭한 가격이 그대로 반영됩니다.\n\n### 변경\n\n- **종목 상세 호가·시세 헤더 고정** — 호가와 시세 영역에서 컬럼 헤더는 고정된 채 데이터만 스크롤되도록 정리했습니다. 헤더 오른쪽에 남던 빈 스크롤 여백이 사라지고 컬럼 끝선이 깔끔하게 맞습니다.\n- **상한가·하한가도 클릭으로 단가 입력** — 기존 매도·매수 호가처럼 상한가·하한가 가격도 클릭하면 주문 단가에 바로 반영됩니다.\n- **예약 주문 창은 버튼으로만 닫힘** — 예약 매수·매도 창이 바깥 영역 클릭이나 ESC 로 닫히지 않고 [닫기]·[취소] 버튼으로만 닫히도록 바꿨습니다. 입력 도중 실수로 창이 사라지는 일을 막습니다.\n- **종목 상세 지표 영역 스크롤바 hover-on-show** — 호가 아래 시장 지표(전일거래량·52주 최고/최저·저항/지지 등) 영역의 스크롤바도 기본으로 숨기고 마우스가 올라갔을 때만 골드 thumb 으로 표시합니다.\n\n---",
-  "pub_date": "2026-05-28T13:09:17Z",
+  "version": "0.1.79",
+  "notes": "## [v0.1.79] — 2026-05-28\n\n### 추가\n\n- **한투 키 등록 시 즉시 유효성 검증** — 한투 App Key·App Secret 을 등록할 때 실제로 동작하는 키인지 바로 확인합니다. 값이 잘못됐으면 저장 전에 안내하고 다시 입력하도록 유도해, 잘못된 키로 등록이 진행되는 일을 막습니다.\n\n### 변경\n\n- **키 신청일 입력 편의 — 달력 + 자동 하이픈** — 키 신청일에 숫자만 입력해도 자동으로 `-` 가 들어가고(예: `20250616` → `2025-06-16`), 우측 달력 아이콘으로 날짜를 골라 넣을 수도 있습니다. 미래 날짜는 선택되지 않습니다.\n\n### 수정\n\n- **재설치 후 AI 설정 상태 오표시 수정** — 데이터 삭제 후 재설치했을 때 AI 키 단계가 실제와 다르게 표시되던 문제를 고쳤습니다. 데이터 삭제 시 AI 키도 함께 정리됩니다.\n\n### 보안\n\n- **인증 키 암호화 보관 강화** — 한투·AI 키를 암호화하는 마스터 키를 OS 보안 저장소(키체인/자격증명 관리자)에 보관하도록 정비하고, AI 키도 한투 키와 동일하게 암호화해 저장합니다.\n\n---",
+  "pub_date": "2026-05-28T15:11:22Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGlsVVRYaXNuWVRnT0daY1F4a0hEN1hTVHpyVkwxa1ZXc0FnMEk1N0pGc203b25rNkttdXZ3SGNQbU5mUU1MNXpnSENZRUNPMUdiNzdYd0IxSzdWYkFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5OTczMTUwCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKTm1sd0hxVVNMaWdhWUlWWHZST3FwZlhqSWh6eUVva1M5QjNVMVdSdnRwWkx4MGo0VXJmYVZkWnBQNEtVSVp0WEMrbWJvenRsUFdFc21ueTUwM2dPQlE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.78/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGw5cW52N3VJTkdCeFAzTHREZVZESWVtUnNINEVwQWVxVFhIMWs3UTl4VzFxUzNrdm5LSXFMOTB4SHZtTEkvMFFuTGcyWUdBRTVFMzk3Ynh6Y0REcFF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5OTgwNTM5CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKOG42VlV5OWgwekZtL3FCdGRrMzdocjhRa0N5MnRqQzV6RndqNVlBbG03Y1RTT05QZDFiSENJdHVKK0Z0N1owK0N5T2tYYkNQa1l3ZnFjMTZFTlFQRFE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.79/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHFzL3d5a0N5OGpTR3A3NCs3TjR4OTh0aU5XTjNpUjQzVTc3dUhWcEN6TnZUVW9UMW1xK1FlWVZkdXg1Z2tHQ3hYUnR6eTBhbWNBTnMyRldmeWwrN2dvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5OTczNzU0CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS43OF94NjQtc2V0dXAuZXhlCm9kRjhNQlE5cDBtUHpJTmg5NFREbHo0eThHNVlpVE1icTJMcnUvVi9aR1gzSnlnQnVkaExpUVFtd3Nna2tWc25Qb055UXpDUk9CM3pRYlhaZDhaTkJ3PT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.78/Gold.Hand.Trade_0.1.78_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHB5emo4bk9laVFTZUg4NWljb2NXUUxmVng5NGMyUDR1WHlEaDNLdDJWRWRhT2x4ZmpuM2Z0d2t4WG1BQWJ2TVBIWDhjakNmWGE2VVczcUp2S1dYU0EwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5OTgxMDgwCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS43OV94NjQtc2V0dXAuZXhlCmJPZVl6VGhkYzY4elVZcDJEelU4dWIrMUdxTEUyQkhhQk54WDZ3a3RnaHRPY0JQSUVRTkZBK2hDeFlJRXByWVhpVUdtVGRja0twM0VQT1dvWUFEUERBPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.79/Gold.Hand.Trade_0.1.79_x64-setup.exe"
     }
   }
 }
