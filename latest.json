@@ -1,15 +1,15 @@
 {
-  "version": "0.1.77",
-  "notes": "## [v0.1.77] — 2026-05-28\n\n### 수정\n\n- **보유종목 분석 일지 — 보유 종목 자동 인식** — 보유종목 분석 일지에서 AI 초안을 띄울 때 사용자의 KIS 보유 종목이 자동으로 분석 대상에 잡힙니다. 본문 placeholder 만 있어도 \"분석할 종목 0/0\" 이 아니라 보유 중인 모든 종목이 체크된 상태로 시작합니다.\n\n### 변경\n\n- **투자 일지 — AI 초안 버튼 톤 다듬기** — 옆 메뉴 버튼들과 톤이 따로 놀던 골드 그라디언트 fill 을 정리해 outline 베이스로 통일하고, ✨ 아이콘에 부드러운 골드 글로우를 입혀 AI 액션임을 미묘하게 강조합니다.\n\n---",
-  "pub_date": "2026-05-27T15:41:00Z",
+  "version": "0.1.78",
+  "notes": "## [v0.1.78] — 2026-05-28\n\n### 추가\n\n- **예약 주문 중 호가 클릭으로 단가 입력** — 예약 매수·매도 창이 떠 있을 때 호가의 가격을 클릭하면 그 가격이 예약 단가에 바로 입력됩니다. 시장가로 선택돼 있었다면 지정가로 자동 전환되어 클릭한 가격이 그대로 반영됩니다.\n\n### 변경\n\n- **종목 상세 호가·시세 헤더 고정** — 호가와 시세 영역에서 컬럼 헤더는 고정된 채 데이터만 스크롤되도록 정리했습니다. 헤더 오른쪽에 남던 빈 스크롤 여백이 사라지고 컬럼 끝선이 깔끔하게 맞습니다.\n- **상한가·하한가도 클릭으로 단가 입력** — 기존 매도·매수 호가처럼 상한가·하한가 가격도 클릭하면 주문 단가에 바로 반영됩니다.\n- **예약 주문 창은 버튼으로만 닫힘** — 예약 매수·매도 창이 바깥 영역 클릭이나 ESC 로 닫히지 않고 [닫기]·[취소] 버튼으로만 닫히도록 바꿨습니다. 입력 도중 실수로 창이 사라지는 일을 막습니다.\n- **종목 상세 지표 영역 스크롤바 hover-on-show** — 호가 아래 시장 지표(전일거래량·52주 최고/최저·저항/지지 등) 영역의 스크롤바도 기본으로 숨기고 마우스가 올라갔을 때만 골드 thumb 으로 표시합니다.\n\n---",
+  "pub_date": "2026-05-28T13:09:17Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHNDblR1djg2aHUzNFBsVWU3Q2xyeGxxamNJQ1NuR3oyajZTMlB3M0Y2VGQ0Y1dicEZ1QjUweHhrVHAzMUhLWjJzczRHQ3hNUFl2NXl0ZkpGMXFTQmdZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5ODk1Njc0CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKRTRLV3Rnd0tndmNmNmpZU2lwWUtkNmJROHFxd1pmcGVwTm1DWVEzdndGWDJMQVdzQjhKd2JTbmlEWDdpUkhIbDFDNGJ0SzNIMnNPNjlBSzlXSkFYQ0E9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.77/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGlsVVRYaXNuWVRnT0daY1F4a0hEN1hTVHpyVkwxa1ZXc0FnMEk1N0pGc203b25rNkttdXZ3SGNQbU5mUU1MNXpnSENZRUNPMUdiNzdYd0IxSzdWYkFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5OTczMTUwCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKTm1sd0hxVVNMaWdhWUlWWHZST3FwZlhqSWh6eUVva1M5QjNVMVdSdnRwWkx4MGo0VXJmYVZkWnBQNEtVSVp0WEMrbWJvenRsUFdFc21ueTUwM2dPQlE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.78/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGdtSElHcFNqd1VnTmJGaHpDcnRYNzVPOTA1cGxyditCY3lES2s1VUE0RnN6Y09aOGJuWkt3cmNZMWFvVUNQbkhpd1JKSmtUbUoyd21CdzNmNmh1OXdZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5ODk2NDU3CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS43N194NjQtc2V0dXAuZXhlCkp4dnpVSnZXQnhiWjc1d043bkxCVGZPbHVzd3o1Z2psL3Nha3VUby84elJHWStta3hsNzVuWHB0cGpjTHJSeWxFOWFndUdrbjgwOW82TEpqajFrVUFnPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.77/Gold.Hand.Trade_0.1.77_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHFzL3d5a0N5OGpTR3A3NCs3TjR4OTh0aU5XTjNpUjQzVTc3dUhWcEN6TnZUVW9UMW1xK1FlWVZkdXg1Z2tHQ3hYUnR6eTBhbWNBTnMyRldmeWwrN2dvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5OTczNzU0CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS43OF94NjQtc2V0dXAuZXhlCm9kRjhNQlE5cDBtUHpJTmg5NFREbHo0eThHNVlpVE1icTJMcnUvVi9aR1gzSnlnQnVkaExpUVFtd3Nna2tWc25Qb055UXpDUk9CM3pRYlhaZDhaTkJ3PT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.78/Gold.Hand.Trade_0.1.78_x64-setup.exe"
     }
   }
 }
