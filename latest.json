@@ -1,15 +1,15 @@
 {
-  "version": "0.1.79",
-  "notes": "## [v0.1.79] — 2026-05-28\n\n### 추가\n\n- **한투 키 등록 시 즉시 유효성 검증** — 한투 App Key·App Secret 을 등록할 때 실제로 동작하는 키인지 바로 확인합니다. 값이 잘못됐으면 저장 전에 안내하고 다시 입력하도록 유도해, 잘못된 키로 등록이 진행되는 일을 막습니다.\n\n### 변경\n\n- **키 신청일 입력 편의 — 달력 + 자동 하이픈** — 키 신청일에 숫자만 입력해도 자동으로 `-` 가 들어가고(예: `20250616` → `2025-06-16`), 우측 달력 아이콘으로 날짜를 골라 넣을 수도 있습니다. 미래 날짜는 선택되지 않습니다.\n\n### 수정\n\n- **재설치 후 AI 설정 상태 오표시 수정** — 데이터 삭제 후 재설치했을 때 AI 키 단계가 실제와 다르게 표시되던 문제를 고쳤습니다. 데이터 삭제 시 AI 키도 함께 정리됩니다.\n\n### 보안\n\n- **인증 키 암호화 보관 강화** — 한투·AI 키를 암호화하는 마스터 키를 OS 보안 저장소(키체인/자격증명 관리자)에 보관하도록 정비하고, AI 키도 한투 키와 동일하게 암호화해 저장합니다.\n\n---",
-  "pub_date": "2026-05-28T15:11:22Z",
+  "version": "0.1.80",
+  "notes": "## [v0.1.80] — 2026-05-29\n\n### 변경\n\n- **온보딩 단계 표시 개선** — 처음 설정 화면에서 현재 진행 단계를 은은한 골드 펄스로 강조해 한눈에 보이게 했습니다. 선택 단계(DART·AI 키)를 건너뛰어도 지나온 단계가 진행바에 제대로 채워지고, 하단 버튼 문구를 '건너뛰기'로 통일했습니다.\n\n---",
+  "pub_date": "2026-05-28T15:58:50Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGw5cW52N3VJTkdCeFAzTHREZVZESWVtUnNINEVwQWVxVFhIMWs3UTl4VzFxUzNrdm5LSXFMOTB4SHZtTEkvMFFuTGcyWUdBRTVFMzk3Ynh6Y0REcFF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5OTgwNTM5CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKOG42VlV5OWgwekZtL3FCdGRrMzdocjhRa0N5MnRqQzV6RndqNVlBbG03Y1RTT05QZDFiSENJdHVKK0Z0N1owK0N5T2tYYkNQa1l3ZnFjMTZFTlFQRFE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.79/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHJOTUxzemkyMlNmWmZYMkplTHVoZS9jYW5xZFZBR0l5cWZYaDZtWUF3SGpsSVFWQ1NXV1FzQXRzYjhqM2RrTmo4NDd4a2U4WGhCTSttVnNVc1FWWndFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5OTgzMTk0CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKbkJ2cEFsY0V1TitTUk9EWEFGK1hpVjlIUjBsNTJFVjJXNkkvcXVmVG9ua0F5dGNHem1GVE1uc1J2NFVtWHpQRFB2OGErbHF4aGJoWm02TjZpQlU2Q0E9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.80/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHB5emo4bk9laVFTZUg4NWljb2NXUUxmVng5NGMyUDR1WHlEaDNLdDJWRWRhT2x4ZmpuM2Z0d2t4WG1BQWJ2TVBIWDhjakNmWGE2VVczcUp2S1dYU0EwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5OTgxMDgwCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS43OV94NjQtc2V0dXAuZXhlCmJPZVl6VGhkYzY4elVZcDJEelU4dWIrMUdxTEUyQkhhQk54WDZ3a3RnaHRPY0JQSUVRTkZBK2hDeFlJRXByWVhpVUdtVGRja0twM0VQT1dvWUFEUERBPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.79/Gold.Hand.Trade_0.1.79_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGhVQkZxaThLbC9LeGE4Tmx0S1FIMVFMc3NXN0g2dnhSblJ6aXBuWTFzWTNEWS9Qc2JjYW5uVTQ1WUJlSjlwZU5Xck01eVRZbS9YYkpvT0VMYkJ5RmdJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5OTgzOTI3CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS44MF94NjQtc2V0dXAuZXhlCkhQeXAzV09kNVE4Q1YvdmVyc1JRT1JucU5MZzR4OFc4dnNvRytqZTlwdUd6eldJY1Z5S1VCNmNLMUsxSEQwMHVMTzZDL2pzTFNob2dTTDdraEVPMEFBPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.80/Gold.Hand.Trade_0.1.80_x64-setup.exe"
     }
   }
 }
