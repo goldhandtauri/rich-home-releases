@@ -1,15 +1,15 @@
 {
-  "version": "0.1.83",
-  "notes": "## [v0.1.83] — 2026-05-29\n\n### 변경\n\n- **AI 분석 키 여러 개 등록** — 처음 설정(온보딩)과 설정 화면에서 Gemini·Groq·GPT·Claude 키를 한 화면에서 여러 개 등록할 수 있습니다. 등록한 AI 는 카드에 '등록됨' 으로 표시되고, 각각 다시 등록하거나 삭제할 수 있습니다. (이전에는 한 곳만 입력되어 다른 AI 를 추가하기 어려웠습니다.)\n- **AI 안내 문구 정리** — 각 AI 카드에서 자주 바뀌는 모델 이름 표기를 빼고, AI 별 특징을 짧게 안내하도록 다듬었습니다. 등록 화면 카드 디자인도 라이트·다크 모드 모두 정돈했습니다.\n\n---",
-  "pub_date": "2026-05-29T05:45:27Z",
+  "version": "0.1.84",
+  "notes": "## [v0.1.84] — 2026-05-29\n\n### 수정\n\n- **일부 종목 호가·시세가 갱신되지 않던 문제** — 넥스트레이드(NXT) 비편입 종목(일부 우선주·중소형주)의 종목상세에서 정규장 중 호가·체결이 멈춰 보이던 문제를 바로잡았습니다. 종목별로 실제 거래되는 시장에 맞춰 실시간 시세를 받도록 했습니다.\n\n### 변경\n\n- **종목상세가 시간대에 맞춰 자동 전환** — 화면을 켜둔 채 장 마감·시간외 전환 시각을 넘겨도 장상태·현재가·주문 모드가 자동으로 갱신됩니다. 장 마감 후에는 확정 종가로 표시합니다.\n- **NXT 거래·주문 안내 개선** — NXT 거래 대상이 아닌 종목에 'NXT 미지원' 표시를 추가하고, 시간대별(정규장 / 시간외 단일가 / NXT 애프터마켓) 주문 모드를 정확히 안내합니다. 즉시주문이 어려운 시간대에도 예약주문이 가능함을 안내합니다.\n- **AI 분석 키 여러 개 등록** — 처음 설정과 설정 화면에서 Gemini·Groq·GPT·Claude 키를 한 화면에서 여러 개 등록할 수 있습니다. 등록한 AI는 '등록됨'으로 표시되고 재등록·삭제할 수 있으며, 카드 안내에서 자주 바뀌는 모델 이름 표기는 정리했습니다.\n\n---",
+  "pub_date": "2026-05-29T08:35:50Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHVBWmJ4ZHZBQnRNQnZEM3FEUUZHTm9Bb2lpMDBGR3ViRWpNeERaeE94dmhxNUVFeEJ5Ty9Zb2M1TEREOFFWeENvdEZQaUs4TmljWlpkMzg3VUFvZUFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwMDMxNzI4CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKQW1YZXVjWk1OQVBKa1hIYkhIVVN6NElXM3NHSEc1Nk9sQ2V6M0FQcFRCNWdURGFGSmpkYzB5a05ZdUNxdGYvcWtiL1NQWjAwU3JFWkJhSUpaR0FIQUE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.83/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGdtZ09HOGJTUWNKNGNJWU5hVmJOYlJOd3BRQWlDWlZIVmtuQm95VXMwQWJzc2ZWRjZGczdkbkZnWWtubGVuOWFSeTNRbzVvdXJaLzNDZ1dqVjdwV0FnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwMDQzMDk3CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKN3AraGF4WU1qd2VXMUI4SzRJUWhtQkpDR01lZmx0Zi83Qk43ME9rdGkvSXNSdjFJaE15TTU3WXdQRy82eTF5eThkK3hjU0pRZ2l1cnJ2eVRVVC9ZRGc9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.84/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGx1TW1sZWNEa25ISExvWnMyc080dkkrakZnNVYxaTROV3BaKzV3YjRBQ3pUSTI2TnZ5N3VXTjVDdUVCRTFqVDlPZHdnUUZHWmg0K0V1RmFMVUd4WUEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwMDMzNTI1CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS44M194NjQtc2V0dXAuZXhlCnNlZklFY1M5eEdiRmFSRWVqUWZnVmpvODRnQzZGNkZZU2NmZkhFckhRa3VBY0lSelZVSWxZRHdOK0QvMEgzRUdUKzB4THJZRlJtbGFUSUlYa2ZGNUF3PT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.83/Gold.Hand.Trade_0.1.83_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHRWZm41MWRnQXpYWjJsczcvcDdLRHJmK1RLNWtrRzVMTjRVdi9VQ0M2OVdwRDZlMHIvTkYwMkFleGxlR0NzOC9oU3p6NC9lRnZUdjg2Nm96N1ZGQ1EwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwMDQzNzQ4CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS44NF94NjQtc2V0dXAuZXhlCkdTaW1KSGp2MVl6UGl6WGxCcWtVNk1pMisrT1JLaVA0NnU3bDVDMmJZWDNFS1dCY3plM3BxeitpNkVodC9zUWFhd1ZwaGYxaVBRR2I3TEkrRW9qYUJ3PT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.84/Gold.Hand.Trade_0.1.84_x64-setup.exe"
     }
   }
 }
