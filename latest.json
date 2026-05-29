@@ -1,15 +1,15 @@
 {
-  "version": "0.1.82",
-  "notes": "## [v0.1.82] — 2026-05-29\n\n### 추가\n\n- **투자 일지 저장 폴더 설정** — 설정 → 일반 설정에서 일지(.md)와 캡처 이미지가 저장되는 폴더를 직접 확인·변경할 수 있습니다.\n- **폴더에서 일지 복원** — 앱을 재설치해 목록이 비어 있어도, 저장 폴더에 남아있는 일지 파일에서 자동으로 목록이 복원됩니다(투자 일지 진입 시). 설정의 '폴더에서 불러오기' 버튼으로 수동 복원도 가능합니다.\n\n---",
-  "pub_date": "2026-05-28T17:27:39Z",
+  "version": "0.1.83",
+  "notes": "## [v0.1.83] — 2026-05-29\n\n### 변경\n\n- **AI 분석 키 여러 개 등록** — 처음 설정(온보딩)과 설정 화면에서 Gemini·Groq·GPT·Claude 키를 한 화면에서 여러 개 등록할 수 있습니다. 등록한 AI 는 카드에 '등록됨' 으로 표시되고, 각각 다시 등록하거나 삭제할 수 있습니다. (이전에는 한 곳만 입력되어 다른 AI 를 추가하기 어려웠습니다.)\n- **AI 안내 문구 정리** — 각 AI 카드에서 자주 바뀌는 모델 이름 표기를 빼고, AI 별 특징을 짧게 안내하도록 다듬었습니다. 등록 화면 카드 디자인도 라이트·다크 모드 모두 정돈했습니다.\n\n---",
+  "pub_date": "2026-05-29T05:45:27Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGhQcFE3Uy9sM3laSG1zOTFvdXBpUEZqQkgrTWZDTit1QVROb3VJalFBa0p4Z1IyK2dPcnpYRWt0ZnpQd2NwaXZaK21oQ2ZwZEdDWmNHb3l6UlB4eGdJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5OTg4ODI0CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKSDI0T2Nva3UxWktmMGt6Um4rNjUrdEQxYTNicGdqL1A3a3djMnlkMStFZlBDaVBzazcyN0E2NVJHRnI0clBoNTVuQ1dDTk5SczFEU3FCV2NkMHBoQVE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.82/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHVBWmJ4ZHZBQnRNQnZEM3FEUUZHTm9Bb2lpMDBGR3ViRWpNeERaeE94dmhxNUVFeEJ5Ty9Zb2M1TEREOFFWeENvdEZQaUs4TmljWlpkMzg3VUFvZUFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwMDMxNzI4CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKQW1YZXVjWk1OQVBKa1hIYkhIVVN6NElXM3NHSEc1Nk9sQ2V6M0FQcFRCNWdURGFGSmpkYzB5a05ZdUNxdGYvcWtiL1NQWjAwU3JFWkJhSUpaR0FIQUE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.83/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHJQMzRmWnExWDltRmpiaTRGdEtic050YTlUbHY5REdKQzlabk8xZVNqTU02L0poRjBCeDFCTVdRZ3pHMWNhVTVjVnhtOFlrNTQzaFRpcTFrc2tONHdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzc5OTg5MjU3CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS44Ml94NjQtc2V0dXAuZXhlCk96elcvVldXamNMMXZaRmRnR1hseFBaN2lhcDk0enJ0TUhoMW43R1dJaHpHSG8vSkJmSklkaDc5S0lmQTlYV2xNVzNqb05jZmxOVFpZVW9kMDVlV0R3PT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.82/Gold.Hand.Trade_0.1.82_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGx1TW1sZWNEa25ISExvWnMyc080dkkrakZnNVYxaTROV3BaKzV3YjRBQ3pUSTI2TnZ5N3VXTjVDdUVCRTFqVDlPZHdnUUZHWmg0K0V1RmFMVUd4WUEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwMDMzNTI1CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS44M194NjQtc2V0dXAuZXhlCnNlZklFY1M5eEdiRmFSRWVqUWZnVmpvODRnQzZGNkZZU2NmZkhFckhRa3VBY0lSelZVSWxZRHdOK0QvMEgzRUdUKzB4THJZRlJtbGFUSUlYa2ZGNUF3PT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.83/Gold.Hand.Trade_0.1.83_x64-setup.exe"
     }
   }
 }
