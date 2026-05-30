@@ -1,15 +1,15 @@
 {
-  "version": "0.1.86",
-  "notes": "## [v0.1.86] — 2026-05-29\n\n### 변경\n\n- **투자 일지에서도 커뮤니티 칩 표시** — 그동안 투자 일지 화면에서는 보이지 않던 커뮤니티 칩을 \"새 일지\" 버튼 왼쪽에 자리하도록 했습니다. 화면을 이동하면 칩이 알아서 따라옵니다.\n\n### 수정\n\n- **DART 본문 첨부 설정 즉시 반영** — 설정에서 'AI 분석에 공시 본문 첨부 허용'을 켜면 투자 일지 AI 초안·AI 채팅의 \"본문 포함\" 옵션을 곧바로 선택할 수 있습니다. (이전에는 앱을 다시 시작해야 반영되던 문제)\n- **시황/공시 뉴스 팝업 확대 버튼** — 뉴스 팝업의 확대(최대화) 버튼이 동작하지 않던 문제를 바로잡았습니다. (Windows)\n\n---",
-  "pub_date": "2026-05-29T14:42:49Z",
+  "version": "0.1.87",
+  "notes": "## [v0.1.87] — 2026-05-31\n\n### 추가\n\n- **공매도·수급 탭 (종목 상세)** — 종목 상세 화면에 \"공매도·수급\" 탭이 생겼습니다. 공매도 잔고 비중 추이(차트), 순보유잔고 대량보유자, 공매도 거래·잔고 추이, 투자자별 순매수를 한 화면에서 모아 봅니다. (한국거래소 정보데이터시스템 자료 — 공시 기준이라 약 이틀 지연)\n- **KRX 정보데이터시스템 계정 연결** — 설정 → \"KRX 정보데이터시스템\" 에서 무료 계정을 연결하면 위 공매도·수급 자료를 받아옵니다. 아이디·비밀번호는 한투 키와 동일하게 기기 안에 암호화되어 저장됩니다.\n- **AI 분석에 공매도·수급 첨부** — 종목 ✨ AI 분석을 시작할 때 \"AI 컨텍스트 첨부\" 창에서 '공매도·수급 첨부' 를 체크하면 분석에 함께 반영됩니다. 요약 형태로 전달돼 토큰 사용량은 적습니다.\n- **초기 설정 가이드에 KRX 단계 추가** — 앱 첫 실행 안내(온보딩)에 'KRX 정보데이터시스템 계정' 단계가 추가됐습니다. 선택 항목이라 건너뛸 수 있습니다.",
+  "pub_date": "2026-05-30T17:54:28Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG9EN21xckJQMFdlVGlKeG1EQVNqbEJKT0UvRGZKelIxdlRWR044aEUyYy9mamI0WkxMbENBS1Bpb2hpSnN4MFoweEFMeEQrdTJQdUVIWWNDME5uYWd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwMDY1NzIzCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKR1RJUnVEa1ZwKzVzVnpqaXByTEp2Qk51OFh4c0F4MmxxNVNoOTc2V2lIaTlDTnpaam1BSDFPUWRvaTRxeTVxT1Fpc2NZaDlmajk3SUNFS0cwdmVsQ0E9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.86/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHZ6WFhZZnRBdkkrSFNpVjZWblB0cmxsRmkzQVN4Q2FNYzFaNURIL2gwNEV2V1puMlViVGxOOXhKOEk4TFdxeGY3R01FYXFDUWpMaXZmaXk5cGxWV2dnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwMTYyNjQzCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKckVJWVprekxRd050RG5CemRKOXdGM0FWVEJNR0RQSzgxd0FIQUU0N0RIenBVTlE2MkxyNzF6aFNkellHaUxtdktGUDZ5NCtzYkpZVnZrazFGZEd6QUE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.87/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG1HTHQyTFN6RCtXTHoyRHpUZkNnZWpGbnpBQmxNazVDSlRYME1zK2ZnUW1RR2pNMEhnWnk2cWR1dkJQVFVxVTlKekg0djNTclpHbGZnVVFHTWZIcHdrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwMDY2MjU2CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS44Nl94NjQtc2V0dXAuZXhlCncza2xYNTlMSVgySW9pQWw2clo1RWJkd2RycjZhYms3Z05pYXZnMlFxaWJpb3A5MGlrWWcwUkovRWdGeGMyTW54T2pWTjZnbHVocHNZZnZxcEIvMEJBPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.86/Gold.Hand.Trade_0.1.86_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHQ1WjZOdlJJc0I5eW5oNEpyTjNHdDFHSm1XU05sMkk4NktLVTYya29QT0xjbWFSTzBwNTBlU1hHWmZ2RzhBdDQ4cFEzSHRyR1dVV1FjZTkwSHRBNndvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwMTYzNjY2CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS44N194NjQtc2V0dXAuZXhlCkFBOWpySGgwRXp0ekRsQnVGck5GNWJwNVZWZGJSR0Eva1dzMHN6YkpJSnRGNHkwVU50enhKODlEaUNpbDQ1OVpTUGNrTXZueWRPVThTT2xla0M3MUNBPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.87/Gold.Hand.Trade_0.1.87_x64-setup.exe"
     }
   }
 }
