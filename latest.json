@@ -1,15 +1,15 @@
 {
-  "version": "0.1.96",
-  "notes": "## [v0.1.96] — 2026-06-01\n\n### 추가\n\n- **호가 정보 패널에 흐름·위치 지표 3종 추가** — 종목 상세의 호가 화면에서 매도 호가 오른쪽 정보 칸의 빈 공간에 실시간 지표 세 가지가 새로 표시됩니다. ‘평균대비’는 현재가가 당일 평균 매매가보다 몇 % 위/아래에 있는지, ‘시가대비’는 오늘 시초가 대비 등락률, ‘오늘위치’는 당일 저가~고가 구간에서 현재가가 어디쯤인지(0~100%)를 막대와 시초가 눈금으로 보여줍니다. 거래량·거래대금처럼 이미 있던 숫자를 다시 쌓는 대신, 지금 비싼지/싼지와 오늘 흐름의 어디인지를 한눈에 읽도록 구성했습니다. 라이트·다크 모드 모두 대응합니다.",
-  "pub_date": "2026-06-01T14:00:48Z",
+  "version": "0.1.97",
+  "notes": "## [v0.1.97] — 2026-06-01\n\n### 수정\n\n- **종목 상세 헤더 가격이 시간대에 맞게 정리됨** — 헤더 상단 가격 표시가 장 운영 시간과 NXT 거래 여부에 따라 정확히 바뀌도록 다듬었습니다. 장이 끝난 뒤(18:00 이후·야간)에도 사라지지 않고 남아 있던 ‘시간외’ 가격이 이제 거래가 끝나면 바로 사라집니다. 정규장에는 NXT 거래 종목이면 ‘통합’, 그 외 종목이면 ‘KRX’ 로 표시되어 어느 시장 가격인지 헷갈리지 않습니다. 주말·공휴일에는 종가 한 줄만 깔끔하게 보이고, 프리마켓·애프터마켓처럼 NXT만 열리는 시간에는 NXT 가격이 주가격으로 표시됩니다.\n\n### 추가\n\n- **호가 정보 패널에 흐름·위치 지표 3종 추가** — 종목 상세의 호가 화면에서 매도 호가 오른쪽 정보 칸의 빈 공간에 실시간 지표 세 가지가 새로 표시됩니다. ‘평균대비’는 현재가가 당일 평균 매매가보다 몇 % 위/아래에 있는지, ‘시가대비’는 오늘 시초가 대비 등락률, ‘오늘위치’는 당일 저가~고가 구간에서 현재가가 어디쯤인지(0~100%)를 막대와 시초가 눈금으로 보여줍니다. 거래량·거래대금처럼 이미 있던 숫자를 다시 쌓는 대신, 지금 비싼지/싼지와 오늘 흐름의 어디인지를 한눈에 읽도록 구성했습니다. 라이트·다크 모드 모두 대응합니다.",
+  "pub_date": "2026-06-01T15:11:48Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHQrUTgvMGI3Rm9MaGRNdUx1dCs2ZlJQVVZmMzU1OFdqMDB4Q1p1QjdJK3ZNV0pla1o5TFZzV3hFRnk2MkdpUUtET0ZuVE1VOWdFOTNvY0pxNjhGVWd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwMzIxNjQ4CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKRHJzTmw4NEJxcTR2ZjI0K0lLWno5dy9rZXRtejdzRUtNR2JpOE0vczZOSXRjVXN2QzNDMHdsNlkyQkNKbCtPemRGRDBrQnY1bFFHK2VrQWpYVmI3Qnc9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.96/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHRDUk9wSGhWNVNzUnIySk1mMm9qNnhZQWdqemhRb1pMRzAxSkY3bEZXYVFlZWZDT2o1bGVyNTFOZTFhcDRTU2pBTXg4NWdIWWphQ2tURFBiUTlEUkE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwMzI2MTM2CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKUmh6VWZTaEJzTEFPQ3R5WHcwMWtLa0xIVDFVbUJISWNCQUFQQml6bENBT3RGdTBYdXhOd3BKcGNjR2E2czV1bW1Fb2hZeWNtdmdEZGZhOGtpTHI2Q3c9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.97/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHNzaXRqN2FKTEVkUFk0VHNnb3NBSG1zRm1Fd0o0ZjhkNWlnV0F5KzNxaHFBcFZra1l0QXJHWnJmbFlGOEZpOVl2SDRzKytBL2FvcDZpdFg3OVY0VXcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwMzIyNDQ2CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS45Nl94NjQtc2V0dXAuZXhlClZ5Y3p0SHFKb2sxVk5jMFdxSmk3ZjVOSTlMd0NHblUvQVM4VTBsbTg1aWt4ckEzanZWSFJ1dGtjcEpzTWhCYnpPUVR5ZVUrZTVJeXRjbjhDdFhjTkRnPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.96/Gold.Hand.Trade_0.1.96_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGdrQXM4SGkyNGg2M1hZS2VuVExaNnJ6ZTcrcHFpVGxNNWRYM29kTHhxeGJheGk2WHpsK0VMV04vZFUvRFlCNXZSUFhXS05MRGhZb2lHTU5IUURZY0FNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwMzI2NzA1CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS45N194NjQtc2V0dXAuZXhlCjNrKzRNTnNhQ2lFSkdQbVN5VTBNZ2FGRVpCTDV0RmVCZEhOTWhIZmE2M2FwajNlWEczKzlQajhvSGVRUnh6ZEZpZjVBSkRjRFpFV05YMk52c0U2WkF3PT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.97/Gold.Hand.Trade_0.1.97_x64-setup.exe"
     }
   }
 }
