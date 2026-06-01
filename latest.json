@@ -1,15 +1,15 @@
 {
-  "version": "0.1.94",
-  "notes": "## [v0.1.94] — 2026-06-01\n\n### 수정\n\n- **시황·공시 화면 스크롤 정리** — 공시 탭에서 목록을 스크롤할 때 열 제목(접수일·종목·보고서명·비고)이 함께 밀려 올라가던 문제를 바로잡아 제목 줄을 위에 고정했습니다. 뉴스·공시 탭 모두 스크롤바는 평소엔 숨기고 마우스를 올렸을 때만 표시되도록 정리했습니다.",
-  "pub_date": "2026-05-31T15:35:56Z",
+  "version": "0.1.95",
+  "notes": "## [v0.1.95] — 2026-06-01\n\n### 추가\n\n- **투자일지 AI 초안에 공매도·수급 첨부** — 투자일지 AI 초안 만들기 창에 공매도·수급(KRX) 첨부 옵션이 추가됐습니다(기본 켜짐, KRX 미연결 시 자동 숨김). 켜고 종목을 고르면 종목별 공매도 잔고 비중·추세·대량보유자·투자자 순매수가 본문에 함께 들어가고 AI 분석에도 반영됩니다. 분석할 종목 선택은 공시 첨부와 함께 공유됩니다.\n- **종목 상세 투자지표에 배당수익률 표시** — 종목 상세 투자지표에 배당수익률 항목이 생겼습니다. 예탁원 배당 자료를 연동해 최근 1년간 주당 현금배당금을 합산하고 현재가로 나눠 계산하므로, 보유·매수 검토 시 배당 매력도를 바로 확인할 수 있습니다.\n\n### 변경\n\n- **종목 상세 시계 위치 이동** — 종목 상세 창의 시간 정보(시계)를 가격 행에서 떼어 창 상단 제목줄의 종목명 옆으로 옮겼습니다. 시세가 갱신되며 가격 숫자 폭이 변할 때 시계가 좌우로 흔들려 보이던 현상을 없앴고, 현재가·등락 숫자도 자릿수가 바뀌어도 폭이 들썩이지 않게 정렬을 다듬었습니다.\n- **AI 종목분석 공매도·수급 첨부 기본 켜짐** — AI 종목분석에서 공매도·수급(KRX) 첨부가 기본으로 켜진 상태로 시작하고 마지막에 선택한 값을 기억합니다. 첨부를 켰는데 데이터를 받지 못하면 분석에 미포함됐다는 경고가 떠, 빠진 채 분석된 것을 바로 알 수 있습니다.\n- **종목정보·뉴스 탭 스크롤바 정리** — 종목 상세의 종목정보 탭과 뉴스 탭 스크롤바를 평소엔 숨기고 마우스를 올렸을 때만 나타나도록 다른 화면과 동일하게 통일했습니다.\n- **종목정보 탭 한눈에 보기** — 종목정보 탭의 글자 크기·여백을 줄이고 거래정지·관리종목 등 종목 상태를 색상 칩으로 압축해, 스크롤을 덜 내려도 핵심 지표가 한 화면에 들어오게 했습니다. 상장주식수·52주 일자처럼 긴 숫자는 창 폭에 맞춰 열 수가 자동으로 늘어 잘리지 않고 모두 표시됩니다.\n\n### 수정\n\n- **AI 분석에 공매도·수급 반드시 반영** — 공매도·수급을 첨부했는데도 AI 분석 결과에 그 내용이 빠지던 문제를 바로잡았습니다(특히 공시 첨부를 함께 켰을 때). 이제 공매도 잔고 비중·대량보유자·투자자 순매수가 별도 항목으로 분석에 출력됩니다.\n- **공매도·수급 요약 표시 정리** — 공매도·수급 요약의 자잘한 표시 오류를 정리했습니다.\n  - 정산 전(당일·지연) 데이터가 잡혀 '최근 공매도 거래'가 0주/0원으로 나오던 것을 정산이 끝난 최근 거래일 기준으로 수정\n  - 순보유잔고 대량보유자를 공시 최신순으로 정렬하고 라벨 표기 정리\n  - 투자자 순매수가 0에 가까울 때 '+-0억'으로 부호가 깨지던 표기를 '0억'으로 수정\n- **우선주 투자지표 0 표시 수정** — 삼성전자우 같은 우선주에서 PER·PBR·EPS·BPS가 0(빈값)으로 나오던 문제를 바로잡았습니다. EPS·BPS는 같은 회사 보통주 기준으로 채우고, PER·PBR은 우선주 현재가로 다시 계산해 실제 밸류에이션을 보여줍니다.\n- **호가·시세 표의 흰색 빈 스크롤바 선 제거** — 장 마감 동시호가처럼 호가·시세 행이 줄어드는 시간대에 표 오른쪽에 흰색 세로선(빈 스크롤바)이 보이던 문제를 바로잡았습니다.",
+  "pub_date": "2026-06-01T09:29:15Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHN2SXpHRmlQS0hHY3BlZnMvWVkxUmI4c2lEZ0lpOG1DUndsbnFHNUVla2hYb2lsZkVJM3BJYTlaY1JLdzJHZXA2NElMNWVuVXdFbGw5YlZPaWdneXdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwMjQwNDcxCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKbFIxdGFXMW9YZC9WS2h6WGdkUDUzRE1VUWpGTFMrT1dhekZjWkZhTkRNOG9ERmRteEl2bjExSnBvZ2haeitDSUg1cDlQYVVvbHkzcm9mZXFGbStmQ2c9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.94/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGxJMXJ4emdudis4WGIydGE2ZHBITU5WbkV3UHZyTzRMVDBhRzFJRWU1c1lsQTM4emlhTU1BRnNNTHJvcnhrd2kxMzVxcFJOQ2NDVy9rdTB2UExuckFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwMzA1NTU4CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKMnhYcHlOTzJwemRRM2hPVWNhUnVrblJjZ29OU0REK045bTRwa2FVdzhLTnVTY1phY3Y3RVJSRXlKclZZV3p6M3JjME1mZVVKNEsxNG83NmRDdkxvQUE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.95/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHFCZDdzdXhzL3VwcS92cVpQcVFnWnpCL2FLcUwwSklYdjhod016TUovUUt3NzFtQzNWbS9YaTFoYkF5V051ZDJudjhoVFQvaE1lcmV1cHBRQ3NMY3dNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwMjQxNzUzCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS45NF94NjQtc2V0dXAuZXhlCllWU0dHK0lYTlc5eGlJaXIwSGp6d0t3TE45VllBWXhtSkRJUVBiZ3lIdlVQN1NidDAzQzk0a2ZnbzN4M1hSTHd1anRhNXVEMCtMTFlJc2hnUHV2UUFRPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.94/Gold.Hand.Trade_0.1.94_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG0rRHA2NmZJWDJ5Rk9uYnJTOGtUdVJWSFduUzNuSEVYNHJRRHltMHdxUWlLOU9JVHJkRjZnTE9iekt4TSt3S01wVm1sL2NUWXdLN2pJZlZUOC8vV0FRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwMzA2MTUyCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMS45NV94NjQtc2V0dXAuZXhlCjJhYURWdURBWWcwdXNScWc1UFV2cVM4VXl6ZTNWODhCM0g0NStSOC9sZ1lOS2k2OGlBV01TbWsyMHppYldlb015TVJzdnVyaVZyM0N6NUxqbGJ5T0JRPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.1.95/Gold.Hand.Trade_0.1.95_x64-setup.exe"
     }
   }
 }
