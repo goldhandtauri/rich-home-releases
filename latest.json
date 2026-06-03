@@ -1,15 +1,15 @@
 {
-  "version": "0.2.1",
-  "notes": "## [v0.2.1] — 2026-06-03\n\n### 변경\n- AI 분석 창 — 바깥 영역을 클릭해도 창이 닫히지 않고 뒤 화면(차트·호가 등)을 바로 조작할 수 있어요. 분석 창이 열린 상태에서 창을 닫으려 하면 \"계속 보기 / 닫기\" 안내가 떠 실수로 대화를 잃지 않습니다.\n\n### 수정\n- 임시공휴일(선거일 등 평일 휴장)에 호가 상태가 '장중'으로 잘못 표시되던 것을 '휴장'으로 정정했어요.\n- 휴장일 호가창 안내(\"거래소 비영업일\")가 종목에 따라 보이거나 안 보이던 것을 모든 종목에서 동일하게 표시하도록 통일했어요.\n- 공매도·수급 화면의 '공매도 잔고비중 추이' 차트가 라이트 모드에서 배경이 검게 나오던 것을 화면 톤에 맞게 수정했어요.\n- 종목정보 확대 화면의 카드 테두리가 다크 모드에서 일부만 보이던 것을 모든 카드에서 동일하게 보이도록 수정했어요.",
-  "pub_date": "2026-06-03T07:33:03Z",
+  "version": "0.2.2",
+  "notes": "## [v0.2.2] — 2026-06-03\n\n### 변경\n- AI 분석 창 — 바깥 영역을 클릭해도 창이 닫히지 않고 뒤 화면(차트·호가 등)을 바로 조작할 수 있어요. 창을 닫으려 할 때만 \"계속 보기 / 닫기\" 안내가 떠 실수로 대화를 잃지 않습니다.\n- 커뮤니티 — 전체 커뮤니티를 '항상 위'로 띄워둔 상태에서 종목 커뮤니티를 열면 전체 커뮤니티 뒤에 가려 안 보이던 것을, 비낀 위치 + 함께 위로 표시하도록 개선했어요.\n- 설정 — 좌측 메뉴의 'KRX 정보데이터시스템' 라벨이 칸을 넘던 것을 정리하고, AI 설정 아이콘을 종목명 옆 AI 아이콘과 통일했어요.\n\n### 수정\n- 시세 연결이 끊겼을 때(다른 PC에서 같은 계정 사용 등) [재연결]이 안 되던 문제를 고쳤어요. 다른 PC의 앱을 끈 뒤 재연결하면 정상 복구되고, 휴장일에도 재연결이 성공 처리됩니다.\n- 임시공휴일(선거일 등 평일 휴장)에 호가 상태가 '장중'으로 잘못 표시되던 것을 '휴장'으로 정정했어요.\n- 휴장일 호가창 안내(\"거래소 비영업일\")가 종목에 따라 보이거나 안 보이던 것을 모든 종목에서 동일하게 표시하도록 통일했어요.\n- 공매도·수급 화면의 '공매도 잔고비중 추이' 차트가 라이트 모드에서 배경이 검게 나오던 것을 화면 톤에 맞게 수정했어요.\n- 종목정보 확대 화면의 카드 테두리가 다크 모드에서 일부만 보이던 것을 모든 카드에서 동일하게 보이도록 수정했어요.",
+  "pub_date": "2026-06-03T09:07:57Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG54b2xUTTBnMGJEWGEvLzNMNi9iSUJuUWNqVGlZcFZiL1g4L1IyNWNLbkszQUQzT0tLVVNkeE0wbEo5UHNJQWlsbGp0aDFKc2tpVWJnU1JIQ2t3TndnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwNDcxMTk5CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKQzlXbUxCL2VYVDNqZjljQUE3Q3BJcnV4d0ZOVCt3VUJhak9wSzJrNlVLUkF3TFdxWVBJQ25MOWJkWHJFWFBWbnJBN0ZQVXhoOTkyYXBXSGxyZ0VXQlE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.1/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHJGN09ObHBkNU1FMkltOGZEQi9uVjU3WGdsemJrNjdXSzJLSFBDRFJMRnpWZVZ2MUZJZXEvTVB5cE5DTXVOODZEalh2bmhXdDBYaG9GR0tKQ0tFaXdZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwNDc2Njk4CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKZ2dsRzYxMzFscGwrbFlCZlBwczJxWFJobVRWWVUzTjh3aDQ5MXlUT0kzNi9xbHdpSXhBanNNU25YUi91ZjJ0alF4RlcrM3dkdmZHd3RwdzhKTXo3RHc9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.2/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG1nd2Y4R1J1RmVibm0xWUVsQVI0dWIweVN4SXdQc2lndEtDcFZCbklDTjhKTUV2aTJLcEJXcTZ3cEVUNW0yYjBleHdUNmhWWFRRWWwwdTR4QTVqY0FJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwNDcxOTgxCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMi4xX3g2NC1zZXR1cC5leGUKaUlHWDJzNUtheEErOGdvenlNN1pKZTNwUnBPYVpvcDh6dS9HSW5uQnpJYmZTT01GcFBFSGJjWnB4K2FoRXN1QzJBTFhOMHYwTkpidWVYa1NjUkI1QVE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.1/Gold.Hand.Trade_0.2.1_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG5DZEJCNEEyUjc1WFArc3hkVzlHc2VnaGxkZllla0VGZ3BOZU1YdDZzWlNMdWFsdWFTMjJJZzhxUXNyeFh4RlU4LzQ2MTlNYS9FN3Y0bUVLaTFmd3djPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwNDc3Njc0CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMi4yX3g2NC1zZXR1cC5leGUKbGxIaW9RS0JaeUFOb1hubVNpL0R0VnFjc0N4R0U3M1MrbkFTUkhPK2RVcFg5cTNZYmVrZVkxZ0FIZVZoeGFHZWg4cGRzNFBCT3QrUlVhSTgycW5PQmc9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.2/Gold.Hand.Trade_0.2.2_x64-setup.exe"
     }
   }
 }
