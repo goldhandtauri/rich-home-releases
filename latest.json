@@ -1,15 +1,15 @@
 {
-  "version": "0.2.0",
-  "notes": "## [v0.2.0] — 2026-06-02\n\n### 추가\n\n- **확대 화면에 뉴스·공시 탭 추가** — 차트 확대 화면 상단 토글에 ‘뉴스’와 ‘공시’가 생겼습니다. 뉴스는 종목 관련 최신 헤드라인을 분류(시황·종목·공시 등) 칩으로 걸러 보고, 아래로 스크롤하면 지난 뉴스가 계속 불러와집니다(제목을 누르면 네이버 뉴스 검색이 열립니다). 공시는 전자공시 목록을 큰 표로 보여주고, 행을 누르면 원문이, ✨ 를 누르면 그 공시 본문을 AI 가 요약해 줍니다. 새로 올라온 공시는 NEW 로 표시되고, ‘공시 종류 한눈에’ 로 정기 실적·중요 이벤트·지분 변동 분포를 함께 봅니다.\n- **모든 탭에 확대 버튼 통일** — 그동안 차트에만 있던 확대 버튼이 종목 상세 탭 바 오른쪽 끝으로 모였습니다. 종목정보·뉴스·공시·공매도·수급 어느 탭에서 눌러도 그 탭이 그대로 큰 화면으로 열립니다.\n\n### 변경\n\n- **종목정보 확대 화면 재설계** — 위에서부터 ‘한눈 요약 → 핵심(밸류·매수매도세·수급) → 참고(거래·재무·회사 명세)’ 순으로 다시 구성했습니다. 적자 회사는 ‘적자’ 로 분명히 표시해 음수 PER·EPS 를 ‘싸다’ 로 오해하지 않게 했고, 재무 표에서 자료가 없는 칸은 0.00% 대신 ‘—’ 로 표시합니다. 카드 높이를 행마다 맞추고 글자도 키워 한눈에 읽기 쉽게 다듬었습니다.\n- **공매도·수급 표 정리** — 컬럼이 화면 전체로 너무 벌어지던 표를 모아 좌우 대칭 2열로 배치하고 글자를 키웠습니다. 공시 표는 아래 빈 공간까지 높이를 채워 한 화면에 더 많은 공시가 보입니다.\n\n### 수정\n\n- **접속 토큰이 조용히 만료될 때 시세 멈춤·재접속 버튼 미노출** — 접속 토큰이 하루 지나 만료됐는데 ‘시세 조회 실패’ 만 뜨고 재접속 버튼이 안 보여 손쓸 수 없던 문제를 고쳤습니다. 이제 만료를 감지하면 자동으로 토큰을 다시 발급하고, 실패하면 재접속 버튼을 띄워 직접 다시 연결할 수 있습니다.",
-  "pub_date": "2026-06-02T15:11:26Z",
+  "version": "0.2.1",
+  "notes": "## [v0.2.1] — 2026-06-03\n\n### 변경\n- AI 분석 창 — 바깥 영역을 클릭해도 창이 닫히지 않고 뒤 화면(차트·호가 등)을 바로 조작할 수 있어요. 분석 창이 열린 상태에서 창을 닫으려 하면 \"계속 보기 / 닫기\" 안내가 떠 실수로 대화를 잃지 않습니다.\n\n### 수정\n- 임시공휴일(선거일 등 평일 휴장)에 호가 상태가 '장중'으로 잘못 표시되던 것을 '휴장'으로 정정했어요.\n- 휴장일 호가창 안내(\"거래소 비영업일\")가 종목에 따라 보이거나 안 보이던 것을 모든 종목에서 동일하게 표시하도록 통일했어요.\n- 공매도·수급 화면의 '공매도 잔고비중 추이' 차트가 라이트 모드에서 배경이 검게 나오던 것을 화면 톤에 맞게 수정했어요.\n- 종목정보 확대 화면의 카드 테두리가 다크 모드에서 일부만 보이던 것을 모든 카드에서 동일하게 보이도록 수정했어요.",
+  "pub_date": "2026-06-03T07:33:03Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHJJSHR4ZmxQMEFjeEc3RitDSjN1Um1oNHdrZll4MVBGeDF6K3Znd1hyVVIramw2b3I4MnpEQ1ExZW9tMzZFakNZZ1ZBZkdPQ093SDBnanpNYllZd0FJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwNDEyMzY0CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKVEJ2STdVcnN4enBTRm9HQ1VPT2ltQnN2T3RNRDRtSGFBUmM2QW9lM1FOM0IwQkR0SG94dVcxTmlJVnRRMDY4SHZNQVBMeVNMbkpqUEhSczhJODJpQlE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.0/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG54b2xUTTBnMGJEWGEvLzNMNi9iSUJuUWNqVGlZcFZiL1g4L1IyNWNLbkszQUQzT0tLVVNkeE0wbEo5UHNJQWlsbGp0aDFKc2tpVWJnU1JIQ2t3TndnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwNDcxMTk5CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKQzlXbUxCL2VYVDNqZjljQUE3Q3BJcnV4d0ZOVCt3VUJhak9wSzJrNlVLUkF3TFdxWVBJQ25MOWJkWHJFWFBWbnJBN0ZQVXhoOTkyYXBXSGxyZ0VXQlE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.1/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHY0MGN2SkkrS2EwTWZ3T1NFQWR4WFMwR05qVjNwSmpQOTFTYVhWUUU3cE8xMk13U29qamVHRU00dkdUOVVDN0p4TWI5a3c1NTlGZzNnWnY5Q01BTlFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwNDEzMDgzCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMi4wX3g2NC1zZXR1cC5leGUKNDZGN3pyWktqWHBlSkR5ZmFMclRST2Z5WlU5ekFXUHhiTmdPdm5Fdml3MTE5UGFKRm0wOGJrdnhhdDVaZjdyS2VIOHBNQ1dtcll4dWNmK1JjZ3EvQWc9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.0/Gold.Hand.Trade_0.2.0_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG1nd2Y4R1J1RmVibm0xWUVsQVI0dWIweVN4SXdQc2lndEtDcFZCbklDTjhKTUV2aTJLcEJXcTZ3cEVUNW0yYjBleHdUNmhWWFRRWWwwdTR4QTVqY0FJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwNDcxOTgxCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMi4xX3g2NC1zZXR1cC5leGUKaUlHWDJzNUtheEErOGdvenlNN1pKZTNwUnBPYVpvcDh6dS9HSW5uQnpJYmZTT01GcFBFSGJjWnB4K2FoRXN1QzJBTFhOMHYwTkpidWVYa1NjUkI1QVE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.1/Gold.Hand.Trade_0.2.1_x64-setup.exe"
     }
   }
 }
