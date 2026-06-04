@@ -1,15 +1,15 @@
 {
-  "version": "0.2.3",
-  "notes": "## [v0.2.3] — 2026-06-04\n\n### 수정\n- **NXT 종목 매수 — 시간외 구간에 '시간외 단일가'로 잘못 떠 매수가 막히던 문제** — NXT에서 거래되는 종목의 상세 화면을 열 때, 종목 정보가 로딩되기 전 잠깐 'KRX 시간외 단일가' 주문 화면이 떠 매수 주문이 거부되던 문제를 고쳤어요. 정보 확인 전에는 '종목 정보 확인 중'으로 안내하고, 확인되면 곧바로 'NXT 애프터마켓' 등 올바른 주문 화면으로 전환됩니다.",
-  "pub_date": "2026-06-04T08:31:16Z",
+  "version": "0.2.4",
+  "notes": "## [v0.2.4] — 2026-06-04\n\n### 추가\n- **자동매매 면책 안내** — 자동매매를 시작하면 컨트롤 바 아래에 유의 안내가 표시됩니다. 프로그램 오류·네트워크 장애·증권사 API 오류 등으로 주문이 지연·누락·중복·오체결될 수 있으며, 이로 인한 손실을 포함한 모든 매매 결과의 책임은 이용자 본인에게 있음을 명시합니다.",
+  "pub_date": "2026-06-04T09:37:56Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHZxcVNySDVhaUF0WEdiZ3lIRWUrZHR1bUNpRWtDcFJ2NE56aE5TdGtLM3VwUTJXbk5QV0FwRUdXNGlxdS83ejNUNzBkaVlSOHZBNnY4NGNCMWFNL1FnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwNTYxMTM2CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKQmVibmkvTm9jRWNiT3RRUElxNE1JWi9GbGFORDJ6bG8wOWlIVmU0OEt3My8vMEtvU1plMU0rQXhCbVppR2ZEbGZXREtwRTZJOUppM0NoR0FZNHdJQ3c9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.3/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHJnc0lidi8vMEZjTjJ0R2liSEtEU0gySU5NcTJGU29VaTc4YlJYRW1PNVV4SjN5bVVxT2dwRkRrZHFwQnlIS0YvLzN4T2dVQmxhTGt0Z3dldkNDOUFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwNTY0NjczCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKUnNvTU00M2hwZVlvY2JXMSs3cnIreGVzeHhKNUF4eG9laitKaWxZVGpRNk83K1pqMGhkNXF3dzRFWlJHd1dmUnZ0NU1laVIyMTVaZm81WUZUV2x2QlE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.4/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG5PSEhaL3AyOXFHK0w4cmhoK1JibVJWV0VIMTZxMHgrZ0lJL3BzakFxWUxRcTFSTUIxQ09RVmRnaTlzMFoxaDB4aUlDUTNhSDRsYytCZlpUMW5qa3dJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwNTYxODc0CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMi4zX3g2NC1zZXR1cC5leGUKbHJkUzMvWkVyL3ZBd3RnclZib2NvdU9FdURhUm1VbFZHa0c2QU1UbjhnSjNycEVLckY1YU1IV1c3OGNzVUNUcVE2YjVYQVBRb2IzUkp0cUdmWUk2QkE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.3/Gold.Hand.Trade_0.2.3_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHAxWGp1dkpOUEdrZEFLcUs5cENtTHY5WkR2MUxGTjBrYjJ5QTBPbmNQeWFDTjkrd2ppdDZXMHV1bjY1S3pNeXdtbndEQWNFSE5kZm16Rzl1UHh1Y2dFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwNTY1ODczCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMi40X3g2NC1zZXR1cC5leGUKa1FTbXhZQ21keWtabkJuajF4bndseGpEMXZvM3pGbC8yYmRvQ2lLQVNjcUpEN3pyanpiVnVLRHIveGFQalNCTEk4cEp5WWhTRFNnM2dhQ0pOT2F5REE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.4/Gold.Hand.Trade_0.2.4_x64-setup.exe"
     }
   }
 }
