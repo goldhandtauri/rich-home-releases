@@ -1,15 +1,15 @@
 {
-  "version": "0.2.6",
-  "notes": "## [v0.2.6] — 2026-06-06\n\n### 추가\n- **화면 녹화** — 매매 화면을 영상으로 녹화할 수 있습니다. 상단의 녹화 버튼으로 시작·일시정지·정지하고, 작은 녹화 창에서 경과 시간과 상태를 확인합니다. 녹화 해상도를 고를 수 있고, 웹캠이 있으면 화면 오른쪽 아래에 얼굴을 원형으로 함께 담을 수 있어요. 녹화하는 동안 종목 상세 같은 별도 창을 열면 그 창까지 영상에 함께 담깁니다.\n- **녹화 영상에서 민감정보 가림** — 녹화한 영상에서 금액·계좌번호 같은 민감한 정보를 자동으로 가리고, 수익률·종목명은 그대로 보여줍니다. '항상 가리기'로 평소 화면에서도 미리 가려 둘 수 있고, 가릴 항목을 세부적으로 켜고 끌 수 있습니다.\n- **오픈소스 라이선스 고지** — 설정 화면에서 앱이 사용하는 오픈소스 구성요소와 라이선스 전문을 확인할 수 있습니다.\n\n### 변경\n- **녹화 창에서 얼굴 실시간 미리보기** — 녹화하는 동안 영상에 담기는 웹캠 얼굴을 녹화 창에서 실시간으로 확인할 수 있어요.\n- **녹화 창 정리** — 녹화 창의 내부용 프레임 수 표시를 빼고 경과 시간 중심으로 깔끔하게 다듬었어요.",
-  "pub_date": "2026-06-05T17:27:27Z",
+  "version": "0.2.7",
+  "notes": "## [v0.2.7] — 2026-06-06\n\n### 수정\n- **화면 녹화 — 웹캠 얼굴·마이크 음성이 안 담기던 문제 (macOS)** — 설치본에서 카메라·마이크 권한을 묻는 창이 뜨지 않아 녹화에 얼굴과 목소리가 들어가지 않던 문제를 고쳤어요. 업데이트 후 처음 녹화할 때 카메라·마이크 허용 창이 뜨고, 허용하면 얼굴(화면 오른쪽 아래 원형)과 음성이 함께 담깁니다.",
+  "pub_date": "2026-06-05T18:22:27Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGc0amJsNzJ0eDhCWVdIY1B5NXlsbjUyR3RqMEFid0FIZ1IvWXNadEYvTitDSDE1UEVlakxwRmNXL0NseFlKQVBGK0lpcHNzeVhCa2tXSTFYaGhLN3dzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwNjc2OTcxCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKcUd6NW5yNEVUOTN1dmxnS3ByOXY3cHA1QXJqcmQ0TmVzRGxLRGFMVDFtRy81TUZ4NzRiQlozSnIwT3QvTmsrMVpPVTQweGNYV2pwblljWlVzSDBYRFE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.6/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGtxdHVURnY0UjIyWUtSU2xRZnVyS29zb3BLVExETW12SEUxSWsvRGhXMFJuSys1aVA0c0puWHVzQnR0OEZJWXBQWU1iNWVVT3JzUkw0c3kvbG54YVFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwNjgyNTY0CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKTTM2My9YNlJqbEhoK3RLQ3FsZXNwY2J0WGFhcll2T0pSVnU2MUJwLzFSRWFHRDJ2aFFaZ0dQeXNqckNRdWVSeEx0NThTT01qRHloUmJHR0ZDQWlIQUE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.7/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG9TUjZibmFYaFpaSE1PWnA0dVpzZUE4b0VjQXlCRHZkenlSamhVVGcwaFNrUytGbzF2TW5SbkNTWGdxQTFGdGk2Q0MvUjFQc1d0N0hGM200UUNlbXc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwNjgwNDQ0CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMi42X3g2NC1zZXR1cC5leGUKdzNxdS9PemxTaVpxVkEwcVpFTDd6UFZjeTEvZCtvZFBtMGtKSSs3QnFYMVdSbmVnNWJKNlJ0QW1ZNGdBRDR3TFBRU2JFNE9OZUF4bkwrQXFTQWFQQ1E9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.6/Gold.Hand.Trade_0.2.6_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGovR0QxRlExeklpSTJIcFJLQzRTSm1uUCs3dzNmRGxHcmVHM3c4MDNSMTcxVXEzSTd4UlBqajIrSklHNmRBZVBEY1Nhc3VFTGtYanJUY2FlL2h4YlEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwNjgzNzQ1CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMi43X3g2NC1zZXR1cC5leGUKQUk2ZnZFV3lQNHJZNGV4Z01adHFZZjh6UklUS1J1QjFCMzIzekxtYUc3dmhudW1Ua1lOTzhRZnU1b0owbWNldGVpSnlQSVJJbDAwU1JOSmtNY2ZEQkE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.7/Gold.Hand.Trade_0.2.7_x64-setup.exe"
     }
   }
 }
