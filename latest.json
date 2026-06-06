@@ -1,15 +1,15 @@
 {
-  "version": "0.2.8",
-  "notes": "## [v0.2.8] — 2026-06-06\n\n### 수정\n- **화면 녹화 — 얼굴과 목소리 입 모양 맞춤 개선** — 녹화 영상에서 웹캠 얼굴의 입 모양과 목소리가 미세하게 어긋나던 현상을 바로잡았어요. 음성 시작 기준을 화면과 같은 시점에 맞추고, 얼굴을 함께 담을 때 생기는 카메라 지연만큼 음성을 보정해 입과 소리가 더 잘 맞습니다. (macOS·Windows)\n- **화면 녹화 — 재생바가 1초 뒤에서 시작하던 문제 (Windows)** — 녹화한 영상을 재생할 때 재생 위치가 약 1초 뒤로 건너뛰어 시작되고 얼굴·음성이 어긋나 보이던 문제를 고쳤어요. 이제 영상이 처음부터 정상 재생됩니다.",
-  "pub_date": "2026-06-06T10:53:56Z",
+  "version": "0.2.9",
+  "notes": "## [v0.2.9] — 2026-06-06\n\n### 수정\n- **화면 녹화 — 녹화 창이 영상에 잡히던 문제** — 녹화 창을 닫거나(X) 최소화했다가 다시 화면에 띄우면 그 창이 녹화 영상에 함께 담기던 문제를 고쳤어요. 이제 녹화 창은 어떤 경우에도 영상에서 제외됩니다.\n- **화면 녹화 — 시작할 때 얼굴이 안 담기던 문제** — 얼굴 미리보기가 다 준비되기 전에 녹화를 시작하면 영상에 얼굴이 들어가지 않던 문제를 고쳤어요.\n\n### 추가\n- **화면 녹화 — 헤더 버튼에 녹화 중 표시** — 녹화 창을 닫거나 최소화해도 녹화는 계속됩니다. 이때 상단 헤더의 녹화 버튼에 빨간 점이 표시돼 녹화 중임을 한눈에 알 수 있고, 그 버튼을 누르면 다시 녹화 제어 창으로 돌아옵니다. 녹화를 정지하면 표시가 사라집니다.",
+  "pub_date": "2026-06-06T12:06:53Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGdIbk9oQnFSWS9uaGRKVU82emN3WXNrcXd6bUplZFhZVlRaU0hXRGZRdmVhSXRNL0o2TTZSUXBzWkRCNEx2c3MvS0dkOU5SNlQyY0VyTXpjMlRzeFFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwNzQyNTMxCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKbFF2SDBUcmJTcTBFWjhMNmprSlVPT2VCOUZoUzhSckk3bllMYnRzem1MWHZ4bEdvbGhFNjUxVzFHQUFhOEFQNEtjdUY1a1V4anl0QnpNc1hCL1FDQ0E9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.8/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGpHcWFSdGRWTUZZZnFLRkY3dDhubmNDWkg2cldtdU9RL21xcjJ5VVRDYVRuREZJRXViRXpPeXhEZ2E0WDBSODhKYWczd2s1amhzbURYdk1UVlA3N1F3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwNzQ2NzI1CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKN2pGVCt0WDlYVkticHpMK2Z6RE9iT25obG1xQ0EvQnEzQjNoUzA5ejlJb3NkUTFUOVVtc1dvdWhhaFZTZDNsQnBZS2FYSUE1QXJVNWxIT0krSzRKQkE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.9/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG4rWDJZRHlTcktlZXEzUXo3ZkYvZ09sVm9Rbm5lZFFUVXRpMkREUFNQak9aNGUxK0dpWW1ZdjZFQVlxcUdIdW1RdDdQbDNYT2Rpb1lwUVIrT2Y0dXdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwNzQzMjMzCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMi44X3g2NC1zZXR1cC5leGUKRngyYUJNRkRCeng0Rm9NdVFGSTlPUk5ESUxvMDArdEw5TkpOblhOc3JQR3FuNEVQcExHbkd4ME9KMDB2QTBFcDVIWDBPL0o0NklLQzRjZXJLRTBzREE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.8/Gold.Hand.Trade_0.2.8_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGpZWUhFTjQwYXptNVBhZWFaSy9ZbFZXUk04Z0ZBdVk2Ky96ZlEyQU1SU0NZdU9QVUV1Q3ljOTdxOFd1SE84K2ZVb0xpTTlLbURZcEYzWHdGYTBmMFFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwNzQ3NjExCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMi45X3g2NC1zZXR1cC5leGUKakZidGpOKzIrWkZsaG4vRjNxZDQzT0twOFQ4R2VpUWxXcFd5Z1BvcnRzVmhTeS9FTGFRdlliNlh5bkJjdFlTREVCRUNUd0ZHOWRLUHJjZXAwcEZWQWc9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.9/Gold.Hand.Trade_0.2.9_x64-setup.exe"
     }
   }
 }
