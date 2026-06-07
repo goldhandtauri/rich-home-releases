@@ -1,15 +1,15 @@
 {
-  "version": "0.2.14",
-  "notes": "## [v0.2.14] — 2026-06-07\n\n### 변경\n- **설정 화면 — 현재 메뉴를 한눈에** — 오른쪽 콘텐츠 맨 위에 지금 보고 있는 메뉴 헤더 띠가 고정 표시되고, 일반 설정처럼 항목이 많은 화면에선 왼쪽 목차에서 선택(또는 스크롤)한 섹션의 오른쪽 카드 헤더가 골드로 강조됩니다. 왼쪽에서 고른 항목이 오른쪽 어디인지 바로 보입니다.\n- **비활성 창 구분** — 창이 포커스를 잃으면 상단 헤더·제목 표시줄이 따뜻한 톤으로 가라앉아, 여러 창 중 지금 활성인 창을 한눈에 알 수 있습니다.\n- **설정 — 데이터 내보내기 동작** — 보유종목·거래 로그를 CSV 파일로 내보낼 수 있습니다. (설정 → 데이터 내보내기)\n- **설정 — 창 위치·크기 기억** — 켜두면 창을 옮기거나 크기를 바꾼 뒤 다시 열 때 마지막 위치·크기로 복원됩니다. (설정 → 윈도우 기본값)\n\n### 수정\n- **API 키 입력란 가림 표시가 네모로 깨지던 문제** — App Key·App Secret 입력란의 가림 점이 처음 실행할 때 네모(□)로 보이던 문제를 고쳤어요. 이제 항상 동그란 점으로 표시됩니다.\n- **토스트 알림 표시 시간 반영** — 설정의 \"토스트 표시 시간\" 값이 실제 인앱 알림에 적용되도록 고쳤습니다.\n- **설정 화면 정리** — 아직 동작하지 않는 일부 항목(OS 시스템 알림, 로그 디렉토리 열기)을 숨겨 혼선을 줄였습니다.",
-  "pub_date": "2026-06-07T11:31:15Z",
+  "version": "0.2.15",
+  "notes": "## [v0.2.15] — 2026-06-07\n\n### 수정\n- **앱 중복 실행 방지** — 실행 아이콘을 빠르게 여러 번 눌러도 앱이 한 번만 실행됩니다. 이미 실행 중이면 기존 창을 앞으로 가져와요. (종목 상세·종목 검색 등 보조 창은 기존처럼 여러 개 열 수 있습니다.)",
+  "pub_date": "2026-06-07T11:50:10Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHBqSzJiNklmUWtZYkk4WDRvUURXWGloczNQKzZqeFhtcXRZMk1WdG5iUFd1cGkxTlFVTTRXRXNyekp3SW1EZEJJOGNiK2pMRGwyZEZFMzdzK1N4MUFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwODMwNDI4CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKcitqa1lKYldZTGxIVVY4Y2hXeHJtb21HYWhNTmlhMHJ6VWY0ZTdxc2pWbHk4dXBGdTFmcFJLL2R6czNZOVdUZFRBQXJwZTRYOU9nWDhFVVVpMjY5RGc9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.14/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHBMNUtIa3NoaVBQR3dpOWE2OGFVVVZlOHNOVElsVXZCc05ybnhqaUFXVENNVTZaWDJKUkZJbW42azdCc2hBb2M2bURteEZ0OXdacVpQbG8zQnZIc1F3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwODMyMjY3CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKWTRFQ3BLRUoxczZoaUNnSEsyVTA2bWt2TkI4eXNiWi9oaTFtVVN4VWc4eG0rMWtscjZkRWpsdFprVUk4bzloTE5LQzZBRENRdHhURXAwOXc2Z09hQXc9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.15/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGlVaGpRSGhKSmFGVWtLaTNZTjRGbTJKK2NGU241OVl2QU5Wcnd0SW11dGNkWGwwblZ4emJZTGE4eG5WaUlLK3ZwMUVqdXo1OEk2bFNtNkhjcWxOdlFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwODMxODcyCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMi4xNF94NjQtc2V0dXAuZXhlCnZUekZrU3FxT2YwSzJZUkFoZTl0eE04ZVlSSWRnRk91L3ovcHErTEZIWTlxNmF1NC9IRnJJcC9mLzdBTDBiZGIxZUdkWUxvR3Rqbjdpbnp0OFlGd0NRPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.14/Gold.Hand.Trade_0.2.14_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGovYTNHV0h6dGVHKzZQcmJ5RFI5Tjlrd2hiWWc3V3h2UExLZ3BZVGMrWitLcjlZWmk4TXhaR0VzaG5mZnRWakFWRVNHUHg4aDJJNDMxS0FOMVBHN0FBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwODMzMDA3CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMi4xNV94NjQtc2V0dXAuZXhlCnZYVWE2SlJPZmtyanpTK3h2RWFjMG1oSEtnSS81ZnFVQWRqbWYzZi9oQVMwWXdCWklZUWlvNzdzbWNvck1zb3FJQ0t6Q3BqS0xWVkdzVG1jMGdiU0N3PT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.15/Gold.Hand.Trade_0.2.15_x64-setup.exe"
     }
   }
 }
