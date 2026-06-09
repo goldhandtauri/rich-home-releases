@@ -1,15 +1,15 @@
 {
-  "version": "0.2.19",
-  "notes": "## [v0.2.19] — 2026-06-09\n\n### 추가\n- **종목상세 차트 보조지표 선택** — 분봉 옆 \"지표\" 버튼으로 볼린저·켈트너·VWAP·일목 등 가격 오버레이와 RSI·MACD·스토캐스틱 등 하단 오실레이터를 골라 주가차트에 바로 반영합니다. 확대 보기와 같은 지표 셋을 공유하고, 한 번 고른 지표는 다음에 차트를 열어도 유지됩니다.\n- **거래량 표시 켜기/끄기** — 지표 선택의 '수급' 항목에서 거래량을 끌 수 있고, 끄면 주가차트가 그 공간을 채웁니다.\n\n### 변경\n- **종목상세 차트 기본을 주가차트 + 거래량으로 단순화** — 기본 화면을 깔끔하게 하고, RSI 등 보조지표는 \"지표\" 버튼에서 원하는 것만 켜도록 했습니다.\n- **차트 스크롤 개선** — 보조지표를 아래에 추가해도 주가·거래량 차트가 함께 스크롤되고, 거래량 차트 높이는 지표를 늘려도 줄지 않게 고정했습니다.\n- **차트 스크롤바 정리** — 다른 화면과 동일하게 평소엔 숨겼다가 마우스를 올리거나 스크롤할 때만 은은한 골드 스크롤바가 나타납니다.\n- **차트 화면 정리** — 차트 좌측 하단 로고를 정리했습니다. (차트 라이브러리 출처는 설정 > 금손매 소개 > 오픈소스 라이선스에 표기)",
-  "pub_date": "2026-06-09T08:45:43Z",
+  "version": "0.2.20",
+  "notes": "## [v0.2.20] — 2026-06-09\n\n### 변경\n- **시세·순위·관심종목 갱신 안정화** — 여러 화면과 자동매매가 동시에 데이터를 불러올 때 한국투자증권 초당 호출 한도를 넘겨 시세·순위가 멈추던 문제를 줄였습니다. 모든 시세·주문 요청이 하나의 호출 속도 제한을 공유하도록 정비했습니다.\n- **매수·매도·정정·취소 주문 우선 처리** — 시세·순위 조회가 몰리는 상황에서도 주문 요청이 먼저 전송되도록 우선순위를 부여했습니다.\n\n### 수정\n- **시세·관심종목이 한 번 멈추면 약 1분간 안 풀리던 문제** — 호출 한도 초과 시 약 1초 후 자동 재시도하도록 고쳤습니다.\n- **종목검색 포커스·첫 항목 활성** — 종목검색 창을 열면 입력창에 바로 포커스되고 첫 항목이 활성화됩니다(Windows에서 포커스가 새던 문제 포함).\n- **여러 창 개수 표시·닫기** — 헤더의 \"모든 팝업 닫기\" 개수가 창을 열고 닫을 때 즉시 반영되고, 최소화한 창도 개수에 포함되어 한 번에 닫힙니다. 메인 창은 개수에서 제외됩니다.",
+  "pub_date": "2026-06-09T14:34:44Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGkzSk5rb0pTZHAvRGdLcU1Va1YxNXpQSEFhdXYwRnBrM2psQ0Noc1k2a2JNVCszT1A4WGxwd05lQXl5eGpUQ3lyeXRPb3I3empLS0daVVN5bzBpV3dzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwOTk0MTQ5CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKRVBOQTdCQ2FUWnFiQXBPa0Z3aEhRL2wyUmxoQnY4T1ZTK2pGbEt4c1c1OGZRRHF0Vm5WeVlNYmRDVW4xdlJyeGVqM1gwV0FZN01WaDVoWldtM1I5REE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.19/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGlPc0RMcWd3Qk5NeFcvcFcxbC9jUDFDQzJGRGpiV2c0MWZZY2V0bFhVNmtnN2VlaDBoQVBjUUNJczhZY2x2d2laZUNLK21vbEtuS3VCY0xNakNwdkFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMDE0NzU0CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKL1NOc1VTcUpCNVpFc3JRNU5SeGNKSU5kbGpSUnMxNlBaZ0NBbHpRRzNtSmlTZlN2ZjJuNFliV1VZZnJWUWZvQXJEcUdoRHNpV1NlYWk0cVdqeDluQlE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.20/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGoycTAzUDZKRGFFYmkxakVxZkkyeVNuVllhWDJnWmpVSGtESE5vRnpNY2RiRjhGVThUNTk1cFRmaWpqemxOWmEwZFduOFJ1VG9lRGZMYU04RnMzOGdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwOTk0NzQxCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMi4xOV94NjQtc2V0dXAuZXhlClZXOEJZTmtIOFE3MXllOG5ncFBialBqYTBjMVp5OC9mcUx0QmQyYUdtcUZlRWRzU3Ezak9BMXoxZWdSK3p1YlFQM2dUcytSbGtkbkNNeUx3K2xRU0F3PT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.19/Gold.Hand.Trade_0.2.19_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHRBOW5aSlNLZllqbWZ4Y2hDNHRLeWsxajd6NlVzRmRpQjZaQk1TNVhReHFRdUt5UXFXd0J0ZzQ3czFCc2JEaGpnVUxJcVV6TDRZYjgzcWd0cEdtK1E0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMDE1NjgxCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMi4yMF94NjQtc2V0dXAuZXhlCnptcEN2VEN5NDN5U0RuRTd6bmIrQVlpZ0lLSnFUWE51VTJVNmNMNDI2TGRrNU5tV1hYR3E4VGgzV3BtNVZQd2dJNzRhbmZoWGEvZzNMRVJ3Mm5ZbUR3PT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.20/Gold.Hand.Trade_0.2.20_x64-setup.exe"
     }
   }
 }
