@@ -1,15 +1,15 @@
 {
-  "version": "0.2.18",
-  "notes": "## [v0.2.18] — 2026-06-09\n\n### 추가\n- **종목상세 장운영 상태 실시간 표시** — 서킷브레이커·사이드카(매수/매도)·시장임시정지·VI(변동성완화장치) 발동을 종목상세 헤더에 실시간 배지로 표시합니다. 거래정지 시 사유도 함께 안내합니다.\n\n### 수정\n- **거래정지 해제 자동 갱신** — 서킷브레이커·사이드카 등으로 거래정지가 걸렸다가 해제돼도, 종목상세 창을 켜둔 채로는 \"거래정지\"가 계속 떠 있던 문제를 고쳤습니다. 이제 해제되는 즉시 자동으로 사라집니다.",
-  "pub_date": "2026-06-09T06:09:37Z",
+  "version": "0.2.19",
+  "notes": "## [v0.2.19] — 2026-06-09\n\n### 추가\n- **종목상세 차트 보조지표 선택** — 분봉 옆 \"지표\" 버튼으로 볼린저·켈트너·VWAP·일목 등 가격 오버레이와 RSI·MACD·스토캐스틱 등 하단 오실레이터를 골라 주가차트에 바로 반영합니다. 확대 보기와 같은 지표 셋을 공유하고, 한 번 고른 지표는 다음에 차트를 열어도 유지됩니다.\n- **거래량 표시 켜기/끄기** — 지표 선택의 '수급' 항목에서 거래량을 끌 수 있고, 끄면 주가차트가 그 공간을 채웁니다.\n\n### 변경\n- **종목상세 차트 기본을 주가차트 + 거래량으로 단순화** — 기본 화면을 깔끔하게 하고, RSI 등 보조지표는 \"지표\" 버튼에서 원하는 것만 켜도록 했습니다.\n- **차트 스크롤 개선** — 보조지표를 아래에 추가해도 주가·거래량 차트가 함께 스크롤되고, 거래량 차트 높이는 지표를 늘려도 줄지 않게 고정했습니다.\n- **차트 스크롤바 정리** — 다른 화면과 동일하게 평소엔 숨겼다가 마우스를 올리거나 스크롤할 때만 은은한 골드 스크롤바가 나타납니다.\n- **차트 화면 정리** — 차트 좌측 하단 로고를 정리했습니다. (차트 라이브러리 출처는 설정 > 금손매 소개 > 오픈소스 라이선스에 표기)",
+  "pub_date": "2026-06-09T08:45:43Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHJ2UHdZaVl6bFlTRnZxdFVCYkhYSzVUMGxhRnA0RFVDL0pGakJqcnlvdnZ0Ly9ETVAxMFhHMUJpaFZSWkpCc2JscEVxVng4dnA0eTR5MkU5ZlZOdlE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwOTg0MzE4CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKWFIzNncrYWJvSjNrdVhHb2NDZnlMaTlzc3VxWVdDcWdieTluRlV6dXRxYXNZYWRWWUlLeVVFcFRyd3JGVHdIQjFvOG1LNXlweUlqM0IyeWtuVVBVQkE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.18/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGkzSk5rb0pTZHAvRGdLcU1Va1YxNXpQSEFhdXYwRnBrM2psQ0Noc1k2a2JNVCszT1A4WGxwd05lQXl5eGpUQ3lyeXRPb3I3empLS0daVVN5bzBpV3dzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwOTk0MTQ5CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKRVBOQTdCQ2FUWnFiQXBPa0Z3aEhRL2wyUmxoQnY4T1ZTK2pGbEt4c1c1OGZRRHF0Vm5WeVlNYmRDVW4xdlJyeGVqM1gwV0FZN01WaDVoWldtM1I5REE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.19/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGdKcEpnOWtEZGVpUHh0Qzkrc2d4SzkxOTluK3VmRmdaa1htK3hwazBDNHNQSzkxWTZPNitGTG96MjY4NUJySGo0TlQyUVlpREk4YWZ1N0VkZ1RxSmdJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwOTg1Mzc0CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMi4xOF94NjQtc2V0dXAuZXhlCkRnVHJwZ1RRZzJIcEJXUXYvWlRld1FSN05ZODBBM0dDSE82ZFl4d2lOZXNIUzV5eWhaL2twbkVSYzJlbFJCRVgvcXFWMlFZS05hY09ENUE0bG5BZUNRPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.18/Gold.Hand.Trade_0.2.18_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGoycTAzUDZKRGFFYmkxakVxZkkyeVNuVllhWDJnWmpVSGtESE5vRnpNY2RiRjhGVThUNTk1cFRmaWpqemxOWmEwZFduOFJ1VG9lRGZMYU04RnMzOGdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwOTk0NzQxCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMi4xOV94NjQtc2V0dXAuZXhlClZXOEJZTmtIOFE3MXllOG5ncFBialBqYTBjMVp5OC9mcUx0QmQyYUdtcUZlRWRzU3Ezak9BMXoxZWdSK3p1YlFQM2dUcytSbGtkbkNNeUx3K2xRU0F3PT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.19/Gold.Hand.Trade_0.2.19_x64-setup.exe"
     }
   }
 }
