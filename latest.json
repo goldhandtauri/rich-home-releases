@@ -1,15 +1,15 @@
 {
-  "version": "0.2.17",
-  "notes": "## [v0.2.17] — 2026-06-09\n\n### 수정\n- **종목상세 시세·호가, 장 세션 바뀌어도 끊김 없이 자동 연결** — 종목상세 창을 열어둔 채 프리마켓→정규장→시간외→애프터마켓처럼 장 세션이 넘어가면 시세·호가가 멈추던 문제를 고쳤습니다. 이제 세션이 바뀌는 순간 새 세션 시세로 자동으로 다시 연결됩니다. (다른 PC 사용으로 시세 연결이 끊겼다는 안내가 떠 있는 동안에는 보류했다가 [재연결] 시 처리)\n- **관심종목 현재가 \"갱신중\" 멈춤 자동 복구** — 관심종목 현재가가 \"갱신중\"에서 더는 갱신되지 않고 새로고침도 막히던 문제를 자동으로 풀도록 했습니다. 한투 키를 앱 실행 후 등록해도 관심종목이 즉시 다시 갱신됩니다.\n- **한투 키 등록 정보 유실 방지** — 예전 방식으로 등록된 일부 한투 키가 앱 업데이트·재시작 과정에서 사라지던 문제를 막았습니다.\n\n### 변경\n- **비편입(KRX 전용) 종목 프리마켓 시세 보강** — NXT에서 거래되지 않는 종목도 장전 시간외 종가 시세를 받아 표시합니다.",
-  "pub_date": "2026-06-09T04:42:15Z",
+  "version": "0.2.18",
+  "notes": "## [v0.2.18] — 2026-06-09\n\n### 추가\n- **종목상세 장운영 상태 실시간 표시** — 서킷브레이커·사이드카(매수/매도)·시장임시정지·VI(변동성완화장치) 발동을 종목상세 헤더에 실시간 배지로 표시합니다. 거래정지 시 사유도 함께 안내합니다.\n\n### 수정\n- **거래정지 해제 자동 갱신** — 서킷브레이커·사이드카 등으로 거래정지가 걸렸다가 해제돼도, 종목상세 창을 켜둔 채로는 \"거래정지\"가 계속 떠 있던 문제를 고쳤습니다. 이제 해제되는 즉시 자동으로 사라집니다.",
+  "pub_date": "2026-06-09T06:09:37Z",
   "platforms": {
-    "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG1DQ0VUZ0VRM0Zob0EzRlB1NEFyNGVrc0xpNGhwNkJEeFFmTTUzT0thbm9qcVdhWEo3cXhmZHRLWjMwL2ErUWZjU3l0NCtkYlR5WnBtcXpEYW40Ynd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwOTgwMTMyCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMi4xN194NjQtc2V0dXAuZXhlClozRkc3ZkhPUGxDeDVqZGhwUnpJSjlkbCs4TitsS3Z4YUw2VjA2WDNJcytjMGVjNUhnckkvTlNGSkg1RjRZT0FyOUV5cVBuU0UwNlhQbnlHbERxYUNRPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.17/Gold.Hand.Trade_0.2.17_x64-setup.exe"
-    },
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHBxb3IvRE5XVDZSblF2TUg1Y28xMlp6TUo5Zk9SRW0wOFRQTmtwakc0ZVdETkd2eE9RbWk0TXh1NFJlWElicXFWU3BldUN1Ky92eXIrcGFTS3h1d1F3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwOTc5MDc2CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKZ0ltVHF4UnJCQmE3eDVSVUxHTE5WYnRDODBQeW9SOG9yYy9hOXpnL2h4VjlmeW9vcFMxNzUxSFFwMlZZNnNRc3JxMTIwbnFlVEVrYk8vWnRlb3c2Qmc9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.17/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHJ2UHdZaVl6bFlTRnZxdFVCYkhYSzVUMGxhRnA0RFVDL0pGakJqcnlvdnZ0Ly9ETVAxMFhHMUJpaFZSWkpCc2JscEVxVng4dnA0eTR5MkU5ZlZOdlE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwOTg0MzE4CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKWFIzNncrYWJvSjNrdVhHb2NDZnlMaTlzc3VxWVdDcWdieTluRlV6dXRxYXNZYWRWWUlLeVVFcFRyd3JGVHdIQjFvOG1LNXlweUlqM0IyeWtuVVBVQkE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.18/Gold.Hand.Trade.app.tar.gz"
+    },
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGdKcEpnOWtEZGVpUHh0Qzkrc2d4SzkxOTluK3VmRmdaa1htK3hwazBDNHNQSzkxWTZPNitGTG96MjY4NUJySGo0TlQyUVlpREk4YWZ1N0VkZ1RxSmdJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgwOTg1Mzc0CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMi4xOF94NjQtc2V0dXAuZXhlCkRnVHJwZ1RRZzJIcEJXUXYvWlRld1FSN05ZODBBM0dDSE82ZFl4d2lOZXNIUzV5eWhaL2twbkVSYzJlbFJCRVgvcXFWMlFZS05hY09ENUE0bG5BZUNRPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.18/Gold.Hand.Trade_0.2.18_x64-setup.exe"
     }
   }
 }
