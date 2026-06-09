@@ -1,15 +1,15 @@
 {
-  "version": "0.2.20",
-  "notes": "## [v0.2.20] — 2026-06-09\n\n### 변경\n- **시세·순위·관심종목 갱신 안정화** — 여러 화면과 자동매매가 동시에 데이터를 불러올 때 한국투자증권 초당 호출 한도를 넘겨 시세·순위가 멈추던 문제를 줄였습니다. 모든 시세·주문 요청이 하나의 호출 속도 제한을 공유하도록 정비했습니다.\n- **매수·매도·정정·취소 주문 우선 처리** — 시세·순위 조회가 몰리는 상황에서도 주문 요청이 먼저 전송되도록 우선순위를 부여했습니다.\n\n### 수정\n- **시세·관심종목이 한 번 멈추면 약 1분간 안 풀리던 문제** — 호출 한도 초과 시 약 1초 후 자동 재시도하도록 고쳤습니다.\n- **종목검색 포커스·첫 항목 활성** — 종목검색 창을 열면 입력창에 바로 포커스되고 첫 항목이 활성화됩니다(Windows에서 포커스가 새던 문제 포함).\n- **여러 창 개수 표시·닫기** — 헤더의 \"모든 팝업 닫기\" 개수가 창을 열고 닫을 때 즉시 반영되고, 최소화한 창도 개수에 포함되어 한 번에 닫힙니다. 메인 창은 개수에서 제외됩니다.",
-  "pub_date": "2026-06-09T14:34:44Z",
+  "version": "0.2.21",
+  "notes": "## [v0.2.21] — 2026-06-10\n\n### 추가\n- **로그 파일 저장** — 설정 > 로그/디버그에서 켜면 한국투자증권 API·오류 등 주요 로그를 날짜별 파일(`YYYY-MM-DD.log`)로 저장합니다. 기본은 꺼짐이며, 켠 상태는 앱을 다시 켜도 유지됩니다. 저장 폴더를 원하는 위치로 직접 지정하거나(\"위치 변경\") \"로그 폴더 열기\"로 바로 열 수 있고, \"로그 레벨\"로 파일에 남길 최소 수준(error/warn/info/debug)을 정할 수 있습니다. 30일이 지난 로그 파일은 자동으로 정리됩니다.",
+  "pub_date": "2026-06-09T15:31:03Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGlPc0RMcWd3Qk5NeFcvcFcxbC9jUDFDQzJGRGpiV2c0MWZZY2V0bFhVNmtnN2VlaDBoQVBjUUNJczhZY2x2d2laZUNLK21vbEtuS3VCY0xNakNwdkFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMDE0NzU0CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKL1NOc1VTcUpCNVpFc3JRNU5SeGNKSU5kbGpSUnMxNlBaZ0NBbHpRRzNtSmlTZlN2ZjJuNFliV1VZZnJWUWZvQXJEcUdoRHNpV1NlYWk0cVdqeDluQlE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.20/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHZrby9YTUNnMk5pQlR1NHZtY29ZaWk1QWlqZmN6WEQ0VDFwZmIram9yY2p2V3VFWjNCUjZkdWROSVRmMlNpazZoMFJ5QUc0TnUzaGJWSVpKak5FNUFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMDE4MzQxCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKbGF6ckJ2bEJ6S3JDUDZsclBUWEdvcXZJQlBtZ1poaWNMdUVUTjE4S291RlYwR29pcVZ5SXNWM3VDOXNsZUNLSXpmaU1vbWZwcmJkcUpZZTJFYWg4QkE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.21/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHRBOW5aSlNLZllqbWZ4Y2hDNHRLeWsxajd6NlVzRmRpQjZaQk1TNVhReHFRdUt5UXFXd0J0ZzQ3czFCc2JEaGpnVUxJcVV6TDRZYjgzcWd0cEdtK1E0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMDE1NjgxCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMi4yMF94NjQtc2V0dXAuZXhlCnptcEN2VEN5NDN5U0RuRTd6bmIrQVlpZ0lLSnFUWE51VTJVNmNMNDI2TGRrNU5tV1hYR3E4VGgzV3BtNVZQd2dJNzRhbmZoWGEvZzNMRVJ3Mm5ZbUR3PT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.20/Gold.Hand.Trade_0.2.20_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHVHTW1xNmpraVdHckpzdzhpZjZLNHdybFYvMEI3NzB5ZjVPREhqaERhWUJHNmptR1o1clo3ejUycTFTSkRwVSs3OXhwMDBCenZLd2ZTbXpkSUZUaHdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMDE5MDYwCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMi4yMV94NjQtc2V0dXAuZXhlCmg0ZHlBM1grRGFKTjBsVlhPYmhtTWswV2FzYmRkblJMSHVGYlVsazBkZnNMM2hleCtVZ0VPalYrUjR4aFQ2YTZUVEVtaW5sUUtHRnMrQ2RSR3c4VUJRPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.21/Gold.Hand.Trade_0.2.21_x64-setup.exe"
     }
   }
 }
