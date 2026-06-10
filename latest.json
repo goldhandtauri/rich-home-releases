@@ -1,15 +1,15 @@
 {
-  "version": "0.2.23",
-  "notes": "## [v0.2.23] — 2026-06-10\n\n### 추가\n- **예약 주문에 보유 수량 표시** — 예약매도 창에서 보유 수량과 매도가능 수량을 함께 보여주고, 빠른 비율 버튼(25%·50%·전량)으로 매도 수량을 한 번에 채울 수 있습니다.\n\n### 변경\n- **주문·예약 처리 후 미체결·예약현황 즉시 갱신** — 매수·매도 주문이나 예약 주문이 접수되면 미체결/예약현황 목록을 곧바로 다시 조회하고 해당 탭으로 전환해 결과를 바로 확인할 수 있습니다.\n- **예약 주문 창 위치** — 예약매수/예약매도 창이 주문 영역 가운데에 뜨도록 조정했습니다(이전에는 화면 위쪽으로 치우쳐 표시되던 문제).\n- **차트 지표 개수 표시 가독성** — 차트의 \"지표\" 버튼에 켜진 보조지표 개수를 보여주는 뱃지를 또렷하게 다듬어, 밝은 화면과 어두운 화면 모두에서 잘 보이도록 했습니다.\n- **호가 영역 정리** — 호가 아래쪽 시간대 안내를 빼고 빈 공간을 정돈해 호가를 더 넓게 표시합니다(시간외 단일가 시간대에는 그 자리에 예상 체결가를 함께 보여줍니다).\n\n### 수정\n- **시간외 단일가 상한가·하한가 표시** — 오후 시간외 단일가 시간대에 일부 종목의 호가 상한/하한이 실제 거래 범위와 다르게(전일 기준 ±30%) 표시되던 문제를 고쳐, 당일 종가 기준 ±10% 범위로 증권사 앱(HTS)과 동일하게 표시합니다.\n- **시간외 종가 주문 거부** — 오후 마감 직후 시간외 종가 시간대에 주문하면 \"주문단가를 입력할 수 없습니다\"로 거부되던 문제를 고쳤습니다.",
-  "pub_date": "2026-06-10T12:33:19Z",
+  "version": "0.2.24",
+  "notes": "## [v0.2.24] — 2026-06-10\n\n### 추가\n- **재무 스크리닝 정식 공개** — 상단 메뉴에 \"스크리닝 종목\"이 모든 사용자에게 표시됩니다. RIM 적정가 기반 가치주 발굴 화면으로, 적정가·괴리율·ROE·부채비율·영업이익 성장률·PER·PBR 등 공개 재무지표를 한 표에서 정렬·필터링할 수 있습니다.\n- **스크리닝 BPS 컬럼** — 적정가(RIM) 옆에 주당순자산(BPS)을 함께 표시합니다.\n- **스크리닝 면책 안내** — 화면 상단에 투자 참고 자료 고지 문구를 추가했습니다.\n\n### 변경\n- **설정 > 일반 설정 화면 정리** — 텍스트 배치와 정렬을 전반적으로 다듬었습니다. 슬라이더 값을 오른쪽 칩으로 분리(자동 잠금 시간·투명도·볼륨 등), 보안 섹션의 하위 옵션을 들여쓰기와 안내선으로 구분, 일지 폴더 등 경로 값을 입력값 형태로 표시, 설명문은 본문과 구분되는 각주 스타일로 정리했습니다. (라이트/다크 모두 적용)\n- **(Windows) 창 테두리 제거** — 메인 창과 팝업 창 가장자리의 굵은 테두리를 없애 화면이 더 깔끔하게 보입니다. (macOS는 기존과 동일)",
+  "pub_date": "2026-06-10T13:24:12Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHNOUXNHWmduTVkwbWxDMWE2S2NTOTFUU210cUwzd25ESjk4N2xacGtQQVgyZ0pyU1REZ2hVL216Tm4rUFFNV1J5V0NvZlZFUVFTTGNqZzBwQTVlZ1FBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMDkzNjQxCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKNW5TWXBaQWdVRnVGWmFnQi9UYjFUMlNpVDl6S0tmNXZXa0ZHQmJwN0hhNTJEcEcxZTZZanQ4STFFOVI5SEN2cjc1a1FER01rUjBoek9NakYzOHp4Q0E9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.23/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG1BQ2x5M3NCaDZXRDV4QUxROEs5UDNoTHo2Uzd0QjAvSDloS3MxYlU5MkwzeEJMVkJRRnozWUxpekZNVzZHYXpHeU15WWRHajREaktLR1FWUXY3QlFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMDk3MjI5CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKaVhYckhRUnJxY3VRUTg3ZDBmenljVlErVXZKQUlzQnpPWVIxTlk0ajc3dkREaXJKeEw0allFNzc5UWxIZXpUMmFJSDZjYmEvOEZkNjMvcmF6S1B3Q1E9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.24/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGtnOFBDWS9YLzBKQURLamZkRG9CVjZyMmdwY2JKd3NZYys2QlI2eElqT0E1bERQT01NMHVrUVphTjVFZ083TzR0YjFzcExNbklqYldoY1VKZWcrVEFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMDk0Nzk3CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMi4yM194NjQtc2V0dXAuZXhlCll6Qmo3U3BLejRQd0syeGduN2k5ZEE1eloycVpqc3gyb2dqN1J1bU4yQk9oamJRVmhRSWc5bG4yaUFaWEk5VzZTOEtEUVBwOFZrZzY1TDFmVWRjRUJ3PT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.23/Gold.Hand.Trade_0.2.23_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHZOc0VNNG9OeWQrUis5RlgvaGZ2VTN0Qk9QMFhRR1FNZnVYWHJnRDR5UTRTOVpyQ1FUQ1NQTk9pL1VaK0R0T2o3VEtaTEUzSUlXY01MdlpwRlpyWGdNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMDk5MDAyCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMi4yNF94NjQtc2V0dXAuZXhlCnQ2QjdNUzZMNk1wTm9USUxKNHk2d2xZVHdjZmhmYVR6RjBsWWFHNlFKbEM0QlpDWHRaSVFzMXNsRllaWDN6MEVEb0RxTUFrSlB5YW9qOVNHNDFhM0F3PT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.24/Gold.Hand.Trade_0.2.24_x64-setup.exe"
     }
   }
 }
