@@ -1,15 +1,15 @@
 {
-  "version": "0.2.22",
-  "notes": "## [v0.2.22] — 2026-06-10\n\n### 추가\n- **단축키 정비 + Windows 단축키 동작** — 앱 전역 단축키를 한 곳에서 일관되게 관리하도록 정리했습니다. Windows에서 현재 창 닫기(Ctrl+W)·앱 종료(Ctrl+Q)·전체화면(F11)·창 최소화(Ctrl+M) 단축키가 동작하도록 추가했습니다. (macOS는 기존 시스템 단축키와 OS 전체화면을 그대로 사용합니다.)\n- **설정 단축키 안내 정리** — 설정 > 단축키 표에 각 단축키의 적용 범위(전역/팝업/투자일지)를 함께 표시하고, 종목검색(/)·창 닫기(Esc)·투자일지(저장·내보내기·인용·새 일지) 단축키를 추가했습니다.\n\n### 변경\n- **여러 창 개수 제한 안내** — 종목상세 창을 동시에 너무 많이 열면 뜨던 안내를, 모든 팝업에 토스트로 띄우지 않고 창을 연 화면에만 앱 테마 안내 창(확인 버튼)으로 보여주도록 다듬었습니다.\n\n### 수정\n- **(Windows) 종목상세 창 쌓임·숨음·맨 앞 표시** — Windows에서 종목상세를 여러 개 열 때 위로 차곡차곡 쌓이지 않거나, 이미 떠 있던 창이 뒤로 숨거나, 종목검색에서 이미 열린 종목을 다시 선택해도 맨 앞으로 오지 않던 문제를 고쳤습니다.\n- **로그 폴더 열기** — 설정 > 로그/디버그의 \"로그 폴더 열기\" 버튼이 아무 반응이 없던 문제를 고쳐, 이제 로그가 저장된 폴더가 파일 탐색기(Finder/탐색기)로 바로 열립니다.\n\n### 제거\n- **동작하지 않던 새로고침(Ctrl/Cmd+R) 단축키 안내** — 실제로 동작하지 않아 단축키 목록에서 제외했습니다.",
-  "pub_date": "2026-06-09T17:26:02Z",
+  "version": "0.2.23",
+  "notes": "## [v0.2.23] — 2026-06-10\n\n### 추가\n- **예약 주문에 보유 수량 표시** — 예약매도 창에서 보유 수량과 매도가능 수량을 함께 보여주고, 빠른 비율 버튼(25%·50%·전량)으로 매도 수량을 한 번에 채울 수 있습니다.\n\n### 변경\n- **주문·예약 처리 후 미체결·예약현황 즉시 갱신** — 매수·매도 주문이나 예약 주문이 접수되면 미체결/예약현황 목록을 곧바로 다시 조회하고 해당 탭으로 전환해 결과를 바로 확인할 수 있습니다.\n- **예약 주문 창 위치** — 예약매수/예약매도 창이 주문 영역 가운데에 뜨도록 조정했습니다(이전에는 화면 위쪽으로 치우쳐 표시되던 문제).\n- **차트 지표 개수 표시 가독성** — 차트의 \"지표\" 버튼에 켜진 보조지표 개수를 보여주는 뱃지를 또렷하게 다듬어, 밝은 화면과 어두운 화면 모두에서 잘 보이도록 했습니다.\n- **호가 영역 정리** — 호가 아래쪽 시간대 안내를 빼고 빈 공간을 정돈해 호가를 더 넓게 표시합니다(시간외 단일가 시간대에는 그 자리에 예상 체결가를 함께 보여줍니다).\n\n### 수정\n- **시간외 단일가 상한가·하한가 표시** — 오후 시간외 단일가 시간대에 일부 종목의 호가 상한/하한이 실제 거래 범위와 다르게(전일 기준 ±30%) 표시되던 문제를 고쳐, 당일 종가 기준 ±10% 범위로 증권사 앱(HTS)과 동일하게 표시합니다.\n- **시간외 종가 주문 거부** — 오후 마감 직후 시간외 종가 시간대에 주문하면 \"주문단가를 입력할 수 없습니다\"로 거부되던 문제를 고쳤습니다.",
+  "pub_date": "2026-06-10T12:33:19Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG0xb1BkVDZRSU83VklFQWorMHM0VTNkc3VBUS8xdG10TVpLbjBudElQb3NSUTA4MVF2bmxINWpYTWxPemh2bndDTHVpYkROdHZZdWY3WFZVVnFCYkE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMDI1Mjg5CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKTXJrbGRNU1JCalpFdUZnTjFybkkwelN2V1k5ZDBwZ2U3NFBhdDdGZXhkRStEV3RYaUdMS2ZxSTRJd3NEcVkrK1MrUGhVMGUvR2ZCUFpKZUt4QnlFQ3c9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.22/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHNOUXNHWmduTVkwbWxDMWE2S2NTOTFUU210cUwzd25ESjk4N2xacGtQQVgyZ0pyU1REZ2hVL216Tm4rUFFNV1J5V0NvZlZFUVFTTGNqZzBwQTVlZ1FBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMDkzNjQxCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKNW5TWXBaQWdVRnVGWmFnQi9UYjFUMlNpVDl6S0tmNXZXa0ZHQmJwN0hhNTJEcEcxZTZZanQ4STFFOVI5SEN2cjc1a1FER01rUjBoek9NakYzOHp4Q0E9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.23/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGpEbmtaM0tzcUxPWng4TVhZVGprRWZMTUdjSGZ3dU9yZFV1VTdIdHdKa29BTmxvY2tqMDdJVlZ5djBvdU1IckowU2wyaUxReVh6Nk1qaG5jSmtKN1EwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMDI1OTYwCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMi4yMl94NjQtc2V0dXAuZXhlCm81QU1JbVhEVElOOHYvWFE5Y1ZydlFFYlVzOENRS2w3Z2xqY080RlA2NWNZYlhEUzBxZ0d0NFFvcloxMVo3L2s1bXdaa3Fsb3BVNE8zTjFudzk2MkRRPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.22/Gold.Hand.Trade_0.2.22_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGtnOFBDWS9YLzBKQURLamZkRG9CVjZyMmdwY2JKd3NZYys2QlI2eElqT0E1bERQT01NMHVrUVphTjVFZ083TzR0YjFzcExNbklqYldoY1VKZWcrVEFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMDk0Nzk3CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMi4yM194NjQtc2V0dXAuZXhlCll6Qmo3U3BLejRQd0syeGduN2k5ZEE1eloycVpqc3gyb2dqN1J1bU4yQk9oamJRVmhRSWc5bG4yaUFaWEk5VzZTOEtEUVBwOFZrZzY1TDFmVWRjRUJ3PT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.23/Gold.Hand.Trade_0.2.23_x64-setup.exe"
     }
   }
 }
