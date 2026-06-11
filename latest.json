@@ -1,15 +1,15 @@
 {
-  "version": "0.2.25",
-  "notes": "## [v0.2.25] — 2026-06-11\n\n### 추가\n- **종목상세 창 제목에 현재가 표시** — Windows의 Alt+Tab, macOS의 Mission Control·Dock 등 창 전환 목록에서 종목명·코드와 함께 현재가가 보여, 창을 열지 않고도 시세를 확인할 수 있습니다.\n\n### 변경\n- **주문 영역 시간대 안내 가독성·정확성** — 다크 모드에서 거의 보이지 않던 시간대 라벨(시간외 단일가·종가 등)을 또렷하게 고치고, NXT 프리마켓 안내 문구를 추가했습니다. 장 마감·주문 불가 시간·NXT 전용 시간대 안내 문구도 실제 거래 시간대에 맞게 정정했습니다.\n- **매도 화면 시각 정리** — 보유정보 카드 가운데의 흰색 세로 구분선과, 선택된 매수/매도 버튼 아래 그림자를 제거하고 카드 테두리를 워밍 골드 톤으로 정돈했습니다. (라이트/다크 모두)\n- **골드 버튼·뱃지 가독성** — 일부 골드 톤 버튼·뱃지의 글자 색을 다듬어 특히 다크 모드에서 더 잘 보이도록 했습니다.\n- **종목검색 창 개수 제한 안내 유지** — 종목상세 창이 최대 개수에 도달한 상태에서 새 종목을 선택하면, 종목검색 창이 닫히지 않고 그대로 남아 안내가 표시됩니다. (이전에는 검색창이 닫히며 안내도 함께 사라지던 문제)\n\n### 수정\n- **키 등록 직후 일부 화면 미갱신 수정** — 한투 API 키를 새로 등록한 직후 거래량·상승/하락 순위, 관심종목, 자산정보 등 일부 화면이 갱신되지 않던 문제를 수정했습니다.\n- **NXT 비편입 종목 주문 실패 수정** — NXT에서 거래되지 않는 종목을 매수·매도할 때 \"거래가 불가능한 종목\" 안내가 뜨며 주문이 거부되던 문제를 수정했습니다. 이제 자동으로 KRX로 주문됩니다.\n\n### 보안\n- **한투 키 보호** — 절전·화면잠금 직후 키 저장소에 일시적으로 접근하지 못하는 상태에서, 정상적인 한투 API 키가 손상된 것으로 잘못 판단되어 삭제되던 문제를 방지했습니다.",
-  "pub_date": "2026-06-11T06:53:14Z",
+  "version": "0.2.26",
+  "notes": "## [v0.2.26] — 2026-06-11\n\n### 변경\n- **화면 전반 디자인 정리(그라데이션 → 단색)** — 카운트·알림·시장 구분 뱃지, AI 채팅 화면(보낸 메시지 말풍선·전송/재시도 버튼 등), 시황·공시 화면(탭·여러 창 구분·자동 정렬 토글·AI 버튼)에서 그라데이션을 걷어내고 단색 워밍 골드 톤으로 통일했습니다. 일부 골드 배경 위에서 흐릿하게 보이던 흰 글자도 또렷하게 고쳤습니다. (라이트/다크 모두)\n- **창 활성/비활성 색 구분** — 메인 창과 팝업 창의 상단 영역이 지금 사용 중인 창(활성)일 때 더 밝게, 다른 창을 쓰는 동안(비활성)에는 따뜻한 톤으로 살짝 어둡게 표시됩니다. 비활성 창의 닫기·최소화·최대화 버튼도 회색으로 흐려지고 마우스를 올리면 다시 색이 돌아옵니다. (다크 모드에서 비활성 창이 오히려 더 밝게 보이던 문제도 함께 수정)\n- **스크리닝 종목 표 정리** — 표 헤더에 남아 있던 빈 스크롤 공간을 없애고, 본문은 마우스를 올리거나 표 안에 있을 때만 스크롤바가 나타나도록 했습니다. \"종목\"과 \"기준가\" 열이 너무 멀리 떨어져 보이던 간격도 좁혀 한눈에 읽기 쉽게 정돈했습니다.\n- **시황·공시 자동 정렬 표시 정리** — 자동 정렬이 켜졌음을 나타내는 \"ON\" 표시를 더 또렷하고 가운데 정렬된 형태로 다듬었습니다.\n\n### 수정\n- **창이 좁을 때 스크리닝 종목 데이터 가림** — 창을 좁게 줄이면 상단 안내 문구가 아래로 길게 늘어지며 정작 중요한 종목 데이터를 가리던 문제를 고쳐, 좁은 폭에서도 종목 데이터가 항상 보이도록 했습니다.\n- **호가 예상 체결가 글자 깨짐** — 시간외 단일가 시간대에 호가가 빽빽할 때 아래쪽 예상 체결가 글자가 눌려 깨져 보이던 문제를 고쳐, 공간에 맞춰 글자 크기가 단계적으로 줄며 잘리지 않도록 했습니다.",
+  "pub_date": "2026-06-11T12:40:24Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGpHamRqdE03d1l4d3JnbjJiY1M2K0lpOU03Rnhxa0R1cG1ERWNQSkZWc2c3UzRXbGJaQlM1dWVMVW9PYitSLzZKejIrR0t0Y1FyQ0lmeDRtK3RjcEFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMTU5Nzk1CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKYS9xTnY0cXJqVGtMNjdpekhoTk5SNzVSUFJ2YW5wQTFPS3FYUWwxRkZ5dnNkNDVaVjNyWFIrV2NsT2JTMC8rL211Q1RaT0xLaUIyVzFDMFc4andyQXc9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.25/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGtKb2tUZnI3TFZSL1YwRWZzMFlpWGNXeGovelk2N0NGWVBaM08xWXBXekhObWJQNE9nQVJjaUd1YmVOUVRGMUNIbTNxcUhFOW9LQ0g2U2krSC9MRndBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMTgwODYyCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKTlNBVE5ZQ3ZhZ0x4MnhrQnZkRFNRRU85WHJVSloxbS9RMVREb1RCWjI3VHBKeVpQWE1jM0tpbFcyVkVUVTk0Z3VYYmtzWmhUdGRsSmVSbml4TFcyQkE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.26/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHY5VzREaTgyd0dBMUtWS0xDcldScVo3dVBjN05LTEkwR2x2QWIwY2tJSjhUbEhPQUplTkFjTXF4WjBhQlVBSlRYUkk0S0dYbUtFeU13NWVwMGFNd0FZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMTYwNzkxCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMi4yNV94NjQtc2V0dXAuZXhlCkJQNWJML0xFdUk1ZzBkUHdBNEZEcDRVWnFWUFVOM1ZscUZMQTc5WFRxZHU4a3gwRzFJd2RjZ3NHSHBHQVNVQmQyV0Ric1NGTUo0UVh3bHBxQ2Y1aERRPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.25/Gold.Hand.Trade_0.2.25_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHJvNXFlcThwM3luMWpsZ3ExRURyT0Ryc1V5VTFlQUVKTXR5Z2pzSzlPSHJCbWE0R0NUdlArUGxmWWU3VE82UllhK1R2WTRIODRaU1lHMDd2dS9xd1FjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMTgxNjIxCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMi4yNl94NjQtc2V0dXAuZXhlCnFldHRKL01BWUNqd3p5Y05sbFUxUFlXSG90Vm5SQ1F5Zytkczh4eTR5VDZHVm4xWFRLK01vdWx5Smg5U21kOWhrQXNTL3ZWeEpvU1lCQlQvYnBnekRBPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.2.26/Gold.Hand.Trade_0.2.26_x64-setup.exe"
     }
   }
 }
