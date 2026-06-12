@@ -1,15 +1,15 @@
 {
-  "version": "0.3.1",
-  "notes": "## [v0.3.1] — 2026-06-12\n\n### 수정\n- **커스텀 스티커 추가 시 앱이 종료되던 문제** — 설정의 “내 스티커”에서 [이미지 추가]를 누르면 앱이 종료되던 문제를 고쳤습니다.\n- **추가한 스티커 삭제 버튼이 보이지 않던 문제** — 등록한 스티커를 지우는 버튼이 화면 밖으로 밀려 보이지 않던 문제를 고쳐, 항목마다 [삭제] 버튼이 항상 보이도록 했습니다.\n- **예약주문 가능 시간 안내** — 정규장 시간(예: 오후 3시 39분)에 예약주문을 등록하면 거부되던 것을, 예약은 **오후 3시 40분부터 다음 영업일 오전 7시 30분까지만** 가능함을 화면에서 안내하고 그 시간에만 예약 버튼이 활성화되도록 했습니다.\n\n### 변경\n- **“내 스티커” · “녹화 저장” 화면 디자인 정리** — 설정 > 화면 녹화의 두 영역을 보기 좋게 다듬었습니다. 스티커가 없을 때는 한눈에 들어오는 추가 영역으로, 추가한 스티커는 이름·배치·크기·삭제가 깔끔하게 정렬된 목록으로 표시됩니다. (라이트/다크 모두)\n- **설정 방향키 이동 — 세부 항목까지** — 설정 화면에서 위/아래 방향키를 누르면 왼쪽 큰 분류뿐 아니라 그 안의 세부 항목(방송 마스킹·녹화 해상도 등)까지 차례로 이동합니다.\n- **버튼·아이콘 디자인 정돈** — 스크리닝 “작성 시작” 버튼·창 고정(핀) 버튼·커뮤니티 글쓰기 버튼 등의 광택 그라데이션을 걷어내고 단색 골드 + 진한 글자로 정리해 더 또렷하고 깔끔하게 다듬었습니다. (라이트/다크 모두)\n\n---",
-  "pub_date": "2026-06-12T10:44:09Z",
+  "version": "0.3.2",
+  "notes": "## [v0.3.2] — 2026-06-12\n\n### 수정\n- **커스텀 스티커 추가 시 앱이 종료되던 문제** — 설정의 “내 스티커”에서 [이미지 추가]를 누르면 앱이 종료되던 문제를 고쳤습니다.\n- **추가한 스티커 삭제 버튼이 보이지 않던 문제** — 등록한 스티커를 지우는 버튼이 화면 밖으로 밀려 보이지 않던 문제를 고쳐, 항목마다 [삭제] 버튼이 항상 보이도록 했습니다.\n- **예약주문 가능 시간 안내** — 정규장 시간(예: 오후 3시 39분)에 예약주문을 등록하면 거부되던 것을, 예약은 **오후 3시 40분부터 다음 영업일 오전 7시 30분까지만** 가능함을 화면에서 안내하고 그 시간에만 예약 버튼이 활성화되도록 했습니다.\n\n### 변경\n- **“내 스티커” · “녹화 저장” 화면 디자인 정리** — 설정 > 화면 녹화의 두 영역을 보기 좋게 다듬었습니다. 스티커가 없을 때는 한눈에 들어오는 추가 영역으로, 추가한 스티커는 이름·배치·크기·삭제가 깔끔하게 정렬된 목록으로 표시됩니다. (라이트/다크 모두)\n- **설정 방향키 이동 — 세부 항목까지** — 설정 화면에서 위/아래 방향키를 누르면 왼쪽 큰 분류뿐 아니라 그 안의 세부 항목(방송 마스킹·녹화 해상도 등)까지 차례로 이동합니다.\n- **버튼·아이콘 디자인 정돈** — 스크리닝 “작성 시작” 버튼·창 고정(핀) 버튼·커뮤니티 글쓰기 버튼 등의 광택 그라데이션과 떠 보이는 그림자·네온 효과를 걷어내고 단색 골드 + 진한 글자의 평면 디자인으로 정리했습니다. (라이트/다크 모두)\n- **상단 메뉴 탭 — 선택 표시 또렷하게** — 현재 보고 있는 메뉴 탭이 한눈에 들어오도록 선택된 탭을 단색 골드 버튼으로 또렷하게 표시하고, 마우스를 올렸을 때와 단계를 분명히 구분했습니다. (라이트/다크 모두)\n\n---",
+  "pub_date": "2026-06-12T11:17:34Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGpEVnB6dkU1NWU3dzZ4VnZieXdROGMxNC8vYUJQRzVjT2lyYmh1V3cvZHZSM05XUkJUVkYxMk9RUXNiQWUvSzBrT3FXTzdvMTNWSFBlSXpnVU1hcndZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMjYwNTY1CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKSmsxUG8xdWEyTm5VVXI5ZzlOaExlbnQzQU10aTZkVWM3V2dZYXp4Ym9jeFphanZoQWdhWkYzQVdQc0VQdFF1RGVwQzdaaFJjWHhsdzFqSzFVdEhJQ0E9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.1/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHBYa2xNZXFvL2kzTGMzS0hRQkRpRkpnUjhEdlhiUHYzZVA1dTluQ1pMbEVPTk5YVjZjMXVnV01udGJRbzBhWUUxcE9JeVVGM2t5Nk5Tb05ZOVIvcHdBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMjYyNDI3CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKOWhOSTk5Y1BmRjB4RmdmcjlJSmtlQit2K1h1L2FlTUcyaTNWQkVwZWhFUFUzaUlBQ21JWFBRaUFSbHQzVDBhWWRUQkhOY3BleCtkc3l0WnpMNkIvQlE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.2/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHNLVlcyOWp2NzExbVc5dmJyTjJWQUJBTVFDelQ0UndiU0xpWFExRlVzRTZTcHNRMXZndVdUN0JPTS9henpQMlJpeHlOcUUwbGpncWlHc05CbW1xRUEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMjYxMDQ3CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy4xX3g2NC1zZXR1cC5leGUKNExxb3NxQlhZOFpQS3U3SW5BemNVS2VYWVVoaEdoNXdJbVlGN3M2TGFUTU9mTGFhRGI3NldvVFZjT1VXbkFUOHZsdTVHMjk5YWZnbFpzQmo3QWxBRHc9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.1/Gold.Hand.Trade_0.3.1_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGlnRnpGVEVNSFdRSHVzQ1JCSnF2cDVkM1pKSzdmRDBvZUM0a0tMQ21FUXBXb1prd3hza21MMVFOOGJ0VTFoSm9mQ1RGd1NWRnFnUmNSMkJVTnA5YXc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMjYzMDUxCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy4yX3g2NC1zZXR1cC5leGUKSkFOWDJwaDNua1FIR3VSUnV2WUZqTzBsUmtaRUpGWDl0NE0zdVZFSVc4UFd1YU5PSEl6S3B5a0VMYlNrVU9QeTRtR0U0NWZTWVdOYTVBNUJlUmtGRHc9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.2/Gold.Hand.Trade_0.3.2_x64-setup.exe"
     }
   }
 }
