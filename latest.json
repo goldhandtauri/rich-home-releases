@@ -1,15 +1,15 @@
 {
-  "version": "0.3.4",
-  "notes": "## [v0.3.4] — 2026-06-13\n\n### 변경\n- **휴장·시간외 주문 안내 화면 가독성·디자인 개선** — 휴장일·장 마감 등 즉시 주문이 불가능한 시간에 뜨는 안내 화면의 글자와 예약 매수·매도 버튼을 키우고 톤을 정돈해 한눈에 들어오도록 개선. 라이트·다크 모드 모두 보강.\n- **시세 연결 끊김 안내를 원인별로 구분** — 다른 PC에서 같은 계정을 사용하는 경우와 한국투자증권 서버 점검·일시 장애로 끊긴 경우를 구분해 각각 맞는 안내를 표시. 서버 점검·장애일 땐 \"작업이 끝나면 자동으로 복구된다\"는 안내로 바뀌어 불필요한 오해를 줄임.\n\n### 수정\n- **휴장일 즉시 주문 차단** — 주말·공휴일에는 즉시 주문 화면 대신 휴장 안내가 표시되어, 체결되지 않을 주문이 잘못 접수되는 것을 막음. 다음 영업일에 자동 접수되는 예약 주문은 그대로 등록 가능.",
-  "pub_date": "2026-06-13T12:32:24Z",
+  "version": "0.3.5",
+  "notes": "## [v0.3.5] — 2026-06-13\n\n### 변경\n- **상단 메뉴 활성 탭 가독성 개선** — 라이트 모드에서 현재 선택된 메뉴 탭이 배경과 또렷이 구분되도록 톤을 조정. 다크 모드는 기존 디자인을 그대로 유지.",
+  "pub_date": "2026-06-13T13:17:24Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHVsNHBQbENHcy9XMVkwR0toS0trVVNESWtVaXh3eVlFMklIanNjbUNhRmZFZDZqL1RVcXhjallna2tXQkxLUG5mcHI1cWswUmZlUGFoekFwc1RwbWd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMzUzMTA0CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKc0IzVk5DLzRBdk9jeDFqajVtQjZyWHV6YWNJdjFmTWxxSXFvQ1MvUWZqQmg0cW4xcjNIM3QyelBTVXNseWE5bm1sZ2dkSlVPcTBUNnBWY1RaclJoQWc9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.4/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG5OQUN6WnNWd2pqaUtrVTFsRndJZjUvelJuYVY4OGo1QjA2YWtYTkNXbnVzbzNIR0tiM20zY2lsN2tBSCtWYkhJQUQxSGJxNFVUVjUzQjl5N2IrNkFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMzU1ODQyCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKMjdrbVBCd2pWNzdveTFLZmQ5Q0hYTWZFUjkyczZxQnk4SktBanRENjNudW92UHQrUkdISVI4cEs3cFI2cG03RllteDYxcEdZdjlzZENxMlVia3Y3Qmc9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.5/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG9YQjAyVmtEMzdaNy9TSGhHQmlXeFVDVzk3MVM4NzMzTTRSajVSK0owOEcwYjZzajE0TkhuU3dTUVQvU1VaODh3MnJRL1FXNzhacFZ0dk9CZHFsMFE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMzUzOTQxCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy40X3g2NC1zZXR1cC5leGUKbGI5dG5acC8rcXQyK1I3MWlxYmFhbFhvMk9TV3ZjeHFURTNPbjViUmNCYkhzQzhhZTYzcERPRGZ0TEVCMW9EQ0Q3V2dtTCtzSUlScTcwajk4YjQvQmc9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.4/Gold.Hand.Trade_0.3.4_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGlFbGxWOXVUenk3RVpUNVRPUnNEZldva0NOajhFTEc1dHF5aks1dWxYdExEOVhiMXR2aE5CVVJhOXlZU2NDclJlbDZ3dm9RRXBZYzU3Nlg3NVRCcGcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMzU2NjQxCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy41X3g2NC1zZXR1cC5leGUKYkQvWW1sUDZvN3NVb0dDMkRjUWpaZDVUZjFsSnd2Vzd2VWJaS2huTyttbTJEMjhoTE5uQkoyMjlzL2xLVEY5bW9zZElWQVYxcC9hUk83K2VwUjhLQkE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.5/Gold.Hand.Trade_0.3.5_x64-setup.exe"
     }
   }
 }
