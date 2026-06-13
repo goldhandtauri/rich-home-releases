@@ -1,15 +1,11 @@
 {
-  "version": "0.3.5",
-  "notes": "## [v0.3.5] — 2026-06-13\n\n### 변경\n- **상단 메뉴 활성 탭 가독성 개선** — 라이트 모드에서 현재 선택된 메뉴 탭이 배경과 또렷이 구분되도록 톤을 조정. 다크 모드는 기존 디자인을 그대로 유지.",
-  "pub_date": "2026-06-13T13:17:24Z",
+  "version": "0.3.6",
+  "notes": "## [v0.3.6] — 2026-06-13\n\n### 변경\n- **녹화 해상도 선택을 디스플레이에 맞게 제한** — 모니터 해상도보다 높은 녹화 해상도(예: 1920×1200 화면에서 4K·2K)는 업스케일이라 화질 이득 없이 파일·부하만 커집니다. 이제 디스플레이를 초과하는 해상도는 선택 목록에서 자동으로 비활성화되고, 설정 화면에 현재 디스플레이 해상도가 함께 표시됩니다.\n\n### 수정\n- **화면 녹화 얼굴 크기 정상화 (Windows)** — 디스플레이보다 높은 해상도(예: 1920×1200 화면에서 4K)로 녹화할 때 얼굴 영상이 비율에 맞지 않게 크게 나오던 문제를 수정. 이제 어떤 녹화 해상도에서도 얼굴이 화면 비율에 맞게 표시됨.",
+  "pub_date": "2026-06-13T14:08:49Z",
   "platforms": {
-    "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG5OQUN6WnNWd2pqaUtrVTFsRndJZjUvelJuYVY4OGo1QjA2YWtYTkNXbnVzbzNIR0tiM20zY2lsN2tBSCtWYkhJQUQxSGJxNFVUVjUzQjl5N2IrNkFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMzU1ODQyCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKMjdrbVBCd2pWNzdveTFLZmQ5Q0hYTWZFUjkyczZxQnk4SktBanRENjNudW92UHQrUkdISVI4cEs3cFI2cG03RllteDYxcEdZdjlzZENxMlVia3Y3Qmc9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.5/Gold.Hand.Trade.app.tar.gz"
-    },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGlFbGxWOXVUenk3RVpUNVRPUnNEZldva0NOajhFTEc1dHF5aks1dWxYdExEOVhiMXR2aE5CVVJhOXlZU2NDclJlbDZ3dm9RRXBZYzU3Nlg3NVRCcGcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMzU2NjQxCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy41X3g2NC1zZXR1cC5leGUKYkQvWW1sUDZvN3NVb0dDMkRjUWpaZDVUZjFsSnd2Vzd2VWJaS2huTyttbTJEMjhoTE5uQkoyMjlzL2xLVEY5bW9zZElWQVYxcC9hUk83K2VwUjhLQkE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.5/Gold.Hand.Trade_0.3.5_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG9ZMnN2TG9Xd05aK25BcVcxVjBycGlpaTRoamU2SFVPK1RIbUFKNUV1UHBxSUlUUGgzV3krWitoYjJHaGRzck5OcW5KblJIRmRzOXg4bEtRcExSRWd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMzU5NzI2CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy42X3g2NC1zZXR1cC5leGUKUHM1TlVtRTFjdVBKRlNTMVlBNy8wNEVFcjUvU3I1c0ZtalUyOGtsWmYvaktzNy9CVFJzeFNLTEpQVnhKNGdneWhoL29ua0VTenkvdkVZbUIyVXdSQWc9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.6/Gold.Hand.Trade_0.3.6_x64-setup.exe"
     }
   }
 }
