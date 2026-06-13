@@ -1,15 +1,11 @@
 {
-  "version": "0.3.6",
-  "notes": "## [v0.3.6] — 2026-06-13\n\n### 변경\n- **녹화 해상도 선택을 디스플레이에 맞게 제한** — 모니터 해상도보다 높은 녹화 해상도(예: 1920×1200 화면에서 4K·2K)는 업스케일이라 화질 이득 없이 파일·부하만 커집니다. 이제 디스플레이를 초과하는 해상도는 선택 목록에서 자동으로 비활성화되고, 설정 화면에 현재 디스플레이 해상도가 함께 표시됩니다.\n\n### 수정\n- **화면 녹화 얼굴 크기 정상화 (Windows)** — 디스플레이보다 높은 해상도(예: 1920×1200 화면에서 4K)로 녹화할 때 얼굴 영상이 비율에 맞지 않게 크게 나오던 문제를 수정. 이제 어떤 녹화 해상도에서도 얼굴이 화면 비율에 맞게 표시됨.",
-  "pub_date": "2026-06-13T14:08:49Z",
+  "version": "0.3.8",
+  "notes": "## [v0.3.8] — 2026-06-14\n\n### 추가\n- **녹화 중 화면에 그리기** — 녹화하면서 화면 위에 펜으로 표시할 수 있습니다. 색상·굵기 선택, 지우개, 전체 지우기를 지원하며, 그린 내용은 녹화 영상에만 담기고 그리기를 종료하면 정리됩니다.\n- **얼굴 가리기에 마스크 추가** — 입을 보건용 마스크로 가립니다. 선글라스와 함께 골라 눈과 입을 동시에 가릴 수 있도록 스티커를 여러 개 겹쳐서 적용할 수 있습니다.\n- **얼굴 보정** — 피부를 매끄럽고 화사하게 보정합니다(약·중·강). 얼굴 가리기와 별개로 켤 수 있습니다.\n\n### 변경\n- **녹화 팝업 디자인 개선** — 시작 전·녹화 중·완료 세 화면의 가독성과 정보 배치를 정돈하고, 라이트·다크 모드 모두 보강했습니다.\n- **그리기 중 녹화 창 정리** — 화면에 그리기를 시작하면 녹화 컨트롤 창이 자동으로 최소화되고(그리기 창에 녹화 시간 표시), 그리기를 종료하면 원래대로 돌아옵니다.\n- **녹화에 마우스 포인터 포함** — 녹화 영상에 마우스 커서가 함께 담깁니다.\n\n### 수정\n- **화면 녹화 시작 부분의 영상·음성 어긋남 개선** — 녹화 도입부에서 입과 소리가 어긋나던 현상을 완화.\n- **고해상도(4K·2K) 녹화에서 얼굴이 덜 부드럽던 문제 완화** — 불필요한 매 프레임 처리를 줄여 얼굴 영상이 더 부드럽게 담기도록 개선.\n- **얼굴 영상 끊김 수정** — 카메라가 낮은 프레임으로 잡혀 얼굴이 뚝뚝 끊기던 문제를 해결.\n- **녹화 시작 시 창이 출렁이거나 깜박이던 문제 수정** — 녹화 시작 버튼을 눌렀을 때 창이 여러 번 튀거나 깜박이던 현상을, 창 크기를 한 번에 부드럽게 맞추도록 수정.\n- **녹화 창을 닫아도 카메라가 꺼지지 않던 문제 수정** — 녹화 중이 아닐 때 창을 닫으면 카메라가 정상적으로 꺼집니다(녹화 중에는 유지).",
+  "pub_date": "2026-06-13T19:43:14Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG9ZMnN2TG9Xd05aK25BcVcxVjBycGlpaTRoamU2SFVPK1RIbUFKNUV1UHBxSUlUUGgzV3krWitoYjJHaGRzck5OcW5KblJIRmRzOXg4bEtRcExSRWd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMzU5NzI2CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy42X3g2NC1zZXR1cC5leGUKUHM1TlVtRTFjdVBKRlNTMVlBNy8wNEVFcjUvU3I1c0ZtalUyOGtsWmYvaktzNy9CVFJzeFNLTEpQVnhKNGdneWhoL29ua0VTenkvdkVZbUIyVXdSQWc9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.6/Gold.Hand.Trade_0.3.6_x64-setup.exe"
-    },
-    "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGx3Q2NZVDQwK3RaWWFGa3R5Mno4dnY3MlE0TGhDUTh3V0llZlV5T0hvQnZYL0NHNFZ5aUpEUXdscmhCUndTdlJ3eXRLZ2VvOEZhYlBSRVpCSlVoTUFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMzU4ODMzCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKcE5CV0F4V2FmTkVtbVkwUW44SGVNVTUxeEhjSi9OQzNMODZvcE9KMDlWd3dFUWVMS1BvNUc0QTE5dDBWaUJhWXE5cjJ2QURwaXpnYklmZkllVDlxQlE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.6/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGhxT0hGaHMraERRTDJ2NDFDRnFtNTRRSkJFd3VaMU94Unl4QmVFSy9xeUk0VWRxNE9DaGhhcmdnQ1VYVzBsQUswMGtvQXdTUDZpRSttVndaUHE5OHd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxMzc5NzkxCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy44X3g2NC1zZXR1cC5leGUKM2dXWk9VUGFDT1d6ZVBUT0FQYktoMGtra1NwcXZNRGFtdXIxbXdPdmg1M0pld0I3OHpZRW1Xc1BRc3pzT0xpZXRFS0JrSVpydTJkS1F4Z1Y0UUdoQnc9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.8/Gold.Hand.Trade_0.3.8_x64-setup.exe"
     }
   }
 }
