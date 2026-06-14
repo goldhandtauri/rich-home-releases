@@ -1,15 +1,11 @@
 {
-  "version": "0.3.9",
-  "notes": "## [v0.3.9] — 2026-06-14\n\n### 추가\n- **녹화 카메라 선택** — 화면 녹화에 쓸 카메라를 직접 고를 수 있습니다. 설정과 녹화 창 양쪽에서 선택할 수 있고, 내장 카메라·아이폰(연속성 카메라)·USB 웹캠처럼 실제 연결된 카메라만 목록에 보입니다(OBS 같은 가상 카메라는 제외). 카메라를 꽂거나 빼면 목록이 자동으로 갱신됩니다.\n- **얼굴이 안 잡힐 때 전체 가리기 옵션** — 얼굴 가리기를 켰을 때 얼굴 검출이 실패하면 화면을 전부 가려 얼굴이 그대로 노출되지 않도록 하는 옵션을 추가했습니다. 기본으로 켜져 있습니다.\n\n### 변경\n- **고른 카메라가 미리보기·녹화에 일관되게 적용** — 카메라를 선택하면 미리보기와 실제 녹화가 항상 같은 카메라로 동작합니다. 아이폰 등 외부 카메라를 골랐는데 미리보기는 다른 카메라로 보이던 문제를 해결했습니다.\n- **카메라가 빠져도 미리보기 자동 복구** — 미리보기 중 카메라(예: 아이폰)가 분리되면 화면이 멈추지 않고 자동으로 다른 사용 가능한 카메라로 전환됩니다.\n\n### 수정\n- **화면 녹화 음성·영상 어긋남 수정** — 녹화가 길어질수록 얼굴과 목소리가 점점 어긋나던 현상을 해결. 녹화 내내 입과 소리가 안정적으로 맞습니다(macOS·Windows).\n- **화면에 그리며 녹화할 때 저장이 오래 걸리던 문제 수정** — 펜으로 그린 뒤 녹화를 멈추면 저장이 한참 걸리던 현상을 빠르게 저장되도록 수정.\n- **화면에 그릴 때 녹화가 검게 나오던 문제 수정 (Windows)** — 메인 화면 위에 그리기를 시작하면 녹화 영상이 검게 비던 현상을 수정.\n- **녹화 창을 닫을 때 카메라가 꺼지지 않던 문제 추가 보강** — 창을 닫는 순간 미리보기 카메라가 확실히 꺼지도록 안정성을 더 높였습니다.",
-  "pub_date": "2026-06-14T04:59:57Z",
+  "version": "0.3.10",
+  "notes": "## [v0.3.10] — 2026-06-14\n\n### 변경\n- **화면 녹화 창 우상단 고정 + 위치 기억** — 녹화 버튼을 누르면 녹화 컨트롤 창이 화면 우상단 구석에 떠서 녹화하려는 화면을 가리지 않습니다. 한 번 끌어 옮겨 두면 다음에 그 자리에서 열리고, 얼굴·마스킹 옵션을 펼쳐도 창이 화면 아래로 사라지지 않습니다.\n- **화면 녹화 창 정리·간결화** — 제목 중복을 없애고 가림 보호 상태를 창 상단에 항상 표시하며, 카메라·얼굴 가리기 같은 세부 옵션은 접어 두어 창이 짧고 한눈에 들어옵니다.\n\n### 수정\n- **'항상 가리기'가 시작 직후 잠깐 적용되지 않던 문제** — 앱을 켜고 메인 화면에 들어간 직후 계좌·금액이 잠깐 그대로 보일 수 있던 문제를 고쳤습니다. 이제 첫 화면부터 가려진 상태로 표시됩니다.\n- **키 만료 안내의 계좌번호도 가림 적용** — 화면 아래 키 만료 안내 문구에 보이던 계좌번호도 '항상 가리기'(계좌번호) 설정에 따라 함께 가려집니다.",
+  "pub_date": "2026-06-14T13:35:26Z",
   "platforms": {
-    "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG90d1dmMXVOY1JMOTRic3IxZFVFcE5ZWlpWZHh1cXBQUUtVSEpNdDl1K0dvdXhDeDhSTFhUTDM4VFdRM2U3eVQ3UzZYcllldHJVNmZTZ1JhTW02a0FJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNDExODgzCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKSXhrcUgvbTlLSmNwN0FzV0RyQXFaMlNRNnUxWUhiaVBQRmQ3dUZSS0RCcVl4dXd4OWhkWk1aZldHZmNleXJ2MktRcTFYZm5MaWNySlpBY1FLS1l2QlE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.9/Gold.Hand.Trade.app.tar.gz"
-    },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGdnb3k5OW1zMEJYRU41TTZmSHBMeXhHZng4OEFlaHphb1ZnOU9RdkRPZktUWWZuc2FuYUZVbFBvMXNzZVZlbnREeGdKQm5YZVJmQmVEYlNnYmhwZFFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNDEzMTk0CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy45X3g2NC1zZXR1cC5leGUKT0E4MEJIa2lhU0h6cmZQUlBYajQ1Z3NLOHpJUmt4V2xxYU1YMGtTWmRwNlpEbFJpWmNBOGpsNTkraUg0Y3lpa085ZXlxS2liaGE5TFNndWh4T1BGQUE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.9/Gold.Hand.Trade_0.3.9_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHUzdGhuQTUzOFZnYWsyZzNMYXJwTU1nMSt2ZzZ6TVpiSlRyNnZPdi9pK0FUdXo5NDZrTG9BTWQ0Z1lZLy9LWC9YQjROV29YSC8yQXNTMGhvNEZFb0FjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNDQ0MTIzCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy4xMF94NjQtc2V0dXAuZXhlCjcvSkRuSkttaTZjSG5xSmxuQmM4TmJ4SGFjUjk4a3ZoL0EwaUZoR3FvZWRIWkl5bGNtcExOQXg3eU9veWdobG5YdlRCdGZsZ0ZsZ1FYVmdKUDE3RkNRPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.10/Gold.Hand.Trade_0.3.10_x64-setup.exe"
     }
   }
 }
