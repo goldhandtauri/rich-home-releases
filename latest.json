@@ -1,15 +1,15 @@
 {
-  "version": "0.3.11",
-  "notes": "## [v0.3.11] — 2026-06-14\n\n### 수정\n- **녹화 창 제목이 Windows 에서 잘리던 문제** — 녹화 중 창 상단 제목이 Windows 에서 `…` 로 잘려 보이던 문제를 고쳤습니다. 제목과 보호 상태가 온전히 표시되도록 타이틀바를 정리했습니다.",
-  "pub_date": "2026-06-14T14:47:00Z",
+  "version": "0.3.13",
+  "notes": "## [v0.3.13] — 2026-06-15\n\n### 추가\n- **상단 바에 한국은행 ECOS 금리·환율** — 기준금리·국고채 3년·국고채 10년·원/달러·원/엔(공식 매매기준율)을 상단 지수 바에 함께 표시합니다. 설정 → 한국은행 ECOS 에서 인증키를 등록하면 즉시 나타나고, 미등록 시 안내 칸을 누르면 설정으로 바로 이동합니다. (일 단위 데이터라 1시간마다 갱신 + 수동 새로고침)\n\n### 변경\n- **금리·환율 전일 대비 표시** — 국고채 3년·10년·원/달러·원/엔에 전일 대비 등락을 지수처럼 상승 빨강·하락 파랑으로 보여줍니다. (기준금리는 정책금리라 값만 표시)\n- **예약주문 안내를 KIS 서버 응답 기준으로 정확화** — 예약 매수/매도가 막힐 때 앱 시계로 추정하지 않고 실제 KIS 서버 응답을 따릅니다. 자정 무렵 KIS 예약 서버 초기화 시간(23:40~00:10)에는 버튼을 열어 두고, 등록을 시도하면 서버 응답에 따라 \"서버 초기화 중 · 00:10 이후 다시 등록\" 으로 정확히 안내합니다.",
+  "pub_date": "2026-06-14T17:05:51Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG96aDMzRXJrZStlZEtVc0pzNGNhSU9RdmdHQ1hQYUpqTHhZenJjZzdGd3QwZ0Z3Tmc0QXlrV1IwM0l3N2c0UWlia3Z3MlVpeFVvTlhaanpBSkJTQkFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNDQ3NjY5CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKSEZtV0dWZWMzSDZYUTNqbktKUHBnOU1ZaWFNc2RTbTdvbkZOa1Fka3A4SWNKa24zU0Jxd3d2aXNHZnFKcWp1Z1liK1hKZzFyemZJZHpYeEdxTUVtQWc9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.11/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHVkbnpmWmtFbFBBMHVIOTBWUGlSdW5jaUhXaVkyaGZxMkFkWjY2dzBrOVcrK3lGY1VsbU5hcmQwVTJqTC9aemtOZjBhT2tjc21xWHlxSEpXdHI3bUFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNDU1MjUwCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKcWNWandoUE9RSW9wQWtiOXdCWFc2ZUd4NjVBR3VOTGE0OVZWT2VGc0xWZ0V3OElYYUpVd0IyRGRhV3lIZndlMXF4RENxLy9qTE9aeXNQVnZ3MU1iQ3c9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.13/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHZaSi8vdDhFdWJPai9YSjFqVUR3WEowL1hJTUZTbERVRlRJY0JWc09jZld2RENzbjJUamdCMkl4RU5oeWlKeWpneU1ZN1p1K1UzdnNSbCtjNEx5NUFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNDQ4NDE0CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy4xMV94NjQtc2V0dXAuZXhlCnIvQzEreGUzQ3pocGEydWV1K1FMZTUrSW9GTGNIV0FvMWdMWmJjRHJTRENkQUFQZ1JXVTlqTHNRcldYSFRTYWxVV3dmL3gyeVdFSFBXak5PbGxxQ0JnPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.11/Gold.Hand.Trade_0.3.11_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGg0WVZzUGtxc3NsMGtacStQeExYa2EzUGJjOWR2ZGEwYVU1WFBBdEtQR1FWbkU3Wk5CSGZHVmNJRy9QWTRCZUxncWEwU092NDNYUjlWcHo0bVU3cFFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNDU2NzQ4CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy4xM194NjQtc2V0dXAuZXhlCjBiajhaR0JPM0dHWnQwSzlQMU5nekdpR1pweXlrQnBmSnhNaWh2VTBDelVMcnQ5bUNPc0h5QjNoMnhjenhmN21SUE56bzNJaUxHOWVKZFpkaEZ5Q0JBPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.13/Gold.Hand.Trade_0.3.13_x64-setup.exe"
     }
   }
 }
