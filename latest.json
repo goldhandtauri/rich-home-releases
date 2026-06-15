@@ -1,15 +1,15 @@
 {
-  "version": "0.3.13",
-  "notes": "## [v0.3.13] — 2026-06-15\n\n### 추가\n- **상단 바에 한국은행 ECOS 금리·환율** — 기준금리·국고채 3년·국고채 10년·원/달러·원/엔(공식 매매기준율)을 상단 지수 바에 함께 표시합니다. 설정 → 한국은행 ECOS 에서 인증키를 등록하면 즉시 나타나고, 미등록 시 안내 칸을 누르면 설정으로 바로 이동합니다. (일 단위 데이터라 1시간마다 갱신 + 수동 새로고침)\n\n### 변경\n- **금리·환율 전일 대비 표시** — 국고채 3년·10년·원/달러·원/엔에 전일 대비 등락을 지수처럼 상승 빨강·하락 파랑으로 보여줍니다. (기준금리는 정책금리라 값만 표시)\n- **예약주문 안내를 KIS 서버 응답 기준으로 정확화** — 예약 매수/매도가 막힐 때 앱 시계로 추정하지 않고 실제 KIS 서버 응답을 따릅니다. 자정 무렵 KIS 예약 서버 초기화 시간(23:40~00:10)에는 버튼을 열어 두고, 등록을 시도하면 서버 응답에 따라 \"서버 초기화 중 · 00:10 이후 다시 등록\" 으로 정확히 안내합니다.",
-  "pub_date": "2026-06-14T17:05:51Z",
+  "version": "0.3.14",
+  "notes": "## [v0.3.14] — 2026-06-15\n\n### 추가\n- **금리 카드에서 향후 정책금리 전망** — 상단 바의 기준금리·국채·정책금리 카드를 누르면 한국·미국·일본의 향후 정책금리 전망이 펼쳐집니다. 미국은 연준 점도표(향후 연도별 금리 중앙값), 한국은 한국은행 점도표와 국고채 기반 시장 기대, 일본은 정책금리와 물가·성장 전망을 보여주고, 각국 통화정책 회의까지 남은 일수(D-day)도 함께 표시됩니다. (당국·시장 전망일 뿐 확정 예측이 아니라는 안내 포함)\n- **상단 바에 해외 금리 추가** — 미국 국채 10년·미국 정책금리·일본 정책금리를 한국 금리·환율과 함께 표시합니다. 각 카드 앞에 해당 국가 국기를 붙여 한눈에 구분됩니다.\n\n### 변경\n- **금리·환율 표시 정리** — 각 카드에 값의 기준 날짜를 함께 보여주고(공식 매매기준율은 게시일 기준), 카드에 마우스를 올리면 어떤 값인지 설명이 나옵니다. 자주 바뀌지 않는 값이라 불필요한 새로고침 버튼은 정리하고, 원/달러·원/엔에도 국기를 추가했습니다.\n- **설정 사이드바 정리** — 한국투자증권·DART·KRX·한국은행·미국 FRED·AI 키 등록 항목을 \"키 등록\" 묶음으로 모아 사이드바가 한결 깔끔해졌습니다. 하위 항목이 있는 메뉴(키 등록·일반 설정·화면 녹화)는 펼침 표시로 통일해 어떤 메뉴에 세부 항목이 있는지 한눈에 보입니다.",
+  "pub_date": "2026-06-15T12:56:15Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHVkbnpmWmtFbFBBMHVIOTBWUGlSdW5jaUhXaVkyaGZxMkFkWjY2dzBrOVcrK3lGY1VsbU5hcmQwVTJqTC9aemtOZjBhT2tjc21xWHlxSEpXdHI3bUFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNDU1MjUwCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKcWNWandoUE9RSW9wQWtiOXdCWFc2ZUd4NjVBR3VOTGE0OVZWT2VGc0xWZ0V3OElYYUpVd0IyRGRhV3lIZndlMXF4RENxLy9qTE9aeXNQVnZ3MU1iQ3c9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.13/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHZadjIzcnRyRU1YK09qZ0sxc3RQL3pRT3Z4dkRyZXBtbDFUaFlTeklzMHU0ZTluNW1aZlZkYVU0d3YrRFBXcWlJSzhoM2ZCQjVoMHFaRk1DdDBPV2cwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNTI3MTg2CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKTEtLcmFIWWR5dkNZWkRIVS9kdEtYTEZkVkE1V1NseFNEeE81a2hkQnd5S0pudC9yMlRwNjZDRm1sZ0tQQ1oyL0R4QzlGRFRnNXdjU3VGU2NPWGh4QXc9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.14/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGg0WVZzUGtxc3NsMGtacStQeExYa2EzUGJjOWR2ZGEwYVU1WFBBdEtQR1FWbkU3Wk5CSGZHVmNJRy9QWTRCZUxncWEwU092NDNYUjlWcHo0bVU3cFFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNDU2NzQ4CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy4xM194NjQtc2V0dXAuZXhlCjBiajhaR0JPM0dHWnQwSzlQMU5nekdpR1pweXlrQnBmSnhNaWh2VTBDelVMcnQ5bUNPc0h5QjNoMnhjenhmN21SUE56bzNJaUxHOWVKZFpkaEZ5Q0JBPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.13/Gold.Hand.Trade_0.3.13_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGlHQXIwNDUyMEdHL1dyTU12VGxjZ2pKaUFWZ3FuYUJIai9rd3FMU2M5Ny82azJiRUtMeUdPU2ZadE5ySXlNL3dRMmVPWEZzR0ZPV05WbUdTS3RQWEFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgxNTI4MTcyCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy4xNF94NjQtc2V0dXAuZXhlCkQ3b3VyRGRCQTlPeFdEalFiYjJ0cTdqSU53ODJVRXFld3NCYzBKQzJIQUliaUo3T2wzT0tsRUJhYUVpelg3MHV0UktoVmtxZ3JUczRRUDZZYXA1NkFBPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.14/Gold.Hand.Trade_0.3.14_x64-setup.exe"
     }
   }
 }
