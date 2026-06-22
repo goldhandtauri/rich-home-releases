@@ -1,15 +1,15 @@
 {
-  "version": "0.3.19",
-  "notes": "## [v0.3.19] — 2026-06-22\n\n### 수정\n- **자동매매 손절 매도 반복 발주 방지** — 손절 매도가 접수된 뒤 잔고에 반영되기 전까지 같은 매도를 반복해서 내보내 주문 거부가 몰리던 문제를 바로잡았습니다. 이제 접수된 매도가 잔고에 반영될 때까지 기다린 뒤 다음 평가를 진행해, 불필요한 주문 거부가 쌓이지 않습니다.\n\n### 변경\n- **자동매매 시스템 로그 가독성 개선** — 주문이 실패했을 때 화면의 시스템 로그에 길고 복잡한 기술 메시지가 통째로 나오던 것을, 사람이 바로 알아볼 수 있는 한 줄 요약으로 정리했습니다. 자세한 원문은 설정에서 '로그 파일 저장'을 켰을 때 로그 파일에만 기록됩니다.",
-  "pub_date": "2026-06-22T07:35:32Z",
+  "version": "0.3.20",
+  "notes": "## [v0.3.20] — 2026-06-22\n\n### 수정\n- **종목상세 창 안정성 개선** — 여러 종목의 종목상세 창을 빠르게 열고 닫을 때 드물게 앱이 종료되던 문제를 막았습니다. 창을 닫을 때 없애는 대신 숨겼다가 다음에 다시 쓰는 방식으로 바꿔, 창을 다시 만드는 과정에서 생기던 충돌을 없앴습니다. 종목상세는 동시에 최대 5개까지 띄울 수 있습니다.\n- **자동매매 손절 매도 반복 발주 방지** — 손절 매도가 접수된 뒤 잔고에 반영되기 전까지 같은 매도를 반복해서 내보내 주문 거부가 몰리던 문제를 바로잡았습니다. 이제 접수된 매도가 잔고에 반영될 때까지 기다린 뒤 다음 평가를 진행해, 불필요한 주문 거부가 쌓이지 않습니다.\n- **AI 공시 요약 안내 개선** — 공시 본문을 가져오지 못할 때 \"본문이 아직 준비되지 않음(접수 직후일 수 있음)\" 처럼 사유를 함께 안내하고, 잠시 후 다시 시도하면 본문이 포함될 수 있음을 알려줍니다.\n\n### 변경\n- **자동매매 시스템 로그 가독성 개선** — 주문이 실패했을 때 화면의 시스템 로그에 길고 복잡한 기술 메시지가 통째로 나오던 것을, 사람이 바로 알아볼 수 있는 한 줄 요약으로 정리했습니다. 자세한 원문은 설정에서 '로그 파일 저장'을 켰을 때 로그 파일에만 기록됩니다.",
+  "pub_date": "2026-06-22T09:11:00Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHVzSmtJM0J4RW43RXBRMEtJNHNTQ0xXRTJ5SmhscW1mK1JHVGhKTzBTL2FWZTE4RFBGWnpPU3haQ2dRckdkQVJNS29kRVhhQ3ZwbGFyS2xNTlBUR2dFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMTEyOTQyCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKK29RZUkrRTREWExYbVdubXhRWkN6NGluMExIb3JMN2RnR3JZTENrSHVncjNzSmF4ckU2c2ZJOUV3N3pyd3JIZHpISHVrNUphUVNyYzMzaWhoaWwxRFE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.19/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG5oL0MwcHZ0RzNabnR4OHk5SkhpMkVwUVRGMnlZMy92UXBjNVZLZXN4bHpyQWMzYWMwbU15cEhjbXpUSDBjTkVTZnVQSGFOTk5ObkV0aDFic0p1WmdNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMTE4Njk3CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKYStZRzVobmgvN2IrU255K3NuNEVYTDJ4UXZGeG0wbW45WEgrWWtLdXJMa3Q2dzFIeCsrTW0zV2dmWERVemN2QndmdytEWCtQZnFKTTVYbWY2TmxuQmc9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.20/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGoyQjZLdTVSN2VoTExhUzdyRjlOelg4UHBOdHRnK3IwRUdBOWhFeVpHVDcvYXV0VEZaSjh2MlV5ekVNTTdyS2g4WGtqR3g5dk5HdC9mclYvYTFmUmdjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMTEzNzMxCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy4xOV94NjQtc2V0dXAuZXhlCmlPL3BkMUFkVFJRTEhoTHE2ZENOdGJ3S2RNUzlhaWJkWUZEbkpIc2kyWHpGR3kvbG8zMEVWb0UwK2xDdHpQU2I1bjhTZkQvb0NxL28wNHNzRklLc0J3PT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.19/Gold.Hand.Trade_0.3.19_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGtCV1pZeHNrWmVCSisvbU9PNTVLVFBXYTNVNGlIK2F2aTNWdm9hNWRLejFzL084MXFXdWNxK3MrTHRNWUFTWkJEZGxudHM5U0NhY3hFNm92SmtSZFEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMTE5NDYwCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy4yMF94NjQtc2V0dXAuZXhlCnFMcTUyUW9TWm1QNUl4TytkSUNMbVliZDRGUnhrclR4SHhKdko3RHdhQkdZK0ZVZURrdnRMYzdFamI0L0FINVI1TFN3bE1vdEZNNnpqOWdETHU5SEFBPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.20/Gold.Hand.Trade_0.3.20_x64-setup.exe"
     }
   }
 }
