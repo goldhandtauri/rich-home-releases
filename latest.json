@@ -1,15 +1,15 @@
 {
-  "version": "0.3.22",
-  "notes": "## [v0.3.22] — 2026-06-22\n\n### 수정\n- **자동매매 매도 안정성 추가 보강** — 손절·매도가 접수된 뒤 잔고에 반영되기 전까지 같은 종목 매도가 다시 나가지 않도록, 모든 자동매매 전략에 동일한 안전장치를 적용했습니다. (앞서 적용한 손절 반복 발주 방지를 전 전략으로 확대)",
-  "pub_date": "2026-06-22T13:49:33Z",
+  "version": "0.3.23",
+  "notes": "## [v0.3.23] — 2026-06-25\n\n### 추가\n- **종목 스크리닝 — 7가지 가치투자 선별** — 마법공식, PEG/GARP, 알트만 Z-Score, 피오트로스키 F-Score, 그레이엄 NCAV, 어콰이어러스 멀티플, 버핏 퀄리티를 '스크리닝 종목' 한 페이지에 탭으로 모았습니다. 전 종목 재무·시세를 기반으로 저평가·우량 종목을 자동으로 추려 줍니다.\n- **데이터 수집 센터** — 전 종목 재무·시세를 한 번 수집하면 모든 선별 탭이 즉시 결과를 보여줍니다. 통계·비율·건전성 데이터셋별로 수집·재작성·갱신할 수 있고, 전체 백업/복원으로 재설치·이전 시 다시 수집하지 않아도 됩니다.\n- **오늘의 시장 판정** — 수동매매 화면에서 지수 등락·시장 폭·200일선 장기추세·외국인/기관 수급을 종합해 상승장·혼조·하락장을 한눈에 알려 줍니다.\n- **초보자용 설명 가이드** — 각 스크리닝 화면에 값 풀이·등급 기준·주의사항을 담은 설명 패널을 더했습니다.\n- **선별 변동 통계** — 재작성할 때마다 순위·지표 변화가 쌓여 종목별 추이, 여러 종목 비교, 순위 급등·급락과 신규 진입·이탈을 시계열로 볼 수 있습니다.\n- **데이터 수집 진행 표시** — 수집 중 다른 화면으로 이동해도 화면 우하단에 진행 상태가 작게 계속 표시되며, 클릭하면 수집 화면으로 돌아갑니다.\n\n### 변경\n- **스크리닝 표 스크롤 최적화** — 많은 종목을 빠르게 스크롤해도 끊기지 않도록 개선했습니다.\n\n### 수정\n- **데이터 수집 안정화** — 같은 수집이 중복으로 실행되지 않도록 막고, 느린 수집을 '응답 대기'로 잘못 표시하던 문제와 선별 탭을 다시 열 때 결과가 갱신되지 않던 문제를 고쳤습니다.",
+  "pub_date": "2026-06-25T11:48:15Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGc2amZtRXJwQjFPOWNRc29pUFRBOWNiSzhlcEpjcHF1SGhHNEFQQXdZYUh0MGZlUHQwM1pHeXY4RzFxb3ZBZHhBYmptejZKQzU3QVF0SEp5eHJIQ0FRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMTM1MzkxCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKSmFFUVRCVmQ1TFV4aU5FejQ0M2JmeGJxcVZXVm9zSUhTV0FBN1VDbDE1dFh5cEhmZWdRQnB1UDdRdDFFTHNmMWhhcE9ob041VkphZmFhdllHYTE5QXc9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.22/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG5wWXNHaFF6YmN1dGdNQUhGb09NMFArUFNwcERkem81WThhTUZpV1U4ZXpvWXZPV3gybEE2OWFBalhibFVLbHVwMkpoZjJaTnJsdW0ySGk5ZkRoTFFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMzkwNzg2CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKc3NKY2dFeEpMa0VMaVFKZVRZaUNyRklVdzdtdGwzZVVmb3Z5c3ZYYXo0Y012SGpFTGsrUkJrUmZJUUhGVU5idHI3bEszaU85dGI3cmFQODRNamdQQ3c9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.23/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHN2aWNGelVhOUVucE9yKzJPemxBa3lVbEVNMjFNSnYxRHc4MGorYzQzR09wa2p5cHkvRkN2c2RPMW9nZVRQcWhsNk5YYStyMTVjMnZFNGJuamhUZWdNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMTM2MTczCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy4yMl94NjQtc2V0dXAuZXhlCmpRdkxKQ0VZdFFxQ2FPc2I2Wnp5MlFIbXpOUkFhOUlOSzBPc2JsNXlFUlVOVjllZFlVc3ZFMUJDakN0L2UzVjNBUjdjeEEzL0grRXNUZUZMeHZtb0FRPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.22/Gold.Hand.Trade_0.3.22_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHMyOXZXcFJWRFc1Qzg2N24yazlUKy9oblNMYU01Tk14Q25VZWNSMDIvck55Zm1sd1dKNTNXL0gyRERaa21Od3RsOC9MRUppQkRLaDV4MW4rUWJMWnd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMzg4MDk0CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy4yM194NjQtc2V0dXAuZXhlCnduUzJ1VitXclFEbWMvUnFEbGtPWE1vbzVnTWhZUDliUUNWVVhDaGQvSmxmQWlMeXpDT3ljenBwL09TKzUyWkpvNDJGc0JDekZRL1F4ZEVoMVU5RkNBPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.23/Gold.Hand.Trade_0.3.23_x64-setup.exe"
     }
   }
 }
