@@ -1,15 +1,15 @@
 {
-  "version": "0.3.23",
-  "notes": "## [v0.3.23] — 2026-06-25\n\n### 추가\n- **종목 스크리닝 — 7가지 가치투자 선별** — 마법공식, PEG/GARP, 알트만 Z-Score, 피오트로스키 F-Score, 그레이엄 NCAV, 어콰이어러스 멀티플, 버핏 퀄리티를 '스크리닝 종목' 한 페이지에 탭으로 모았습니다. 전 종목 재무·시세를 기반으로 저평가·우량 종목을 자동으로 추려 줍니다.\n- **데이터 수집 센터** — 전 종목 재무·시세를 한 번 수집하면 모든 선별 탭이 즉시 결과를 보여줍니다. 통계·비율·건전성 데이터셋별로 수집·재작성·갱신할 수 있고, 전체 백업/복원으로 재설치·이전 시 다시 수집하지 않아도 됩니다.\n- **오늘의 시장 판정** — 수동매매 화면에서 지수 등락·시장 폭·200일선 장기추세·외국인/기관 수급을 종합해 상승장·혼조·하락장을 한눈에 알려 줍니다.\n- **초보자용 설명 가이드** — 각 스크리닝 화면에 값 풀이·등급 기준·주의사항을 담은 설명 패널을 더했습니다.\n- **선별 변동 통계** — 재작성할 때마다 순위·지표 변화가 쌓여 종목별 추이, 여러 종목 비교, 순위 급등·급락과 신규 진입·이탈을 시계열로 볼 수 있습니다.\n- **데이터 수집 진행 표시** — 수집 중 다른 화면으로 이동해도 화면 우하단에 진행 상태가 작게 계속 표시되며, 클릭하면 수집 화면으로 돌아갑니다.\n\n### 변경\n- **스크리닝 표 스크롤 최적화** — 많은 종목을 빠르게 스크롤해도 끊기지 않도록 개선했습니다.\n\n### 수정\n- **데이터 수집 안정화** — 같은 수집이 중복으로 실행되지 않도록 막고, 느린 수집을 '응답 대기'로 잘못 표시하던 문제와 선별 탭을 다시 열 때 결과가 갱신되지 않던 문제를 고쳤습니다.",
-  "pub_date": "2026-06-25T11:48:15Z",
+  "version": "0.3.24",
+  "notes": "## [v0.3.24] — 2026-06-28\n\n### 추가\n- **금손매 AI — 키 없이 쓰는 무료 로컬 AI** — 내 PC에서 직접 실행되는 로컬 AI를 더했습니다. 설정 → AI 설정에서 [설치] 한 번이면 종목·공시·투자일지 분석에 바로 쓸 수 있고, 거래 데이터를 외부로 보내지 않아 무료·오프라인으로 동작합니다. 기존 클라우드 AI(Gemini·Claude 등)를 대체하지 않는 추가 선택지입니다.\n- **로컬 AI 응답 실시간 표시** — 금손매 AI가 답을 한 글자씩 바로바로 보여 줍니다. 종목 AI 분석은 물론 투자일지 AI 초안·발행 정리·공지 작성에서도 긴 글을 기다림 없이 진행 상황을 보며 받을 수 있습니다.\n- **투자일지·공지에서도 금손매 AI 선택** — 투자일지 AI 초안과 발행 정리, 공지 작성에서 금손매 AI(로컬)를 직접 골라 쓸 수 있습니다.\n- **모델 설치 완료 알림** — AI 설정 창을 닫아 두어도 모델 내려받기가 끝나면 메인 화면에 알려 줍니다.\n\n### 변경\n- **AI 전달 길이 설정 한 곳으로 통합** — AI에 보낼 길이 설정을 지금 쓰는 AI에 맞춰 한 자리로 모았습니다. 클라우드 AI는 글자 기준 '전달 총 길이', 금손매 AI는 메모리·속도 균형을 정하는 '처리 길이'로 자동 전환됩니다.",
+  "pub_date": "2026-06-28T08:01:55Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG5wWXNHaFF6YmN1dGdNQUhGb09NMFArUFNwcERkem81WThhTUZpV1U4ZXpvWXZPV3gybEE2OWFBalhibFVLbHVwMkpoZjJaTnJsdW0ySGk5ZkRoTFFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMzkwNzg2CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKc3NKY2dFeEpMa0VMaVFKZVRZaUNyRklVdzdtdGwzZVVmb3Z5c3ZYYXo0Y012SGpFTGsrUkJrUmZJUUhGVU5idHI3bEszaU85dGI3cmFQODRNamdQQ3c9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.23/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGhsQXZ4dW51dHZtUWo3cWloUEFHSWhoR3ZiemZxeWNSdmwwbEdZdkhMOWJuMkNZZnpXNU9UdEI2SWJyV0s1dSs1TndFaHh2TTBSK3A5cEloUDBZSVFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyNjMyNjMzCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKbFZMa1ZLN2FkM2FtV3BGdlhxQk0vdlQrdStJQUJBSU1nQXdiSFVGbVFBcGJSS0UzNENsaEwwdmVLelJvZGZoOGVqa3BYSlpTRzdSOXJNNkdQY003QVE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.24/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHMyOXZXcFJWRFc1Qzg2N24yazlUKy9oblNMYU01Tk14Q25VZWNSMDIvck55Zm1sd1dKNTNXL0gyRERaa21Od3RsOC9MRUppQkRLaDV4MW4rUWJMWnd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyMzg4MDk0CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy4yM194NjQtc2V0dXAuZXhlCnduUzJ1VitXclFEbWMvUnFEbGtPWE1vbzVnTWhZUDliUUNWVVhDaGQvSmxmQWlMeXpDT3ljenBwL09TKzUyWkpvNDJGc0JDekZRL1F4ZEVoMVU5RkNBPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.23/Gold.Hand.Trade_0.3.23_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG8vakJKYk9LNUN6MFM4dkVBOC9tVEFhNk1xekpyV240a1NHbWZ6eGFCc2tzNm90bWJoZHpxMXpUdiswejh4UGRaMVZJMmZUZ1FBeThVWkRFU2VVYlE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyNjMzNzE0CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy4yNF94NjQtc2V0dXAuZXhlCjNVbTZJcE1SdzJvQmNENG9INUdubi9nTVhlSDNtTGwxT1VXVHhDeHBlb0JKL3dhNW04aUFGRWZ0ZmlsemNGbVdiOUxLQ21pUFdvZi91NXNuTkxkaUJnPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.24/Gold.Hand.Trade_0.3.24_x64-setup.exe"
     }
   }
 }
