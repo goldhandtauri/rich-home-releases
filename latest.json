@@ -1,15 +1,15 @@
 {
-  "version": "0.3.31",
-  "notes": "## [v0.3.31] — 2026-07-02\n\n### 수정\n- **로컬 '금손매 AI'만 켜도 ✨ AI 분석이 바로 열리도록 수정** — 클라우드 AI(API 키 필요) 없이 무료 로컬 AI 모델만 설치·사용 설정한 경우, 종목 화면의 ✨(AI 분석)이나 공시 요약을 눌러도 \"AI 설정을 먼저 해 주세요\" 안내만 반복되고 정작 분석 창은 열리지 않던 문제를 고쳤습니다. 이제 로컬 AI 모델이 설치돼 있으면 API 키 없이도 곧바로 AI 분석이 열립니다. (투자일지 AI 초안·발행도 동일하게 로컬 AI만으로 사용할 수 있습니다.)\n\n### 변경\n- **'사용 가능한 AI 없음' 안내 개선** — 아직 쓸 수 있는 AI가 하나도 없을 때 뜨는 안내에, API 키 등록뿐 아니라 무료 금손매 AI(로컬) 모델 설치도 함께 안내하도록 문구를 다듬었습니다.",
-  "pub_date": "2026-07-02T07:11:56Z",
+  "version": "0.3.32",
+  "notes": "## [v0.3.32] — 2026-07-02\n\n### 추가\n- **시장·거시 지표 AI 분석 (✨)** — 수동매매 화면 상단의 '오늘 강한 하락장/상승장' 지표, 지수 카드(코스피·코스닥·코스피200), 금리·환율 바에 AI 아이콘을 달았습니다. 누르면 오늘의 시장 데이터(지수 등락·상승/하락 종목 수·외국인/기관 수급·200일선 추세·국내외 금리·환율)를 근거로, 누른 지표에 초점을 맞춰 AI가 데이터 기반으로 분석해 줍니다. (금리·환율 바는 항목이 많아 마우스를 올렸을 때 아이콘이 나타납니다.)\n\n### 수정\n- **커뮤니티 종목 멘션이 코드로 보이던 문제 수정** — 커뮤니티 글·댓글·미리보기와 새 댓글 알림에서 종목 멘션이 '$087010' 같은 코드 대신 종목명으로 표시됩니다. 글·댓글·떠다니는 위젯 미리보기에서는 전체 커뮤니티와 동일한 종목명 칩으로 통일했습니다.\n- **시장 지표 수급 숫자 정렬** — '오늘 시장' 지표의 외국인/기관 순매수 숫자가 라벨과 세로로 어긋나 보이던 정렬을 바로잡았습니다.",
+  "pub_date": "2026-07-02T09:24:48Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG5FbHNxTHZmOFVZRXZDTHpteDlndGJZMElMVi9LakNiL0tHNXdsZEh1NGdzWkN1aitVZjF6MFNuMHJBOGhaNVFpQVJTbm50ZEdpSTlqbmhCUUwySmdBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyOTc0OTM2CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKWlA5S3ZvaXZoR0hhWjhZUDhMUkJQL25nemxVSllDbWk3akF3NnpNSmJWVDJlOVJhNjZLVG91dXczdWVwb3Y5NW82bHhDa0Q5dGdMSG9SbVNyRHpqQUE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.31/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHFZaWo2ZTNHa2Yzc0FpcDlUditZYmk3Q0hrcGNPMUNES2JjSEFVRlB4Y3k1ckNjMzJQQXBZMG1TaVVON3VzY3pCWHY3SFArTHoxazVsT2p2LzlCVmc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyOTgzMjAxCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKaXJLaWZJQWJKUXVyaXEvTEoxVTJPRzdjb2NFOGJjelF0clp1dUhNcDNwMjZEWFRZeFh5bWU3RUx3SUIwbi9oMUtQYVlwNkxXNU52RjBOVVVPWkRCQmc9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.32/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG1VNklxdy9vYkxFSnUrdDFSNzRXR3ZBVXJzOWU3KzN1VmZHeVlCS0FJMURVSUN2UUZYY0xCSUpSa0lzeUhxZUNQWkdvMTZTMkRCRDc1b2EvVlhsOXc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyOTc2MzE1CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy4zMV94NjQtc2V0dXAuZXhlCjZZZEpBSk42L29uQm42aUZ6a0dRZWhLMlFSL25jK25IR1RhbXlIdVU2SittVTlleVVYMTJ5aTdMV2tvK2p1ZEVVc3R2QU1rUHJsUTNFa2svT01wWUFRPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.31/Gold.Hand.Trade_0.3.31_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGdkZm91MEkwSTRwN0lZTWQzSGZxNVB0UmxraGIxMmVTMTg3dVV2M2lPTHRQNnZyWGRla1pXVEc1cHg3eGpLcDRHQ3IwNHVqM1pETU91TXdzS2FpMVFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyOTg0Mjg3CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy4zMl94NjQtc2V0dXAuZXhlCmIwSFBxQTNRUHhkVGNVT3VNNmgvald4eFdnMVdWMW1yVkd6T1IrTmlJbS94d3JjaFMvQTJDUlJYVjhaTnA1NVdPRFRIQXdVQmllUnE4QzZBbzNSekNnPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.32/Gold.Hand.Trade_0.3.32_x64-setup.exe"
     }
   }
 }
