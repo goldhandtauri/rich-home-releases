@@ -1,15 +1,15 @@
 {
-  "version": "0.3.32",
-  "notes": "## [v0.3.32] — 2026-07-02\n\n### 추가\n- **시장·거시 지표 AI 분석 (✨)** — 수동매매 화면 상단의 '오늘 강한 하락장/상승장' 지표, 지수 카드(코스피·코스닥·코스피200), 금리·환율 바에 AI 아이콘을 달았습니다. 누르면 오늘의 시장 데이터(지수 등락·상승/하락 종목 수·외국인/기관 수급·200일선 추세·국내외 금리·환율)를 근거로, 누른 지표에 초점을 맞춰 AI가 데이터 기반으로 분석해 줍니다. (금리·환율 바는 항목이 많아 마우스를 올렸을 때 아이콘이 나타납니다.)\n\n### 수정\n- **커뮤니티 종목 멘션이 코드로 보이던 문제 수정** — 커뮤니티 글·댓글·미리보기와 새 댓글 알림에서 종목 멘션이 '$087010' 같은 코드 대신 종목명으로 표시됩니다. 글·댓글·떠다니는 위젯 미리보기에서는 전체 커뮤니티와 동일한 종목명 칩으로 통일했습니다.\n- **시장 지표 수급 숫자 정렬** — '오늘 시장' 지표의 외국인/기관 순매수 숫자가 라벨과 세로로 어긋나 보이던 정렬을 바로잡았습니다.",
-  "pub_date": "2026-07-02T09:24:48Z",
+  "version": "0.3.33",
+  "notes": "## [v0.3.33] — 2026-07-02\n\n### 추가\n- **AI 채팅으로 매수·매도·예약 주문 (✨ 금손매 AI)** — 종목 화면의 ✨ AI 채팅에서 \"1주 매수해줘\", \"2,000원에 1주 예약 매수해줘\" 처럼 말하면 AI가 \"…매수할까요?\" 하고 되물은 뒤 **\"네\"라고 답할 때만 실제 주문**을 넣습니다. 지정가(\"2만원에\")·수량(숫자 또는 '한주')·예약 매수/매도를 알아듣고, 지금 시장 시간대에 맞는 방식으로 접수합니다. 안전을 위해 **① 로컬 '금손매 AI' 사용 중일 때만 ② 텔레그램이 연동돼 있을 때만(주문 시 즉시 알림) ③ 명시적으로 \"네\" 확인**해야만 주문이 나갑니다. (수량·매수/매도는 AI 추측이 아니라 규칙으로만 해석하고, 성공·실패는 증권사 응답으로만 표시합니다.)\n- **AI 채팅으로 주문 취소** — \"예약 취소해줘\", \"매수 취소\", \"전체 취소\", \"하나만 취소\"처럼 말하면 대상 건수를 확인시켜 준 뒤 \"네\"로 취소합니다. (예약 매수/매도·미체결 주문·부분 취소 지원)\n- **매매·취소 텔레그램 알림 확대** — 채팅 주문뿐 아니라 종목 화면에서 직접 매수/매도·예약·취소할 때도 연동된 텔레그램으로 알려 줍니다.\n- **종목 AI 분석에 공식 뉴스 첨부** — 종목 AI 분석 시 공식 뉴스 제목을 함께 참고하도록 옵션을 추가했습니다(공시 옵션에서 켜고 끔). 소문·게시글이 아니라 공식 뉴스 헤드라인만 사용합니다.",
+  "pub_date": "2026-07-02T14:12:20Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHFZaWo2ZTNHa2Yzc0FpcDlUditZYmk3Q0hrcGNPMUNES2JjSEFVRlB4Y3k1ckNjMzJQQXBZMG1TaVVON3VzY3pCWHY3SFArTHoxazVsT2p2LzlCVmc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyOTgzMjAxCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKaXJLaWZJQWJKUXVyaXEvTEoxVTJPRzdjb2NFOGJjelF0clp1dUhNcDNwMjZEWFRZeFh5bWU3RUx3SUIwbi9oMUtQYVlwNkxXNU52RjBOVVVPWkRCQmc9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.32/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHZQdFNzeHcvQ2g1SzlTbXBPOXdhMEVUbW16anZ0bU0yVk00c3pscW1PeVpZT1JYbzRnZmRiNE1uQURMdDc2c2dldHpVbzZKcGlIazM4bXoraXhRSHc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMDAwNzEwCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKV042RkJkbHU0aEdmc0syQmJjbExVdFJqK2ZQNU5lc3hoSm16TEJJRFB4bDMwVlBqTmpMY2ltVW1TQTkrc1F6TWhXcDczQ2wxQUhES3FtVlF1WVZlQlE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.33/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGdkZm91MEkwSTRwN0lZTWQzSGZxNVB0UmxraGIxMmVTMTg3dVV2M2lPTHRQNnZyWGRla1pXVEc1cHg3eGpLcDRHQ3IwNHVqM1pETU91TXdzS2FpMVFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyOTg0Mjg3CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy4zMl94NjQtc2V0dXAuZXhlCmIwSFBxQTNRUHhkVGNVT3VNNmgvald4eFdnMVdWMW1yVkd6T1IrTmlJbS94d3JjaFMvQTJDUlJYVjhaTnA1NVdPRFRIQXdVQmllUnE4QzZBbzNSekNnPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.32/Gold.Hand.Trade_0.3.32_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHFhMzRZeE1Ebi9XOW44ZlA1c2EzZDAyeHBvM29vYlJBMjZwaEFCaVg2QTFpa0tkemhZMWVoZWRVUnZwa29FRklXdkFibGNLWXF6cnlPaWxBVnFIOVFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMDAxNTM5CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy4zM194NjQtc2V0dXAuZXhlCk9zaWY4VkUwek1nMTFCZkd5R3VLYjVQUmRkeC9VS00yTTlWWmtWL3UrMDVFQVdXQkswdWZDY2kyalRkZHhzSkVQYWEyUURMUndobGt4clJmOXFzd0NRPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.33/Gold.Hand.Trade_0.3.33_x64-setup.exe"
     }
   }
 }
