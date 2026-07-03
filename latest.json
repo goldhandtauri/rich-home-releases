@@ -1,15 +1,15 @@
 {
-  "version": "0.3.33",
-  "notes": "## [v0.3.33] — 2026-07-02\n\n### 추가\n- **AI 채팅으로 매수·매도·예약 주문 (✨ 금손매 AI)** — 종목 화면의 ✨ AI 채팅에서 \"1주 매수해줘\", \"2,000원에 1주 예약 매수해줘\" 처럼 말하면 AI가 \"…매수할까요?\" 하고 되물은 뒤 **\"네\"라고 답할 때만 실제 주문**을 넣습니다. 지정가(\"2만원에\")·수량(숫자 또는 '한주')·예약 매수/매도를 알아듣고, 지금 시장 시간대에 맞는 방식으로 접수합니다. 안전을 위해 **① 로컬 '금손매 AI' 사용 중일 때만 ② 텔레그램이 연동돼 있을 때만(주문 시 즉시 알림) ③ 명시적으로 \"네\" 확인**해야만 주문이 나갑니다. (수량·매수/매도는 AI 추측이 아니라 규칙으로만 해석하고, 성공·실패는 증권사 응답으로만 표시합니다.)\n- **AI 채팅으로 주문 취소** — \"예약 취소해줘\", \"매수 취소\", \"전체 취소\", \"하나만 취소\"처럼 말하면 대상 건수를 확인시켜 준 뒤 \"네\"로 취소합니다. (예약 매수/매도·미체결 주문·부분 취소 지원)\n- **매매·취소 텔레그램 알림 확대** — 채팅 주문뿐 아니라 종목 화면에서 직접 매수/매도·예약·취소할 때도 연동된 텔레그램으로 알려 줍니다.\n- **종목 AI 분석에 공식 뉴스 첨부** — 종목 AI 분석 시 공식 뉴스 제목을 함께 참고하도록 옵션을 추가했습니다(공시 옵션에서 켜고 끔). 소문·게시글이 아니라 공식 뉴스 헤드라인만 사용합니다.",
-  "pub_date": "2026-07-02T14:12:20Z",
+  "version": "0.3.34",
+  "notes": "## [v0.3.34] — 2026-07-03\n\n### 추가\n- **AI 에게 조회·순위·스크리닝을 물어볼 수 있어요** — 텔레그램이나 앱의 ✨ AI 채팅(상단 '금손매 AI 에게 물어보기' 포함)에서 자연어로 물으면 금손매가 실제 데이터로 답합니다.\n  - **내 계좌** — \"내 보유종목\", \"자산 알려줘\"(총 평가금액·평가손익·수익률), \"관심종목\", \"예약주문\"\n  - **종목 순위** — \"거래량 순위\", \"상승률/하락률 순위\", \"시가총액 순위\"\n  - **스크리닝** — \"스크리닝 알려줘\"(전략별 통과 현황), \"GP/A 스크리닝\"·\"버핏 스크리닝\" 처럼 특정 전략\n  - 종목명을 말하면 시세·재무를 찾아 답하고, 답 끝에 더 볼 수 있는 순위·전략 옵션도 안내합니다. (조회는 읽기 전용이라 주문과 무관합니다.)\n- **금손매 사용 가이드** — 텔레그램·AI 채팅에서 **\"금손매야\"** 또는 **\"도움말\"** 이라고 하면 매수·매도·조회·순위·스크리닝을 어떻게 말하면 되는지 예시로 알려 줍니다.\n- **'AI 에게 물어보기' 단축키** — 상단 물어보기 버튼을 `⌘/Ctrl + K` 로 바로 엽니다.\n\n### 변경\n- **AI 채팅 주문, 어떤 AI 에서도** — 이제 로컬 '금손매 AI' 뿐 아니라 연동한 클라우드 AI 를 쓸 때도 AI 채팅으로 매수·매도를 넣을 수 있습니다. (여전히 \"네\" 확인이 있어야만 실제 주문이 나갑니다.)\n- **텔레그램 순위·스크리닝 답변 정렬** — 순위·스크리닝을 물었을 때 보기 좋게 정렬된 목록으로 정리해 보냅니다.\n- **국민연금(연기금) 화면 다듬기** — 스크리닝 '국민연금' 탭의 인증키 안내에 설정으로 바로 가는 버튼을 추가했고, 종목상세의 국민연금 지분율 배지 글자를 또렷하게 개선했습니다.\n- **AI 답변 안내 문구 강화** — AI 답변이 사실과 다를 수 있다는 면책 안내를 더 잘 보이게 다듬었습니다.\n\n### 수정\n- **국민연금 데이터가 바로 반영되도록** — 설정에서 국민연금 인증키를 저장하거나 데이터를 수집한 직후, 스크리닝 '국민연금' 탭과 종목상세 배지가 곧바로 갱신됩니다. (이전엔 화면을 다시 열어야 보였습니다.)\n- **등락률 부호 중복 표기** — 하락 종목의 등락률에 마이너스가 두 번 찍히던 문제를 고쳤습니다.",
+  "pub_date": "2026-07-03T08:29:19Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHZQdFNzeHcvQ2g1SzlTbXBPOXdhMEVUbW16anZ0bU0yVk00c3pscW1PeVpZT1JYbzRnZmRiNE1uQURMdDc2c2dldHpVbzZKcGlIazM4bXoraXhRSHc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMDAwNzEwCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKV042RkJkbHU0aEdmc0syQmJjbExVdFJqK2ZQNU5lc3hoSm16TEJJRFB4bDMwVlBqTmpMY2ltVW1TQTkrc1F6TWhXcDczQ2wxQUhES3FtVlF1WVZlQlE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.33/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHY4aHVwTXlGNkZqR3FOVDFtNjF4N3kwbHFrYmZyczE1MXRpVHppRnlMOWkvbjlWbTFRMHJhWndLOTJkeEFJZEtLc3ZiUjYvbzZhUGNsK2NWSUc3Q2dNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMDY2MjExCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKOWtDWjNqYkhaMCtnb0FFcEpZK0lhUHNkZFBaWXdaWDk1VHduMmRZTEtuKzU4NEVPTXRaZ044Vmo1WVcvQWZqYmZnMHBrSktuYkNObzI5c1dZVUZVQVE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.34/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHFhMzRZeE1Ebi9XOW44ZlA1c2EzZDAyeHBvM29vYlJBMjZwaEFCaVg2QTFpa0tkemhZMWVoZWRVUnZwa29FRklXdkFibGNLWXF6cnlPaWxBVnFIOVFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMDAxNTM5CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy4zM194NjQtc2V0dXAuZXhlCk9zaWY4VkUwek1nMTFCZkd5R3VLYjVQUmRkeC9VS00yTTlWWmtWL3UrMDVFQVdXQkswdWZDY2kyalRkZHhzSkVQYWEyUURMUndobGt4clJmOXFzd0NRPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.33/Gold.Hand.Trade_0.3.33_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG1uMWMxVzZKVEFadmNGL0VyZGdpcS93T2lCT3FQSnNCaVZzR3hlbTZNYVNpbW50VWdiTEFxU3NEVEVQb3kxSlRhUVZ2M1NOTkhvb1J4cG41VDJiQVFBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMDY3MzU4CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy4zNF94NjQtc2V0dXAuZXhlClZ3UDlBVFRobjRFSVYzdlE0Y3FDb0RZU3VoLzUyMG5oSXhJL3laQ1FlcUgxN1d4Z0hxTjdPWWREYnJCc0dUejQxQTBKS2FrUHVNVXUwaVR2Qm9xSkJRPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.34/Gold.Hand.Trade_0.3.34_x64-setup.exe"
     }
   }
 }
