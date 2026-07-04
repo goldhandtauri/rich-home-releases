@@ -1,15 +1,15 @@
 {
-  "version": "0.3.38",
-  "notes": "## [v0.3.38] — 2026-07-04\n\n### 수정\n- **재접속이 필요한 상태에서 순위·보유종목이 '조회 중'에 멈추던 문제** — 접속 토큰이 없어 재접속이 필요한 상태(상단 [재접속] 버튼이 뜬 상태)에서는 거래량·상승률·하락률 순위와 보유종목이 '조회 중...'에서 계속 멈춰 있었습니다. 이제 각 위젯에 \"재접속이 필요해요 · [재접속]\"을 바로 보여 주고, 버튼을 누르면 다시 연결합니다. 재접속 시도가 한국투자증권 서버 연결 문제로 막히면 화면 위쪽에 \"한국투자증권 서버 연결 문제\" 안내 배너도 함께 표시해, 잠시 후 자동으로 복구된다는 것을 알려 줍니다.",
-  "pub_date": "2026-07-04T11:58:09Z",
+  "version": "0.3.39",
+  "notes": "## [v0.3.39] — 2026-07-04\n\n### 추가\n- **IPO 공모주 캘린더** — 시황/공시 화면에 'IPO 공모주' 탭이 생겼습니다. 청약일·상장일, 확정 공모가와 공모가 밴드, 수요예측 경쟁률·의무보유확약 비율, 주관사·시장 구분을 한 화면에 모아 보여 주고, 항목을 펼치면 자금 사용 목적·인수인 같은 상세까지 볼 수 있습니다. 청약이 임박한 순서로 정렬되며 약 30분마다 갱신됩니다.\n- **종목상세 IR 자료** — 종목상세 공시 탭에 'IR 자료' 섹션을 추가했습니다. 기업 IR 발표자료(PDF)를 앱 안에서 바로 열어 보고, 기업설명회(IR) 개최 공시도 함께 모아 봅니다. 자료가 없는 종목에서는 섹션이 표시되지 않습니다. (대형주는 공개 자료가 적을 수 있습니다.)\n\n### 수정\n- **일부 팝업 창을 열 때 앱이 종료되던 문제 (최신 macOS)** — 공시 원문·뉴스·IR 자료처럼 별도 창으로 열리는 팝업에서 최신 macOS(26 Tahoe)에서 앱이 갑자기 꺼지던 것을 근본적으로 고쳤습니다.\n- **AI 채팅 처리 길이 안내 툴팁이 가려지던 문제** — 처리 길이 선택 목록을 펼칠 때 설명 툴팁이 목록에 겹쳐 가려지던 것을, 목록이 열리면 툴팁이 바로 닫히도록 고쳤습니다.",
+  "pub_date": "2026-07-04T14:53:10Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHRMTlBqV2IrUjhON1hFck5Qa0hRR0NoRzJkRUZhVURTMzlBcm91dXNEVHpWQXhLRkY4SnNCYlgyR0Y5YlV5S2dNWFYvOWx3Q0JqS1grL1VRQzl5TlFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMTY1MzExCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKLytUbWxKUElrTlZMQWZ1dzhWV1Fsc0dUTzBFck8vak1vWjBxaS9HQng0czhHYkpqY0ROL3NZNUw1L1pJM0lTRDA4MnprRVRDakdrakhhY3VoaEcwQnc9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.38/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHQxSXJ2SStIVWhHYXo2REZCUlNXcUVXbUpSdEJzbyt4QW5kSzJMVTNra25sMkkybDY2c0JIZXpuWktoQ3o4K1EwR1J2OWI5MWZSbGtCZlNnWlhOYkEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMTc1OTc0CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKQnB6M3JFTmlReTBEbUZ3U0hrYjdaVGUxRWFwK1piK1E4MGxpLy94bU5kK2ZEM0wvNlZUdkZ4MEhib3NLWWU1cXA1ZDFpVmRTeCt1aWZyMTEwRFd4QWc9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.39/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHJyYVBoeHNEdmFtYk84bGZxaHZyUURtWVd0RldyWW1rMDdFZEVFbGVpWjRIQ2p2QURRVzlzdGVVbWJWQXZhWmlwL3YrTmZGdmkyUG84T0Y1Z0IxaFE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMTY2Mjg4CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy4zOF94NjQtc2V0dXAuZXhlCjBrRnlaaXNHZkk0MjM1bVd5d0ZlVFdhdnV6SjlDTjZvNkFONXZqTHl0YUU1MEZWLzZXQUNHMEFqRVU4NmI3NWprYmdLTk12VjVWZDhxOEM1RTE1dkJ3PT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.38/Gold.Hand.Trade_0.3.38_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGk1ekFpTFQ3eUZ2QlA0ZmlseUJvUXcrK1BUUmJMMnh1ZC9OM3FocStHb3dIWitNM1BnWVJFZzRJVEx0Ri9KVjNpcFhRbm0zNFd5cFp6WWUxQkNGY1FJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMTc2Nzg5CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy4zOV94NjQtc2V0dXAuZXhlCjJTd3hrNUtDLzZWbmJGTzlSRnltMHBwM3R4bnJrTDRQYzdCWnIxcUVESnJ6OWVscHZaMUxXRWFzUXRFTmVodUx6cVh0NE95Tkk2MFhDMExFY2ROd0NRPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.39/Gold.Hand.Trade_0.3.39_x64-setup.exe"
     }
   }
 }
