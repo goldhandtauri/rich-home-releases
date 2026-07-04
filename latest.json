@@ -1,15 +1,15 @@
 {
-  "version": "0.3.35",
-  "notes": "## [v0.3.35] — 2026-07-03\n\n### 추가\n- **금손매 AI 설치 중지** — 로컬 AI 모델을 내려받는 중에 **[중지]** 버튼으로 멈출 수 있습니다. 중지하면 받던 파일을 정리하고 다시 [설치] 상태로 돌아갑니다. (이전에는 한 번 시작한 대용량 다운로드를 멈출 방법이 없었습니다.)\n\n### 변경\n- **설정 화면 상태 배지 통일·가독성** — \"설정됨\" 같은 배지가 골드 배경 위 흰 글자라 잘 안 보이던 것을, \"로컬·무료\"·\"권장\" 배지와 동일한 진한 글자 디자인으로 통일했습니다. (라이트·다크 동일)\n\n### 수정\n- **모델 설치 실패 안내 겹침** — 로컬 AI 모델 설치가 실패할 때 뜨는 경고 문구가 모델 이름과 겹쳐 보이던 것을, 카드 아래 전체 폭으로 깔끔하게 표시되도록 고쳤습니다.\n- **로컬 '금손매 AI' 실행 시 검은 명령창이 뜨던 문제 (Windows)** — 로컬 AI 를 처음 켤 때 뒤에서 뜨던 콘솔 창을 더 이상 표시하지 않습니다.\n- **로컬 AI 채팅이 간헐적으로 \"연결 실패\"로 응답하지 못하던 문제** — 로컬 AI 서버가 종료된 뒤에도 이전 연결을 재사용하려다 실패하던 것을, 서버 상태를 확인해 필요하면 자동으로 다시 띄우도록 고쳤습니다.",
-  "pub_date": "2026-07-03T09:22:07Z",
+  "version": "0.3.37",
+  "notes": "## [v0.3.37] — 2026-07-04\n\n### 추가\n- **텔레그램 '금손매 시작' 메시지에 오늘의 시장 요약** — 아침에 앱을 처음 켤 때 오는 텔레그램 시작 메시지에 이제 다음이 함께 담깁니다.\n  - **오늘 영업일 여부** — 정상 영업일인지, 주말·공휴일 휴장인지 한눈에.\n  - **오늘의 시장 분위기** — 코스피·코스닥 등락과 상승/하락 종목 수로 판정한 상승장·하락장(수동매매 화면과 동일 기준).\n  - **주요 지수·금리·환율** — 코스피·코스닥·코스피200, 그리고 기준금리·국고채·달러/엔 환율(한국은행 ECOS 키를 등록한 경우)까지 수동매매 화면에 보이는 지표를 그대로 정리해 보여 줍니다.\n\n### 수정\n- **한국투자증권 서버 점검·장애 때 '조회 중'에서 멈추던 문제** — KIS 서버가 점검·장애로 응답하지 않을 때 수동매매 화면의 순위·보유종목 위젯이 '조회 중...' 상태로 계속 멈춰 있던 것을, 잠시 후 \"불러오지 못했어요 · 다시 시도\"로 바꿔 보여 주고 연결이 돌아오면 자동으로 다시 불러옵니다. 여러 조회가 연달아 연결에 실패하면 화면 위쪽에 \"한국투자증권 서버 연결 문제\" 안내 배너도 함께 표시합니다. (앱 키·토큰 만료로 조회가 막힌 경우는 '점검'으로 잘못 안내하지 않습니다.)",
+  "pub_date": "2026-07-04T10:33:47Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG9zM05ucTk3bWpVV3RiNlIzeFNPQW9PdkQrWDJzVmlFWmJWZG9ZaDhnbld0QXdKNndkWm1CblZVMGhmTy9GcFBqMWJpVUgwWndmYUtPaWVvMHBnNVFvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMDY5Mzc3CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKZmgvYkE0RVNwaC8xRENEQUFYZnBabkk3aUtPTTNSbnVES3hpMkxJN0x1OWlJRGRTeEFydWJtbi9Ba2dxanAzNDBRVVdkUHBMYzlBcmZiRGJ0TGZJREE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.35/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG5UYlBsZG1pVFBwdms0SFBFUE1mMWZ4UFlxa2FiN243cGk2RjJKa3czQ25RcnhnUHJpdWtycitwbkdLREx4Zlp3V0JWUGp2eU1oaVc2TDV6NXhIY0FvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMTU5MDA4CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKOElhd0N0MmNMZmFVeURLV0ZaRTR2QXhJT1pqTXBVYlJSM1luNThlcklZRllsVXV3Z0JZalZYTkNZY3AyVnpkOWZOMlFTdzFYOTQrY0xtMWtaMUJCQ1E9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.37/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGxhallhemUxT3NiSit1NVN2TFY1NjlNblcxYldaSFo5c1NwbE9mcDhiVjl2ckcwa1FDRzUxYjQ1MTRHWWpZUE4xNDYwaEUwNHdwTkNGM0M5WGR3MEFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMDcwNTI2CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy4zNV94NjQtc2V0dXAuZXhlCkpyYTlxZmRYWFVCbFNURCtQaUdlTkhYNUZ6dmVpeGtubTYvbHBQMmRTd2xzS0pScHV4aUdYSmdLRTN0NDZkMFVNV3JWRld2Qkxzbi9qd1A2T2pGMkJRPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.35/Gold.Hand.Trade_0.3.35_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGhvMjYwV3pmVU8rRkdUWFQzdlcrOHlYaVJFclYwSXlObk5FcUtqeXMwWHlQQW1WVlVDS1VuY0FhakxqSXNsWmJ5TTNMVUJ6YnBRTVVHREI5Nk50T1FFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMTYxMjI2CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy4zN194NjQtc2V0dXAuZXhlCmhGMTluOStsOTg5VWU5L2toMVFodDY3eXd3eFZZV3NHYkxmdi9uQ092VzNRWnJwbDZmajRGUUFsenZaeFNtSGJDNHBFVjdkVGNtYVNZSmJzcmJWREJRPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.37/Gold.Hand.Trade_0.3.37_x64-setup.exe"
     }
   }
 }
