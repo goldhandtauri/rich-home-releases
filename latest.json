@@ -1,15 +1,15 @@
 {
-  "version": "0.3.43",
-  "notes": "## [v0.3.43] — 2026-07-05\n\n### 추가\n- **투자 유튜브 채널 모음** — 상단 '유튜브' 탭을 추가했습니다. 투자·경제 인기 유튜브 채널을 분류별(경제·시황 / 국내주식 / 가치투자 / 미국·해외주식 / 부동산 / 재테크·자산배분) 카드로 모아 두고, 카드를 누르면 앱 안에서 채널이 열립니다.",
-  "pub_date": "2026-07-05T06:55:30Z",
+  "version": "0.3.44",
+  "notes": "## [v0.3.44] — 2026-07-05\n\n### 추가\n- **유튜브 채널 직접 관리** — '유튜브' 탭 편집 모드에서 원하는 채널을 추가·삭제하고, 카테고리도 직접 만들 수 있습니다. 카드를 드래그해 다른 카테고리로 옮기거나 순서를 바꿀 수 있습니다.\n- **유튜브 새 영상 알림** — 등록한 채널에 새 영상이 올라오면 카드에 'NEW' 배지가 표시되고, 채널을 열면 사라집니다.\n- **유튜브 채널 섬네일** — 카드에 채널 아바타 이미지를 함께 보여줍니다.\n- **유튜브 창 제어 도구** — 채널을 여러 창 또는 단일 창으로 열기, 열린 유튜브 창 자동 정렬, 한 번에 모두 닫기를 지원합니다.\n- **종목상세 회사 홈페이지** — 종목정보 '기업 개요'에 회사 홈페이지 링크를 추가했습니다. 누르면 앱 안 브라우저로 열립니다.\n\n### 변경\n- **'수동매매' 메뉴 이름을 '홈'으로 변경**했습니다.\n- **유튜브 추천 채널 목록을 재정비**했습니다(무료이면서 평판 좋은 채널 위주).\n- 인앱 브라우저의 브라우저 정보를 사용 중인 OS에 맞게 조정했습니다.\n\n### 수정\n- 인앱 브라우저에서 **사이트 공지·팝업의 닫기 버튼이 동작하지 않던 문제**를 고쳤습니다. 이제 공지 창만 닫히고 원래 페이지는 그대로 유지됩니다.\n- 인앱 브라우저 창을 닫아도 **재생 중이던 소리가 계속 나던 문제**를 고쳤습니다.\n- 실적 시즌 위젯에서 종목을 누르면 종목상세의 '공시' 탭이 바로 열리도록 했습니다.",
+  "pub_date": "2026-07-05T12:00:13Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG5ncUxUUDJIUXRhYk94ajJuTTNUR1hpQmlwRmptRitrTjZiT0x1S0NYOC8vVG5SRXJTRW52K2ZWRDBzOWQ5UlRjbHgrSFl6Tyt3WW5UQ3hnaGVtWEFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMjMyOTQxCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKakNabkJjZTc5SllSaXZFYk5BMDlFZzhnVXJBL3pGdWtLSTlOR0JIMEozMFZ5TlpWWHlZK0kvOUxnSm14YzRuWEZ2dHlRWlp6R2tSZmhFTmZrRnorQnc9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.43/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHNSdVZkUFVyTHRFS0FtUHd0S2RJYVhpdms4MUtuTWgyRjVLSUtyYTlEamZyZjkzbnoxYTl4bGVUQkNtRkM5SXNkaFBEeU01alcwdzU2SGMwQ0dOS3djPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMjUxNTM2CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKcVdzUFhGeFBFSHBlalNialJnUkhCRkRVQnB4cndvTk1BV25DTk0wYjdxTGVORzRIRVFwWmcremxKRDJoU1gyaWdxb0Nnb29lQzdzL3RnR1lSejBtQnc9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.44/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHZIdjRuczBQaUdCZ0J2cW8wZmFoRzNiSjJ2c1ZrQVBMdTR6YVJRNXVINXV2UHpadWZ3YnFSWVFzZ3NpOU9Ob0dpNE1Zb0NZZDhZS284bUwvMlRNelFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMjM0NTI5CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy40M194NjQtc2V0dXAuZXhlCkgxZlVON2c5WDJ4VDM5NyttWHMzSWRYNkpZdStyZ3BDTGpDNFZ2d0kvQXIzaXBwVlAvVCs5NUpMbnI0c2lyUHRNVDJvN2FvMlhoSkJmZXpXemY3M0RRPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.43/Gold.Hand.Trade_0.3.43_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHBUam5DNWgzR0NSSTd6YldrL2ZGUVN6Z24wenhIU1F3ZFpNOUhCZXgrMlQxL2J6dHVJWGd0RjF4SlhiTEw0eTNOeG93U2NKcm84WVNMeXErV1hvUkFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMjUyODEzCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy40NF94NjQtc2V0dXAuZXhlCllpMFZ3QkJkUjM5ZEN1QWhBcjAvbXJ4N1lrdmdoZ1BxRkRsM2grakhseGRjTXBLNlJWQXJMT1lZdy93djIrdXRvamZHZ0JwUHFOcU1xdDFwRzJvcUJBPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.44/Gold.Hand.Trade_0.3.44_x64-setup.exe"
     }
   }
 }
