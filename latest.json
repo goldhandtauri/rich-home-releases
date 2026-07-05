@@ -1,15 +1,15 @@
 {
-  "version": "0.3.46",
-  "notes": "## [v0.3.46] — 2026-07-05\n\n### 추가\n- **텔레그램 \"유튜브\" 명령** — 텔레그램에서 \"유튜브\"라고 보내면 앱에 등록된 유튜브 채널 목록을 카테고리별로 정리해 보내드립니다. (텔레그램 원격 명령 기능이 켜져 있을 때)\n\n### 변경\n- \"금손매 시작\" 알림과 도움말에 유튜브 채널 조회 안내를 추가했습니다.",
-  "pub_date": "2026-07-05T13:30:28Z",
+  "version": "0.3.47",
+  "notes": "## [v0.3.47] — 2026-07-06\n\n### 추가\n- **시장맵** — '시황/공시' 탭에 시가총액 트리맵을 추가했습니다. 칸 크기는 시가총액, 색은 등락률(상승 빨강·하락 파랑)로, 반도체·2차전지·바이오·금융 등 업종별로 묶어 시장 전체를 한눈에 볼 수 있습니다. 칸을 누르면 종목상세가 열립니다. (장 시간 외에는 시가총액 상위 종목 위주로 표시)\n- **유튜브 인기 영상** — '유튜브' 탭에 등록 채널의 인기 영상을 조회수 순으로 보여주는 화면을 추가했습니다. 오늘·1주일·1개월·3개월 기간으로 볼 수 있고, 텔레그램에서 \"인기영상\"으로도 받아볼 수 있습니다.\n- **유튜브 채널 검색** — 등록된 채널을 이름으로 빠르게 찾을 수 있습니다.\n- **유튜브 운동·교육 카테고리** — 유명한 무료 운동·교육 채널을 기본 추천에 추가했습니다.\n\n### 변경\n- **유튜브 인기 영상은 기간 내 조회수 순** — 선택한 기간에 올라온 영상만 순위에 넣어 오래된 영상이 상위에 섞이지 않도록 했고, 영상 날짜를 년·월·일로 표시합니다.\n- **유튜브 창 제어 도구를 인기 영상에서도** — 여러 창/단일 창 전환·자동 정렬·모두 닫기를 인기 영상 탭에서도 쓸 수 있고, 영상도 같은 방식으로 열립니다.",
+  "pub_date": "2026-07-05T16:38:03Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGw1ZzkxK2tTQkxWaG1odDhTejdnNmVmcHo5QTlTeUF1Sit3VXRhaWdyU0ZIc2Z0UVJZeC9mVlJiajNXazZzakhaQTI3ZFJnR0VqQ0luSTF0T1hjT2d3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMjU2NjgwCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKWlRQR3NCNUpHSW02a29BTmJnYi80S2JWVVBHQUFMV2gzMEJ3UjdjQjBNRkxJczlWbVVEZDRBYUgxc3VGT0dZclAxbXNvYXp6WndJYTFvdmw2KzBrQ0E9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.46/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGdQUk53TjlKZXlpVy9RMk1iaFAzd0dqZENJdk92WkIzdjc3bEt4bVllaUJHdjB6M1NUKyt0T2FxUDN2QVBUUWprTDlHSWV5bncrVE5VdDJaUitsdGdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMjY4MDU1CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKNG15akdUeXp2ZDVRRzg0bWdQeG1YcWJ2eUJuN3pHbUM4cVVCSGthVlhNMnBBbXMra3dyZmttTldFOU4xVjA5LzlsRVRQSWhpQlFzMjR3cHVMOUU5Qmc9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.47/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHUrSUFCVVJ5VDhWTFdpVkhiYzhWQWxyb2J2dWRxanFRcytwSVhLQjZ1YytiN1Eyem5vcDE1NUZrck9paHZOSGV3cG8vUE9TM3FNWVAvTTUzRjJ6R2cwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMjU4MjI3CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy40Nl94NjQtc2V0dXAuZXhlClJ5VWIxMTNsTEEzRWJZcmtnT0Qva0NiYlhkU0I3WTROVjNnWDFYMHE0KytTU25SeGxhVklwTlBEZkJHU0xjbGdCTkkwVEo4ZkJNK1lDQ3ZWYUtta0N3PT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.46/Gold.Hand.Trade_0.3.46_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGdzelNucE8rNGgwZGVnaC9LTjhiWTZoQ3R1QlcxQzVYTndiVGFZS3lkVU5CbHFTWFltR1p6V3R5alFabjhIY0J5NXpTSW5RT1MyWnBaMURjM3kra0EwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMjY5NDgyCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy40N194NjQtc2V0dXAuZXhlCmVobjZQUWM2QmFvVUtFZHN1YURxdzJvUitwU1FEU2M4YTJWbDkrYnAwMHJXQUFwbjZKSko1U3hHMzFGckM3bE5DSzNLT3NSQnBUTTduKzQrY3NkL0RBPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.47/Gold.Hand.Trade_0.3.47_x64-setup.exe"
     }
   }
 }
