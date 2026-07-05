@@ -1,15 +1,15 @@
 {
-  "version": "0.3.41",
-  "notes": "## [v0.3.41] — 2026-07-05\n\n### 추가\n- **시황·공시 '투자유의' 탭** — 시황/공시 화면에 '투자유의' 탭을 추가했습니다. 관리종목·투자경고·투자위험·매매거래정지로 지정된 종목을 시장 전체에서 한눈에 확인하고, 종목명으로 검색할 수 있습니다.\n- **종목상세 '시장조치 이력'** — 공시 탭에 매매거래정지·불성실공시법인 지정·정리매매 이력을 시간순으로 보여 줍니다. 해당 이력이 있는 종목에서만 표시됩니다.\n- **종목상세 '밸류업'** — 기업이 발표한 기업가치제고계획(밸류업) 공시를 공시 탭에서 모아 봅니다.\n- **수동매매 상단 '실적 시즌' 위젯** — 지금이 어느 분기 실적 발표 시즌인지와 분기·반기·사업보고서 법정 마감까지 남은 일수를 보여 주고, 관심·보유 종목 중 최근 실적을 발표한 종목을 함께 표시합니다.\n- **IR 발표자료 AI 요약** — 종목상세 공시 탭의 IR 발표자료 항목에 ✨ 버튼이 생겼습니다. 누르면 첨부된 IR 자료(PDF)를 AI가 읽어 핵심 내용을 요약해 줍니다.\n- **IPO·투자유의 목록 종목 검색** — IPO 공모주와 투자유의 목록을 종목명으로 바로 검색할 수 있습니다.\n\n### 변경\n- **종목상세 뉴스의 네이버 링크를 앱 안에서 열기** — 뉴스 탭의 '네이버 종목뉴스'·'네이버 종목토론'을 외부 브라우저 대신 앱 안 창에서 엽니다.\n\n### 수정\n- **종목상세 공시 목록이 안 보이던 문제** — 공시 탭 상단의 여러 섹션(IR·리서치 등)에 밀려 정작 전자공시 목록이 화면 밖으로 내려가던 문제를 고쳤습니다. 이제 한 화면에서 자연스럽게 스크롤되고 목록 스크롤바도 보입니다.\n- **AI 공시·IR 요약의 수치 정확도** — 자료에 없는 실적·재무 수치를 AI가 임의로 지어내던 문제를 개선했습니다. 자료에 없으면 '자료에 명시 안 됨'으로 표기하고, 회사 전망치는 확정 실적과 구분합니다.\n- **앱 안 브라우저에서 새 창 링크 무반응** — 앱 안에서 웹페이지를 볼 때 새 창으로 열리는 링크(예: 네이버 주주오픈톡)를 눌러도 반응이 없던 문제를 고쳤습니다.",
-  "pub_date": "2026-07-05T05:04:45Z",
+  "version": "0.3.42",
+  "notes": "## [v0.3.42] — 2026-07-05\n\n### 변경\n- **앱 안 브라우저 좌우 스와이프** — 앱 안에서 웹페이지를 볼 때 트랙패드 두 손가락 좌우 스와이프로 이전/다음 페이지로 이동할 수 있습니다(뒤로/앞으로 버튼과 동일).\n\n### 수정\n- **투자유의 탭 종목 클릭 이동 일관성** — 투자유의 탭에서 관리종목·매매거래정지 종목을 눌러도 종목상세로 가지 않던 문제를 고쳤습니다. 이제 투자경고·투자위험과 동일하게 모든 카테고리에서 종목을 누르면 종목상세로 이동합니다.\n- **앱 안 브라우저 기사 링크 이동** — 앱 안에서 웹페이지를 볼 때 새 창으로 열리는 일부 링크(예: 네이버 종목뉴스 기사)를 눌러도 이동하지 않던 문제를 고쳤습니다.",
+  "pub_date": "2026-07-05T05:47:10Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHYxTy9PQ2kwMTlhTlFwTit1ZHF6U2RTTFN1WC9tTnNiMlpOT1dyRmJUN3UzWGVEaUc3aWNrTStmVlRJeWZ1MTc5NmdRR1JwdjRlTm9vb1drV21YVlFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMjI2MzU3CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKSkZWanIzZHl6Wldja29WdGdVRFJlb2UrVmUzV2haakVTckgvM3FBT2hXRENWM2NjbDlLQXpSVTd6SEt4VEFjY3FuWDh0aHdpQkJ1WCtFSS9QQlgzQ3c9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.41/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHFvcmxWRmcvWE9xTVBibWc2YnRIeTVMd29vdWtlTlJnOGlWa3VYamxoUWFWL3VUdTBickpDU1RUVElnZE5XeDhNRStRajIrcDF0NndGZXg5b1I3K1FRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMjI5OTA1CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKanNsTllkZVpiTkdhbG0wVDdSRzNGdDQ1d0ltUFVBcWIrVHdFZGJlRE5raHZhN29MMTBGZmJLYU9tMGh4YkV5WFF5WEVOVEljMTA1UjNQcDNycm8rQ3c9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.42/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGdBU21IS1NFdXlLdG5FbElrTXhtMG5VY1FXYWdmNEkrcHN3STZrZDBIbVlSd1hOS20xMC9vakVQSkFqZTdWK2pNUVpqTmZTN2FqZjNaSlZob2RycEFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMjI3ODg0CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy40MV94NjQtc2V0dXAuZXhlCkpBZ2YwejNoN3NrSS8xbUFudDZKT0RaWjJweTR2YkE5cmMvNTk3OXh6Ky9iWUQwNGlCemZnNTZJbWk1NG9ZZXY2NzEwOVFVQlI2MWt4SkExZ1AxVkRRPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.41/Gold.Hand.Trade_0.3.41_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHJnRWxENVNieDJrVWhwYVNtNXUrU3hUMlN6RUcxU3NyRkhRcCtXMlNMZitOaU92NWFNRE50MGVBYUNDTlJXV3JvT1Zsck83djh2aGhUVGhvcjJLNlFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMjMwNDI5CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy40Ml94NjQtc2V0dXAuZXhlCndBS0NJU0NRbGdScS9TS0JTQXIyRGNBclNsUzBtK1F0ZmlQejc4a3ZyY3VNRHE1enBpVzA1OGhmbm04U2taVkdlaG4yd2Z4UVFUQVZJSHlPNEVYNUJ3PT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.42/Gold.Hand.Trade_0.3.42_x64-setup.exe"
     }
   }
 }
