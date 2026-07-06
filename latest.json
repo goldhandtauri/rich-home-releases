@@ -1,15 +1,15 @@
 {
-  "version": "0.3.56",
-  "notes": "## [v0.3.56] — 2026-07-06\n\n### 변경\n- 시장맵 화면의 버튼(복사·저장·닫기) 색상을 골드 톤으로 통일했습니다.",
-  "pub_date": "2026-07-06T09:34:08Z",
+  "version": "0.3.57",
+  "notes": "## [v0.3.57] — 2026-07-06\n\n### 수정\n- 투자일지를 이미지로 저장·복사할 때 차트가 여러 개인 일지(보유·관심종목 등)에서 일부 차트가 빈 칸으로 빠지던 문제를 고쳤습니다. 이제 모든 차트가 안정적으로 들어갑니다.",
+  "pub_date": "2026-07-06T11:12:17Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG5JUVNlZ3BqaXFMMVY4N0tFdzZSbjgxVm03YU0ySFdlOHB3VXFEMnhoRzdDaXB4Z00vOEFhSmFjdUN6bENNSHczWkgvWGdtQW4rcVRrdDQwcnoxcFFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMzI5NjI1CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKR1JJRklFdXM5c2VkOXZkbVdraVk5ek9zNzFZSEo4SjNZTDVmNGFXWjQyVjJSb25LNWtTQzdMb1NNMThTN3F2cVkxcmRZclgxWGhCSXRtdnN3YXUwRHc9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.56/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHFneDQ5T2JEZUJ5bVVaNklkSHlQZTFPK3F0a3YxbGVSd24rdTNCOG1iWm02MWhCampvUmlRWE5vcm5NalFvNi9IUXA2RlZ1Z0UwUGpwZjZWSFU5SFE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMzM1MjM0CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKc0FVZVJKdjdwWnlQS1FENFBvdFpic1o5d2JmUE9YWFhHL200aGZucjIwZkg0TmVuZUZjc05BUlozemFkQ1FTcERseHFORUFCU1NnZWdGS3hnUDlTQUE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.57/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGl6cVdwWmxCelFjaS9VY05GQ3hqTkVONFNhc3hvM29VUmNzNUZWVTIzUXl2RTBNRHFLOEhod0loZjJyNmFQM1B5aE9JY2t1MU5qMnYxQlliTldOYndrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMzMwNDQ3CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy41Nl94NjQtc2V0dXAuZXhlCmxNbG05dFJQQ2J6clhOck1QN2RSbnoxMFdBdXlFZ3RkU2Z6QVViaUlLZmwvOEVrVnJHSjVpUm5nNHlpellnUzFxVkZqYlg4ekIwNEJTdkhoWGx3V0J3PT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.56/Gold.Hand.Trade_0.3.56_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGl3T3BCdWlpTUQwS3plREU4eXg2NFhIMW5YZG9JOXBkdEJqRCtTTHdwNTRkbDVCVTN6ZTlwOGtZWG40Q1NPcmI3RkN4c2krVmJzOXlYajF4ZEt0WHdJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMzM2MzM3CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy41N194NjQtc2V0dXAuZXhlClhMMmFrN08wbjFCNkRldGtXVitKdGM1K0FPaDFiQXF5bThUOVRTcEp3cUEydTRPQzMxOVFoeHJFbWhvb1ZCZHpRRnJHVXV3cEVPcnVQajM2MldXeENnPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.57/Gold.Hand.Trade_0.3.57_x64-setup.exe"
     }
   }
 }
