@@ -1,15 +1,15 @@
 {
-  "version": "0.3.59",
-  "notes": "## [v0.3.59] — 2026-07-08\n\n### 추가\n- **무료리서치에 증권사 리서치 추가** — 기존 무료 리서치에 삼성·미래에셋·대신증권의 무료 리서치 리포트를 함께 모아 보여줍니다. 오른쪽 패널에서 원문을 바로 열람하고 확대·축소할 수 있으며, 새 리포트가 올라오면 알려드립니다(텔레그램 연결 시 링크 포함). IPO 공모주도 새 일정·청약 시작을 자동으로 알려드립니다.\n- **유튜브 작은 화면(PiP) 모드** — 영상을 화면 우측 아래에 항상 위로 떠 있는 작은 창으로 띄워, 차트를 보거나 다른 작업을 하면서 시청할 수 있습니다. 유튜브 페이지 없이 영상만 꽉 차게 나옵니다.\n- **투자유의 목록 새 항목 표시** — 관리종목·투자경고·거래정지 등 투자유의에 새로 추가된 종목을 목록에서 \"NEW\" 배지로 표시합니다.\n\n### 변경\n- **유튜브 — 오른쪽 인앱 화면으로 열기** — 영상·채널을 클릭하면 별도 창 대신 화면 오른쪽에 바로 열립니다(공시 화면처럼). 클릭하면 화면이 자연스럽게 좌우로 나뉘고, 항목 위에 마우스를 올리면 나오는 아이콘으로 별도 창으로도 열 수 있습니다.\n- **금손매 시작 알림 — 장 시작 전** — 장이 열리기 전(오전 8시 이전)에 앱을 켜면 전날 시세를 오늘 것으로 오해하지 않도록 \"아직 장 시작 전\" 안내만 보냅니다. 개장 후 앱을 다시 켜면 오늘 시장 데이터를 보내드립니다.\n- **시황·공시 탭 디자인 다듬기** — 내부 탭을 워밍 골드 톤으로 정리하고 스크롤 동작을 통일했습니다.\n\n### 수정\n- **AI 초안 작성 화면 — \"받는 중\" 표시** — 초안을 만들 때 아래쪽 \"받는 중\" 영역이 옵션에 가려 보이지 않던 문제를 고쳤습니다. 생성이 시작되면 그 영역으로 화면이 한 번 이동합니다.\n- **관심종목 이미지 복사 — 차트 여백** — 관심종목 분석 일지를 이미지로 복사할 때 차트만 오른쪽 여백 없이 화면 끝까지 붙어 보이던 문제를 고쳤습니다.\n- **유튜브 화면 다듬기** — 오른쪽 패널 상단 바 색을 공시 화면과 통일하고, 카드에 마우스를 올릴 때 위쪽 테두리가 잘려 보이던 문제를 고쳤습니다.",
-  "pub_date": "2026-07-07T16:33:42Z",
+  "version": "0.3.60",
+  "notes": "## [v0.3.60] — 2026-07-08\n\n### 변경\n- **무료리서치 새 리포트를 리서치 종류별로 표시** — 기업분석·기술분석·삼성증권·미래에셋·대신증권 각 종류에 새로 올라온 리포트 개수를 배지로 달아, 어느 곳에 새 리포트가 있는지 한눈에 보이도록 했습니다. 목록에서도 새 리포트에는 \"NEW\" 표시가 붙습니다.\n\n### 수정\n- **무료리서치 일부 종류에서 새 리포트 표시가 빠지던 문제 수정** — 기술분석 등 그동안 새 리포트 알림이 누락되던 종류에서도 빠짐없이 표시됩니다.\n- **유튜브 작은 화면(PiP) — Windows에서 영상이 창을 꽉 채우지 못하고 상단 메뉴가 보이던 문제 수정** — 이제 Windows에서도 유튜브 페이지 없이 영상만 창 전체로 나옵니다.",
+  "pub_date": "2026-07-07T17:48:37Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGpBd09RR3UwL0JENmdRQUg3dWxUZHM1UzFSa0tsZ08vYVdBWi9tZ3Q3ckVLdzFNL0p3dVNJbnpsZEVDR3A2YUU0V0EySHFSaHA0UWtpRG1FVmZCWndjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNDQwNzczCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKVGJhZ2kxcmhrSXY2cVBMWkhaYlhvVkFTa1VsWU9PNlJyVUE3eTgySFUzQ3VCeHcvendNbkNJTTllZlczK08rVTdIZHZoWkZIa09vZm9KN2NjeFBtQ2c9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.59/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGpUS0p2TS9MeHBJajZKVS9WazlVZVZTZUNPczJJbVF1NkNGeFNzOVZZYnEwbC9EcjlrVWlzaEFabVhRQmhGY2FNU3dtTk5yMEczUTNhQ0Z5ZFFCendjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNDQ1NjY3CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKeE1od0FUcTl5bVJzMytkeDdoaDROQ3prQlA4T201NVBMTmxtdGFUZUVScDJ4SXk4VlA2L2Q1cUQvZW43U0FISjR3ZGcxbWFqZkw0NjhnZytOamRDQlE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.60/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG1pK0RlNXFwOHhFYktJZ2M0eldSc0R6dWo3WUx6d3c4a2hnMTc1SnM1SWY1aEw5ZVhtVVlhSDhYcmdJMVFnSVgxKzl3Tk5nbCt4d3lsUFhUTHZVaVFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNDQyMDIyCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy41OV94NjQtc2V0dXAuZXhlCnJQbWZycEkwQnRkd2lINTNURnQvUmdqTFpEQUlXWGg0SU1vY05pVEd4TG1TQnJuVi8vcit5N3FYMnZJbytUZ0Q4Q1FwbmJvRG5TZHFVZnh5S0wrWkJBPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.59/Gold.Hand.Trade_0.3.59_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGxzUzNnM2kvUjMvQit3RkZkNUZUV0VuSEpKZlBuN1Vzd3FoQndSWEswRXR4UU40OVdKeG5aczR2Vkd3UE1aWWVMcm1pbmpmTVdyMUxqZDhONG5UdncwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNDQ2NTE2CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy42MF94NjQtc2V0dXAuZXhlCkhWQTExOW9jNGVvMVBwaFA2RDJIVThJcm9FRmVJV1JKWS9idHU2cVE0bllxTjBxSERUUkp0c0duUW1xcGJzWXBFRWtKbDFpYWZlcmtuV1ltMTMrZEFBPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.60/Gold.Hand.Trade_0.3.60_x64-setup.exe"
     }
   }
 }
