@@ -1,15 +1,15 @@
 {
-  "version": "0.3.57",
-  "notes": "## [v0.3.57] — 2026-07-06\n\n### 수정\n- 투자일지를 이미지로 저장·복사할 때 차트가 여러 개인 일지(보유·관심종목 등)에서 일부 차트가 빈 칸으로 빠지던 문제를 고쳤습니다. 이제 모든 차트가 안정적으로 들어갑니다.",
-  "pub_date": "2026-07-06T11:12:17Z",
+  "version": "0.3.58",
+  "notes": "## [v0.3.58] — 2026-07-07\n\n### 추가\n- **시황·공시 \"무료리서치\" 탭** — 종목과 무관하게 최신 무료 리서치 리포트를 스크롤로 계속 불러옵니다. 종목명·코드로 검색도 가능.\n- **상단 메뉴 새 콘텐츠 표시** — 유튜브·시황·공시·커뮤니티에 새 콘텐츠가 있으면 메뉴에 빨간 점이 뜹니다. 시황·공시는 내부 탭(공시·IPO 공모주·투자유의·무료리서치)별로 새 항목 개수를 숫자로 함께 표시.\n- **유튜브 새 영상 모아보기** — 새 영상이 올라온 채널을 한곳에 모아 보여주고, 항목을 클릭하면 바로 재생됩니다.\n- **오늘의 시장판정 — 시장별 수급** — 수동매매 화면의 시장판정에 코스피·코스닥 각각의 외국인·기관 순매수 금액을 추가.\n- **종목상세 기관 순매수 일별 보기** — 공매도·수급의 기관 유형별 순매수를 누적/일별로 전환해 볼 수 있습니다.\n\n### 변경\n- **유튜브 화면 상단 고정** — 제목·탭·검색 영역은 고정되고 목록만 스크롤됩니다. 목록이 많으면 페이지로 나눠 표시.\n- **유튜브 새 콘텐츠 점 동작** — 유튜브 메뉴를 클릭하면 빨간 점만 사라지고 새 영상 목록은 그대로 유지됩니다. 이후 새 영상이 올라오면 다시 표시.\n- **공시 목록 새 공시 강조** — 관심·보유 종목의 새 공시를 목록에서 \"NEW\" 배지로 표시하고, 해당 공시를 열어보면 표시가 해제됩니다.\n\n### 수정\n- **시간외 '종가' 표시 오류** — 정규장에서 상승 마감한 종목이 시간외 시간대에 헤더 '종가'가 하락처럼 보이던 문제를 수정했습니다. 이제 '종가'는 당일 정규장 종가와 등락률을, '시간외'는 시간외 단일가를 각각 정확히 표시합니다.",
+  "pub_date": "2026-07-07T10:57:50Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHFneDQ5T2JEZUJ5bVVaNklkSHlQZTFPK3F0a3YxbGVSd24rdTNCOG1iWm02MWhCampvUmlRWE5vcm5NalFvNi9IUXA2RlZ1Z0UwUGpwZjZWSFU5SFE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMzM1MjM0CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKc0FVZVJKdjdwWnlQS1FENFBvdFpic1o5d2JmUE9YWFhHL200aGZucjIwZkg0TmVuZUZjc05BUlozemFkQ1FTcERseHFORUFCU1NnZWdGS3hnUDlTQUE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.57/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHNWa00rOTJ3OUFKYXI5bEw3RFNyT0xqRTZOc3ZvU29oMDNYM1c1TFlleXVWNHdkN21LZzRZUVlVTUllcDRENEhSK0ZCeVpRN2xWWjFyMmgxdjN5NndVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNDE3MTUyCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKTThRNWZTTksvSUJOUU1FWHNaM3Y1VUxrT21pOTVmM3VoRy9CeGl2YStKU05ackVzVTV5Vk0zSEFSc1JibVJGWEVYWU0vbXlhdGswdEdzajAzQjhTQ2c9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.58/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGl3T3BCdWlpTUQwS3plREU4eXg2NFhIMW5YZG9JOXBkdEJqRCtTTHdwNTRkbDVCVTN6ZTlwOGtZWG40Q1NPcmI3RkN4c2krVmJzOXlYajF4ZEt0WHdJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzMzM2MzM3CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy41N194NjQtc2V0dXAuZXhlClhMMmFrN08wbjFCNkRldGtXVitKdGM1K0FPaDFiQXF5bThUOVRTcEp3cUEydTRPQzMxOVFoeHJFbWhvb1ZCZHpRRnJHVXV3cEVPcnVQajM2MldXeENnPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.57/Gold.Hand.Trade_0.3.57_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHM2TDgyczhDTHA4b1kxQVQ0ZXByeWpsZGxPak85WHFmR0hYeThhcEgrWlhtU3Bucmt5dVczc2ZQaHdlZDZZYVpYdHNkU0NpelhGOFRRamtwaXZZZ2djPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNDIxODY5CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy41OF94NjQtc2V0dXAuZXhlClRxR09ZUUVYWGxIOEdaN0l5NzlidFF3TC9uaWpVOUhsZjJUYURFcHN5eCtwUWs4Vk43WUl6dXNreXIyQnlCWkl0UXRyV1RkU3Z2WVIvcUI0YmdBWUF3PT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.58/Gold.Hand.Trade_0.3.58_x64-setup.exe"
     }
   }
 }
