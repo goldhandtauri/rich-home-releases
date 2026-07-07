@@ -1,15 +1,15 @@
 {
-  "version": "0.3.58",
-  "notes": "## [v0.3.58] — 2026-07-07\n\n### 추가\n- **시황·공시 \"무료리서치\" 탭** — 종목과 무관하게 최신 무료 리서치 리포트를 스크롤로 계속 불러옵니다. 종목명·코드로 검색도 가능.\n- **상단 메뉴 새 콘텐츠 표시** — 유튜브·시황·공시·커뮤니티에 새 콘텐츠가 있으면 메뉴에 빨간 점이 뜹니다. 시황·공시는 내부 탭(공시·IPO 공모주·투자유의·무료리서치)별로 새 항목 개수를 숫자로 함께 표시.\n- **유튜브 새 영상 모아보기** — 새 영상이 올라온 채널을 한곳에 모아 보여주고, 항목을 클릭하면 바로 재생됩니다.\n- **오늘의 시장판정 — 시장별 수급** — 수동매매 화면의 시장판정에 코스피·코스닥 각각의 외국인·기관 순매수 금액을 추가.\n- **종목상세 기관 순매수 일별 보기** — 공매도·수급의 기관 유형별 순매수를 누적/일별로 전환해 볼 수 있습니다.\n\n### 변경\n- **유튜브 화면 상단 고정** — 제목·탭·검색 영역은 고정되고 목록만 스크롤됩니다. 목록이 많으면 페이지로 나눠 표시.\n- **유튜브 새 콘텐츠 점 동작** — 유튜브 메뉴를 클릭하면 빨간 점만 사라지고 새 영상 목록은 그대로 유지됩니다. 이후 새 영상이 올라오면 다시 표시.\n- **공시 목록 새 공시 강조** — 관심·보유 종목의 새 공시를 목록에서 \"NEW\" 배지로 표시하고, 해당 공시를 열어보면 표시가 해제됩니다.\n\n### 수정\n- **시간외 '종가' 표시 오류** — 정규장에서 상승 마감한 종목이 시간외 시간대에 헤더 '종가'가 하락처럼 보이던 문제를 수정했습니다. 이제 '종가'는 당일 정규장 종가와 등락률을, '시간외'는 시간외 단일가를 각각 정확히 표시합니다.",
-  "pub_date": "2026-07-07T10:57:50Z",
+  "version": "0.3.59",
+  "notes": "## [v0.3.59] — 2026-07-08\n\n### 추가\n- **무료리서치에 증권사 리서치 추가** — 기존 무료 리서치에 삼성·미래에셋·대신증권의 무료 리서치 리포트를 함께 모아 보여줍니다. 오른쪽 패널에서 원문을 바로 열람하고 확대·축소할 수 있으며, 새 리포트가 올라오면 알려드립니다(텔레그램 연결 시 링크 포함). IPO 공모주도 새 일정·청약 시작을 자동으로 알려드립니다.\n- **유튜브 작은 화면(PiP) 모드** — 영상을 화면 우측 아래에 항상 위로 떠 있는 작은 창으로 띄워, 차트를 보거나 다른 작업을 하면서 시청할 수 있습니다. 유튜브 페이지 없이 영상만 꽉 차게 나옵니다.\n- **투자유의 목록 새 항목 표시** — 관리종목·투자경고·거래정지 등 투자유의에 새로 추가된 종목을 목록에서 \"NEW\" 배지로 표시합니다.\n\n### 변경\n- **유튜브 — 오른쪽 인앱 화면으로 열기** — 영상·채널을 클릭하면 별도 창 대신 화면 오른쪽에 바로 열립니다(공시 화면처럼). 클릭하면 화면이 자연스럽게 좌우로 나뉘고, 항목 위에 마우스를 올리면 나오는 아이콘으로 별도 창으로도 열 수 있습니다.\n- **금손매 시작 알림 — 장 시작 전** — 장이 열리기 전(오전 8시 이전)에 앱을 켜면 전날 시세를 오늘 것으로 오해하지 않도록 \"아직 장 시작 전\" 안내만 보냅니다. 개장 후 앱을 다시 켜면 오늘 시장 데이터를 보내드립니다.\n- **시황·공시 탭 디자인 다듬기** — 내부 탭을 워밍 골드 톤으로 정리하고 스크롤 동작을 통일했습니다.\n\n### 수정\n- **AI 초안 작성 화면 — \"받는 중\" 표시** — 초안을 만들 때 아래쪽 \"받는 중\" 영역이 옵션에 가려 보이지 않던 문제를 고쳤습니다. 생성이 시작되면 그 영역으로 화면이 한 번 이동합니다.\n- **관심종목 이미지 복사 — 차트 여백** — 관심종목 분석 일지를 이미지로 복사할 때 차트만 오른쪽 여백 없이 화면 끝까지 붙어 보이던 문제를 고쳤습니다.\n- **유튜브 화면 다듬기** — 오른쪽 패널 상단 바 색을 공시 화면과 통일하고, 카드에 마우스를 올릴 때 위쪽 테두리가 잘려 보이던 문제를 고쳤습니다.",
+  "pub_date": "2026-07-07T16:33:42Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHNWa00rOTJ3OUFKYXI5bEw3RFNyT0xqRTZOc3ZvU29oMDNYM1c1TFlleXVWNHdkN21LZzRZUVlVTUllcDRENEhSK0ZCeVpRN2xWWjFyMmgxdjN5NndVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNDE3MTUyCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKTThRNWZTTksvSUJOUU1FWHNaM3Y1VUxrT21pOTVmM3VoRy9CeGl2YStKU05ackVzVTV5Vk0zSEFSc1JibVJGWEVYWU0vbXlhdGswdEdzajAzQjhTQ2c9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.58/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGpBd09RR3UwL0JENmdRQUg3dWxUZHM1UzFSa0tsZ08vYVdBWi9tZ3Q3ckVLdzFNL0p3dVNJbnpsZEVDR3A2YUU0V0EySHFSaHA0UWtpRG1FVmZCWndjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNDQwNzczCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKVGJhZ2kxcmhrSXY2cVBMWkhaYlhvVkFTa1VsWU9PNlJyVUE3eTgySFUzQ3VCeHcvendNbkNJTTllZlczK08rVTdIZHZoWkZIa09vZm9KN2NjeFBtQ2c9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.59/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHM2TDgyczhDTHA4b1kxQVQ0ZXByeWpsZGxPak85WHFmR0hYeThhcEgrWlhtU3Bucmt5dVczc2ZQaHdlZDZZYVpYdHNkU0NpelhGOFRRamtwaXZZZ2djPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNDIxODY5CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy41OF94NjQtc2V0dXAuZXhlClRxR09ZUUVYWGxIOEdaN0l5NzlidFF3TC9uaWpVOUhsZjJUYURFcHN5eCtwUWs4Vk43WUl6dXNreXIyQnlCWkl0UXRyV1RkU3Z2WVIvcUI0YmdBWUF3PT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.58/Gold.Hand.Trade_0.3.58_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG1pK0RlNXFwOHhFYktJZ2M0eldSc0R6dWo3WUx6d3c4a2hnMTc1SnM1SWY1aEw5ZVhtVVlhSDhYcmdJMVFnSVgxKzl3Tk5nbCt4d3lsUFhUTHZVaVFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNDQyMDIyCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy41OV94NjQtc2V0dXAuZXhlCnJQbWZycEkwQnRkd2lINTNURnQvUmdqTFpEQUlXWGg0SU1vY05pVEd4TG1TQnJuVi8vcit5N3FYMnZJbytUZ0Q4Q1FwbmJvRG5TZHFVZnh5S0wrWkJBPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.59/Gold.Hand.Trade_0.3.59_x64-setup.exe"
     }
   }
 }
