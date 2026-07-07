@@ -1,15 +1,15 @@
 {
-  "version": "0.3.60",
-  "notes": "## [v0.3.60] — 2026-07-08\n\n### 변경\n- **무료리서치 새 리포트를 리서치 종류별로 표시** — 기업분석·기술분석·삼성증권·미래에셋·대신증권 각 종류에 새로 올라온 리포트 개수를 배지로 달아, 어느 곳에 새 리포트가 있는지 한눈에 보이도록 했습니다. 목록에서도 새 리포트에는 \"NEW\" 표시가 붙습니다.\n\n### 수정\n- **무료리서치 일부 종류에서 새 리포트 표시가 빠지던 문제 수정** — 기술분석 등 그동안 새 리포트 알림이 누락되던 종류에서도 빠짐없이 표시됩니다.\n- **유튜브 작은 화면(PiP) — Windows에서 영상이 창을 꽉 채우지 못하고 상단 메뉴가 보이던 문제 수정** — 이제 Windows에서도 유튜브 페이지 없이 영상만 창 전체로 나옵니다.",
-  "pub_date": "2026-07-07T17:48:37Z",
+  "version": "0.3.61",
+  "notes": "## [v0.3.61] — 2026-07-08\n\n### 변경\n- **무료리서치 새 리포트를 리서치 종류별로 표시** — 기업분석·기술분석·삼성증권·미래에셋·대신증권 각 종류에 새로 올라온 리포트 개수를 배지로 달아, 어느 곳에 새 리포트가 있는지 한눈에 보이도록 했습니다. 목록에서도 새 리포트에는 \"NEW\" 표시가 붙습니다.\n\n### 수정\n- **무료리서치 일부 종류에서 새 리포트 표시가 빠지던 문제 수정** — 기술분석 등 그동안 새 리포트 알림이 누락되던 종류에서도 빠짐없이 표시됩니다.\n- **유튜브 작은 화면(PiP) — 영상이 창을 꽉 채우지 못하고 상단 메뉴가 보이던 문제 수정** — Windows에서, 그리고 채널로 들어가 영상을 재생한 뒤 PiP로 전환할 때 유튜브 페이지가 함께 보이던 문제를 고쳐, 이제 항상 유튜브 페이지 없이 영상만 창 전체로 나옵니다.",
+  "pub_date": "2026-07-07T18:30:24Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGpUS0p2TS9MeHBJajZKVS9WazlVZVZTZUNPczJJbVF1NkNGeFNzOVZZYnEwbC9EcjlrVWlzaEFabVhRQmhGY2FNU3dtTk5yMEczUTNhQ0Z5ZFFCendjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNDQ1NjY3CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKeE1od0FUcTl5bVJzMytkeDdoaDROQ3prQlA4T201NVBMTmxtdGFUZUVScDJ4SXk4VlA2L2Q1cUQvZW43U0FISjR3ZGcxbWFqZkw0NjhnZytOamRDQlE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.60/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGtoa2pXWFc3b083UWVuMk5WeWtVemkvck00aVlIdGVvMkFJdDlpNXdBYmgzTXZUbHdkYXFrQkx0RmcvWERqa2xYWVFVWUNjSTZMenppNW8xenBLdlE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNDQ4MTI4CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKQzBaYmdTWUhSRnowMFlJbEFvZkcvb3hwVmJGNDljb1IyRjJDTGlWOC9XbGl0VzhPN0ZtZ1p6K2Y4WXZRV0xnOGs1UUYyK0x5SlNtalhselM1cFNoRGc9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.61/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGxzUzNnM2kvUjMvQit3RkZkNUZUV0VuSEpKZlBuN1Vzd3FoQndSWEswRXR4UU40OVdKeG5aczR2Vkd3UE1aWWVMcm1pbmpmTVdyMUxqZDhONG5UdncwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNDQ2NTE2CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy42MF94NjQtc2V0dXAuZXhlCkhWQTExOW9jNGVvMVBwaFA2RDJIVThJcm9FRmVJV1JKWS9idHU2cVE0bllxTjBxSERUUkp0c0duUW1xcGJzWXBFRWtKbDFpYWZlcmtuV1ltMTMrZEFBPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.60/Gold.Hand.Trade_0.3.60_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG5yYmdCc0gyaFpQUFptNU05aVlFaEtVZ3FQM1hMcDVQSW5FaVFvTG5TdURiQUxVcEhxZkdUSE1ORTdZUkhQdXRPZ2x1U2gwRTJtOTdUM1loakRGU0FvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNDQ5MDI0CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy42MV94NjQtc2V0dXAuZXhlCm1GQ1ZNZFIwQS9PSHRwenFkU3phb2ZNYVJKY3pDK0FiUElRVHVkQmhvUmpBK1liSVlYeVZSdVgrbnJGUGFkeWg3eUtFYjJRTUwzM1NiZkNUN3JZbUFRPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.61/Gold.Hand.Trade_0.3.61_x64-setup.exe"
     }
   }
 }
