@@ -1,15 +1,15 @@
 {
-  "version": "0.3.66",
-  "notes": "## [v0.3.66] — 2026-07-09\n\n### 추가\n- **무료리서치 리포트 AI 분석** — 시황·공시 > 무료리서치 목록에서 제목 옆 AI 아이콘을 누르면 그 리포트 원문을 읽어 핵심 결론·근거 수치·리스크·체크 포인트로 정리해 드립니다. 목표주가와 투자의견은 작성기관이 제시한 의견임을 분명히 구분해 표기하고, 원문에 없는 수치는 지어내지 않고 \"명시 안 됨\"으로 남깁니다. 기업분석·기술분석·삼성증권·미래에셋·대신증권·키움증권 여섯 곳 모두 지원합니다. 이미지 위주라 글자를 읽어낼 수 없는 리포트는 제목만으로 요약하며 그 사실을 함께 알려드립니다.\n\n### 변경\n- **공시 목록의 클릭 동작을 종목명과 보고서명으로 분리** — 시황·공시 > 공시 탭에서 종목명을 누르면 종목상세가 열리고, 보고서명을 누르면 오른쪽에 공시 본문이 열립니다. 이전에는 행 아무 곳이나 누르면 본문이 열렸습니다.\n- **투자유의 목록에서 종목명을 눌러 종목상세 열기** — 관리종목·투자경고·투자위험·매매거래정지 네 화면 모두 해당합니다. 행을 누르는 것은 이전과 같이 \"NEW\" 표시만 지우며, 종목명을 눌러 종목상세를 열 때도 함께 지워집니다. 코넥스 종목은 종목코드를 확인할 수 없어 종목명을 누를 수 없습니다.\n- **시황·공시 화면의 좌우 경계 정돈** — 목록과 원문 화면을 하나의 카드로 감싸고 가운데 경계선을 또렷하게 다듬었습니다. 좌우 상단 바의 높이를 맞춰 경계선이 한 줄로 이어지며, 원문을 열지 않은 상태에서도 오른쪽이 빈 여백이 아니라 화면의 일부로 보입니다. 라이트·다크 모드 모두 적용됩니다.\n\n### 수정\n- **유튜브 \"새 영상\" 목록의 마지막 줄이 비어 보이던 문제 수정** — 창 너비에 따라 한 줄에 들어가는 카드 수가 달라지는데 항상 10개씩 보여주다 보니 마지막 줄 오른쪽이 비었습니다. 이제 줄 단위로 채워 어떤 창 너비에서도 빈칸 없이 표시되고, 카드가 넓어져 영상 제목도 덜 잘립니다.\n- **무료리서치에서 일부 종목의 종목상세가 열리지 않던 문제 수정** — 종목코드에 영문자가 섞인 종목(신형우선주, 일부 ETF)에서 종목명을 눌러도 종목상세가 열리지 않았습니다.",
-  "pub_date": "2026-07-09T05:53:55Z",
+  "version": "0.3.67",
+  "notes": "## [v0.3.67] — 2026-07-09\n\n### 추가\n- **무료리서치 원문을 앱 안에서 바로 보기** — 시황·공시 > 무료리서치에서 리포트를 누르면 오른쪽에 원문이 앱 안에서 바로 열립니다. 확대·축소하며 볼 수 있고, 원문을 보면서 AI 분석 창을 열면 AI 창이 원문 위에 겹쳐 떠 원문과 분석을 나란히 볼 수 있습니다. 창을 옮겨도 뒤로 원문이 계속 보입니다.\n\n### 수정\n- **데이터 수집 진행 표시가 끝난 항목을 \"수집 중\"으로 잘못 보여주던 문제 수정** — 여러 데이터를 이어서 수집할 때, 앞서 끝난 항목이 \"완료 · 100%\"인데도 계속 수집 중처럼 보여 다 끝난 것으로 오인되던 것을 고쳐, 지금 실제로 받고 있는 항목을 정확히 표시합니다.\n- **수동매매 순위 목록의 스크롤 막대가 보이지 않던 문제 수정** — 거래량·상승률·하락률 순위 목록에 마우스를 올려도 스크롤 막대가 나타나지 않던 것을 고쳤고(macOS), 스크롤할 때 목록이 좌우로 미세하게 흔들리던 것도 없앴습니다.\n- **유튜브에서 \"광고 차단 프로그램은 허용되지 않습니다\" 안내창이 떠 영상이 멈추던 문제 수정** — 앱 안에서 유튜브를 볼 때 이 안내창이 떠 재생이 끊기던 것을 막아, 영상이 이어서 재생됩니다.",
+  "pub_date": "2026-07-09T09:48:54Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHN3VlkzRnZhQmp2amxlRXovYnF5WjVNbWNMb09UNjBUTmg4S1UyaXNVRmZIUUNNQU1hK2ZoSjBFQVBNckNUdDhBUHh3WW5QNjYxSTFjSmdNRU9aVmdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNTc1MTA5CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKMU53V1g2cmR4WVBxMFlvc0k2dldPamVMUTJEMWpIdTY4UjR4QUF6ZTFaZUNCSTBwZGtaeWFwT0FMM2QzNlRvUm9OcGhrUnBQYnlBWXMwZlpSSm8zQ0E9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.66/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGlyNS9zTWNZY3E2TjljYjE5Tk9nLzNFaEVhMUs2RThZL1JKZms0YWYxSDRXaGQ3REFpREVNNW1rZGZJcnNDRU9TZGdXbG10YUhPOFpRK3ZYaGxvc3c4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNTg5NDM1CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKdzhmY2RScDF6M2NPelFvSXQ1eVhGV21ESzRHZ2E3MGZ0ajV5VklGN2phcktNVlJaelBocFhJazkxYU5GamRhdVBhV2tqbU9CVWttd0huN0hlc2lkQWc9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.67/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHNhZUYrYjMxNDhmb1NRd1orUE93TkNnWDlad2xWT0tCOHl2Nm0wM1JRUDVEN1RpdXQ2NnI3c256QlVBK0k3NzJoeFpOTjJ0Yk00M0ovK0lOSFRUaFFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNTc2NDM0CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy42Nl94NjQtc2V0dXAuZXhlCnhHOHZwYTlpZ0d2UWFKL2g1V0lhdXZkQTZjbTNHSFEwUThjdnA3dUp5aFNLbWx5bjl2eXYyQUJBSFphRFZNWVUyZndUZmFHaWkyR0hnVVNIS1UvYUFRPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.66/Gold.Hand.Trade_0.3.66_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHJtSXNNTmU1RkxVc0t1RjU3TWl5aHpzdkVML0VPYzE4RG9CTFQ2VkQrd05rM3NYUlkySi9YM2w2Uy9YK0dhMXJxelUySG0wVVJWNy9HcEJWNzdEN0FZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNTkwNTMzCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy42N194NjQtc2V0dXAuZXhlCjVPTlBSbXBBTFRXZVQvZXNaTk1ZaXoxcWx4emFiMFF5YzBsTVNUZTAvZ0x4eFVCeWNWMS9jdm5SSmZLRGhHYlZ3UEVxaTB5ajNJdm5SeXN3OTN1QURnPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.67/Gold.Hand.Trade_0.3.67_x64-setup.exe"
     }
   }
 }
