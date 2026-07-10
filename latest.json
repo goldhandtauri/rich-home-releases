@@ -1,15 +1,15 @@
 {
-  "version": "0.3.67",
-  "notes": "## [v0.3.67] — 2026-07-09\n\n### 추가\n- **무료리서치 원문을 앱 안에서 바로 보기** — 시황·공시 > 무료리서치에서 리포트를 누르면 오른쪽에 원문이 앱 안에서 바로 열립니다. 확대·축소하며 볼 수 있고, 원문을 보면서 AI 분석 창을 열면 AI 창이 원문 위에 겹쳐 떠 원문과 분석을 나란히 볼 수 있습니다. 창을 옮겨도 뒤로 원문이 계속 보입니다.\n\n### 수정\n- **데이터 수집 진행 표시가 끝난 항목을 \"수집 중\"으로 잘못 보여주던 문제 수정** — 여러 데이터를 이어서 수집할 때, 앞서 끝난 항목이 \"완료 · 100%\"인데도 계속 수집 중처럼 보여 다 끝난 것으로 오인되던 것을 고쳐, 지금 실제로 받고 있는 항목을 정확히 표시합니다.\n- **수동매매 순위 목록의 스크롤 막대가 보이지 않던 문제 수정** — 거래량·상승률·하락률 순위 목록에 마우스를 올려도 스크롤 막대가 나타나지 않던 것을 고쳤고(macOS), 스크롤할 때 목록이 좌우로 미세하게 흔들리던 것도 없앴습니다.\n- **유튜브에서 \"광고 차단 프로그램은 허용되지 않습니다\" 안내창이 떠 영상이 멈추던 문제 수정** — 앱 안에서 유튜브를 볼 때 이 안내창이 떠 재생이 끊기던 것을 막아, 영상이 이어서 재생됩니다.",
-  "pub_date": "2026-07-09T09:48:54Z",
+  "version": "0.3.68",
+  "notes": "## [v0.3.68] — 2026-07-10\n\n### 추가\n- **인앱 브라우저 광고 차단** — 뉴스·공시·리서치를 앱 안에서 열 때 광고와 추적 요청을 네트워크 단계에서 막습니다. 기사 아래 추천 콘텐츠 위젯과 배너가 사라져 본문이 먼저 눈에 들어옵니다. 설정 > 일반 > 인앱 브라우저에서 끌 수 있으며 기본은 켜짐이고, 바꾼 설정은 다음에 여는 창부터 적용됩니다. 언론사가 자기 서버에서 직접 내보내는 자체 광고는 막지 못할 수 있습니다.\n\n### 변경\n- **종목상세 뉴스 창이 목록을 가리지 않고 오른쪽에 열립니다** — 뉴스 탭에서 기사를 누르면 뜨던 창이 뉴스 목록을 덮어 다음 기사를 고르기 어려웠습니다. 이제 목록 바로 오른쪽에 열려 목록을 보면서 기사를 읽을 수 있습니다.\n\n### 수정\n- **앱 안에서 기사 링크를 눌러도 아무 반응이 없던 문제 수정 (macOS)** — 네이버 뉴스 검색 결과의 기사 제목 중 일부는 보안 연결이 아닌 주소로 내려오는데, 그런 링크를 누르면 아무 일도 일어나지 않았습니다. 검색어에 따라 결과 전부가 그런 링크여서 뉴스 탭이 통째로 멈춘 것처럼 보이기도 했습니다.\n- **광고 숨김이 조용히 실패하던 문제 수정** — 앱 안에서 웹페이지를 열 때 광고를 가리는 처리가 시작 단계에서 멈춰버려, 광고가 그대로 보이던 것을 고쳤습니다.\n- **일부 웹페이지가 앱 안에서 제대로 동작하지 않던 문제 수정** — 광고를 거르는 과정에서 사이트 스크립트가 중간에 끊기거나, 걸러진 요청의 응답을 페이지가 끝없이 기다리던 상황을 고쳤습니다.",
+  "pub_date": "2026-07-10T10:37:25Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGlyNS9zTWNZY3E2TjljYjE5Tk9nLzNFaEVhMUs2RThZL1JKZms0YWYxSDRXaGQ3REFpREVNNW1rZGZJcnNDRU9TZGdXbG10YUhPOFpRK3ZYaGxvc3c4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNTg5NDM1CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKdzhmY2RScDF6M2NPelFvSXQ1eVhGV21ESzRHZ2E3MGZ0ajV5VklGN2phcktNVlJaelBocFhJazkxYU5GamRhdVBhV2tqbU9CVWttd0huN0hlc2lkQWc9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.67/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGgrM0xqZFFnbUN6WktEUFExclVSeUVLV3luM0hidWltN0dJR0tudWowZGI0YUlWcmZjdldGQmpobUIvekFZbE14VzlNbk81L1U1RThRL2RSYlJlTVFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNjc3OTg4CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKS0dBbFhJaDRrNmZhUFBBWlgzaVRZdk5tL2lNSE5rWWpWa3BUYUQ1Um5DUkZnZ2EwZzZLZVlGb3paeU5ZUWQ4dFRNUU5Zam1IclVXRkd5M2RtTHpsQUE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.68/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHJtSXNNTmU1RkxVc0t1RjU3TWl5aHpzdkVML0VPYzE4RG9CTFQ2VkQrd05rM3NYUlkySi9YM2w2Uy9YK0dhMXJxelUySG0wVVJWNy9HcEJWNzdEN0FZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNTkwNTMzCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy42N194NjQtc2V0dXAuZXhlCjVPTlBSbXBBTFRXZVQvZXNaTk1ZaXoxcWx4emFiMFF5YzBsTVNUZTAvZ0x4eFVCeWNWMS9jdm5SSmZLRGhHYlZ3UEVxaTB5ajNJdm5SeXN3OTN1QURnPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.67/Gold.Hand.Trade_0.3.67_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGpISVV5b01OdWcyVW5JcERXcEI0NmlzTHVoU0dhM0Y4YTZwTmlFdXd0SW5ETDVZZituZktXdjFBdjI0K0FQSXFWYzBLdTBNUzh4b0dqRjJkbjUxTlFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNjc5ODQ0CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy42OF94NjQtc2V0dXAuZXhlCmxZK21ZSGQ0VGtyd0F6YXJwSG1Ic3NySnB4SjZrT2o1d0VrZWtvUnB0UGFDMFFtd0lQS0dKNEdTcGpKUFdQRjJXNW1KZ1NXTXJpb1dWRHpPdEk2Q0NBPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.68/Gold.Hand.Trade_0.3.68_x64-setup.exe"
     }
   }
 }
