@@ -1,15 +1,15 @@
 {
-  "version": "0.3.74",
-  "notes": "## [v0.3.74] — 2026-07-11\n\n### 추가\n- **데일리 회고 \"시장 한 줄\"에 코스피·코스닥·코스피200 지수 자동 표시** — 금리·환율처럼, 오늘 지수 값과 등락률·시장 판정(상승장/하락장/혼조세)이 자동으로 채워지고 그 아래 한 줄에 AI가 시황 코멘트를 답니다. 지수 숫자·방향은 앱이 직접 넣어 AI가 지어내거나 반대로 쓸 수 없습니다. 주말·공휴일 등 휴장일에는 휴장 안내와 함께 직전 거래일 종가를 보여줍니다.\n- **종목상세 뉴스·공시를 목록 옆에 뜨는 이동식 창으로 열기** — 뉴스·공시 목록의 항목을 누르면, 별도 창 대신 목록 바로 오른쪽에 겹쳐 뜨는 창으로 내용이 열립니다(목록은 그대로 보입니다). 제목 표시줄을 끌어 원하는 위치로 옮기고 오른쪽 아래 모서리로 크기를 조절할 수 있으며 ESC로 닫힙니다. 항목 옆의 열기 아이콘을 누르면 예전처럼 별도 창으로도 열 수 있고, 창 안에서 기사·링크를 누르면 바로 해당 페이지로 이동합니다.\n\n### 수정\n- **공매도·수급 탭 '기관 유형별 순매수' 일별 표의 날짜 잘림 수정** — 날짜가 \"26/07/…\"처럼 끝이 잘려 보이던 것을 온전히 표시하도록 넓혔습니다. 큰 금액(1조 이상)은 \"1.3조\"처럼 압축해 좁은 칸에서도 잘리지 않습니다.",
-  "pub_date": "2026-07-11T15:01:21Z",
+  "version": "0.3.75",
+  "notes": "## [v0.3.75] — 2026-07-12\n\n### 추가\n- **데일리 회고 \"시장 한 줄\"에 코스피·코스닥·코스피200 지수 자동 표시** — 금리·환율처럼, 오늘 지수 값과 등락률·시장 판정(상승장/하락장/혼조세)이 자동으로 채워지고 그 아래 한 줄에 AI가 시황 코멘트를 답니다. 지수 숫자·방향은 앱이 직접 넣어 AI가 지어내거나 반대로 쓸 수 없습니다. 주말·공휴일 등 휴장일에는 휴장 안내와 함께 직전 거래일 종가를 보여줍니다.\n- **종목상세 뉴스·공시를 목록 옆에 뜨는 이동식 창으로 열기** — 뉴스·공시 목록의 항목을 누르면, 별도 창 대신 목록 바로 오른쪽에 겹쳐 뜨는 창으로 내용이 열립니다(목록은 그대로 보입니다). 제목 표시줄을 끌어 원하는 위치로 옮기고 오른쪽 아래 모서리로 크기를 조절할 수 있으며 ESC로 닫힙니다. 항목 옆의 열기 아이콘을 누르면 예전처럼 별도 창으로도 열 수 있고, 창 안에서 기사·링크를 누르면 바로 해당 페이지로 이동합니다.\n\n### 수정\n- **공매도·수급 탭 '기관 유형별 순매수' 일별 표의 날짜 잘림 수정** — 날짜가 \"26/07/…\"처럼 끝이 잘려 보이던 것을 온전히 표시하도록 넓혔습니다. 큰 금액(1조 이상)은 \"1.3조\"처럼 압축해 좁은 칸에서도 잘리지 않습니다.\n- **유튜브 채널 추가 창이 재생 화면에 가려지던 문제 수정** — 유튜브를 앱 안 오른쪽 패널에서 보는 중에 '채널 추가'를 누르면 입력 창이 재생 화면에 일부 가려지던 것을 고쳐, 이제 온전히 위에 표시됩니다.\n- **유튜브 미니 창에서 돌아왔을 때 화면이 어긋나던 문제 수정** — 미니 창으로 봤다가 다시 앱 안 오른쪽 패널로 돌아오면 영상 화면이 제자리에서 벗어나 보이던 경우를 고쳤습니다.",
+  "pub_date": "2026-07-11T15:42:30Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHNnL3hacDg5c1lOeFF1eE1LVTdLN2FIYWVwREFibjNNRk5tK1pMbWoyaVJKT0gwckJjeGVvUTh3emFobS9tVlZWRTFNS0RiTDFkam5oaUlrTm9mRFFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNzgwODAyCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKYXZvTXdzaTlyRUNSN2pnZER0RUVLN0psbjlCSDNiQ0JIUUF5bmhYQk12cm9CelE5ZHY3dzZnZGxDM2hxU0FDdFc5TWRUbkhWNHhwNitmYUNOU1ZrRHc9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.74/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG1qRnFuTFE3ZXNtL2hmZ2YrS1ZMM09nWllCK1NFa1JHQTVraEhQTHZ5Tml5SVdoUExNYVgyVUN0NTQxY1pIQ0NpQ25hSWJIbmtuNy83QVNUTUtTOUE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNzgzNzUyCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKVWFlaURhWHJiajgyWWYya0EyMi9LNU9wcEtMUk81Y3JYU29xalZPSHRxZnJDS2REamJNcFBuaHhFcHFNbUlGcmJTN1B1cXpKSnJMcURtbkg1WGJWQWc9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.75/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGlraG01SDcwWXBibmNvd3BHcllNa3RwakhrOEVvb1ZxNDFlR0ZJZGlvRU1IcjdodnQyV3F1L3FGOWJOdU14dnoyVEFqeWFLUFRkY1ZaVWc0eHluSWdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNzgyMDgwCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy43NF94NjQtc2V0dXAuZXhlCitzZ3lCQVhabWFGck94YUIrVnVPUE5tNW00WTRURUdneFZJR3p2RCtZYkJzcXRMVENGYXpZYTRJSUdhdjVhQlBpaDNPZVlvNDBNMFp1WDFvcklRMURBPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.74/Gold.Hand.Trade_0.3.74_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHZGQ09HclJPNXhBZy8xY3lES1VJY0dCR3lDNXg4ckhtdzk4TVd5eGs0WEJjdEZoQ1ZhaDZjSG5VcFNzVXE0c0lXdmlkeWp5MUN0ajlCSkFGZnRvc1FVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNzg0NTQ5CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy43NV94NjQtc2V0dXAuZXhlCnU0bmV4TFo0aGVKeG9QQzh5VE9GQm8xTlBlNDRrYlpsL04yOXAwdzVxRjhjTm05dEhLcjd1ZEZwRXhkSjJ1YjdodlF6WE41VzNIYjJhbXk0NDNLNkNnPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.75/Gold.Hand.Trade_0.3.75_x64-setup.exe"
     }
   }
 }
