@@ -1,15 +1,15 @@
 {
-  "version": "0.3.70",
-  "notes": "## [v0.3.70] — 2026-07-10\n\n### 추가\n- **인앱 브라우저 새로고침 버튼** — 유튜브 오른쪽 패널과 인앱 브라우저 창의 위쪽 막대에 새로고침 버튼이 생겼습니다. 페이지가 잘못 뜨거나 영상이 멈췄을 때 창을 닫았다 다시 열 필요 없이 그 자리에서 다시 불러옵니다.\n- **미니 창에서 원래 화면으로 돌아가기** — 유튜브를 항상 위에 띄우는 미니 창의 위쪽 막대에 돌아가기 버튼이 생겼습니다. 누르면 보고 있던 영상 그대로 앱 안 오른쪽 패널로 돌아옵니다. 미니 창 안에서 다른 영상으로 넘어갔더라도 지금 보고 있는 영상으로 돌아옵니다.\n\n### 수정\n- **유튜브 영상이 \"문제가 발생했습니다\"로 재생되지 않던 문제 수정 (macOS)** — 앱 안 오른쪽 패널에서 유튜브를 볼 때 영상이 재생되지 않고 오류만 뜨던 문제를 고쳤습니다. 같은 영상이 별도 창에서는 정상 재생돼 더 헷갈리던 증상입니다. Windows에서는 원래 발생하지 않았습니다.\n- **시황·공시 화면의 글자가 줄바꿈되어 깨져 보이던 문제 수정** — 뉴스 탭 위쪽 버튼 막대와 투자유의 탭 도구 막대에서 글자가 두 줄로 접히거나 시장 표시가 쪼개져 보이던 것을 고쳤습니다. 투자유의 탭은 오른쪽 본문 칸 없이 전체 폭을 쓰도록 정리했습니다.\n\n### 변경\n- **유튜브에서는 광고를 네트워크 단계에서 막지 않습니다** — 유튜브는 광고 요청이 막히는 것을 감지하면 영상 재생을 중단합니다. 그래서 유튜브에서만 네트워크 차단을 끄고, 기존 방식(재생기 단계에서 광고를 걸러내는 처리)만 남겼습니다. 유튜브 광고는 이전과 똑같이 걸러지며, 뉴스·공시·리서치 페이지의 광고 차단은 그대로입니다.",
-  "pub_date": "2026-07-10T13:31:05Z",
+  "version": "0.3.71",
+  "notes": "## [v0.3.71] — 2026-07-11\n\n### 변경\n- **데일리 회고 \"시장 한 줄\"에 코스피·코스닥·코스피200 지수가 자동으로 채워집니다** — 금리·환율처럼, 오늘 지수 값과 등락률·시장 판정(상승장/하락장/혼조세)이 자동으로 표시되고 그 아래 한 줄에 AI가 시황 코멘트를 답니다. 지수 숫자와 방향은 앱이 직접 넣기 때문에 AI가 지어내거나 반대로 쓸 수 없습니다. 주말·공휴일 등 휴장일에는 휴장 안내와 함께 직전 거래일 종가를 보여줍니다.\n\n### 수정\n- **데일리 회고의 시장 코멘트가 하락장을 상승으로 반대로 설명하던 문제 수정** — 지수가 내린 날에도 등락 숫자에 '+'가 붙어, AI가 시장 방향을 반대로 적던 문제를 고쳤습니다. 오른 날에는 증상이 드러나지 않아, 최근처럼 하락·혼조장이 잦을 때 특히 자주 어긋나 보이던 문제입니다.",
+  "pub_date": "2026-07-11T11:55:05Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHUxVlU4SXNMMlA1d2tXd29tb2FTUDdBVEZmeEF5eG5aWFBObHZtUmFSSTdWOTJpOEluWkRYWjc0MEV0YUFXeURPNER4a1NHRHhPbWR6eTR2b2phM0FRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNjg5Mjk3CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKQ2tsRkhXTUdFbUo4R1JXYUxDNkdjNGc1STlCUnJsUWtiMVZDS1VHZEd4M3k0V3lIRmYzS25vWUxYUW10Q1hNU2Y5RGpkNDZsa2RRYWd3RE1sQWJwQ2c9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.70/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHFDZTk1VXRDTmtYVFZ3d1M4U2lnZXdyaGk1YVJOd2lFNUxpTzl2VUwwV3FWdGJqS1JZZ3NWWm9neTU5R1JDTVJZWUhJYVJPV0VjRHI4bVJaL3B3OEFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNzY5ODQ0CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKMFo1RzA2UUUyRHliRDVGU05McXcyV2FkTGlETUg4OFVsbjByV3dLVk9OcjUwQnY5ak9MNjJMeCtHOC9rZ2YyaWtnd0d2aWVTVzg2akQzZmlOcXBLQXc9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.71/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHZWdWt0OHZya1R6b2llRzFpS3VBUzJmQlhnY0U5bWloQmNyODUrU28vMjhzZlVXUStXT3ErdHh0RWpaUGo5NDZESXlPdk1CdVM3ZzZ3YWtJOWVJTkFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNjkwMjY0CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy43MF94NjQtc2V0dXAuZXhlCnhDQUw4aWRkWVpnelJLeVFwYnluMkZEb3NjejErOERqQWMzQjA2eURrSUcyazVHc1IrQjBEVkQxR2FxN0srdEFlRkFkYkp1Szl0bnk4a2Qvd2YwS0RnPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.70/Gold.Hand.Trade_0.3.70_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHVIaFo0dTgrc3lQbGpQcXNpYlhrUFAyek9VQnBSaE83U0ZyN2VEbHFNKy9mb0k5ZkRyUEV1L25hMS8wYVM1a3BMcDI4V0JLbmExY0tpTnVkZ0tlVFFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNzcwOTA0CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy43MV94NjQtc2V0dXAuZXhlClVnZ1FGVEJROVJEVkhnSnR1WUd6NDFZRjFOSGpSa3JDdTJNdVlVeUdDZi9XVld3TGtlejlJQ2lkTjhzcm1Wd2dQaU9yMDR3RklnTDd5TktRcVA4akR3PT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.71/Gold.Hand.Trade_0.3.71_x64-setup.exe"
     }
   }
 }
