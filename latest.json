@@ -1,15 +1,15 @@
 {
-  "version": "0.3.77",
-  "notes": "## [v0.3.77] — 2026-07-12\n\n### 변경\n- **커뮤니티를 화면 안 패널로 보기** — 이제 커뮤니티를 열면 별도 창 대신 화면 오른쪽에 패널로 함께 나타납니다. 트레이딩 화면을 보면서 커뮤니티를 같이 볼 수 있고, 패널과 화면 사이 경계를 드래그해 넓이를 조절할 수 있습니다. 예전처럼 별도 창으로 크게 보고 싶으면 패널 위쪽의 '새 창으로 열기' 버튼을 누르거나 설정에서 창 모드로 바꿀 수 있습니다.\n- **종목 상세에서도 커뮤니티를 그 자리에서** — 종목 상세 화면의 커뮤니티도 별도 창이 아니라 화면 위에 떠서(위치·크기 조절 가능) 그 종목의 글을 보여줍니다. 전체 커뮤니티와 종목별 커뮤니티를 같은 패널에서 오갈 수 있고, '전체 커뮤니티로' 버튼으로 되돌아갈 수 있습니다.\n\n### 수정\n- **배당 화면 시가배당률 표시 정확도 개선** — 일부 종목에서 비정상적으로 크게 나오던 시가배당률을 현재가 기준으로 다시 계산해 바로잡았습니다.",
-  "pub_date": "2026-07-12T14:20:23Z",
+  "version": "0.3.78",
+  "notes": "## [v0.3.78] — 2026-07-12\n\n### 수정\n- **시장맵이 항상 최대 종목까지 채워집니다** — 시장맵을 열거나 새로고침할 때 종목이 조금씩만 늘어 최대에 못 미치던 것을 고쳐, 한 번에 최대한 많은 종목까지 모아서 보여줍니다.",
+  "pub_date": "2026-07-12T14:53:41Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHBRYVBEaVB6Wkt2N2pVbVlhR0RhclNNYlBBNWNFcEZvUHd5OXNpdlprZkNyNWdyQ2Q5V2RiRXRRMlNuNjZHQ21NdDhFUzdQYlZoVEhBOXQzM2lWMFFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzODY1MjMzCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKdmRlYXloMmYrT3JqTXM0ODhWY0JwcWRJWURQYnlRbDE3MkF2ZFc0L3I0d3RCcFRaS1BCa3h2N0lyamo2THZVZ3ZKZDVyUHo2Y2dMUGxZeW9TNDNoQ2c9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.77/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHJxVGUvdVJqaVBtV095RG8wUjBiZWh2RDNYd0hlbEMxM1dmTERWNEloTW9XcC9GK1I2RGpXanhvMHpGRWp2LzJFbFR5NjBMK1phRUxadXBsSnp6N0FRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzODY2NTc0CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKYlhNVUs3c1JnNWw1R2pYR3BwSksvQTNmZ3B4eDhBY05OZmJHai9OZXcyMXNQbkhaNUVxZGNaRVpLNkJDbG1JbVhaR05nMG9lK3lQL2NteEdkclVlQXc9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.78/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG9xTDh6Z0ZZMURMYVJVNGJ5Z2hkTnFqcGhmSktnSnh5ZnRqRlRjbTlDVk9uUlIzcDJ1dHNOVFNWOGxXRjZyS256OE9VY1VvdnRsTkFNV1d0T241Z3dZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzODY2MDIyCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy43N194NjQtc2V0dXAuZXhlCmFXSVpUMEVqUEFtbDBNbldQTEE3S09HNlJkWmxFell5Zkw3UHMzbUlCSS9aYWVWUnplZkhIYjgzeXI0dG9jbmFHQ0t0dGlCTlpUVlZFOXk5V2hhTENRPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.77/Gold.Hand.Trade_0.3.77_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGgzL2I3RklzQXdFaThSSDZ1bUZjYUlNNVNnNVYzbDRuME0vZjY0WHlHbnpXaVlQdzgxY01GdWN3ckZMakVMYXZ1aVlpallpYnZDWWNXUnMxdmFYQlFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzODY4MDIwCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy43OF94NjQtc2V0dXAuZXhlClRseGpxbWNWMk4vUFh3VDUyamRZWW9ZSlM5TjhGS1FUZ0N6SlZoeURMblp6S3laMEM0SGlPbVF5eTQzb29BbDY1NHBkdVNjY2Nuc2YyUU1NWUJYNUJnPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.78/Gold.Hand.Trade_0.3.78_x64-setup.exe"
     }
   }
 }
