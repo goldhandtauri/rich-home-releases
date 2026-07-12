@@ -1,15 +1,15 @@
 {
-  "version": "0.3.76",
-  "notes": "## [v0.3.76] — 2026-07-12\n\n### 추가\n- **화면 방송 (실시간 송출)** — 화면 녹화 팝업에 '라이브' 모드가 생겼습니다. 유튜브 등 방송 서비스의 스트림 키를 넣으면 이 앱 화면을 그대로 실시간으로 내보낼 수 있습니다. 스트림 키는 기기 안에 암호화해 저장돼 다음부터는 붙여넣기 없이 바로 시작할 수 있고, 방송 중 인터넷이 잠깐 끊겨도 자동으로 다시 이어집니다. 계좌·잔고·평가손익 등 민감 정보는 녹화와 똑같이 자동으로 가려집니다.\n- **웹캠 얼굴 함께 내보내기** — 녹화·방송 팝업에서 '얼굴 함께 나오기'를 켜면 웹캠 얼굴이 화면 우하단에 원형으로 함께 담깁니다. 얼굴 가리기(블러·모자이크·단색·스티커)와 얼굴 보정도 그대로 적용됩니다.\n- **종목선별에 배당 화면** — 시가배당률·배당성향으로 배당주를 걸러 볼 수 있고, 종합 점수에도 배당(인컴) 항목이 반영됩니다.\n- **수동매매 '오늘의 시장' 바에 시장맵 버튼** — 누르면 업종·종목 흐름을 한눈에 보는 시장맵이 팝업으로 열립니다.\n- **투자유의 화면에 '투자주의 환기종목' 추가** — 기존 관리·투자경고·투자위험·매매거래정지에 더해 투자주의 환기종목 목록을 볼 수 있습니다.\n- **관심종목·보유종목 개수 전체 표시** — 홈·자동매매 화면에서 '9+'로 줄이지 않고 전체 개수를 그대로 보여줍니다.\n\n### 변경\n- **얼굴 마스크가 훨씬 빠르고 안정적으로 따라옵니다** — 얼굴을 움직일 때 마스크(블러·스티커 등)가 늦게 따라오던 것을 크게 개선하고, 가만히 있을 때 스티커가 커졌다 작아졌다 떨리던 것도 잡았습니다.\n- **체결강도 오독 방지 안내** — 종목상세 '사는 중? 파는 중?' 카드에서 상한가·하한가일 때는 체결강도가 실제 방향과 다를 수 있다는 주의 문구를 함께 보여줍니다 (하한가인데 매수우위로 보이는 경우 등).\n\n### 보안\n- **텔레그램 봇 토큰·방송 스트림 키 암호화 보관** — 텔레그램 원격주문 봇 토큰과 화면 방송 스트림 키를 기기 안에서 암호화해 저장합니다.",
-  "pub_date": "2026-07-12T11:44:31Z",
+  "version": "0.3.77",
+  "notes": "## [v0.3.77] — 2026-07-12\n\n### 변경\n- **커뮤니티를 화면 안 패널로 보기** — 이제 커뮤니티를 열면 별도 창 대신 화면 오른쪽에 패널로 함께 나타납니다. 트레이딩 화면을 보면서 커뮤니티를 같이 볼 수 있고, 패널과 화면 사이 경계를 드래그해 넓이를 조절할 수 있습니다. 예전처럼 별도 창으로 크게 보고 싶으면 패널 위쪽의 '새 창으로 열기' 버튼을 누르거나 설정에서 창 모드로 바꿀 수 있습니다.\n- **종목 상세에서도 커뮤니티를 그 자리에서** — 종목 상세 화면의 커뮤니티도 별도 창이 아니라 화면 위에 떠서(위치·크기 조절 가능) 그 종목의 글을 보여줍니다. 전체 커뮤니티와 종목별 커뮤니티를 같은 패널에서 오갈 수 있고, '전체 커뮤니티로' 버튼으로 되돌아갈 수 있습니다.\n\n### 수정\n- **배당 화면 시가배당률 표시 정확도 개선** — 일부 종목에서 비정상적으로 크게 나오던 시가배당률을 현재가 기준으로 다시 계산해 바로잡았습니다.",
+  "pub_date": "2026-07-12T14:20:23Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG1VQTN2WU9zSVFtTnFOVGo4M1JORlpEc29BRTNSMDdORzAxdXFhTzIrU0ZDMnhUR0EvTzlkTmpRU0FxMmFsWWsyZXBNZld0Z0xwUWt2WVNROXJ5TndJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzODU1MjgwCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKQkh3QnRwS0gvRzl4Q3pKbm1nam9MRUxEdlg1cHRKbTh4MXJGMmhyNGZGRHpTblpkRnVUeUdSTkVCR01LeTZudGRPYlF0dGU3YUxycEs0eWtiNUdhQWc9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.76/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHBRYVBEaVB6Wkt2N2pVbVlhR0RhclNNYlBBNWNFcEZvUHd5OXNpdlprZkNyNWdyQ2Q5V2RiRXRRMlNuNjZHQ21NdDhFUzdQYlZoVEhBOXQzM2lWMFFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzODY1MjMzCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKdmRlYXloMmYrT3JqTXM0ODhWY0JwcWRJWURQYnlRbDE3MkF2ZFc0L3I0d3RCcFRaS1BCa3h2N0lyamo2THZVZ3ZKZDVyUHo2Y2dMUGxZeW9TNDNoQ2c9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.77/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGxoa096NDRjZHNVNHRXdDY3Y2JHNkE5YWFpK01OdEpDTHFVY3FNVEIydWVLdCtSak50OVlzQVJkWDVIVDc3eHFOR0dSQzBCN0FpRXJKV1RBbUVFSUEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzODU2NjY5CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy43Nl94NjQtc2V0dXAuZXhlClF1ejJzSjM0UE03a05MbmlGWS9VTWlnZE96SHkwd0tERGRnS1Nicmk2Y25taE4vS1VZcHN3dnVSMDE0WkRCcWloWlA2M1F3N2xNZlBiTzh2cXZDNUF3PT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.76/Gold.Hand.Trade_0.3.76_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG9xTDh6Z0ZZMURMYVJVNGJ5Z2hkTnFqcGhmSktnSnh5ZnRqRlRjbTlDVk9uUlIzcDJ1dHNOVFNWOGxXRjZyS256OE9VY1VvdnRsTkFNV1d0T241Z3dZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzODY2MDIyCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy43N194NjQtc2V0dXAuZXhlCmFXSVpUMEVqUEFtbDBNbldQTEE3S09HNlJkWmxFell5Zkw3UHMzbUlCSS9aYWVWUnplZkhIYjgzeXI0dG9jbmFHQ0t0dGlCTlpUVlZFOXk5V2hhTENRPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.77/Gold.Hand.Trade_0.3.77_x64-setup.exe"
     }
   }
 }
