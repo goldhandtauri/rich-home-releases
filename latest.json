@@ -1,15 +1,15 @@
 {
-  "version": "0.3.81",
-  "notes": "## [v0.3.81] — 2026-07-13\n\n### 수정\n- **웹캠 얼굴 스티커가 고개를 돌려도 제자리에 붙어 있습니다** — 화면 방송·녹화에서 얼굴에 선글라스 등 스티커를 켜고 고개를 좌우로 빠르게 돌릴 때 스티커가 한순간 확 날아갔다 돌아오던 현상을 바로잡았습니다. 정지·느린 움직임에서의 부착 안정성은 그대로 유지됩니다.",
-  "pub_date": "2026-07-13T06:00:40Z",
+  "version": "0.3.82",
+  "notes": "## [v0.3.82] — 2026-07-13\n\n### 수정\n- **라이브 방송 중에도 화면 그리기가 바로 나옵니다** — 라이브 송출을 막 시작한 직후 그린 선이 방송 화면에 안 담기던 문제를 바로잡았습니다. 파일 녹화에서는 정상 동작하던 것을 라이브에서도 동일하게 맞췄습니다.\n- **모니터가 여러 대일 때 그리기 화면이 앱과 같은 모니터에 뜹니다** — 앱을 다른 모니터로 옮긴 뒤 화면 그리기를 켜면 엉뚱한 모니터에 그리기 창이 뜨던 문제를 고쳐, 지금 앱이 있는 모니터 위에 정확히 겹쳐 뜨도록 했습니다.\n- **공시·PDF 팝업창을 닫아도 종목상세가 뒤로 밀리지 않습니다** — 종목상세 공시 탭에서 보고서·PDF를 별도 창으로 띄운 뒤 그 창을 닫으면 종목상세가 메인 화면 뒤로 가라앉던 문제를 바로잡았습니다. 이제 팝업창만 닫히고 종목상세는 그대로 앞에 남습니다.",
+  "pub_date": "2026-07-13T07:17:51Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGhpVVNqV3h1UFQycXRJTTM5ZFV0enRySFVSN2crWlhCZ1c2SEhCMHFIaFNJRWFXazhRMTBhcU5wajIzK0NqbVVEMFBJYmhQeE54VEhHL09oOUxuR0FnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzOTIxNjMwCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKSGZGa3o1K3JOS25Jc095UUFpUTE5aEg4THNUNzh1OHJlK0lFUWZJaVY2eEFsZEl0WDlzT1FpTVpuWFR0SGYwZ2owWEQ5NncvaS9WYmYyaE9xZE5SQUE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.81/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHZyYjFWSkFaUWdnWUJreDZxWmhxTHJtV0FaL3pmbUN5Nmc0cEcyK2gxeWlzNHdFbHJTdlJ3R1lsVE5HK1FYcEVPNHpKZUpIdGVFRzVJK3pybjVaTkE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzOTI2MDY4CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKZVRaMC94Rm9tWm4wUzJMZE1GMG9tVWJwM2d6WHZHOW03aGZxVW1lQmxmR0RJeXNUZGhRU0FBTmhWN2xSOXlXUDlQVmFuZVBCWFJQS2lITE56b21oQVE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.82/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGpXK0tWUzY0a3FGMWZaOWpOcXNLQ2VBVmp6Vzg3OE9iK2l0UGR5cXV0V2dTMFM5UEhsK2I2WTZNWkZCMVg0SnVTcGRwM3IzRlBSak9jcG81MjJTMFFrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzOTIyNDM5CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy44MV94NjQtc2V0dXAuZXhlCkNtWG9SRG1MSmpkS3BaYUdmYU1kQ1JmUkNJVzRnOTNTNDBsR3Z3bndMUlRYVTVpdmx6YzhoMVlFR0p3TVQrOHBWSjJlbmxxKzk1dDkvRHpOWmZwVURRPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.81/Gold.Hand.Trade_0.3.81_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHRZUmM0WXFUaEdmYXBqcURVWTVjODJJbTZMQlRuTG5ydTVvU1FjUm00TnFiWkM0RWVwTGhJWEFpOTBEMVJjOFk1Q3VXWEM2YTlQaUdRNlR0NTByaVFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzOTI3MDcwCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy44Ml94NjQtc2V0dXAuZXhlClRpS0NxRHhSM2xLVlVibzRUZlFFZ2xGL0FraFFvcXQ5VSt3elplUzN3dnArMUlqMTJFVUZMQmNHT2lwQUNLbFJaZFBJeTljY1FUd3JRTkhtNU1nREJnPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.82/Gold.Hand.Trade_0.3.82_x64-setup.exe"
     }
   }
 }
