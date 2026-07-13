@@ -1,15 +1,15 @@
 {
-  "version": "0.3.82",
-  "notes": "## [v0.3.82] — 2026-07-13\n\n### 수정\n- **라이브 방송 중에도 화면 그리기가 바로 나옵니다** — 라이브 송출을 막 시작한 직후 그린 선이 방송 화면에 안 담기던 문제를 바로잡았습니다. 파일 녹화에서는 정상 동작하던 것을 라이브에서도 동일하게 맞췄습니다.\n- **모니터가 여러 대일 때 그리기 화면이 앱과 같은 모니터에 뜹니다** — 앱을 다른 모니터로 옮긴 뒤 화면 그리기를 켜면 엉뚱한 모니터에 그리기 창이 뜨던 문제를 고쳐, 지금 앱이 있는 모니터 위에 정확히 겹쳐 뜨도록 했습니다.\n- **공시·PDF 팝업창을 닫아도 종목상세가 뒤로 밀리지 않습니다** — 종목상세 공시 탭에서 보고서·PDF를 별도 창으로 띄운 뒤 그 창을 닫으면 종목상세가 메인 화면 뒤로 가라앉던 문제를 바로잡았습니다. 이제 팝업창만 닫히고 종목상세는 그대로 앞에 남습니다.",
-  "pub_date": "2026-07-13T07:17:51Z",
+  "version": "0.3.83",
+  "notes": "## [v0.3.83] — 2026-07-13\n\n### 추가\n- **투자전략 카드보드** — 보유 종목을 트렐로식 카드 보드로 한눈에 관리하는 새 화면이 생겼습니다. 종목마다 **매수 근거·목표 매수가·목표 매도가·손절가·메모**를 적어두면, 현재가에 따라 카드가 자동으로 **매수 검토 / 보유 유지 / 매도 검토 / 손절 주의** 컬럼으로 이동합니다. 아직 기준을 세우지 않은 종목은 **기준 세우기**에 모이고, 매도해 정리한 종목은 **청산됨**에 기록으로 남습니다. 값을 입력하는 도중에 카드가 튀지 않도록, 입력이 30초간 멈추면 그때 위치를 정리합니다. 목표가는 입력하면 천 단위 콤마가 자동으로 붙습니다.\n- **투자전략 카드보드 텔레그램 알림** — 텔레그램을 연동해 두면, 기준을 아직 세우지 않은 종목 안내와 카드 위치 변동(매수 검토·보유 유지 등)을 앱이 켜져 있는 동안 텔레그램으로 받아볼 수 있습니다.\n\n### 수정\n- **AI 분석에 종목 정보가 비어 나오던 문제** — 관심 종목을 많이 조회하는 동안 특정 종목의 AI 분석을 열면 시세·재무 정보가 첨부되지 않고 비어 나오던 현상을 바로잡았습니다. 조회가 일시적으로 밀리면 잠깐 기다렸다 다시 받아오도록 해, 종목 정보가 안정적으로 담깁니다.\n- **스크롤 영역의 흰색 막대 (macOS)** — 시황·공시 화면 목록을 스크롤할 때 골드 테마와 어울리지 않는 흰색 스크롤 막대가 뜨던 것을, 테마에 맞는 은은한 골드 인디케이터로 바꿨습니다.",
+  "pub_date": "2026-07-13T11:51:47Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHZyYjFWSkFaUWdnWUJreDZxWmhxTHJtV0FaL3pmbUN5Nmc0cEcyK2gxeWlzNHdFbHJTdlJ3R1lsVE5HK1FYcEVPNHpKZUpIdGVFRzVJK3pybjVaTkE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzOTI2MDY4CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKZVRaMC94Rm9tWm4wUzJMZE1GMG9tVWJwM2d6WHZHOW03aGZxVW1lQmxmR0RJeXNUZGhRU0FBTmhWN2xSOXlXUDlQVmFuZVBCWFJQS2lITE56b21oQVE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.82/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGg3b3hCcU16M1BOWXhPV1VnRGlCYURobUw4MkFFRnRQczIvSG1mZTEwYmFXRFVoUUNvSnJ3dTBvT1pvV2hRVDJuNWVRL29oRlI4cG82cnMrYnpBU2c4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzOTQyNjMwCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKRzRjTlZGTEMxam5KUUhXdjJmSE5KUW56b3hGcDMxeE05M1FBaDlsamNpcFNvNnFCaWNicE8yNHA3emNFNUJLU1hKUC8vVkJodlNkRk1tL2RQaDJJQUE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.83/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHRZUmM0WXFUaEdmYXBqcURVWTVjODJJbTZMQlRuTG5ydTVvU1FjUm00TnFiWkM0RWVwTGhJWEFpOTBEMVJjOFk1Q3VXWEM2YTlQaUdRNlR0NTByaVFNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzOTI3MDcwCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy44Ml94NjQtc2V0dXAuZXhlClRpS0NxRHhSM2xLVlVibzRUZlFFZ2xGL0FraFFvcXQ5VSt3elplUzN3dnArMUlqMTJFVUZMQmNHT2lwQUNLbFJaZFBJeTljY1FUd3JRTkhtNU1nREJnPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.82/Gold.Hand.Trade_0.3.82_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG42KzFwcy9uTUZSWk56cjhRb1NMVjRKeXA3RDliUkdyUzRsRWtBUzhqRFZtMXhaTkJzWEp1RGFiSEtkcUZnUHFZdXZUaGVaVng5VGROVU9sajdkWkE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzOTQzNTA2CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy44M194NjQtc2V0dXAuZXhlClFUeFIwV1hLdjFMbmxLSnB6encwZ2h1aEtXeFhwd3BVL2NqU0FuQjJqQVlWUWZqSEZZWHpja3BoZkp1cS9hK3pybDdNamFkMFVEUGs5TUF5WWtqS0RnPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.83/Gold.Hand.Trade_0.3.83_x64-setup.exe"
     }
   }
 }
