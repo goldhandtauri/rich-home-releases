@@ -1,15 +1,15 @@
 {
-  "version": "0.3.85",
-  "notes": "## [v0.3.85] — 2026-07-15\n\n### 추가\n- **보유·관심 종목 뉴스 알림** — 보유·관심 종목에 새 기사가 뜨면 종목명 옆 빨간 점, 뉴스 탭 배지, 그리고 텔레그램을 연동해 두면 텔레그램 메시지로 알려줍니다. 종목상세와 시황/공시의 뉴스 탭에서 각 종목 뉴스를 모아 볼 수 있고, 항목을 클릭해 읽으면 배지 숫자가 하나씩 줄어듭니다.\n- **네이버 검색 API 연동 (선택)** — 설정 › 네이버 검색 API 에서 무료 키를 등록하면, 뉴스를 클릭했을 때 **원문 기사로 바로** 열리고 종목 뉴스 알림 범위도 넓어집니다. 등록하지 않아도 뉴스 기능은 그대로 동작합니다.\n- **유튜브 PiP 이어보기** — 유튜브 영상을 작은 고정 창(PiP)으로 전환할 때, 처음부터가 아니라 **보던 위치에서 이어** 재생합니다.\n\n### 변경\n- **뉴스 탭 개편** — 뉴스 항목에 **언론사 이름과 도메인**을 함께 표시하고, 새로 도착한 기사에는 **NEW** 표시를 붙입니다. 시황/공시 뉴스는 클릭하면 공시처럼 **오른쪽 패널**에 본문이 열리고, 별도 창으로 보려면 항목 위 창 아이콘을 누르면 됩니다.\n- **AI 채팅 모델 목록 정리** — 모델 선택 목록에 **실제 대화에 쓸 수 있는 모델만** 보이도록 정리했습니다(이미지·음악 생성 등 대화용이 아닌 모델은 숨김). 사용량 한도 초과 오류도 상황에 맞게 안내합니다.\n- **실적 시즌 위젯** — 보유·관심 종목의 실적 발표를 **최근 발표 순**으로 보여주고, 5개가 넘으면 **더보기**로 펼쳐 확인합니다.\n\n### 수정\n- **텔레그램 뉴스 중복 알림** — 같은 뉴스가 여러 번 오던 문제를 바로잡아, 기사 한 건당 한 번만 알립니다.\n- **뉴스 항목이 첫 클릭에 안 열리던 문제** — 클릭했는데 창이 뒤에 떠서 두 번 눌러야 했던 것을, 한 번에 앞으로 뜨도록 고쳤습니다.\n- **관심종목 뉴스 점이 안 사라지던 문제** — 뉴스를 다 확인해도 종목명 옆 빨간 점이 남던 현상을 바로잡았습니다.",
-  "pub_date": "2026-07-14T15:40:47Z",
+  "version": "0.3.86",
+  "notes": "## [v0.3.86] — 2026-07-15\n\n### 수정\n- **시장맵을 처음 열 때 종목이 일부만 나오던 문제** — 시황·공시의 시장맵을 처음 열면 주요 60종목만 보이고 새로고침을 눌러야 전체가 채워지던 현상을 바로잡아, 처음부터 전체 종목(약 260여 개)이 채워지도록 했습니다.\n- **종목상세를 다시 열면 이전 뉴스 창이 남던 문제** — 종목상세에서 뉴스를 연 뒤 창을 닫고 다른 종목을 열면 앞서 보던 뉴스 화면이 그대로 떠 있던 현상을 고쳤습니다.\n- **시황·공시 알림 점이 사라지지 않던 문제** — 시황·공시 목록(공시·IPO·투자유의·무료리서치)을 모두 확인하면 상단 메뉴의 빨간 점이 정상적으로 사라지도록 했습니다. 보유·관심 종목의 새 뉴스 알림은 종목명 옆 점으로 계속 표시됩니다.",
+  "pub_date": "2026-07-14T17:03:09Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHZ2YjhqU0tTaEdscjloTGpraE5aejdnYU92bTEreVcvQlluMlBkSnhveHI5d0Fyb25ReWZDbXlVZE1qR0FFVXdCUzluMmc2b1gwblhwWUpZNnpOWUFjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0MDQyNTU1CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKRWhnWWwvZGhhMzJNbFEvQjllcGtVbk9jR0V4TVgxNDlzZlgrdS94VjRERFNCN2lKekQ4eGpTcTBOWHNKb1p3RVR4ZUNYcDNtRktDclNYZ1B0cHl6QUE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.85/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHJiRnA4MS9SWnAzNFZKYkhRalovRXFjQnNWenJJR0YxRlRGdkh1TmVieGZlMHZ1OXN2OUQ0bEIvZ2lBRWJvaWdwbkxFeVNleFdUOEFBdVVjR1JRWGdFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0MDQ3MDM4CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKRDJuNHJjOTJ6dlNzMVhrSXpRTFIzZi9CTHhCR3VFVUR1d1Q0Rm9Jdmk4dFdrNkNsL0VaUzU3K3NMNkpGNEVGOVNma0V3UXdxRUlZUWdlajNxVEliRHc9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.86/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG9lWVU4YjNqT0RtbnJNN0xQNDZNS1JkZmwrUXF6WG9yTm9EUTBSd0hoN2RBdkFZY0lyeUtOV3YwdEpTRlhkL0NKQ3RZNTFDNkhkVGVRRkRTMjYyOFFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0MDQzNjQ2CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy44NV94NjQtc2V0dXAuZXhlCmpUUDFNTUw3SXhRNHk2RDhUV1ozUTBoNkgySnRSR2RmUjV1Skdza25lRzVra3p1VFpuRGtxbG16UzAxWEJ4dTNtNGIvRlA1S0dtMjJYVlJzalpuOENRPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.85/Gold.Hand.Trade_0.3.85_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG1uQ2ZaWWt4eW1TbGg4NU1LbjRrRDZHSno4SkJHOHdteFFPbytxaGRmMXFJS3B4MmRGZGJyZkNzSFAyK1dSeVlDWHROLzBMcy95eE9PY252UUNNR2dzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0MDQ4NTg4CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy44Nl94NjQtc2V0dXAuZXhlCjVSZXdOdUhrcmsrM21rZnNHdGFJVVRmY0pFdUhvK1k3aGd6dDNDVEhQQytvTE5nQ0dqZmtlZnNvdmxHYkVYWEYzdlF3ZWZVYVcvcGR1elNScFFxcER3PT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.86/Gold.Hand.Trade_0.3.86_x64-setup.exe"
     }
   }
 }
