@@ -1,15 +1,15 @@
 {
-  "version": "0.3.89",
-  "notes": "## [v0.3.89] — 2026-07-15\n\n### 변경\n- **오늘의 시장 판정 배치 정리** — 지수·시장폭·200일선을 윗줄, 투자자 수급(개인·외국인·기관)을 아랫줄로 나눠 두 줄로 보기 좋게 재배치했습니다. 코스피·코스닥 등락률도 오르면 빨강, 내리면 파랑으로 표시해 한눈에 방향을 알 수 있습니다.\n\n### 수정\n- **뉴스 화면에서 스크롤 시 상단 메뉴가 가려지던 문제** — 시황·공시 뉴스를 열고 스크롤을 내리면 뉴스 내용이 상단 메뉴 영역을 덮던 현상을 바로잡았습니다.\n- **종목상세를 닫을 때 관련 창도 함께 정리** — 종목상세에서 뉴스·공시·IR·PDF 창을 여러 개 띄운 상태에서 종목상세 화면을 닫으면, 거기서 연 창들도 함께 닫히도록 했습니다.",
-  "pub_date": "2026-07-15T05:50:04Z",
+  "version": "0.3.90",
+  "notes": "## [v0.3.90] — 2026-07-16\n\n### 추가\n- **나라장터 입찰 탭** — 새 \"나라장터\" 메뉴에서 조달청 나라장터의 홈페이지·웹·앱 개발 등 참여 가능한 **용역 입찰공고**와, 아직 공고 전인 **발주(입찰) 예정 계획**을 리스트로 확인할 수 있습니다. 마감 D-day·추정가·지역/업종 제한이 한눈에 보이고 키워드로 걸러 볼 수 있으며, 새 공고가 올라오면 앱 표시(메뉴 점·목록 NEW)와 텔레그램으로 알려줍니다(설정에서 켜고 끌 수 있음). 앱을 켜두면 화면에 들어가 있지 않아도 백그라운드로 모아둡니다. (이용하려면 공공데이터포털 data.go.kr 에서 무료 인증키를 발급받아 설정 → \"나라장터 입찰\"에 등록하면 됩니다.)\n\n### 변경\n- **종목 상단 금리·환율 바 개선** — 기준금리·국고채·미국/일본 금리·환율 표시를 카드형으로 다듬어, 화면을 좁혀도 기준일 날짜가 잘리지 않고 마감·값·변동을 또렷하게 볼 수 있습니다.\n- **설정 사이드바 아이콘 정리** — 키 등록 목록에서 서로 겹쳐 보이던 아이콘을 각각 구분되게 바꿨습니다.\n\n### 수정\n- **종목상세 뉴스 과거 기사 이어보기** — 종목상세 뉴스 목록을 아래로 스크롤하면 최신뿐 아니라 과거 뉴스도 계속 불러와 보여줍니다.\n- **종목명 옆 새 소식 점 정리** — 종목명 옆 공시(빨강)·뉴스(골드) 점을 서로 붙여 깔끔하게 표시하고, 상단 메뉴 \"시황·공시\" 점 순서도 정리했습니다.",
+  "pub_date": "2026-07-15T16:16:45Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHYwMHJKZUNTNVJLS3lxYTBwb1FNZUpKaGZWcFdYLy9CSXJZK0dhb1FGaUJMZ2haNDVqMWtlVG44ajFGL09JRUNkTnBldGx3MEtsSG9hbVNCK3d1ZGc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0MDkzNDQ5CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKOHpTNzY4dGVJV3dsZzVDWkdVcnZuemlDODAvTnkrZ0JyY0pCRnFRbW55dzgxSUJ6REdmQzdmQU9nRkk4UndCWEVUc2cwZTdnOGZGdUZ0WThOWnJRREE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.89/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHZFV25WTmNMcTBiY0ljK2VEdjFNZThXaWI5S29aaXlBRWJScnpXWSt6akRsTXRvTWFTRHBOajI4V0NkaW4vSDc4RXhCcHlsS3BUZnoxOExteG9VSkFJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0MTMwMzc4CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKZXhaY2Z3andKTlR5QXBHOVlPWjJxaExMTW1JNmtyNGdxN2Z5MUNuWXJoS1VLOXZrcEdJNU01TlYrVWo0Wk43VVc2LzJ4M3FGME43VkNHa3NIL1hWQWc9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.90/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHRURXYyazRaQ1R0b1g5VFpUVWhvZzhZS1B3dFJ3Y2ZHM0h3aHFZSEZ0NmJqcUFjRDNXSjZyY3ZzL3pKcjYyVklPK29OcWJXcFlHdDlEenNNRjdoSHdrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0MDk0NjAzCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy44OV94NjQtc2V0dXAuZXhlClBhQjJyaEYwLzZBbkN6RlBXalQ5TTRjTVl0MmtrNzlCMVFFdWZTUER6ZndKRElCZnBHYkZNU2thQVR0MHdqVGdEOHFzOWlDdFVMTGgwTTZZeWVOUERRPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.89/Gold.Hand.Trade_0.3.89_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHRsYkQvYjRKV08vVWQ1VUwwckdJZUtUd01lM0s1WVFLQjRhYWYrYnB1R1dHY3JDUEhrZ3J4ajFiT0lIUVlMK1h4dkZNSlFoNGpDeHdyd0pqS3R2S3dvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0MTMyMjA0CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy45MF94NjQtc2V0dXAuZXhlClZJVzJPYzI2cVVrQ3ZBckc5S3NGSjVGcjBxbnZSSDFBVEMyWHczUVlNRktROTNmSEpxSnBvTzAzZmRuRFdyajNYMEhPMDVWcndWeFpWekNxYXEzSENBPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.90/Gold.Hand.Trade_0.3.90_x64-setup.exe"
     }
   }
 }
