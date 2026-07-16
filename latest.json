@@ -1,15 +1,15 @@
 {
-  "version": "0.3.91",
-  "notes": "## [v0.3.91] — 2026-07-16\n\n### 추가\n- **나라장터 입찰공고 키워드 검색** — 나라장터 입찰공고 화면에서 원하는 키워드(예: CCTV, 드론, 교육)를 입력해 바로 검색할 수 있습니다. 기본으로 모아 주는 홈페이지·앱 개발 용역 외의 공고도 찾을 수 있고, 검색어를 지우면 원래 목록으로 돌아옵니다.\n\n### 변경\n- **나라장터 조회 기간 선택 정돈** — \"최근 30일\" 기간 선택 상자의 높이와 모양을 옆 버튼들과 맞춰 깔끔하게 다듬었습니다.\n\n### 수정\n- **나라장터 진입 시 안내 카드 깜빡임 제거** — 인증키가 이미 등록돼 있는데도 화면에 들어갈 때 안내 카드가 잠깐 스쳐 보이던 현상을 없앴습니다. 이제 곧바로 목록이 표시됩니다.",
-  "pub_date": "2026-07-16T04:18:00Z",
+  "version": "0.3.92",
+  "notes": "## [v0.3.92] — 2026-07-16\n\n### 추가\n- **공매도·수급 데이터 복사** — 종목상세 \"공매도·수급\" 탭의 각 표·차트와 전체를 헤더 아이콘으로 **이미지(그림)로 복사**하거나 **표(엑셀·시트에 붙여넣기용)로 복사**할 수 있습니다.\n\n### 변경\n- **나라장터 입찰을 고급 기능으로 정리** — 나라장터 입찰공고·발주계획을 기본은 숨기고, **설정 › 일반의 버전 정보를 여러 번 누르면 켜지는** 고급 기능으로 바꿨습니다. 꺼져 있으면 백그라운드 수집·텔레그램 알림도 동작하지 않고, 켜면 함께 동작합니다. 신규 입찰 텔레그램 알림 설정은 \"텔레그램 설정\"의 알림 항목으로 옮겼습니다.\n- **금손매 AI(로컬)의 문서 분석 강화** — 로컬 AI로 IR 자료·공시·리서치를 분석할 때 **문서 전체를 반영**하도록 개선했습니다. 문서가 길거나 컴퓨터 사양이 낮아 한 번에 다 담기 어려우면, 문서를 여러 부분으로 나눠 각각 분석한 뒤 종합합니다(진행률 표시).\n\n### 수정\n- **공시 보고서 여러 페이지 전체 분석** — 종목상세 공시에서 보고서를 AI로 분석할 때, 여러 문서로 이뤄졌거나 긴 보고서가 **첫 부분만 분석되던 문제**를 고쳤습니다. 이제 사업·분기보고서 등도 전체를 읽고 분석합니다.\n- **AI 창이 기사에 가리던 문제** — 종목상세에서 기사를 띄운 채 AI를 열면 AI 창이 기사 뒤에 숨던 것을, 옆으로 붙여 **둘 다 보이게** 하고 AI 창을 **드래그로 옮길 수** 있게 했습니다.\n- **IR 자료 스크롤바 표시** — 종목상세 공시의 IR 자료(기업설명회·IR 발표자료)가 많을 때 마우스를 올리면 스크롤바가 나타나 조작하기 쉽게 했습니다.",
+  "pub_date": "2026-07-16T07:31:38Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHJZdk5mbkxGa2tjQ3ZNUzhJdWF6c0ZTdVM2WllET1ZiaytGZVQ4dTVvT2hZMHpOR0ZFRUVvYnpKcHRiLzhrcmE0UFppVzZaWkw2aUw4SG5pcjBZNVE4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0MTY4NzQ2CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKM2c1ZW5yOFc1VTJ0c0FJUExybENIRFhFTkd2Z1h6QnFzc1Fmc1diVjIzdWY0bWZYNkM2V1RPQnZZRG5HTUcramNSQzFnZk82L1NUejlLczN0YXl2RFE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.91/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGwwZWtyamxCalpLRGtPaGtZbGltSzJnNldmK2dBMjR1cDA2TFhMWGFyYzNKSGM1ZWhlZ1NBUy9CQUJVQlpMTmtReFlrQnJjY1dBc2h6cDl6NU1UendRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0MTg2MTQ0CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKMFlXY1dBcG1YVjVTOWFzaXROQUJ3dEZxd1F2ajVYaVg5ak9FN2hEUnU4cHowVTZEbVlmc0o2ZllJZ20reGdtM21VSkZBejBOQnhGWWdNbFZ2dWl6QkE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.92/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGxNU3JkcnZYMlpUa1UyTHdOeFB0cTJhdmlwSjV6WDN6OG9DME5qbDh6TVFtakNaNWxrd1ZwZm5zYURMdUxKK3RSb2I1TXRLbVpzRFhJTWtZZzhsRFFVPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0MTc1NDc5CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy45MV94NjQtc2V0dXAuZXhlCm83NWRiWUUrY3REZzYvM3JyZkR1NmN1azdnZTJTa2hwM3BrNjhqdHFpVHFQNEFHcWM2MVc0RXo1ekNQQWlaWit4M3NNblF4YUNuNThXM2doRGg5QkF3PT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.91/Gold.Hand.Trade_0.3.91_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHJlclE5UHdsZWtjY2tKaFlkS2xWNW9DcVI3a0oxQ1NUaHpvZ2dtYUExQXMvV0F4cHdZbUxaTW1FRXZTSFRzTTN2TU5QSEJadlplb3VuZkh0UkNuMWdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0MTg3MDk3CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy45Ml94NjQtc2V0dXAuZXhlClhRZks1VVcrKzUxZERUaCt2ZFZzK0NBZ3RYbUJ2YmlPSy9QbjJWN1pURkRlaTBUQWY1N3l5a291Z2xLYnJsMlplNFhYQnlVVk1TMlhPRGlGVWg2RUNBPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.92/Gold.Hand.Trade_0.3.92_x64-setup.exe"
     }
   }
 }
