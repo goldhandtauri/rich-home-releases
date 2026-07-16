@@ -1,15 +1,15 @@
 {
-  "version": "0.3.94",
-  "notes": "## [v0.3.94] — 2026-07-16\n\n### 변경\n- **시황/공시 알림 점 색 구분** — 메뉴의 \"시황/공시\" 알림 점이 **공시·투자유의는 빨강**(확인이 급한 신호), **뉴스·IPO 공모주·무료리서치는 금색**(참고 정보)으로 나뉩니다. 이전에는 공모주·리서치 소식도 빨강으로 떠서 급한 신호와 구분되지 않았습니다. 두 종류가 함께 있으면 빨강·금색 두 점이 나란히 표시됩니다.\n\n### 수정\n- **스크리닝 \"전체 내보내기/가져오기\"가 모든 화면을 복원** — 이전에는 통계·비율·건전성만 백업에 담겨, 새 컴퓨터에서 가져오기를 해도 마법공식·PEG·Z스코어·F스코어·GP/A·NCAV·인수자배수·버핏·모멘텀·배당 등 나머지 스크리닝 화면이 비어 있었습니다. 이제 **12개 스크리닝 결과를 모두 포함**해, 한 번도 수집하지 않은 컴퓨터에서도 **가져오기만 하면 전 화면이 그대로 복원**됩니다. 가져오기 미리보기·완료 안내에도 복원되는 스크리닝 건수가 표시됩니다. (이전 버전에서 만든 백업 파일도 그대로 사용할 수 있습니다.)",
-  "pub_date": "2026-07-16T13:18:50Z",
+  "version": "0.3.95",
+  "notes": "## [v0.3.95] — 2026-07-17\n\n### 추가\n- **메모장** — 헤더의 메모 아이콘 또는 단축키(맥 ⌘⇧M · 윈도우 Ctrl+Shift+M)로 여는 메모장 창이 생겼습니다. 워드처럼 보이는 그대로 편집하고(굵게·기울임·취소선·제목·글머리 목록·번호 목록), 이미지는 **파일 선택·붙여넣기·드래그·주소 넣기** 네 가지 방법으로 넣을 수 있습니다. 본문의 링크를 누르면 **메모장 오른쪽이 확장되며 그 자리에서 웹페이지가 열립니다**. 적은 내용은 자동 저장되며, 설정 > 일반 > 메모장에서 이미지 저장 폴더를 원하는 위치로 지정할 수 있습니다.\n\n### 변경\n- **유튜브 자동 최고 화질** — 유튜브 패널과 새 창에서 그 영상이 지원하는 **가장 높은 화질을 자동으로 선택**합니다. 이전에는 자동 화질이 낮은 단계에 머무르는 경우가 있었습니다. 화질은 플레이어에서 언제든 직접 바꿀 수 있고, 작게 띄우는 미니 창에는 적용되지 않습니다.\n\n### 수정\n- **확인창이 뜨지 않고 곧바로 실행되던 문제** — 되돌릴 수 없는 동작에서 확인창이 화면에 **나타나지 않은 채 \"예\"를 누른 것처럼 그대로 진행**되던 문제를 고쳤습니다. 투자 일지 내보내기의 민감정보 경고, 한국투자증권 API 키 초기화, 비밀번호 삭제, 커뮤니티 표현 경고 등에서 이제 확인창이 정상적으로 뜨고 **취소하면 실제로 취소**됩니다.\n- **금손매 AI(로컬)가 앱을 닫아도 계속 실행되던 문제** — 로컬 AI를 한 번 사용하면 앱을 종료해도 AI 엔진이 백그라운드에 남아 메모리를 차지하던 문제를 고쳤습니다. 이제 **앱을 닫을 때 함께 종료**되고, 앱을 켤 때 이전에 남아 있던 엔진이 있으면 정리합니다.\n- **일부 글꼴이 앱 기본 글꼴로 표시되지 않던 문제** — 계좌번호 등 화면 곳곳의 글꼴이 앱 기본 글꼴과 다르게 보이던 것을 수정했습니다.",
+  "pub_date": "2026-07-16T16:52:34Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG9iemJqNkdFL2RNaTI4b0pYYVlFc3RkWWxHREc4NzFnNm5vY29tdFNMNERMSzJzSVNxK0ZTbWRqZzFjODYyeTR6NGFIbnEybFRYTTJNY0FIMkM4OWcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0MjA2ODI2CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKV0drYmR1cmJlRGpJcGovRVRrakNYbVM4N2hXUlIzK0lzb2tBck5sNXdjR2d2cnZ3aGhSWSt4bEFBS0xIN3c1OTlqUmViM01SbUVYZXNEalllQjVxQUE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.94/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG44bTJiRXVIbmtQZFhwRjhNMjZHcFFHZE1UWGpsZmcvOGhsV3hYaVN0Zk1MZDJCMWtaZUpUZmFJY0ZEd2tOSmtvUEZiUnJZSVBpU29LS3ptN3hnS0FNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0MjE5NTQ3CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKMVltcGJsUzJkcWIrMm82a29CRnZ0MWhFa2txU3FZeWZGeWpjYWM1elE5Nm50R0Y5WHBUcXlWR21DR2V5WFhYa2JraFc4QVZ4NldKdmFSQnhmZ3NoQ2c9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.95/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHFnSGJ0OFlMZDY3UjB4Qjk5Y29nY05iRzZWZUcyb2VaeGowekN0THhmVDdtcnFyL0hpUHE0N2pZNjNlK2RXNm43YzkrRm1wVGVKNi81QVJyV3ZyS0FrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0MjA3OTI5CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy45NF94NjQtc2V0dXAuZXhlCnN1bG9pZDJDTFB2RFI1Y0FnaE93b1l1MXJ4OVhHQStPazl1bUlXR0FQRnFaamJRUnlJc2dHeWxBQlRLMmdnSldxeE5XYXJ1WHB4a0VRMGhYajhkdkJRPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.94/Gold.Hand.Trade_0.3.94_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG1kcC9SaFlNVEc5dEdXbnNCbnJIRXl0a1pCbktpUmY4VjVuc1FlQnA1QmdTSk4wdnp4WkZJcisrNCtuNEpYbjYzeVJHR1VJTHl1VVVmMjBQejhBMVF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0MjIwNzUzCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy45NV94NjQtc2V0dXAuZXhlCmVqWHNtV2V0OHVQMmJTNXZTVitSVmJKbEU1UW85YU9qNWVTRGxtZmJmYUdYYnJvZmZXaVdTK3d0enFQa0J0WjRqMDYyelV4M2t0L1hha1luNDRpQUFRPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.95/Gold.Hand.Trade_0.3.95_x64-setup.exe"
     }
   }
 }
