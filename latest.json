@@ -1,15 +1,15 @@
 {
-  "version": "0.3.92",
-  "notes": "## [v0.3.92] — 2026-07-16\n\n### 추가\n- **공매도·수급 데이터 복사** — 종목상세 \"공매도·수급\" 탭의 각 표·차트와 전체를 헤더 아이콘으로 **이미지(그림)로 복사**하거나 **표(엑셀·시트에 붙여넣기용)로 복사**할 수 있습니다.\n\n### 변경\n- **나라장터 입찰을 고급 기능으로 정리** — 나라장터 입찰공고·발주계획을 기본은 숨기고, **설정 › 일반의 버전 정보를 여러 번 누르면 켜지는** 고급 기능으로 바꿨습니다. 꺼져 있으면 백그라운드 수집·텔레그램 알림도 동작하지 않고, 켜면 함께 동작합니다. 신규 입찰 텔레그램 알림 설정은 \"텔레그램 설정\"의 알림 항목으로 옮겼습니다.\n- **금손매 AI(로컬)의 문서 분석 강화** — 로컬 AI로 IR 자료·공시·리서치를 분석할 때 **문서 전체를 반영**하도록 개선했습니다. 문서가 길거나 컴퓨터 사양이 낮아 한 번에 다 담기 어려우면, 문서를 여러 부분으로 나눠 각각 분석한 뒤 종합합니다(진행률 표시).\n\n### 수정\n- **공시 보고서 여러 페이지 전체 분석** — 종목상세 공시에서 보고서를 AI로 분석할 때, 여러 문서로 이뤄졌거나 긴 보고서가 **첫 부분만 분석되던 문제**를 고쳤습니다. 이제 사업·분기보고서 등도 전체를 읽고 분석합니다.\n- **AI 창이 기사에 가리던 문제** — 종목상세에서 기사를 띄운 채 AI를 열면 AI 창이 기사 뒤에 숨던 것을, 옆으로 붙여 **둘 다 보이게** 하고 AI 창을 **드래그로 옮길 수** 있게 했습니다.\n- **IR 자료 스크롤바 표시** — 종목상세 공시의 IR 자료(기업설명회·IR 발표자료)가 많을 때 마우스를 올리면 스크롤바가 나타나 조작하기 쉽게 했습니다.",
-  "pub_date": "2026-07-16T07:31:38Z",
+  "version": "0.3.93",
+  "notes": "## [v0.3.93] — 2026-07-16\n\n### 변경\n- **시황/공시 목록 디자인 통일** — 뉴스·공시·IPO 공모주·투자유의·무료리서치 다섯 탭의 목록이 글자 크기·행 간격·머리글·강조가 제각각이던 것을, 하나의 일관된 디자인으로 정리해 한눈에 보기 편하게 했습니다.\n- **로컬 AI 문서 전체 분석 속도 개선** — 큰 공시·보고서를 금손매 AI(로컬)로 분석할 때, 이전에 종료되지 않고 남아 성능을 갉아먹던 백그라운드 AI 엔진을 자동으로 정리하고, 문서를 나눠 분석하는 과정을 함께 처리하도록 개선했습니다. (문서를 처음부터 끝까지 읽어야 하는 특성상 큰 문서는 여전히 수 분이 걸릴 수 있습니다.)\n- **알림 점 깜빡임 효과** — 종목명과 시황/공시 탭에 뉴스·공시 알림 점이 나란히 표시될 때 가볍게 깜빡이는 효과를 더했습니다.\n\n### 수정\n- **로컬 AI 전체 분석이 멈춘 것처럼 보이던 문제** — 큰 문서를 분석할 때 진행 상태가 잘 안 보여 멈춘 듯 느껴지던 것을, 경과 시간과 취소 버튼을 표시하고 응답이 없을 때 무한정 기다리지 않도록 고쳤습니다.\n- **시황/공시 너비 조절 드래그** — 좌우 목록·본문 너비를 조절할 때, 처음 이후 다시 조절하면 덜컹거리다 갑자기 튀던 문제를 수정했습니다.\n- **공시 탭 다크 모드 톤** — 다크 모드에서 공시 탭만 유독 밝게(금색빛) 떠 보이던 것을 다른 탭과 같은 톤으로 맞췄습니다.",
+  "pub_date": "2026-07-16T10:04:30Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGwwZWtyamxCalpLRGtPaGtZbGltSzJnNldmK2dBMjR1cDA2TFhMWGFyYzNKSGM1ZWhlZ1NBUy9CQUJVQlpMTmtReFlrQnJjY1dBc2h6cDl6NU1UendRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0MTg2MTQ0CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKMFlXY1dBcG1YVjVTOWFzaXROQUJ3dEZxd1F2ajVYaVg5ak9FN2hEUnU4cHowVTZEbVlmc0o2ZllJZ20reGdtM21VSkZBejBOQnhGWWdNbFZ2dWl6QkE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.92/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHFmQWRpa3JsR0t3NkRtZHowZUo2UkhLRFRCOTJoY0IzdXhWVkRUd212MEVzQ2kwYnF4UFlwR0x0NEpQSkhDWnV1RmFkamp4MXBzQ2hCcnpNRjZRVmdrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0MTk1NDU3CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKVVJPU0NIUkdLQTJsVnVTdDYxQW5nNHdZa2hmbmhwTzR1d1VuYmRhREFrZWhRa1RsQ0p1dDUwN2RDenB6dXUvZ1U1bU1Bb3ZCcFR6d2k2WCszbFA5Q0E9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.93/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHJlclE5UHdsZWtjY2tKaFlkS2xWNW9DcVI3a0oxQ1NUaHpvZ2dtYUExQXMvV0F4cHdZbUxaTW1FRXZTSFRzTTN2TU5QSEJadlplb3VuZkh0UkNuMWdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0MTg3MDk3CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy45Ml94NjQtc2V0dXAuZXhlClhRZks1VVcrKzUxZERUaCt2ZFZzK0NBZ3RYbUJ2YmlPSy9QbjJWN1pURkRlaTBUQWY1N3l5a291Z2xLYnJsMlplNFhYQnlVVk1TMlhPRGlGVWg2RUNBPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.92/Gold.Hand.Trade_0.3.92_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHJLOFprbHFpOUtVZzdOOXBlaWoxQ3lQS0U4cmErdEtFZmpjeG5MNVNaT1Z3VFVlaldKcXZraEFOckNsdTl4WFVEWXFtMW50K2FVK2FUZFNpRmR1a1FnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0MTk2MjcwCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy45M194NjQtc2V0dXAuZXhlCk5XMHdvN0MzOXJtK2JtU3VrUGhYTnNPd1JSOG94UzU0cTNPUjlOQTBVa3U4aFBBUDFlMENCdVRpdGtFNFlncEp3YkhwZDU4cldCd2RhZlVReDJhVUNnPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.93/Gold.Hand.Trade_0.3.93_x64-setup.exe"
     }
   }
 }
