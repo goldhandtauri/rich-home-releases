@@ -1,15 +1,15 @@
 {
-  "version": "0.3.93",
-  "notes": "## [v0.3.93] — 2026-07-16\n\n### 변경\n- **시황/공시 목록 디자인 통일** — 뉴스·공시·IPO 공모주·투자유의·무료리서치 다섯 탭의 목록이 글자 크기·행 간격·머리글·강조가 제각각이던 것을, 하나의 일관된 디자인으로 정리해 한눈에 보기 편하게 했습니다.\n- **로컬 AI 문서 전체 분석 속도 개선** — 큰 공시·보고서를 금손매 AI(로컬)로 분석할 때, 이전에 종료되지 않고 남아 성능을 갉아먹던 백그라운드 AI 엔진을 자동으로 정리하고, 문서를 나눠 분석하는 과정을 함께 처리하도록 개선했습니다. (문서를 처음부터 끝까지 읽어야 하는 특성상 큰 문서는 여전히 수 분이 걸릴 수 있습니다.)\n- **알림 점 깜빡임 효과** — 종목명과 시황/공시 탭에 뉴스·공시 알림 점이 나란히 표시될 때 가볍게 깜빡이는 효과를 더했습니다.\n\n### 수정\n- **로컬 AI 전체 분석이 멈춘 것처럼 보이던 문제** — 큰 문서를 분석할 때 진행 상태가 잘 안 보여 멈춘 듯 느껴지던 것을, 경과 시간과 취소 버튼을 표시하고 응답이 없을 때 무한정 기다리지 않도록 고쳤습니다.\n- **시황/공시 너비 조절 드래그** — 좌우 목록·본문 너비를 조절할 때, 처음 이후 다시 조절하면 덜컹거리다 갑자기 튀던 문제를 수정했습니다.\n- **공시 탭 다크 모드 톤** — 다크 모드에서 공시 탭만 유독 밝게(금색빛) 떠 보이던 것을 다른 탭과 같은 톤으로 맞췄습니다.",
-  "pub_date": "2026-07-16T10:04:30Z",
+  "version": "0.3.94",
+  "notes": "## [v0.3.94] — 2026-07-16\n\n### 변경\n- **시황/공시 알림 점 색 구분** — 메뉴의 \"시황/공시\" 알림 점이 **공시·투자유의는 빨강**(확인이 급한 신호), **뉴스·IPO 공모주·무료리서치는 금색**(참고 정보)으로 나뉩니다. 이전에는 공모주·리서치 소식도 빨강으로 떠서 급한 신호와 구분되지 않았습니다. 두 종류가 함께 있으면 빨강·금색 두 점이 나란히 표시됩니다.\n\n### 수정\n- **스크리닝 \"전체 내보내기/가져오기\"가 모든 화면을 복원** — 이전에는 통계·비율·건전성만 백업에 담겨, 새 컴퓨터에서 가져오기를 해도 마법공식·PEG·Z스코어·F스코어·GP/A·NCAV·인수자배수·버핏·모멘텀·배당 등 나머지 스크리닝 화면이 비어 있었습니다. 이제 **12개 스크리닝 결과를 모두 포함**해, 한 번도 수집하지 않은 컴퓨터에서도 **가져오기만 하면 전 화면이 그대로 복원**됩니다. 가져오기 미리보기·완료 안내에도 복원되는 스크리닝 건수가 표시됩니다. (이전 버전에서 만든 백업 파일도 그대로 사용할 수 있습니다.)",
+  "pub_date": "2026-07-16T13:18:50Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHFmQWRpa3JsR0t3NkRtZHowZUo2UkhLRFRCOTJoY0IzdXhWVkRUd212MEVzQ2kwYnF4UFlwR0x0NEpQSkhDWnV1RmFkamp4MXBzQ2hCcnpNRjZRVmdrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0MTk1NDU3CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKVVJPU0NIUkdLQTJsVnVTdDYxQW5nNHdZa2hmbmhwTzR1d1VuYmRhREFrZWhRa1RsQ0p1dDUwN2RDenB6dXUvZ1U1bU1Bb3ZCcFR6d2k2WCszbFA5Q0E9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.93/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG9iemJqNkdFL2RNaTI4b0pYYVlFc3RkWWxHREc4NzFnNm5vY29tdFNMNERMSzJzSVNxK0ZTbWRqZzFjODYyeTR6NGFIbnEybFRYTTJNY0FIMkM4OWcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0MjA2ODI2CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKV0drYmR1cmJlRGpJcGovRVRrakNYbVM4N2hXUlIzK0lzb2tBck5sNXdjR2d2cnZ3aGhSWSt4bEFBS0xIN3c1OTlqUmViM01SbUVYZXNEalllQjVxQUE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.94/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHJLOFprbHFpOUtVZzdOOXBlaWoxQ3lQS0U4cmErdEtFZmpjeG5MNVNaT1Z3VFVlaldKcXZraEFOckNsdTl4WFVEWXFtMW50K2FVK2FUZFNpRmR1a1FnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0MTk2MjcwCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy45M194NjQtc2V0dXAuZXhlCk5XMHdvN0MzOXJtK2JtU3VrUGhYTnNPd1JSOG94UzU0cTNPUjlOQTBVa3U4aFBBUDFlMENCdVRpdGtFNFlncEp3YkhwZDU4cldCd2RhZlVReDJhVUNnPT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.93/Gold.Hand.Trade_0.3.93_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHFnSGJ0OFlMZDY3UjB4Qjk5Y29nY05iRzZWZUcyb2VaeGowekN0THhmVDdtcnFyL0hpUHE0N2pZNjNlK2RXNm43YzkrRm1wVGVKNi81QVJyV3ZyS0FrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0MjA3OTI5CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy45NF94NjQtc2V0dXAuZXhlCnN1bG9pZDJDTFB2RFI1Y0FnaE93b1l1MXJ4OVhHQStPazl1bUlXR0FQRnFaamJRUnlJc2dHeWxBQlRLMmdnSldxeE5XYXJ1WHB4a0VRMGhYajhkdkJRPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.94/Gold.Hand.Trade_0.3.94_x64-setup.exe"
     }
   }
 }
