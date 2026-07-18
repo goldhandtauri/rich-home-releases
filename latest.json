@@ -1,15 +1,15 @@
 {
-  "version": "0.3.96",
-  "notes": "## [v0.3.96] — 2026-07-17\n\n### 변경\n- **AI 분석에 첨부되는 뉴스가 네이버 검색 기반으로** — 설정에 네이버 검색 키를 등록해 두면, AI 분석에 함께 보내는 최근 뉴스를 **네이버 검색에서 해당 종목 기사만 골라** 첨부합니다. 키가 없으면 기존 방식(증권사 뉴스)으로 동작합니다. 어느 쪽이든 제목·출처·시각만 전달합니다.\n\n### 수정\n- **윈도우에서 앱을 켤 때 검은 창이 잠깐 떴다 사라지던 문제** — 이전 버전(v0.3.95)에서 추가된 \"이전에 남은 AI 엔진 정리\" 기능이 앱 시작 때마다 명령 창을 띄우던 것을 고쳤습니다. 이제 화면에 보이지 않게 처리됩니다.\n- **AI 분석에 다른 종목 뉴스가 섞여 전달되던 문제** — 종목을 지정해도 시장 전체 뉴스가 함께 전달돼, **절반 가까이가 다른 종목 기사**였습니다(실측: 40건 중 21건만 해당 종목). 이제 해당 종목 기사만 전달됩니다.\n- **금손매 AI(로컬)가 첨부를 \"데이터 부족\"이라 답하던 문제** — 첨부가 모델 입력 한도를 넘으면 줄이는데, **긴 공시 본문과 짧은 뉴스 목록을 같은 비율로 줄여** 뉴스·수급이 통째로 사라졌습니다. 이제 **긴 것부터 줄여** 뉴스·수급 같은 작은 첨부는 그대로 전달됩니다. 또한 입력 한도가 실제 용량보다 작게 계산되던 것을 바로잡아(21,862자 → 31,232자) 더 많은 내용이 전달됩니다.\n- **첨부가 줄어든 경우 답변 위에 안내** — 첨부가 한도를 넘어 일부만 전달됐다면, 얼마나 줄었는지와 해결 방법(공시 건수 줄이기 / 모델 컨텍스트 키우기)을 답변 위에 표시합니다.",
-  "pub_date": "2026-07-16T18:21:48Z",
+  "version": "0.3.97",
+  "notes": "## [v0.3.97] — 2026-07-18\n\n### 추가\n- **녹화에 얼굴을 함께 담을 때, 실제로 녹화되는 모습을 실시간 미리보기** — 녹화를 시작하기 전에도, 녹화 중에도 화면과 얼굴이 어떻게 겹쳐 담기는지 그대로 보여줍니다. 미리보기에서 **얼굴을 드래그해 원하는 위치로 옮기고** 모서리를 잡아 **크기를 조절**할 수 있으며, 정한 위치·크기는 다음에 다시 켜도 그대로 유지됩니다. macOS·Windows 모두 지원합니다.\n\n### 수정\n- **얼굴을 함께 녹화할 때 화면이 끊기던 문제** — 얼굴 인식이 컴퓨터 자원을 과도하게 점유해 녹화 화면이 드문드문 끊기던 것을 고쳤습니다. 이제 매끄럽게 녹화됩니다.\n- **얼굴 미리보기가 끊기거나 크기가 튀고 가장자리가 어긋나던 문제** — Windows에서 미리보기가 불안정하던 것을 바로잡았습니다.\n\n### 변경\n- **화면 녹화 창·자산정보 카드 디자인 정리** — 불필요한 그라데이션을 없애 톤을 통일하고 계좌번호 가독성을 보정했습니다.",
+  "pub_date": "2026-07-18T09:33:34Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGozeFA1Y3YzMkUvbTJ4aVBrdk5oWmtDZUczR0pPVXl0SE1nM3BNNWZ5OEJNZ0dTVHBtMW56N25HUTBLVWxGUzV2SVRQUkFRVXlyQjg3UGZhOWsvNkFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0MjI1MDEzCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKNkhLL2F4b01ETEQxWEhzeXZ2c1FMM1R6dERUTzd6ekVmWEwzaExUM0JidlBJNTNpUnFkaTA1T0U3bWRQTGR6M3B2bm5yL2dZVXNZMkNQTXNtNFVzQkE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.96/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGpJTUZBZWpwQ3d3azRlcG5tUTIxd28wYWx0czNrODBkN1lsOGtZR1ZpYnk0MEhZU3p3dnZmZ1hZemlyM0IvQXZnSXVzRHZZeTFldm0xaTFTY1pHNmdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0MzY2MTY1CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKRFdnQXJ5NTBZSE1ZWmFpaWdMY0RBeEMvNkZSWGlFN0lXU1VMbit4UzJNR0p0MmFSOVI2d0grUkNxN1F2YmdpUmwxZTQvTW85enBzY08yVjRGOVp2Q3c9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.97/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGs4cmF4emVvNU1FSnU5UW1ZeUdwb1FGWTNWUnNWTGVmRkZNWUhldW51RTFSbmQvVHBXaEI1RElJWFRGZ0ZGLzRrWm9uaFlPOVRWL1UrdGtxWUkxRncwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0MjI2MTA4CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy45Nl94NjQtc2V0dXAuZXhlClZGQVkrSHdyeUdWbHBKMklodndta21VUDJsN1BtbHdCcXBFb3ZaMWxCbnVNRjkzZzBkeEJtcVI5a1BaRFc4b2ppYmxmSkk3Y1Z1eEV6VGwrOXFuaEJ3PT0K",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.96/Gold.Hand.Trade_0.3.96_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG5ZSzhBeVZtOGc0eGt2Yk0zQ1d4S2NWa3lKQ1dXZFNJb1kxc1NSNVJ1c2crSW9CR2FNR2lGT3U1cXVoTHJyQkJ5b3hCZVhMU2ZFVWFjNFRqc2oxRHcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0MzY3MjEyCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuMy45N194NjQtc2V0dXAuZXhlCmtaK1lPK2pCMW04U0Y1aUdLUzZrWm9qMmZNOUc0VGgwdXNhME5CTWJnREh2d1hsN29iRU5ZSm42WGp4ZTB0a0VoQzVMaHRFSkk5c21Rb1JpUGUvZ0FnPT0K",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.3.97/Gold.Hand.Trade_0.3.97_x64-setup.exe"
     }
   }
 }
