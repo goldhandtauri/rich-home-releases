@@ -1,15 +1,15 @@
 {
-  "version": "0.4.4",
-  "notes": "## [v0.4.4] — 2026-07-21\n\n### 추가\n- **녹화 해상도를 화면에서 바로 고를 수 있습니다** — 녹화 창과 설정 양쪽에 해상도 선택(자동 · 720p · 1080p · 1440p · 4K)이 생겼습니다. **자동**을 고르면 쓰는 PC 사양에 맞는 해상도를 알아서 잡아 줍니다.\n\n### 변경\n- **녹화가 사양이 낮은 PC에서 덜 버벅입니다** — 녹화 중 미리보기를 만드는 작업이 영상 저장과 순서를 다투면서 화면이 끊기고 프레임이 빠지던 것을, 미리보기를 따로 처리하도록 분리했습니다. 얼굴을 함께 녹화할 때 특히 좋아집니다.\n- **PC 사양에 맞춰 녹화 프레임을 자동으로 맞춥니다** — 사양이 낮은 PC에서는 초당 24프레임으로 낮춰 부드럽게, 여유 있는 PC는 기존대로 30프레임을 유지합니다.\n\n### 수정\n- **녹화를 시작한 뒤에 켠 문서 프로그램이 영상에 안 담기던 문제** — 파워포인트·엑셀 등을 녹화 시작 후에 열면 영상에도 미리보기에도 나오지 않던 문제를 고쳤습니다. 이제 녹화 도중에 열어도 몇 초 안에 함께 담깁니다.\n- **금손매 AI 설치 진행률이 100%까지 찼다가 다시 0%부터 시작하던 문제** — 설치가 'AI 엔진 준비'와 '모델 내려받기' 두 단계인데 둘이 진행 막대를 같이 쓰면서 생긴 문제입니다. 이제 준비 단계는 안내 문구로 보여 주고, 진행 막대는 실제 내려받기만 나타냅니다.\n- **전체 수집을 눌러도 일부 자료가 모이지 않던 문제** — 현금흐름·배당·추세 자료가 전체 수집에서 빠져 있어 FCF·발생액·배당·모멘텀 화면의 근거 자료가 비어 있었습니다. 이제 여섯 가지를 모두 모읍니다. 이미 모은 자료가 중복해서 쌓이지는 않습니다.\n  - 추세 자료는 종목마다 따로 조회가 필요해, 전체 수집에 걸리는 시간이 이전보다 깁니다. 화면의 항목별 진행 막대로 어디까지 왔는지 볼 수 있습니다.\n- **시작 화면과 수동매매 화면의 명언이 서로 다르게 보이던 문제 (Windows)** — 화면이 뜨는 순서에 따라 명언이 엇갈리던 문제를 고쳤습니다. 이제 한 번 실행하는 동안에는 모든 화면이 같은 명언을 보여 줍니다.",
-  "pub_date": "2026-07-21T08:17:52Z",
+  "version": "0.4.5",
+  "notes": "## [v0.4.5] — 2026-07-21\n\n### 변경\n- **녹화 해상도 선택이 한 줄로 정돈됐습니다** — 선택지 중 `4K` 하나만 아래로 밀려 두 줄로 보이던 것을 고쳤습니다. 항목 폭을 균등하게 고정해 **어떤 PC에서도 줄이 밀리지 않습니다.** 권장 해상도 안내는 선택지 위쪽 설명으로 옮겼습니다.\n- **설정 화면과 녹화 창의 해상도 목록을 통일했습니다** — 순서(가벼움 → 최고화질)와 항목 이름이 두 화면에서 같아졌습니다.\n- **글꼴이 화면 전체에서 통일됐습니다** — 버튼과 입력칸만 시스템 글꼴로 나오던 것을 앱 글꼴로 맞췄습니다. Windows와 macOS의 글자 폭 차이로 좁은 영역이 한쪽에서만 어긋나던 원인도 함께 사라집니다. (비밀번호 입력칸은 가림 점이 깨지지 않도록 기존 글꼴을 유지합니다.)\n\n### 수정\n- **모니터 해상도보다 높은 녹화 해상도를 녹화 창에서 고를 수 있던 문제** — 설정 화면에서는 막혀 있는데 녹화 창에서는 선택돼, 화질 이득 없이 파일만 커지는 녹화가 가능했습니다. 이제 두 화면 모두 잠기고, 저장된 값이 모니터를 넘으면 자동으로 맞춰집니다.\n- **밝은 화면에서 일부 글자가 흐릿해 읽기 어렵던 문제** — 해상도 선택과 녹화/라이브 전환에서, 선택되지 않은 항목의 글자가 배경과 충분히 구분되지 않던 것을 고쳤습니다.\n- **키보드로 해상도를 고를 수 없던 문제** — 좌우 방향키로 항목을 옮길 수 있고, 키보드로 이동했을 때 지금 어디에 있는지 표시됩니다.",
+  "pub_date": "2026-07-21T12:17:39Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGt2eTA4dUliQjhFUTMrSERCSldOZlYxYzV2MzdqRFRHaXFXTkVwbUlVaEtjTXNIM2wybWhWV2hkbEJDV1QyTjJoeWw0THd0aU9ZS05jQ0dOclhnZXdBPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0NjIwNzUwCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKSkh1UjRnaVdlT3ZXeWhnREl2WGo2TEhiUlpBaCszOTE3enkzdnNtSTU5c081OEVLbjlycXZ1a00xc2RkRFJyRjdtZ1RQUWJ4N0NLNDBocloxdTYrQUE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.4.4/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHVZaFhSZEJBMlgrWm5rSU4wMDQvSXVJTWVldGEybzNSSDIzYUZhcXpSaEZGdkl0RkdCSmlhVWRRVDcvSzJqM3Q4R3RKQVUzUCt5cXhoWjhpMjgrU2c4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0NjM1MDU5CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKcDc2a2xPSXlFZzVMWitpOGxIQVBMMG5GbjFkNzVwbDZwSkJ3UG9JejRBaks5b1hlS29pclpGNytZblovSWJSVmE1NkFDNGM4SWpReFFWTTVvV2dtREE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.4.5/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG0rbUVCTU1Yemc5WWd1eENrZGduWDRwOFFiWlgwdnhSUXZQUkJLWXhIRUZWTGRxOG5lTlNDRkJNNGdIZkkrN1VVVkNldDJoTmVOem93ZUxYWE1wNlFzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0NjIxODcxCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuNC40X3g2NC1zZXR1cC5leGUKOCtMZEpTMUFvaVVGVER3UUR2bXVqUUtDR0RzU2lZMUdBZnFEaDhmT3pBL2l5YkkwcnF1MUpSTU93U1BGS0xRUCtrUUZHMDNvYUNuY05vLzhSWTVvQ0E9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.4.4/Gold.Hand.Trade_0.4.4_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGw1K0laWkpKakVwV2xIbHRYd1dKMzdXNWlMNGhxV3ZZU2FsREFGMXdiQjNyRlVidkhrd0NUZCt6YXdKTWJiZnNmaUhWT0pyMGNSUjdYbGhkRkNhK1FRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0NjM2MjU4CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuNC41X3g2NC1zZXR1cC5leGUKVUlmS3ppR3UyTkw0WlBRYzhWL0QvZ2N6QnJrNlRvZkRkN3hyT2dWWUQxZTNOcmJtdHBJWE9OZk1aemdKOUdjaXRMNGxRa0xvWjVOTmRVRXJHRkh2QkE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.4.5/Gold.Hand.Trade_0.4.5_x64-setup.exe"
     }
   }
 }
