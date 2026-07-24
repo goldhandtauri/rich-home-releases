@@ -1,15 +1,15 @@
 {
-  "version": "0.4.5",
-  "notes": "## [v0.4.5] — 2026-07-21\n\n### 변경\n- **녹화 해상도 선택이 한 줄로 정돈됐습니다** — 선택지 중 `4K` 하나만 아래로 밀려 두 줄로 보이던 것을 고쳤습니다. 항목 폭을 균등하게 고정해 **어떤 PC에서도 줄이 밀리지 않습니다.** 권장 해상도 안내는 선택지 위쪽 설명으로 옮겼습니다.\n- **설정 화면과 녹화 창의 해상도 목록을 통일했습니다** — 순서(가벼움 → 최고화질)와 항목 이름이 두 화면에서 같아졌습니다.\n- **글꼴이 화면 전체에서 통일됐습니다** — 버튼과 입력칸만 시스템 글꼴로 나오던 것을 앱 글꼴로 맞췄습니다. Windows와 macOS의 글자 폭 차이로 좁은 영역이 한쪽에서만 어긋나던 원인도 함께 사라집니다. (비밀번호 입력칸은 가림 점이 깨지지 않도록 기존 글꼴을 유지합니다.)\n\n### 수정\n- **모니터 해상도보다 높은 녹화 해상도를 녹화 창에서 고를 수 있던 문제** — 설정 화면에서는 막혀 있는데 녹화 창에서는 선택돼, 화질 이득 없이 파일만 커지는 녹화가 가능했습니다. 이제 두 화면 모두 잠기고, 저장된 값이 모니터를 넘으면 자동으로 맞춰집니다.\n- **밝은 화면에서 일부 글자가 흐릿해 읽기 어렵던 문제** — 해상도 선택과 녹화/라이브 전환에서, 선택되지 않은 항목의 글자가 배경과 충분히 구분되지 않던 것을 고쳤습니다.\n- **키보드로 해상도를 고를 수 없던 문제** — 좌우 방향키로 항목을 옮길 수 있고, 키보드로 이동했을 때 지금 어디에 있는지 표시됩니다.",
-  "pub_date": "2026-07-21T12:17:39Z",
+  "version": "0.4.6",
+  "notes": "## [v0.4.6] — 2026-07-24\n\n### 변경\n- **매물대가 종목상세 차트에 기본으로 표시됩니다** — 어느 가격대에서 거래가 많았는지 가로 막대로 보여주는 지표입니다. 막대가 길수록 그 가격에 사고판 물량이 많아 지지·저항이 되기 쉬운 자리입니다. 차트 지표 목록에서 끄고 켤 수 있습니다.\n- **매물대를 초보자도 알아보기 쉽게 다듬었습니다** — 가격축 이름을 쉬운 우리말로 정리했고(가장 많이 거래된 가격 = 최다거래, 거래 밀집 구간의 위·아래 = 밀집상단·밀집하단), 거래가 집중된 70% 구간은 옅은 띠로 표시됩니다. 차트 왼쪽 위 '매물대 보는 법'에 마우스를 올리면 설명이 뜨고, 처음엔 한 번 자동으로 안내됩니다.",
+  "pub_date": "2026-07-24T05:34:53Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHVZaFhSZEJBMlgrWm5rSU4wMDQvSXVJTWVldGEybzNSSDIzYUZhcXpSaEZGdkl0RkdCSmlhVWRRVDcvSzJqM3Q4R3RKQVUzUCt5cXhoWjhpMjgrU2c4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0NjM1MDU5CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKcDc2a2xPSXlFZzVMWitpOGxIQVBMMG5GbjFkNzVwbDZwSkJ3UG9JejRBaks5b1hlS29pclpGNytZblovSWJSVmE1NkFDNGM4SWpReFFWTTVvV2dtREE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.4.5/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG1XZE1KSmRtajVPb2xKNm55dDJYc1RGLzZKK1MyYTYzUHlRQ01Oemkxdks1dVR0cDhCMUduVDlkSndHYmIxbnRXZVlQWmVsUGVuc0xMTmxodHNJWkFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0ODcwMjg3CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKZGlmdngxZkk4WDc5TitMSlMwTEhPL0hZeGlHZ2pkS055YjRoYU8rM0JxYTNxSkVVVVpMWG93WDlOYTM1K3pqekN6RXNna2tadDdSY2J6VjBjSDdZQmc9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.4.6/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGw1K0laWkpKakVwV2xIbHRYd1dKMzdXNWlMNGhxV3ZZU2FsREFGMXdiQjNyRlVidkhrd0NUZCt6YXdKTWJiZnNmaUhWT0pyMGNSUjdYbGhkRkNhK1FRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0NjM2MjU4CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuNC41X3g2NC1zZXR1cC5leGUKVUlmS3ppR3UyTkw0WlBRYzhWL0QvZ2N6QnJrNlRvZkRkN3hyT2dWWUQxZTNOcmJtdHBJWE9OZk1aemdKOUdjaXRMNGxRa0xvWjVOTmRVRXJHRkh2QkE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.4.5/Gold.Hand.Trade_0.4.5_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHZTOW5VR0dUcjBEdXNZS21iUzhSQXdWTXVFMXpVaVZ0dWl3ZU1Ielo0S2ZWY0JGQklHdlg4aTF4VUw4ZmJ6KzVlcW9hSFB0TGdwSTYwbkdxNkFJSVFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0ODcxMjkyCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuNC42X3g2NC1zZXR1cC5leGUKb2s1Y3Bxc2x3MGs2a3dtSHNtNGk5NS84Z1hJY2xzTWpUa0g2SHJRNmFraXJoMFoxN1QrT3NDcGRuVUREd090dzlweTdnWkpDdC8wRE9qcG81K3ZMRHc9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.4.6/Gold.Hand.Trade_0.4.6_x64-setup.exe"
     }
   }
 }
