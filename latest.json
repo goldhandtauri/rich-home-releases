@@ -1,15 +1,15 @@
 {
-  "version": "0.4.6",
-  "notes": "## [v0.4.6] — 2026-07-24\n\n### 변경\n- **매물대가 종목상세 차트에 기본으로 표시됩니다** — 어느 가격대에서 거래가 많았는지 가로 막대로 보여주는 지표입니다. 막대가 길수록 그 가격에 사고판 물량이 많아 지지·저항이 되기 쉬운 자리입니다. 차트 지표 목록에서 끄고 켤 수 있습니다.\n- **매물대를 초보자도 알아보기 쉽게 다듬었습니다** — 가격축 이름을 쉬운 우리말로 정리했고(가장 많이 거래된 가격 = 최다거래, 거래 밀집 구간의 위·아래 = 밀집상단·밀집하단), 거래가 집중된 70% 구간은 옅은 띠로 표시됩니다. 차트 왼쪽 위 '매물대 보는 법'에 마우스를 올리면 설명이 뜨고, 처음엔 한 번 자동으로 안내됩니다.",
-  "pub_date": "2026-07-24T05:34:53Z",
+  "version": "0.4.7",
+  "notes": "## [v0.4.7] — 2026-08-02\n\n### 추가\n- **미국 주식 지원** — 헤더 왼쪽 위 국내/해외 토글로 미국 시장으로 전환합니다. 종목 검색·현재가·차트·호가·잔고·관심종목과 매수/매도 주문(즉시·예약·주간거래)까지 국내와 같은 흐름으로 이용합니다. 현재가는 달러와 원화를 함께 보여줍니다.\n- **해외 홈·종목순위·시황공시·스크리닝** — 미국 지수 카드와 추세 그래프, 거래량·등락률 순위, 시황 뉴스·공시·IPO·거래정지 안내, 재무 스크리닝을 미국 종목에도 제공합니다. 시황 뉴스와 공시는 번역기가 설정돼 있으면 한글로, 없으면 원문으로 보여줍니다.\n- **해외 종목상세 커뮤니티 + 멘션** — 미국 종목상세에서도 커뮤니티를 열 수 있고, 글에서 미국 티커(예: `$AAPL`)도 종목으로 인식됩니다. 커뮤니티는 국내/해외 구분 없이 동작합니다.\n\n### 변경\n- **종목 검색이 국내/해외 한 화면으로 통합됐습니다** — 디자인은 하나로 맞추고 위 국내/해외 토글로 목록만 전환합니다. 최근 검색·인기 목록·검색 결과에 회사 로고가 함께 표시되고, 방향키로 이동하면 선택 항목이 또렷하게 강조됩니다. 최근 검색 목록은 마우스를 올리거나 스크롤할 때만 스크롤바가 나타납니다.\n- **국내 종목상세 커뮤니티 버튼 디자인을 해외와 통일** — 헤더의 커뮤니티 버튼이 열려 있으면 활성 상태로 표시됩니다.\n- **해외 화면 왼쪽 메뉴 순서** — 홈 다음에 자동매매가 오도록 정리했습니다.\n\n### 수정\n- **미국 공시 원문이 열리지 않던 문제** — 미국 기업 공시 문서를 정상적으로 불러와 보여줍니다.\n- **해외 종목 검색에서 방향키로 목록이 강조되지 않던 문제** — 위/아래 방향키로 선택 항목이 또렷하게 표시됩니다.\n- **거래정지·경보 종목에 한글 종목명 표시** — 미국 종목의 거래정지·경보 안내에 한글 이름을 함께 보여줍니다.\n- **미국 시황·공시 원문 창의 닫기·최소화가 안 되던 문제** — 원문 창을 정상적으로 닫고 최소화할 수 있습니다.\n- **종목 검색에서 결과가 없을 때 좌우 방향키로 커서를 옮길 수 없던 문제** — 검색어 오타를 바로 고칠 수 있습니다.\n- **미국 스크리닝 '모멘텀'에서 상장 기간이 짧은 종목이 52주 신고가근접을 잘못 표시하던 문제** — 52주 데이터가 충분한 종목만 집계합니다.\n- **해외 종목상세 창을 닫아 자리가 났는데 '창 개수 제한' 안내가 자동으로 닫히지 않던 문제** — 자리가 나면 안내가 즉시 사라집니다.\n- **앱 시작 직후 해외 자동매매 화면이 잠시 비어 보이던 문제** — 로그인 준비가 끝나면 잔고·감시 정보가 바로 표시됩니다.",
+  "pub_date": "2026-08-02T14:42:42Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG1XZE1KSmRtajVPb2xKNm55dDJYc1RGLzZKK1MyYTYzUHlRQ01Oemkxdks1dVR0cDhCMUduVDlkSndHYmIxbnRXZVlQWmVsUGVuc0xMTmxodHNJWkFRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0ODcwMjg3CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKZGlmdngxZkk4WDc5TitMSlMwTEhPL0hZeGlHZ2pkS055YjRoYU8rM0JxYTNxSkVVVVpMWG93WDlOYTM1K3pqekN6RXNna2tadDdSY2J6VjBjSDdZQmc9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.4.6/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGlHaHl1N3E1S0xVS0ZxNmtMcXZ1MHl2eCtJK0tMTHMrNzRidUhzMnJITExwVGlvK0ZuMW9PbUJHR25HVGhRTVlkeXBoVjd0VUc0aHdkaXEyT2JnSXdvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg1NjgwNjY4CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKbHNEbk1tRmkvWkl2UFRLUFJBTVNrMGtHSUNPSWtDREphanJrWFYyeWVQOUx6bHhJQk4xNm5MbjVOaHlnUmorbGhvc1hSY05mNUk5a2hGdVNvL01tRFE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.4.7/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHZTOW5VR0dUcjBEdXNZS21iUzhSQXdWTXVFMXpVaVZ0dWl3ZU1Ielo0S2ZWY0JGQklHdlg4aTF4VUw4ZmJ6KzVlcW9hSFB0TGdwSTYwbkdxNkFJSVFnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg0ODcxMjkyCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuNC42X3g2NC1zZXR1cC5leGUKb2s1Y3Bxc2x3MGs2a3dtSHNtNGk5NS84Z1hJY2xzTWpUa0g2SHJRNmFraXJoMFoxN1QrT3NDcGRuVUREd090dzlweTdnWkpDdC8wRE9qcG81K3ZMRHc9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.4.6/Gold.Hand.Trade_0.4.6_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHMzSDlnTkpqYlRlcnlFK1NCV2NYYnhraVJvZE9xQ2RSMzdmaXk1eG1wSWZHQzVEdnJWQWlLZHhLQmxMbFhJU2tRak9SWGFHYlQvNkVSY3Z6RDdVRndZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg1NjgxNzYyCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuNC43X3g2NC1zZXR1cC5leGUKNlZ1a2tTRXNMNmtvTUg3QkZIVDFMWEZPckFkeEk2RFUrM3JLY1lTN2pCOHpSRmkxUXlBUEkrSklZVlFjTVFVdDAveHpZUFRCUnk1Q0pNTEJhcmgzQkE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.4.7/Gold.Hand.Trade_0.4.7_x64-setup.exe"
     }
   }
 }
