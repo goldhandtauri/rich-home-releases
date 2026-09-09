@@ -1,15 +1,15 @@
 {
-  "version": "0.5.2",
-  "notes": "## [v0.5.2] — 2026-09-09\n\n### 수정\n- **금리 바에 국고채 10년·해외 금리가 \"—\" 로 비던 문제** — 한국은행 경제통계 조회가 순간적으로 실패하면 국고채 10년, 미국 정책금리, 미국 국채 10년, 일본 정책금리가 통째로 비어 보였습니다. 이 네 항목은 대체 경로가 없어서, 한 번 놓치면 다음 갱신 때까지 최대 한 시간 동안 계속 빈 상태로 남았습니다. 이제 실패하면 곧바로 한 번 더 시도하고, 그래도 비면 5분 뒤 다시 받아옵니다(최대 3회).\n- **금리 기준일과 전일 대비가 함께 사라지던 문제** — 같은 원인으로 기준금리·국고채 3년·원달러·원엔의 \"기준일\" 표시와 전일 대비 등락 폭도 빠졌습니다. 이제 값과 함께 복구됩니다.\n\n### 변경\n- **설정 ECOS 연결 확인이 실제 쓰는 자료를 모두 점검** — 이전에는 대표 지표 한 가지만 확인해서, \"연결 성공\" 이 떠도 국고채 10년·해외 금리가 안 나오는 상황을 잡지 못했습니다. 이제 금리 바가 쓰는 자료 여섯 가지를 모두 확인해 어떤 자료가 왜 실패했는지 한국은행이 돌려준 사유 그대로 보여주고, 성공한 자료는 실제로 받아온 값까지 함께 표시합니다.",
-  "pub_date": "2026-09-09T13:44:18Z",
+  "version": "0.5.3",
+  "notes": "## [v0.5.3] — 2026-09-09\n\n### 변경\n- **설정 ECOS 연결 확인에 실제 수신 항목 이름 표시** — 한국은행이 항목 이름을 바꿔서 값을 못 찾는 경우, 이전에는 \"찾지 못함\" 만 떠서 무엇이 어긋났는지 알 수 없었습니다. 이제 실제로 받아온 항목 이름을 함께 보여줍니다.",
+  "pub_date": "2026-09-09T14:12:37Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHRRdUtSZlpNTW1UUE5YUzYyYmRYUmNPb2tERzVRYXZTY09jNForc0V6VFhUOSs1YzRvSjdMN2h6L2MrR0NLaDNyZnMvVnBYdWx1di9FSWVqVjFwdmdJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4OTU5ODgwCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKblcxTnZjcTdwQXNtQUFhdjE2Rk5NM3NaL3J6VlRVbm54L3lQNERRQVErakVrbnpKdzJHSUNOaTFVTUVRQXNIQmVaR2NwUjFVWXBDQmZXbDVqVnJSQlE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.5.2/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG1malpVTmtWSEFmMVNaNG50UEhaVEJFUGlGYmRKSEM5WFFBbDFSNDFSRHRGOEovVHNkY2tDZFY5NC9YcXhFM2ZZZHRDT3JBMmlKV1N1aXhVSlRjdndjPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4OTYxNjczCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKUjh1WDJWRG5CVVhKNFBwMGNpNkJTR3FjcGhWWGxpSVlYTFAzM2VmaFljZUNCdEtqWVo5WG11TWljVmNJVjlyWkV6c0FsTUI1QlJ4ckFBNjFzMFJZQlE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.5.3/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGlpUVN1c0Z3clNvSjlmdDZrYXIzbEhaR1hhNWxsdFhDb1JCeTYvNGxvL25xWmY1U0c2OWlPTG40enZqU0FzRlJJbzRXS1FPQkFYcWc2NEU0K1JwTGc0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4OTYxNDQ4CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuNS4yX3g2NC1zZXR1cC5leGUKMFZiOS84QUFwK3JSYTFBbXFmZDhZbU14Nnh1UDhyVThmY0l3c3hqZVpIWTRjSnFVYkdmTnp6WlBXL3QwTEU2VmwvbHZOSmp4anBwRmVOYWkrbU9LQVE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.5.2/Gold.Hand.Trade_0.5.2_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHZlUko3THp6ODc2Nnh0UjUvb0JjVTAzeFQ2eVpnQkxFd1A5OW5laHMrbzN4N21iQ3ZBU0p5SXJLRGxxRnNwSUhVbWRaL1ZMVk5KYm96SDRmT2Y3T0FzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg4OTYzMTUxCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuNS4zX3g2NC1zZXR1cC5leGUKYlR6NWx5MVJrTjZRR2Q3VXUzSDRJK01IZytzQUlISU9xZ2ZibEdhcXhwd0hjSTJ4TENqNElzd2xEWTk2T292RUs1R1QrUGVBU2x3VzBnU05HbGYvQ2c9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.5.3/Gold.Hand.Trade_0.5.3_x64-setup.exe"
     }
   }
 }
