@@ -1,15 +1,15 @@
 {
-  "version": "0.5.4",
-  "notes": "## [v0.5.4] — 2026-09-12\n\n### 수정\n- **종목상세 뉴스에 NEW 표시가 뒤늦게 붙던 문제** — 목록 맨 위 최신 기사에는 NEW 가 안 붙고, 시간이 좀 지나 다시 열면 이미 읽은 기사에 NEW 가 뒤늦게 뜨곤 했습니다. 새 뉴스 판정이 백그라운드 수집(최대 15분 간격)을 기다리느라, 화면에 보이는 목록보다 항상 늦었기 때문입니다. 이제 뉴스 탭을 여는 순간 화면에 보이는 목록을 기준으로 새 기사를 가려냅니다. 최신 기사에 곧바로 NEW 가 붙고, 한 번 본 기사가 나중에 다시 NEW 로 올라오지도 않습니다.\n- **뉴스를 봐도 안 읽음 표시가 계속 남던 문제** — 종목상세 뉴스 탭을 열면 그 종목 뉴스는 읽음으로 정리되어야 하는데 저장이 되지 않아, 관심종목 종목명 옆 뉴스 점과 탭의 안 읽은 개수가 그대로 남아 있었습니다. 이제 뉴스 탭을 열면 바로 정리됩니다.",
-  "pub_date": "2026-09-12T07:46:47Z",
+  "version": "0.5.5",
+  "notes": "## [v0.5.5] — 2026-09-12\n\n### 수정\n- **뉴스 NEW 표시가 다른 탭에 갔다 오면 사라지던 문제** — 종목상세에서 뉴스 탭을 열기만 해도 그 종목 뉴스가 전부 읽음으로 처리돼, 차트나 공시 탭에 갔다 돌아오면 아직 안 본 기사의 NEW 가 통째로 없어졌습니다. 이제 공시 탭과 똑같이 **기사를 눌러서 열 때 그 한 건만** 읽음이 됩니다. 안 읽은 개수와 관심종목 종목명 옆 점도 누른 만큼만 줄고, 한 번에 정리하고 싶으면 뉴스 탭의 ✓ 전체읽음 버튼을 쓰면 됩니다.",
+  "pub_date": "2026-09-12T09:45:19Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGlwdlRIMHdCSUw4amRuTGRIS3kvanNwNTl5M2xMT3RvVVphSzZ3TE1ueG9tcFRYZVFjaTJGTmtrclZJS3FvYitMZnNTeCtGMlMvZ2J0QytSWXJ4dWc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5MTk3OTMzCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKMGZjRElhaGhpTTdKMlprVEpyVm9rbG5hSlF4Z3ZwWldTWVZVaURBamw4UXMybGt1S09haHhCdHhwVm5oZGZlc2VtS1pQM1FqdkVicjV4Unk5ZE5jRGc9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.5.4/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHJ2eG9ZVHpZcFdDZ052M0Y4OER0c0wvWUlvWU5UZ3R2L2JTdWFTNll2cHVLMTM3SFJ5MkExbml2c29QanlIdVRPVmVQakluS1NYY3FSQkhueEhyb3dnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5MjA0OTg1CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKKzdVWk5hRWtnR3BYK0pyZGwwZXQ0UmdCQWt4Q0NOK2ZBaXhBMXE0VjF1bmxUZ3BWMnZYYlYxMHlMU3ErOVZ1TlZJN3hSY2dQSkc4RkgwQkY4c1BpQ3c9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.5.5/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHBUUjAwQ2xralpUT1JOZUpmL2JhaW16ZDIxdEhWYWxBZ0F2UjgyOUdYbUZzTXNKS0pwQ0U0UUhwN2xhN3puTmNyNFM5Qi85cHdYZ1NYN1NqQjg2Y0FRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5MTk5MTk3CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuNS40X3g2NC1zZXR1cC5leGUKUWRsYlN3RHgxZlBScHp5Z3d3cWtmY1FFUG1WbWtUYXBJSWtPYUk4a3dNSkREVzl3MnVqUXBvQXdrY2p4UnlKakd1cTlyaUhHZC96cFdxSHkvRkwrQlE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.5.4/Gold.Hand.Trade_0.5.4_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGhGM0UyUnVEa2haYjR6TUNNSzduUit3S3hmYlFBZkI0VkJ5Q1g3NnA2MjgxM0ZoVklJODBJRXBPSE52YVFVUU40QTZQYmxsTmRaVlZsdUkvTWRtTWdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5MjA2MzA5CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuNS41X3g2NC1zZXR1cC5leGUKZ1pVWDZIVkQwa3I5bW8vK1NHSEdmVWFnbFZjaHFOTDhycXVKc2xpVGlWeXV4S1BRWkJ0cFNBcEQ1UTdqbUlZUHlqMHZxM1A2cTFhRUF4Vm0zVlViQVE9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.5.5/Gold.Hand.Trade_0.5.5_x64-setup.exe"
     }
   }
 }
