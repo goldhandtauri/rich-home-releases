@@ -1,15 +1,15 @@
 {
-  "version": "0.5.5",
-  "notes": "## [v0.5.5] — 2026-09-12\n\n### 수정\n- **뉴스 NEW 표시가 다른 탭에 갔다 오면 사라지던 문제** — 종목상세에서 뉴스 탭을 열기만 해도 그 종목 뉴스가 전부 읽음으로 처리돼, 차트나 공시 탭에 갔다 돌아오면 아직 안 본 기사의 NEW 가 통째로 없어졌습니다. 이제 공시 탭과 똑같이 **기사를 눌러서 열 때 그 한 건만** 읽음이 됩니다. 안 읽은 개수와 관심종목 종목명 옆 점도 누른 만큼만 줄고, 한 번에 정리하고 싶으면 뉴스 탭의 ✓ 전체읽음 버튼을 쓰면 됩니다.",
-  "pub_date": "2026-09-12T09:45:19Z",
+  "version": "0.5.6",
+  "notes": "## [v0.5.6] — 2026-10-05\n\n### 수정\n- **공매도·수급 탭이 몇 달 전 데이터를 경고 없이 보여주던 문제** — KRX 조회가 실패해도 이전에 받아둔 데이터를 아무 표시 없이 그대로 띄워서, 오래된 공매도 잔고·거래·투자자 수급을 최신으로 착각할 수 있었습니다. 이제 갱신에 실패하면 탭 상단에 \"KRX 갱신 실패 · 08/11 기준\"처럼 경고와 데이터 기준일을 띄우고, 누르면 다시 조회합니다.\n\n### 변경\n- **KRX 로그인 실패 원인 안내** — 비밀번호 변경이 필요하거나 아이디를 찾을 수 없어 KRX 로그인이 막힌 경우, \"KRX 비밀번호 변경 필요\"처럼 원인을 그대로 보여줍니다. 누르면 설정의 KRX 계정 화면이 바로 열립니다.",
+  "pub_date": "2026-10-05T03:24:49Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNHJ2eG9ZVHpZcFdDZ052M0Y4OER0c0wvWUlvWU5UZ3R2L2JTdWFTNll2cHVLMTM3SFJ5MkExbml2c29QanlIdVRPVmVQakluS1NYY3FSQkhueEhyb3dnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5MjA0OTg1CWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKKzdVWk5hRWtnR3BYK0pyZGwwZXQ0UmdCQWt4Q0NOK2ZBaXhBMXE0VjF1bmxUZ3BWMnZYYlYxMHlMU3ErOVZ1TlZJN3hSY2dQSkc4RkgwQkY4c1BpQ3c9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.5.5/Gold.Hand.Trade.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGwrTUl5TFdTR0l6cnlHbVdqQURNY2YzUE9ZYmhJbDZJWWcrcFIwcmh0UGdCSUdJa0kxSm01NENRMUMyeFVGYXhUejFGZUJQRHBNS2J2QlRSck1IMmd3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMTcwNDIxCWZpbGU6R29sZCBIYW5kIFRyYWRlLmFwcC50YXIuZ3oKcGhKQjdkbXRYeTNaWlVJL1NTWGNFRHgwWWJpWlpPeUlpRHFBQXNJZWtXZENKZW5mYVBEUEcrYzR6MzlRbE1KQWZnbmpyYWNpZ2NGVGJvbEoxN1BXQWc9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.5.6/Gold.Hand.Trade.app.tar.gz"
     },
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNGhGM0UyUnVEa2haYjR6TUNNSzduUit3S3hmYlFBZkI0VkJ5Q1g3NnA2MjgxM0ZoVklJODBJRXBPSE52YVFVUU40QTZQYmxsTmRaVlZsdUkvTWRtTWdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg5MjA2MzA5CWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuNS41X3g2NC1zZXR1cC5leGUKZ1pVWDZIVkQwa3I5bW8vK1NHSEdmVWFnbFZjaHFOTDhycXVKc2xpVGlWeXV4S1BRWkJ0cFNBcEQ1UTdqbUlZUHlqMHZxM1A2cTFhRUF4Vm0zVlViQVE9PQo=",
-      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.5.5/Gold.Hand.Trade_0.5.5_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTOFVqUXB4UllqNG1jT0JRcUY5S095ZkFNMGo2VWUvQ3k3OVFHWkZVbEp6SzVDanpKcWtyZHdhUVZlK1hiSUgxM3RzQmw2WTJVQ0JhN1VzeUU1VW5oN0NjVFZHVm9UQlEwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkxMTcwNjgzCWZpbGU6R29sZCBIYW5kIFRyYWRlXzAuNS42X3g2NC1zZXR1cC5leGUKaEN6WElPc1dNcXludk0vVXJLUG5MOHNTa2JRWDM4VnFRSFBSN3hUbm5uRjBaeEZrTjZlTHloL0JFNzRMWnZQQlIyZGlmclhkODU0LytqeENxdVllQ0E9PQo=",
+      "url": "https://github.com/goldhandtauri/rich-home-releases/releases/download/v0.5.6/Gold.Hand.Trade_0.5.6_x64-setup.exe"
     }
   }
 }
